@@ -9,6 +9,7 @@ export interface Service {
   heroLines: string[];
   h1: string;           // added to the hero heading for search engines
   heroProject: string;  // project whose cover is the hero photo
+  heroImage?: string;   // or a file in src/assets/services (overrides heroProject)
   intro: string[];
   deliver: string[];
   approvals: string[];
@@ -64,7 +65,7 @@ export const services: Service[] = [
     description: 'Office, retail, clinic and showroom fit-out in Dubai: design & build with landlord and authority approvals in DIFC, Dubai Mall, Bay Square, d3 and Dubai Hills.',
     heroLines: ['Commercial', 'fit-out'],
     h1: '— office, retail and clinic fit-out company in Dubai',
-    heroProject: 'livrichy-real-estates-office',
+    heroProject: 'gary-tatintsian-gallery',
     intro: [
       'Offices, shops, clinics, galleries and studios — we design and build commercial spaces that represent your brand and work from day one. Our projects include Christie’s auction house and gallery office in DIFC, AMV Aesthetic Clinic in Bay Square, Gari Tatintsian Gallery in d3, LIVRICHY Real Estate in Dubai Hills, Fissman in Circle Mall and Mercure Gold Hotel.',
       'Every landlord and authority in Dubai has its own fit-out rules. We prepare the technical package, obtain the NOC and permits, and plan works around mall hours or occupied floors, so you hand over on the agreed date.',
@@ -125,6 +126,7 @@ export const services: Service[] = [
     heroLines: ['Design &', 'consultancy'],
     h1: '— interior design, approvals and fit-out consultancy in Dubai',
     heroProject: 'gary-tatintsian-gallery',
+    heroImage: 'design-render-omakase.jpg', // Omakase restaurant concept render
     intro: [
       'Not every project needs a contractor from day one. We provide design and consultancy on its own: concept and interior design, space planning, technical and shop drawings for approvals, and project management on behalf of the owner.',
       'Ten years of Dubai fit-outs mean we know what landlords and authorities will ask for. F&B operators, brands and investors use our team to check a unit before signing a lease, to prepare a design that passes approvals the first time, or to manage their contractor.',
