@@ -29,7 +29,7 @@
 /* type filter (Show all / F&B / Commercial / Residential) — fits into the original gap above the grid */
 .ptitle { padding-bottom: 25px; }
 .pfilter { display: flex; justify-content: flex-start; gap: 40px; height: 25px; margin: 0; padding: 0 30px; list-style: none; }
-.pfilter a { position: relative; display: inline-block; font-size: 13px; line-height: 20px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #222; padding-bottom: 3px; }
+.pfilter a { position: relative; display: inline-block; font-family: var(--ff-head); font-size: 13px; line-height: 20px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #222; padding-bottom: 3px; }
 .pfilter a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: #222; transform: scaleX(0); transform-origin: left; transition: transform .3s; }
 .pfilter a:hover::after, .pfilter a.is-active::after { transform: scaleX(1); }
 .pfilter sup { font-size: 9px; font-weight: 500; letter-spacing: 0; color: #999; margin-left: 3px; }
