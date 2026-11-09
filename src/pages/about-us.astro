@@ -9,7 +9,7 @@ import LineIcon from '../components/LineIcon.astro';
 import { logosInner } from '../data/site';
 import '../styles/pages.css';
 import hero from '../assets/site/hero-about.jpg';
-import office from '../assets/about/office.jpg';
+import heroOffice from '../assets/about/hero-office.jpg';
 
 const photos = import.meta.glob<{ default: ImageMetadata }>('../assets/about/team-*.jpg', { eager: true });
 const ph = (n: string) => photos[`../assets/about/team-${n}.jpg`].default;
@@ -19,51 +19,42 @@ const team = [
   ['dhanesh', 'Dhanesh T.', '3D Visualizer'], ['saba', 'Saba F.', 'Designer'], ['stepan', 'Stepan R.', 'Site Coordinator'],
 ];
 const why: [string, string, string][] = [
-  ['award', 'Proven expertise', '200+ fit-out projects delivered in Dubai and the UAE since 2014.'],
-  ['layers', 'One-stop solution', 'Design, approvals, MEP, construction and project management under one roof.'],
-  ['shield', 'Approvals know-how', 'Landlord and authority approvals with Emaar, Dubai Holding, TECOM, Nakheel, DM, DCD and DEWA.'],
-  ['clock', 'Time & quality', 'Programmes we keep and finishing standards we don’t compromise.'],
-  ['target', 'Tailored approach', 'Every space reflects the client’s brand, vision and the way the business operates.'],
-  ['calc', 'Cost transparency', 'Detailed BOQs, clear budgets and proactive value engineering.'],
-  ['network', 'Trusted network', 'Long-term partners: specialist subcontractors, suppliers and manufacturers.'],
-  ['growth', 'Long-term partnership', 'Not just a contractor — a strategic partner in your growth.'],
+  ['award', '200+ projects', 'Delivered in Dubai and the UAE since 2014'],
+  ['layers', 'One-stop', 'Design, approvals and build under one roof'],
+  ['shield', 'Approvals', 'Emaar, Dubai Holding, TECOM, Nakheel, DM, DCD'],
+  ['clock', 'On time', 'Programmes we keep, finishes we don’t compromise'],
+  ['calc', 'Transparent', 'Detailed BOQs and value engineering'],
+  ['growth', 'Partnership', 'A long-term partner, not just a contractor'],
 ];
-const units: [string, string, string][] = [
-  ['pen', 'Interior design studio', 'Concepts, space planning, material and furniture selection.'],
-  ['cube', '3D visualisation', 'Photorealistic renders so you see the space before it is built.'],
-  ['ruler', 'Technical & shop drawings', 'Architectural, joinery and approval drawing packages.'],
-  ['bolt', 'MEP engineering', 'HVAC, electrical, plumbing, drainage and fire-fighting coordination.'],
-  ['clipboard', 'Project management', 'Programme, budget, procurement and weekly client reporting.'],
-  ['helmet', 'Site supervision', 'Site coordinators, HSE, quality control and snagging to handover.'],
+const units: [string, string][] = [
+  ['pen', 'Interior design'], ['cube', '3D visualisation'], ['ruler', 'Technical drawings'],
+  ['bolt', 'MEP engineering'], ['clipboard', 'Project management'], ['helmet', 'Site supervision'],
 ];
 const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC', url: new URL('/about-us/', Astro.site).href,
   mainEntity: { '@id': new URL('/#company', Astro.site).href } },
   { '@type': 'Person', name: 'Konstantin Grytsan', jobTitle: 'CEO & Founder', worksFor: { '@id': new URL('/#company', Astro.site).href } }];
 ---
 <Base title="About Crystal Fit – Design & Build Fit-Out Team, Dubai" description="Dubai design & build fit-out team since 2014: 200+ projects for Roasters, Christie's, Mercure and Shangri-La. Approved by Emaar and Dubai Holding." schema={schema}>
-  <Hero slides={[{ image: hero, lines: ['Who we', 'are'] }]} place="right-top" dark h1="— about Crystal Fit Contracting LLC, design & build fit-out company in Dubai" />
-  <div class="hero-gap"></div>
-  <section class="about">
-    <div class="about__text">
-      <p class="about__lead"><strong>Crystal Fit Contracting LLC</strong> is a Dubai-based design &amp; build fit-out company working across the UAE, GCC and MENA since 2014.</p>
-      <p>We deliver turnkey interiors for <strong>Food &amp; Beverage (F&amp;B)</strong> (specialty coffee shops, restaurants, lounges and hotels), <strong>commercial</strong> (offices, retail, clinics and galleries) and <strong>residential</strong> clients — from the first concept and landlord approvals to construction and handover.</p>
-      <p>Our portfolio counts <strong>200+ completed projects</strong>, including nine Roasters Specialty Coffee branches, Christie’s in DIFC, YOY Neo Bistro at Shangri-La, Mercure Gold Hotel and AMV Aesthetic Clinic, delivered under the requirements of Emaar, Dubai Holding, TECOM and Nakheel.</p>
-      <p>We are selective with our methods, suppliers and subcontractors, so every space we hand over is functional, on-brand and built to last.</p>
-      <ul class="about__why">
-        {why.map(([i, t, d]) => <li><LineIcon name={i} size={26} class="about__ico" /><div><strong>{t}</strong><span>{d}</span></div></li>)}
-      </ul>
+  <Hero slides={[{ image: heroOffice, lines: ['Who we', 'are'] }]} dark h1="— about Crystal Fit Contracting LLC, design & build fit-out company in Dubai" />
+  <section class="ab">
+    <div class="ab__intro">
+      <p class="ab__lead">Dubai design &amp; build fit-out company since 2014.</p>
+      <p>We design, approve and build Food &amp; Beverage (F&amp;B), commercial and residential interiors across the UAE — with one in-house team from the first sketch to handover.</p>
+      <p class="ab__brands">Roasters · WALA · Christie’s · YOY at Shangri-La · Mercure · AMV Clinic</p>
     </div>
-    <div class="about__media">
-      <Image src={office} alt="Crystal Fit office and workshop in Al Quoz, Dubai" widths={[475, 950]} sizes="475px" loading="lazy" />
-    </div>
+    <ul class="ab__nums">
+      <li><b>200+</b><span>projects</span></li><li><b>10+</b><span>years in UAE</span></li><li><b>1</b><span>team, design to handover</span></li><li><b>1 year</b><span>warranty</span></li>
+    </ul>
   </section>
 
-  <section class="units">
-    <h2 class="units__title">One in-house team for every stage</h2>
-    <p class="units__sub">Designers, engineers and site specialists work as one team, backed by a network of trusted subcontractors and manufacturers.</p>
-    <ul class="units__grid">
-      {units.map(([i, t, d]) => <li><LineIcon name={i} size={34} stroke={1.3} /><h3>{t}</h3><p>{d}</p></li>)}
-    </ul>
+  <section class="ab-why">
+    <h2 class="ab-h2">Why Crystal Fit</h2>
+    <ul class="ab-why__grid">{why.map(([i, t, d]) => <li><LineIcon name={i} size={32} stroke={1.3} /><h3>{t}</h3><p>{d}</p></li>)}</ul>
+  </section>
+
+  <section class="ab-units">
+    <h2 class="ab-h2">In-house team</h2>
+    <ul>{units.map(([i, t]) => <li><LineIcon name={i} size={30} stroke={1.3} /><span>{t}</span></li>)}</ul>
   </section>
 
   <section class="team">
@@ -74,10 +65,9 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
         <figcaption><b>Konstantin Grytsan</b><span>CEO / Founder</span></figcaption>
       </figure>
       <div class="team__bio">
-        <p class="team__quote">“We build spaces that work for the business behind them — on time, on budget and to a standard we are proud to sign.”</p>
-        <p>Konstantin founded Crystal Fit in Dubai in 2014 and has led the company from a small design studio to a full design &amp; build contractor with 200+ completed projects across the UAE.</p>
-        <p>He personally oversees every project from the first concept to handover — from specialty coffee chains such as Roasters and WALA to Christie’s, Mercure Gold Hotel and private villas in Dubai Hills and Palm Jumeirah.</p>
-        <p>His focus: one accountable team, transparent budgets, and design that turns into revenue for Food &amp; Beverage (F&amp;B) and commercial clients.</p>
+        <p class="team__quote">“One team, one promise: spaces that work for the business behind them.”</p>
+        <p>Founder of Crystal Fit (2014). From a small design studio to a full design &amp; build contractor with 200+ projects — from specialty coffee chains to Christie’s, Mercure and private villas.</p>
+        <p>Personally leads every project, from the first concept to handover.</p>
       </div>
     </div>
     <div class="team__grid">
@@ -94,29 +84,34 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
   <Logos list={logosInner} />
 </Base>
 <style is:global>
-  .about__lead { font-size: 19px; line-height: 32px; }
-  .about__text p strong { font-weight: 600; }
-  .about__why { list-style: none; margin: 34px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 22px 34px; }
-  .about__why li { display: flex; gap: 14px; align-items: flex-start; }
-  .about__ico { flex: 0 0 auto; margin-top: 3px; color: #fff; }
-  .about__why strong { display: block; font-size: 15px; line-height: 22px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
-  .about__why span { display: block; font-size: 15px; line-height: 23px; color: #cfcfcf; }
-  .units { max-width: 1350px; margin: 0 auto; padding: 70px 40px 30px; font-family: var(--ff-head); }
-  .units__title, .team__title { font-family: var(--ff-head); font-size: 26px; line-height: 32px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: #000; margin: 0 0 14px; }
-  .units__sub { font-size: 17px; line-height: 28px; font-weight: 300; color: #444; max-width: 760px; margin: 0 0 36px; }
-  .units__grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px 40px; }
-  .units__grid li { border-top: 1px solid #ddd; padding-top: 20px; color: #000; }
-  .units__grid h3 { font-size: 17px; line-height: 24px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin: 14px 0 6px; }
-  .units__grid p { font-size: 15px; line-height: 24px; font-weight: 300; color: #444; margin: 0; }
-  /* team: one left edge for the lead photo and the grid */
-  .team { max-width: 1350px; margin: 0 auto; padding: 50px 40px 30px; }
-  .team__title { margin-bottom: 36px; }
+  .ab { background: #000; color: #fff; font-family: var(--ff-head); display: grid; grid-template-columns: 1.4fr 1fr; gap: 60px; padding: 70px max(40px, calc((100% - 1270px) / 2)); align-items: center; }
+  .ab__intro .ab__lead { font-size: 32px; line-height: 42px; font-weight: 400; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 20px; }
+  .ab__intro p { font-size: 18px; line-height: 30px; font-weight: 300; color: #ddd; margin: 0 0 18px; max-width: 640px; }
+  .ab__intro .ab__lead { color: #fff; }
+  .ab__brands { font-size: 13px !important; letter-spacing: 2px; text-transform: uppercase; color: #999 !important; }
+  .ab__nums { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 34px 20px; }
+  .ab__nums li { border-top: 1px solid #333; padding-top: 14px; }
+  .ab__nums b { display: block; font-size: 44px; line-height: 1.1; font-weight: 300; }
+  .ab__nums span { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: #aaa; }
+  .ab-h2 { font-family: var(--ff-head); font-size: 26px; line-height: 32px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: #000; margin: 0 0 30px; }
+  .ab-why, .ab-units { max-width: 1350px; margin: 0 auto; padding: 60px 40px 10px; font-family: var(--ff-head); }
+  .ab-why__grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 26px; }
+  .ab-why__grid li { color: #000; }
+  .ab-why__grid h3 { font-size: 16px; line-height: 22px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin: 14px 0 6px; }
+  .ab-why__grid p { font-size: 14px; line-height: 21px; color: #555; margin: 0; }
+  .ab-units ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+  .ab-units li { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 22px 10px; border: 1px solid #e5e5e5; text-align: center; color: #000; }
+  .ab-units span { font-size: 13px; line-height: 18px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+  @media (max-width: 1100px) { .ab { grid-template-columns: 1fr; gap: 40px; } .ab-why__grid, .ab-units ul { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 767px) { .ab { padding: 40px 16px; } .ab__intro .ab__lead { font-size: 24px; line-height: 32px; } .ab__nums b { font-size: 34px; } .ab-why, .ab-units { padding: 40px 16px 0; } .ab-why__grid { grid-template-columns: repeat(2, 1fr); } .ab-units ul { grid-template-columns: repeat(2, 1fr); } }
+  .team { max-width: 1350px; margin: 0 auto; padding: 60px 40px 30px; }
+  .team__title { font-family: var(--ff-head); font-size: 26px; line-height: 32px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: #000; margin: 0 0 30px; }
   .team__lead { display: grid; grid-template-columns: 487px 1fr; gap: 60px; align-items: center; width: auto; margin: 0 0 40px !important; }
   .team__lead figure { margin: 0; }
   .team__lead img { width: 487px; height: 487px; object-fit: cover; display: block; }
-  .team__bio { font-family: var(--ff-head); font-size: 17px; line-height: 29px; font-weight: 300; color: #333; max-width: 640px; }
-  .team__bio p { margin: 0 0 16px; }
-  .team__quote { font-size: 22px; line-height: 34px; font-weight: 400; font-style: italic; color: #000; border-left: 2px solid #000; padding-left: 20px; margin-bottom: 26px !important; }
+  .team__bio { font-family: var(--ff-head); font-size: 17px; line-height: 29px; font-weight: 300; color: #333; max-width: 560px; }
+  .team__bio p { margin: 0 0 14px; }
+  .team__quote { font-size: 24px; line-height: 36px; font-weight: 400; font-style: italic; color: #000; border-left: 2px solid #000; padding-left: 20px; margin-bottom: 24px !important; }
   .team figure { margin: 0; }
   .team figcaption { padding-top: 16px; color: #000; font-family: var(--ff-head); text-transform: uppercase; }
   .team figcaption b { display: block; font-size: 14px; line-height: 21px; font-weight: 700; letter-spacing: .5px; }
@@ -124,15 +119,11 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
   .team__grid { display: grid; grid-template-columns: repeat(5, 1fr); column-gap: 20px; row-gap: 26px; padding: 0; }
   .team__grid img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; display: block; }
   @media (max-width: 1100px) {
-    .about__why { grid-template-columns: 1fr; }
-    .units__grid { grid-template-columns: repeat(2, 1fr); }
     .team__lead { grid-template-columns: 1fr 1fr; gap: 36px; }
     .team__lead img { width: 100%; height: auto; aspect-ratio: 1; }
     .team__grid { grid-template-columns: repeat(3, 1fr); }
   }
   @media (max-width: 767px) {
-    .units { padding: 44px 16px 10px; }
-    .units__grid { grid-template-columns: 1fr; gap: 24px; }
     .team { padding: 30px 16px 20px; }
     .team__title { margin: 0 0 20px; }
     .team__lead { grid-template-columns: 1fr; gap: 22px; margin: 0 0 30px !important; }
