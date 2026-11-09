@@ -12,43 +12,54 @@ import retail from '../assets/services/retail.jpg';
 import fnb from '../assets/services/fnb.jpg';
 import residential from '../assets/services/residential.jpg';
 import planning from '../assets/services/planning.jpg';
+import turnkey from '../assets/services/turnkey.jpg';
 
 const blocks = [
-  { dark: true, img: fnb, title: 'Food & Beverage (F&B)', href: '/cafe-restaurant-fit-out-dubai/', paras: [
-    'Opening a new Food &amp; Beverage (F&amp;B) venue in the UAE is a long and thrilling journey. Strict timelines, specified vendors, landlord obligations, design codes and fines are what your first site meeting will mostly sound like.',
-    'Business in Dubai does not forgive mistakes — this is where an experienced design &amp; build team comes first. Since 2014 we have delivered cafes, coffee shops and restaurants in the major Dubai locations and worked with most landlords: Emaar, Nakheel, Dubai Holding, Trakhees, The Dubai Mall, Dubai Hills, Circle Mall, The Pointe and more.',
-    'Our strength is not only design aesthetics but procedure know-how: we are prequalified with the main vendors and registered with all government entities, ready to be your reliable partner on the way to a successful food concept.'] },
-  { dark: false, img: retail, title: 'Commercial', href: '/commercial-fit-out-dubai/', paras: [
-    'Our commercial interiors — offices, retail, clinics and showrooms — always start with a deep analysis of your business, customers and their behaviour. We create a memorable image of your brand, both aesthetically and functionally, with efficient zoning, styling and decor.',
-    'We know the government approval processes and have a proven track record in the major malls and business districts of the UAE: The Dubai Mall, Mall of the Emirates, Nakheel Mall, Marina Mall, JBR, Bluewaters, DIFC and Bay Square.',
-    'Hire a professional team with vast experience and make sure you meet your handover deadlines.'] },
-  { dark: true, img: residential, title: 'Residential', href: '/villa-interior-design-dubai/', paras: [
-    'Residential interiors have always been a core part of our services. We create well-thought, bespoke designs for you to call home — perfectly balanced space planning combined with experience-based design solutions for concentration, revival and retreat.',
-    'Crystal Fit develops the interior, handles all documentation and approvals, procurement, construction timelines, quality and budget on your behalf. Sit back, relax and move in to a tailor-made interior of your dreams.'] },
-  { dark: false, img: planning, title: 'Design & Consultancy', href: '/interior-design-consultancy-dubai/', paras: [
-    'If you don’t think about space planning in daily life, your space is well planned. Our bespoke space planning, ergonomics and technical consultancy maximise the potential and efficiency of every square metre, bringing form and function together.',
-    'Since 2014 we have mastered construction project management and turnkey project handling. We coordinate architects, designers, contractors, authorities and all stakeholders, solving issues early and delivering the highest quality — on time.'] },
+  { dark: true, img: retail, title: 'RETAIL / OFFICE PROJECTS', paras: [
+    'Our Commercial /Retail interior design always starts with deep analysis, of your business, customers, their desires and behaviors. Our experienced team creates unforgettable image of your business both aesthetically and functionally rethinking the space with efficient zoning, styling and decor.',
+    '&nbsp;',
+    'Crystal fit contracting LLC team are familiar with all the government approval processes with a proven track of experience within all major Malls and vendors around UAE. The Dubai Mall, Mall of Emirates, Nakheel Mall, Marina Mall, JBR, Blue Waters these are just few names with whom we already have successfully finished projects Commercial and Retail Projects.',
+    '&nbsp;',
+    'Make your life easier by hiring our professional team with vast experience to make sure you meet your handover deadlines.'] },
+  { dark: false, img: fnb, title: 'RESTAURANT/CAFE INTERIOR DESIGN / Technical consultancy', paras: [
+    'Opening a new Food &amp; Beverage (F&amp;B) place in UAE is indeed a long and thrilling journey unlike in many other places worldwide. <br>Strict timelines, specified vendors, client obligations, design codes and FINES is what your first meeting at site will mostly sound like.',
+    '&nbsp;',
+    'Business in Dubai does not forgive you mistakes, and this is where hiring experienced and professional team of Designers comes to first place.',
+    '&nbsp;',
+    'Since 2014, the Crystal Fit Contracting LLC team has successfully completed projects in most of the major Dubai Locations, and worked with the most possible landlords. You name it- we have it :Emaar, Nakheel, Trakhees ,Dubai Mall, Mall of the Emirates, Dubai Hills, Nakheel mall, Circle Mall, The Pointe, these are only few locations where we worked.',
+    '&nbsp;',
+    'Our key strengths in this field is not only design aesthetics but also experience based procedure know-how. We are certified and prequalified with varieties of the main vendors, registered with all government entities ready to be your reliable partner paving your way towards successful food concept in UAE with peace and confidence.'] },
+  { dark: true, img: residential, title: 'RESIDENTIAL INTERIOR DESIGN', paras: [
+    'Residential Interiors have been always a core part of our services. We create well thought bespoke designs for you to call a home. Our team will find the optimal solution for your future place of strength. A perfectly balanced spatial planning twisted with experience-based design solutions will create a flawless space for concentration, revival and retreat.',
+    '&nbsp;',
+    'Crystal fit contracting LLC develops the interior spaces, handles all documentation bureaucracy, approvals, procurements, manages construction timelines, qualities and budgets on your behalf.<br>Sit back relax and wait to move in to a classy tailor-made interior of your dreams.'] },
+  { dark: false, img: planning, title: 'Space planning / Technical consultancy', tight: true, paras: [
+    'If you don’t think of a space planning in your daily life, it means your space is well-planned. Very few can do it by themselves. For others, there are bespoke interior design services.',
+    'Crystal fit contracting LLC will keep worries about the best furniture placement, ergonometrics and sizes -away from you. Bespoke spatial planning maximizes the design potential and efficiency while discreetly bringing together both form and function in perfect harmony.',
+    '&nbsp;',
+    'We understand that each space has its unique characteristics to which we must find the key to unlock its full potential. Our creative ideas and extensive experience will bring perfect balance to your interiors.'] },
+  { dark: true, img: turnkey, title: 'TURN KEY PROJECT MANAGEMENT', narrow: true, paras: [
+    'Since 2014 we have been mastering our skills in Construction Project Management (CPM) and turn key project handling. CPM is an essential part of Fit out process at any construction work size and it is crucial for those who values their time and money.',
+    '&nbsp;',
+    'Providing end to end turn key project management is an essential part of Crystal Fit work model. By providing superior advice and decision-making experience across all stages of the project our team will mitigate any arising issues in a timely manner.',
+    '&nbsp;',
+    'Crystal fit contracting LLC project management will take care of cooperation between architects/designers, contractors, authorities and other stakeholders to ensure strong and fruitful performance with the highest quality that is delivered on time !'] },
 ];
 ---
 <Base title="Interior Design & Fit-Out Services in Dubai | Crystal Fit" description="Restaurant, cafe, office and retail fit-out, villa interiors and turnkey project management in Dubai, with Emaar, Dubai Holding, TECOM & Nakheel approvals.">
   <Hero slides={[{ image: hero, lines: ['Our', 'Services'] }]} place="right-top" dark h1="— interior design & fit-out in Dubai" />
   <Breadcrumb current="Crystal fit contracting LLC UAE / SERVICES" />
-  {blocks.map((b) => (
-    <section class:list={['svc', b.dark ? 'svc--dark' : 'svc--light']}>
+  {blocks.map((b, i) => (
+    <section class:list={['svc', b.dark ? 'svc--dark' : 'svc--light', { 'svc--narrow': b.narrow }]} style={`--h:${[820, 1097, 820, 925, 870][i]}px`}>
       <div class="svc__inner">
         <div class="svc__text">
-          <h2 class="svc__title"><a href={b.href}>{b.title}</a>{b.dark && <span class="dot" aria-hidden="true"></span>}</h2>
+          <h2 class="svc__title">{b.title}{b.dark && <span class="dot" aria-hidden="true"></span>}</h2>
           {b.paras.map((p) => <p set:html={p} />)}
-          <a class:list={['btn', b.dark ? 'btn--white' : 'btn--black', 'svc__more']} href={b.href}>Learn more</a>
         </div>
-        <div class="svc__media"><Image src={b.img} alt={`${b.title} fit-out by Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" /></div>
+        <div class="svc__media"><Image src={b.img} alt={b.title.toLowerCase().replace(/(^|[ /])\w/g, (c) => c.toUpperCase())} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" /></div>
       </div>
     </section>
   ))}
   <Logos list={logosInner} />
   <CtaBand title="still having questions ?" label="Contact us" href="/contact/" />
 </Base>
-<style>
-  .svc__title a { color: inherit; }
-  .svc__more { margin-top: 14px; }
-</style>

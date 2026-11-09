@@ -8,8 +8,7 @@ import Icon from '../components/Icon.astro';
 import LineIcon from '../components/LineIcon.astro';
 import { logosInner, site } from '../data/site';
 import '../styles/pages.css';
-import { getCollection } from 'astro:content';
-const hero = (await getCollection('projects')).find((p) => p.id === 'panmi-coffee-shop-dubai-hills')!.data.cover;
+import hero from '../assets/site/hero-contact.jpg';
 const follow = site.socials.map((s) => [s.name === 'linkedin-in' ? 'linkedin' : s.name, s.href]);
 const steps: [string, string, string][] = [
   ['file', 'Send your brief', 'Floor plan, unit location and what you plan to open — via the form, WhatsApp or e-mail.'],

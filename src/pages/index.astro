@@ -9,13 +9,7 @@ import data from '../data/home-faq.json';
 import Masonry from '../components/Masonry.astro';
 import '../styles/portfolio.css';
 import '../styles/pages.css';
-import h1 from '../assets/site/home-1.jpg';
-import h2 from '../assets/site/home-2.jpg';
-import h3 from '../assets/site/home-3.jpg';
-import h4 from '../assets/site/home-4.jpg';
-import h5 from '../assets/site/home-5.jpg';
-import h6 from '../assets/site/home-6.jpg';
-import teamImg from '../assets/home/what-we-do.jpg';
+import heroImg from '../assets/site/home-1.jpg';
 import l1 from '../assets/home/latest-1.jpg';
 import l2 from '../assets/home/latest-2.jpg';
 import l3 from '../assets/home/latest-3.jpg';
@@ -33,8 +27,6 @@ const services: [string, string, string, ImageMetadata, string][] = [
   ['Residential', 'Villas, penthouses and apartments, from design to move-in.', '/villa-interior-design-dubai/', cover('anantara-penthouse'), 'pin'],
   ['Design & Consultancy', 'Concepts, 3D, technical drawings and approvals management.', '/interior-design-consultancy-dubai/', render, 'pen'],
 ];
-// hero slides: same photos and lines as the original home slider
-const slides: [ImageMetadata, string][] = [[h1, 'Building spaces that inspire'], [h2, 'Commercial fit-outs'], [h3, 'One stop design & build team'], [h4, 'Health & wellness designs'], [h5, 'Premium residential interiors'], [h6, 'Turn key project management']];
 const stats: [string, string][] = [['10+', 'Years in UAE fit-out'], ['200+', 'Projects handed over'], ['1', 'Team from design to handover'], ['1 year', 'Warranty on works']];
 const logos = import.meta.glob<{ default: ImageMetadata }>('../assets/logos/*', { eager: true });
 const lg = (n: string) => Object.entries(logos).find(([k]) => k.endsWith('/' + n))![1].default;
@@ -54,44 +46,23 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
 <Base schema={faqSchema} title="Crystal Fit – Cafe, Restaurant & Office Fit-Out in Dubai" description="Design & build fit-out contractor in Dubai since 2014: 200+ cafes, restaurants, offices and villas. Approved by Emaar, Dubai Holding, TECOM & Nakheel.">
 
   <!-- 1. Hero: what we do, in one sentence -->
-  <section class="hd-hero" data-interval="6000">
-    {slides.map(([img, label], i) => (
-      <div class:list={['hd-hero__slide', { 'is-active': i === 0 }]}>
-        <Image src={img} alt={label} class="hd-hero__img" widths={[480, 800, 1080, 1440, 1920]} sizes="100vw" loading={i === 0 ? 'eager' : 'lazy'} fetchpriority={i === 0 ? 'high' : 'auto'} quality={72} />
-        <span class="hd-hero__cap">{label}</span>
-      </div>
-    ))}
+  <section class="hd-hero">
+    <Image src={heroImg} alt="YOY Neo Bistro restaurant fit-out by Crystal Fit" class="hd-hero__img" widths={[480, 800, 1080, 1440, 1920]} sizes="100vw" loading="eager" fetchpriority="high" quality={72} />
     <div class="hd-hero__content">
       <h1>Design &amp; Build<br />Fit-Out in Dubai<span class="sr-only"> — Crystal Fit Contracting LLC</span></h1>
       <p>Food &amp; Beverage (F&amp;B), commercial and residential interiors — from concept and approvals to handover.</p>
       <div class="hd-hero__btns"><a class="hd-btn hd-btn--white" href="/portfolio/">View portfolio</a><a class="hd-btn hd-btn--line" href="#contact-form">Get a quote</a></div>
     </div>
-    <div class="hd-hero__dots" aria-hidden="true">{slides.map((_, i) => <span class:list={{ 'is-active': i === 0 }} />)}</div>
+    <a class="hd-hero__cap" href="/featured-projects/restaurant-contractor-dubai-yoy-neo-bistro/"><b>YOY Neo Bistro, Shangri-La</b><span>Design · Fit-out · MEP</span></a>
   </section>
-  <script is:inline>
-  (function () {
-    var el = document.currentScript.previousElementSibling, sl = el.querySelectorAll('.hd-hero__slide'), dots = el.querySelectorAll('.hd-hero__dots span'), i = 0;
-    setInterval(function () {
-      var n = (i + 1) % sl.length, img = sl[n].querySelector('img');
-      if (img && !img.complete) { img.loading = 'eager'; return; }
-      sl[i].classList.remove('is-active'); dots[i].classList.remove('is-active');
-      i = n; sl[i].classList.add('is-active'); dots[i].classList.add('is-active');
-    }, +el.dataset.interval);
-    addEventListener('load', function () { var im = sl[1] && sl[1].querySelector('img'); if (im) im.loading = 'eager'; });
-  })();
-  </script>
 
   <!-- 2. Numbers -->
   <section class="hd-stats">{stats.map(([n, t]) => <div><b>{n}</b><span>{t}</span></div>)}</section>
 
   <!-- 3. Services: 4 cards -->
   <section class="hd-dark"><div class="hd-sec">
-    <div class="hd-wwd">
-    <div class="hd-wwd__media"><Image src={teamImg} alt="Crystal Fit team member on site" width={600} height={820} widths={[400, 600, 900]} sizes="(min-width: 992px) 34vw, 100vw" fit="cover" loading="lazy" quality={72} /></div>
-    <div>
     <h2 class="hd-h2 hd-h2--big">What we do<span class="dot" aria-hidden="true"></span></h2>
-    <p class="hd-wwd__lead">One in-house design &amp; build team — designers, engineers and our own site crew — so you deal with one contractor from the first sketch to opening day.</p>
-    <div class="hd-svc hd-svc--2">
+    <div class="hd-svc">
       {services.map(([t, d, href, img, ico]) => (
         <a class="hd-svc__card" href={href}>
           <Image src={img} alt={t} width={600} height={420} widths={[320, 600]} sizes="(min-width: 992px) 25vw, (min-width: 600px) 50vw, 100vw" fit="cover" loading="lazy" quality={70} />
@@ -99,7 +70,6 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
         </a>
       ))}
     </div>
-    </div></div>
   </div></section>
 
 
@@ -140,21 +110,16 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
 </Base>
 <style is:global>
   .hd-hero { position: relative; height: 720px; overflow: hidden; background: #111; }
-  .hd-hero__slide { position: absolute; inset: 0; opacity: 0; transition: opacity .9s ease; }
-  .hd-hero__slide.is-active { opacity: 1; }
   .hd-hero__img { width: 100%; height: 100%; object-fit: cover; }
-  .hd-hero__dots { position: absolute; z-index: 2; left: 60px; bottom: 36px; display: flex; gap: 10px; }
-  .hd-hero__dots span { width: 28px; height: 2px; background: rgba(255,255,255,.4); transition: background .3s; }
-  .hd-hero__dots span.is-active { background: #fff; }
-  .hd-hero__slide::after { z-index: 1; content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.35) 50%, rgba(0,0,0,0) 80%); }
-  .hd-hero__content { position: absolute; z-index: 2; left: 60px; top: 50%; transform: translateY(-50%); max-width: 600px; color: #fff; font-family: var(--ff-head); }
+  .hd-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.35) 50%, rgba(0,0,0,0) 80%); }
+  .hd-hero__content { position: absolute; z-index: 1; left: 60px; top: 50%; transform: translateY(-50%); max-width: 600px; color: #fff; font-family: var(--ff-head); }
   .hd-hero h1 { font-size: 58px; line-height: 66px; font-weight: 400; letter-spacing: 4px; text-transform: uppercase; margin: 0 0 22px; }
   .hd-hero p { font-size: 20px; line-height: 31px; font-weight: 300; margin: 0 0 32px; }
   .hd-hero__btns { display: flex; gap: 14px; flex-wrap: wrap; }
   .hd-btn { display: inline-block; padding: 15px 30px; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
   .hd-btn--white { background: #fff; color: #000; }
   .hd-btn--line { border: 1px solid #fff; color: #fff; }
-  .hd-hero__cap { position: absolute; z-index: 2; right: 0; bottom: 0; background: #fff; color: #000; padding: 14px 22px; font-family: var(--ff-head); font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
+  .hd-hero__cap { position: absolute; z-index: 1; right: 0; bottom: 0; background: #fff; padding: 14px 22px; font-family: var(--ff-head); }
   .hd-hero__cap b { display: block; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
   .hd-hero__cap span { font-size: 13px; color: #666; }
   .hd-stats { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 1180px; margin: 0 auto; padding: 46px 40px; font-family: var(--ff-head); text-align: center; border-bottom: 1px solid #eee; }
@@ -173,10 +138,6 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .hd-dark .hd-svc__card:hover { box-shadow: 0 12px 30px rgba(255,255,255,.06); }
   .hd-dark .hd-svc__body p { color: #bdbdbd; }
   .hd-dark .hd-more { color: #fff; }
-  .hd-wwd { display: grid; grid-template-columns: 34% 1fr; gap: 50px; align-items: start; }
-  .hd-wwd__media img { width: 100%; height: auto; aspect-ratio: 600/820; object-fit: cover; display: block; }
-  .hd-wwd__lead { font-size: 18px; line-height: 30px; font-weight: 300; color: #ddd; margin: -14px 0 30px; max-width: 640px; }
-  .hd-svc--2 { grid-template-columns: repeat(2, 1fr) !important; }
   .hd-svc { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
   .hd-svc__card { display: flex; flex-direction: column; background: #fff; border: 1px solid #e6e6e6; color: #000; transition: box-shadow .25s, transform .25s; }
   .hd-svc__card:hover { box-shadow: 0 12px 30px rgba(0,0,0,.08); transform: translateY(-3px); }
@@ -219,12 +180,9 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   @media (max-width: 991px) {
     .hd-hero { height: 600px; }
     .hd-hero__content { left: 20px; right: 20px; top: auto; bottom: 90px; transform: none; }
-    .hd-hero__dots { left: 20px; bottom: 60px; }
-    .hd-wwd { grid-template-columns: 1fr; gap: 26px; }
-    .hd-wwd__media img { aspect-ratio: 4/3; object-position: center 20%; }
     .hd-hero h1 { font-size: 34px; line-height: 42px; letter-spacing: 2px; }
     .hd-hero p { font-size: 16px; line-height: 25px; margin-bottom: 22px; }
-    .hd-hero__slide::after { background: linear-gradient(0deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.3) 60%, rgba(0,0,0,.1) 100%); }
+    .hd-hero::after { background: linear-gradient(0deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.3) 60%, rgba(0,0,0,.1) 100%); }
     .hd-hero__cap { padding: 10px 16px; }
     .hd-stats { grid-template-columns: repeat(2, 1fr); gap: 26px 10px; padding: 34px 16px; }
     .hd-stats b { font-size: 36px; }
