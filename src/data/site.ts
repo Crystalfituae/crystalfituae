@@ -5,9 +5,9 @@ export const site = {
   phoneMobile: '+971563386219',
   phoneOffice: '+97143202224',
   email: 'info@crystalfituae.com',
-  address: 'Dubai, Al Quoz Industrial Area 3, str.19 D',
+  address: 'Al Quoz Industrial 3, Ghoshi Warehouse City WH-132, Dubai',
   // structured data (schema.org) — same address/phone as the Google Business profile
-  streetAddress: '19D Street, Al Quoz Industrial Area 3',
+  streetAddress: 'Ghoshi Warehouse City WH-132, Al Quoz Industrial 3',
   geo: { lat: 25.1218654, lng: 55.2185395 },
   foundingYear: '2014',
   mapUrl: 'https://maps.app.goo.gl/6d8yRjZRXKNBa2M89',
@@ -18,7 +18,6 @@ export const site = {
     // original pointed to the LinkedIn admin page; public company page:
     { name: 'linkedin-in', href: 'https://www.linkedin.com/company/66214155/' },
     { name: 'pinterest', href: 'https://www.pinterest.com/kgdesignuae' },
-    { name: 'facebook-f', href: 'https://www.facebook.com/crystalfituae' },
     { name: 'whatsapp', href: 'https://wa.me/971563386219' },
   ],
   nav: [
