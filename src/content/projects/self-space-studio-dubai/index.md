@@ -1,6 +1,6 @@
 ---
-title: "SELF.SPACE AI POWERED SELF PORTRAIT STUDIO"
-heading: "SELF.SPACE, Private self portrait studio"
+title: "SELF.SPACE AI-Powered Self-Portrait Studio"
+heading: "SELF.SPACE, Private Self-Portrait Studio"
 order: 8
 listed: true
 size: quarter
@@ -38,8 +38,8 @@ gallery:
   - image: "./img/09-img_7565.jpg"
     size: half
     title: "bar seatign"
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "SELF.SPACE AI POWERED SELF PORTRAIT STUDIO — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "SELF.SPACE Self-Portrait Studio, Dubai | Crystal Fit"
 seoDescription: "Discover the SELF.SPACE AI POWERED SELF PORTRAIT STUDIO project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Ghoshi Warehouse City, Al Quoz 3, Dubai</p> <p><strong>SIZE:</strong>&nbsp;250 sq.m.&nbsp; TIMELINE: 3 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2025</span></p></div>

@@ -1,6 +1,6 @@
 ---
-title: "CHRISTIE`S AUCTION HOUSE/ART GALLERY/OFFICE, DUBAI"
-heading: "CHRISTIE`S ART GALLERY/OFFICE, DUBAI"
+title: "Christie's Auction House, Art Gallery & Office, DIFC"
+heading: "Christie's Art Gallery & Office, DIFC, Dubai"
 order: 26
 listed: true
 size: quarter
@@ -51,8 +51,8 @@ gallery:
     size: quarter
   - image: "./img/20-christie1s-office-gallery-design-by-kg-design-photo-31.jpg"
     size: quarter
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "CHRISTIE`S AUCTION HOUSE/ART GALLERY/OFFICE, DUBAI — Interior Design in UAE | Crystal Fit"
-seoDescription: "Discover the CHRISTIE`S AUCTION HOUSE/ART GALLERY/OFFICE, DUBAI project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Christie's Office & Art Gallery, DIFC Dubai | Crystal Fit"
+seoDescription: "Discover the CHRISTIE'S AUCTION HOUSE/ART GALLERY/OFFICE, DUBAI project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION: </strong>DIFC, Gate village,&nbsp; Dubai, UAE</p> <p><strong>SIZE:</strong> 320 sq.m.</p> <p><strong>YEAR:</strong> 2018</p></div>

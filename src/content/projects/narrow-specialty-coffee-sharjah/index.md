@@ -41,8 +41,8 @@ gallery:
     size: quarter
   - image: "./img/14-narrow-specialty-coffee-design-by-kg-design-photo-7.jpg"
     size: quarter
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "Narrow Specialty Coffee, Sharjah — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Narrow Specialty Coffee, Sharjah | Crystal Fit"
 seoDescription: "Discover the Narrow Specialty Coffee, Sharjah project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION: </strong>Al Layyeh, Sharjah, UAE</p><p><strong>SIZE:</strong> 35 sq.m</p><p><strong>YEAR:</strong> 2018</p></div>

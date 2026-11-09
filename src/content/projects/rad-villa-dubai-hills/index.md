@@ -13,84 +13,84 @@ heroCol: 33
 gallery:
   - image: "./img/01-interior-design-rad-villa-dubai-hills-by-kg-design-living-ro.jpg"
     size: half
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Living room photo 4"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Living room photo 4"
   - image: "./img/02-interior-design-rad-villa-dubai-hills-by-kg-design-wardrobe-.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design wardrobe"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit wardrobe"
   - image: "./img/03-interior-design-rad-villa-dubai-hills-by-kg-design-living-ro.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Living room"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Living room"
   - image: "./img/04-interior-design-rad-villa-dubai-hills-by-kg-design-living-ro.jpg"
     size: half
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Living room photo 3"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Living room photo 3"
   - image: "./img/05-interior-design-rad-villa-dubai-hills-by-kg-design-scaled.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit"
   - image: "./img/06-interior-design-rad-villa-dubai-hills-by-kg-design-living-ro.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Living room photo 2"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Living room photo 2"
   - image: "./img/07-interior-design-rad-villa-dubai-hills-by-kg-design-kitchen-p.jpg"
     size: half
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Kitchen photo 4"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Kitchen photo 4"
   - image: "./img/08-interior-design-rad-villa-dubai-hills-by-kg-design-kitchen-p.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Kitchen photo 3"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Kitchen photo 3"
   - image: "./img/09-interior-design-rad-villa-dubai-hills-by-kg-design-kitchen-p.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Kitchen photo 2"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Kitchen photo 2"
   - image: "./img/10-interior-design-rad-villa-dubai-hills-by-kg-design-kids-room.jpg"
     size: half
-    title: "Interior Design RAD Villa Dubai Hills by KG Design kids room"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit kids room"
   - image: "./img/11-interior-design-rad-villa-dubai-hills-by-kg-design-kids-room.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design kids room photo 2"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit kids room photo 2"
   - image: "./img/12-interior-design-rad-villa-dubai-hills-by-kg-design-kids-room.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design kids room photo 3"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit kids room photo 3"
   - image: "./img/13-interior-design-rad-villa-dubai-hills-by-kg-design-kids-room.jpg"
     size: half
-    title: "Interior Design RAD Villa Dubai Hills by KG Design kids bathroom"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit kids bathroom"
   - image: "./img/14-interior-design-rad-villa-dubai-hills-by-kg-design-hall-scal.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Hall"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Hall"
   - image: "./img/15-interior-design-rad-villa-dubai-hills-by-kg-design-hall-phot.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Hall photo 2"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Hall photo 2"
   - image: "./img/16-interior-design-rad-villa-dubai-hills-by-kg-design-guest-kit.jpg"
     size: half
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Kitchen"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Kitchen"
   - image: "./img/17-interior-design-rad-villa-dubai-hills-by-kg-design-guest-bed.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Guest bedroom"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Guest bedroom"
   - image: "./img/18-interior-design-rad-villa-dubai-hills-by-kg-design-guest-bed.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Guest Bedroom photo 2"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Guest Bedroom photo 2"
   - image: "./img/19-interior-design-rad-villa-dubai-hills-by-kg-design-bedroom-s.jpg"
     size: half
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Bedroom"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Bedroom"
   - image: "./img/20-interior-design-rad-villa-dubai-hills-by-kg-design-bedroom-p.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Bedroom photo 2"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Bedroom photo 2"
   - image: "./img/21-interior-design-rad-villa-dubai-hills-by-kg-design-bathroom-.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Bathroom"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Bathroom"
   - image: "./img/22-interior-design-rad-villa-dubai-hills-by-kg-design-bathroom-.jpg"
     size: half
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Bathroom photo 7"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Bathroom photo 7"
   - image: "./img/23-interior-design-rad-villa-dubai-hills-by-kg-design-bathroom-.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Bathroom photo 6"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Bathroom photo 6"
   - image: "./img/24-interior-design-rad-villa-dubai-hills-by-kg-design-bathroom-.jpg"
     size: quarter
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Bathroom photo 5"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Bathroom photo 5"
   - image: "./img/25-interior-design-rad-villa-dubai-hills-by-kg-design-bathroom-.jpg"
     size: half
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Bathroom photo 4"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Bathroom photo 4"
   - image: "./img/26-interior-design-rad-villa-dubai-hills-by-kg-design-bathroom-.jpg"
     size: half
-    title: "Interior Design RAD Villa Dubai Hills by KG Design Bathroom photo 2"
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "RAD Villa, Dubai Hills — Interior Design in UAE | Crystal Fit"
+    title: "Interior Design RAD Villa Dubai Hills by Crystal Fit Bathroom photo 2"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "RAD Villa, Dubai Hills | Crystal Fit"
 seoDescription: "Discover the RAD Villa, Dubai Hills project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION: </strong>Dubai Hills, Dubai, UAE</p><p><strong>SIZE:</strong> 420 sq.m</p><p><strong>YEAR:</strong> 2018</p></div>

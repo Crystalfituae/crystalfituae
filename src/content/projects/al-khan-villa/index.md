@@ -1,6 +1,6 @@
 ---
-title: "Al Khan VIlla SHARJAH"
-heading: "Al Khan VIlla_SHARJAH"
+title: "Al Khan Villa, Sharjah"
+heading: "Al Khan Villa, Sharjah"
 order: 999
 listed: false
 size: half
@@ -47,7 +47,7 @@ fields:
     value: "December 2019"
   - label: "SIZE"
     value: "450 sq.m"
-seoTitle: "Crystal fit contracting LLC | Commercial Design & Build"
-seoDescription: "Villa Interior Design in Sharjah AL Khan area, by KG Design team. Design features Neo classic Interior in beige colors and black gold accents."
+seoTitle: "Al Khan Villa, Sharjah | Crystal Fit"
+seoDescription: "Villa Interior Design in Sharjah AL Khan area, by Crystal Fit team. Design features Neo classic Interior in beige colors and black gold accents."
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Roasters Specialty Coffee, Dubai Mall"
-heading: "Roasters Specialty Coffee Kiosk"
+title: "Roasters Specialty Coffee Kiosk, Dubai Mall"
+heading: "Roasters Specialty Coffee Kiosk, Dubai Mall"
 order: 3
 listed: true
 size: quarter
@@ -39,9 +39,9 @@ gallery:
     size: quarter
   - image: "./img/11-img_9526-hdr.jpg"
     size: quarter
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "Specialty Coffee kiosk design and build by Crystal fit in Duabi mall"
-seoDescription: "Villa Interior Design project in Abu-Dhabi, UAE. One of the besty interior design companies providing creative home decor in modern style. Majlis, Dining"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Roasters Coffee Kiosk, Dubai Mall | Crystal Fit"
+seoDescription: "Villa Interior Design project in Abu Dhabi, UAE. One of the besty interior design companies providing creative home decor in modern style. Majlis, Dining"
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai Mall, Dubai</p><p><strong>SIZE:</strong>&nbsp;70 sq.m.&nbsp; TIMELINE: 1.5 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2026</span></p></div>
 

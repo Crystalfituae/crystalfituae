@@ -1,0 +1,29 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+import { site } from '../data/site';
+---
+<LegalPage title="Terms of Use | Crystal Fit" heading="Terms of Use" updated="9 November 2026"
+  description="Terms of use of the crystalfituae.com website of Crystal Fit Contracting LLC, Dubai.">
+  <p>These terms apply to your use of crystalfituae.com, operated by <strong>{site.name}</strong>, {site.address}, United Arab Emirates. By using the site you accept them.</p>
+
+  <h2>1. Information on this site</h2>
+  <p>The content of this website is general information about our company, services and past projects. It is not an offer or a quotation. Prices, timelines and scope are agreed only in a signed proposal or contract.</p>
+
+  <h2>2. Projects and images</h2>
+  <p>Project photos and descriptions show work designed and/or delivered by our team. Brand names and logos belong to their owners and are shown to identify past clients and projects. You may share links to our pages. Copying, reusing or republishing images and texts requires our written permission.</p>
+
+  <h2>3. Enquiries</h2>
+  <p>Please give accurate contact details when you send an enquiry. We handle them as described in our <a href="/privacy-policy/">Privacy Policy</a>.</p>
+
+  <h2>4. Links to other websites</h2>
+  <p>Links to social networks, maps and other websites are provided for convenience. We are not responsible for their content or privacy practices.</p>
+
+  <h2>5. Liability</h2>
+  <p>We take care to keep this site accurate and available but do not guarantee that it is error-free or uninterrupted. To the extent permitted by law, we are not liable for losses arising from the use of the website.</p>
+
+  <h2>6. Governing law</h2>
+  <p>These terms are governed by the laws of the Emirate of Dubai and the federal laws of the United Arab Emirates. The courts of Dubai have jurisdiction.</p>
+
+  <h2>7. Contact</h2>
+  <p><a href={`mailto:${site.email}`}>{site.email}</a> · <a href={`tel:${site.phoneMobile}`}>{site.phoneMobileDisplay}</a></p>
+</LegalPage>

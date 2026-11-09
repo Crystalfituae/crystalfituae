@@ -14,7 +14,7 @@ import '../styles/portfolio.css';
 const projects = (await getCollection('projects')).filter((p) => p.data.listed).sort((a, b) => a.data.order - b.data.order);
 const filters: [string, string][] = [['*', 'Show all'], ['fb', 'F&B'], ['commercial', 'Commercial'], ['residential', 'Residential']];
 ---
-<Base title="Portfolio: Fit-Out & Interior Design Projects in Dubai | Crystal Fit" description="Explore Crystal Fit's portfolio of commercial, F&B and residential fit-out and interior design projects across Dubai and the UAE.">
+<Base title="Fit-Out & Interior Design Portfolio, Dubai | Crystal Fit" description="Explore Crystal Fit's portfolio of commercial, F&B and residential fit-out and interior design projects across Dubai and the UAE.">
   <Hero slides={[{ image: hero, lines: ['Take a look', 'inside our wonderland'] }]} />
   <Breadcrumb current="Crystal fit contracting LLC / Portfolio" />
   <section class="ptitle"><h1>Check out our portfolio</h1></section>

@@ -1,6 +1,6 @@
 ---
 title: "Muha Music & Fine Arts"
-heading: "\"Muha Music & Fine Arts\""
+heading: "Muha Music & Fine Arts"
 order: 17
 listed: true
 size: quarter
@@ -77,8 +77,8 @@ gallery:
   - image: "./img/22-img_3426.jpg"
     size: half
     title: "Gym"
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "Muha Music & Fine Arts — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Muha Music & Fine Arts | Crystal Fit"
 seoDescription: "Discover the Muha Music & Fine Arts project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong> Jumeirah Beach Residence, JBR,<br>&nbsp;Podium Level, Dubai, UAE</p> <p><strong>SIZE:</strong>&nbsp;450 sq.m.</p> <p><strong>YEAR:</strong> 2023</p></div>

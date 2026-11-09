@@ -17,8 +17,8 @@ gallery:
     size: five12
   - image: "./img/03-fissman-store-design-by-kg-design-photo-4.jpg"
     size: five12
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "Fissman, Circle Mall, JVC, Dubai — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Fissman, Circle Mall, JVC, Dubai | Crystal Fit"
 seoDescription: "Discover the Fissman, Circle Mall, JVC, Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION: </strong>Fissman, Circle Mall, JVC, Dubai, UAE</p><p><strong>SIZE:</strong> 70 sq.m</p><p><strong>YEAR:</strong> 2022</p></div>

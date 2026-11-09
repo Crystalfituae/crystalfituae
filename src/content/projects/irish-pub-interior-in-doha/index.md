@@ -1,6 +1,6 @@
 ---
-title: "IRISH HARP, PUB INTERIOR DESIGN_DOHA"
-heading: "ROASTERS Specialty coffee house, SOBHA HARTLAND"
+title: "Irish Harp Pub, Doha"
+heading: "Irish Harp Pub, Doha"
 order: 43
 listed: true
 size: quarter
@@ -58,8 +58,8 @@ gallery:
     size: quarter
   - image: "./img/17-img_1780-uluchsheno-um.-shuma-hdr.jpg"
     size: quarter
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "IRISH HARP, PUB INTERIOR DESIGN_DOHA — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Irish Harp Pub, Doha | Crystal Fit"
 seoDescription: "Discover the IRISH HARP, PUB INTERIOR DESIGN_DOHA project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Sobha Hartland by<br>Dubai, UAE</p><p><strong>SIZE:</strong>&nbsp;180 sq.m.</p><p><strong>YEAR:</strong> 2025</p></div>

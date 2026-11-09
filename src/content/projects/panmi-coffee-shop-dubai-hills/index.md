@@ -1,6 +1,6 @@
 ---
 title: "Panmi Coffee Shop Dubai Hills"
-heading: "Roasters Specialty Coffee Kiosk"
+heading: "Panmi Coffee Shop, Dubai Hills"
 order: 0
 listed: true
 size: half
@@ -62,8 +62,8 @@ gallery:
     size: quarter
   - image: "./img/23-panmi_mandytoh_october2026_63-scaled.jpg"
     size: quarter
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "Panmi Coffee Shop Dubai Hills | Crystal Fit Contracting | Interior |"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Panmi Coffee Shop Dubai Hills | Crystal Fit"
 seoDescription: "Panmi Cafe, Asian inspired coffee shop design and built by Crystal Fit in Dubai hills under Emaar with all approvals from Crystal fit team"
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai Hills, Lime Garden, Dubai</p><p><strong>SIZE:</strong>&nbsp;210 sq.m.&nbsp; TIMELINE: 4 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2026</span></p></div>

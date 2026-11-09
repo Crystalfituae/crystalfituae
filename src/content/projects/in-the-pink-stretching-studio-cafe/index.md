@@ -76,8 +76,8 @@ gallery:
     size: quarter
   - image: "./img/24-0033.jpg"
     size: quarter
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "In the Pink, Stretching Studio, Cafe — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "In the Pink, Stretching Studio, Cafe | Crystal Fit"
 seoDescription: "Discover the In the Pink, Stretching Studio, Cafe project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai Hills,<span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">&nbsp;by Emaar</span><br>Dubai, UAE&nbsp;<strong style="font-size: 18px;">SIZE:</strong><span style="font-size: 18px;">&nbsp;280 sq.m.&nbsp;</span><span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">TIMELINE: 3.5 month.&nbsp;</span></p><p><strong>YEAR:</strong> 2024</p></div>

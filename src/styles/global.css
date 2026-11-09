@@ -175,6 +175,8 @@ button { font: inherit; }
 .cf button:hover { background: #000; }
 .cf__status { grid-column: 1 / -1; margin-top: 16px; font-size: 14px; color: var(--ink); }
 .cf__hp { display: none; }
+.cf__legal { grid-column: 1 / -1; margin: 14px 0 0; font-size: 12px; line-height: 18px; color: #777; }
+.cf__legal a { text-decoration: underline; }
 @media (max-width: 1240px) {
   .contact-form__inner { padding: 0 25px; }
   .cf { grid-template-columns: 1fr 1fr 1.4fr; }
@@ -198,11 +200,14 @@ button { font: inherit; }
 .site-footer a:hover { opacity: .7; }
 .site-footer__bottom { display: flex; justify-content: space-between; align-items: center; padding: 27px 55px; border-top: 1px solid rgba(255,255,255,.06); height: 79px; }
 .site-footer__bottom p { margin: 0; }
+.site-footer__legal { display: flex; gap: 18px; list-style: none; margin: 0; padding: 0; font-size: 12px; }
+.site-footer__legal a { color: inherit; opacity: .75; }
+.site-footer__legal a:hover { opacity: 1; }
 .socials { display: flex; gap: 20px; }
 .socials .ico { width: 12px; height: 12px; }
 @media (max-width: 767px) {
   .site-footer__top { display: none; }
-  .site-footer__bottom { flex-direction: column; justify-content: center; gap: 12px; height: 130px; padding: 30px 15px; text-align: center; border: 0; }
+  .site-footer__bottom { flex-direction: column; justify-content: center; gap: 12px; height: auto; padding: 30px 15px; text-align: center; border: 0; }
 }
 
 /* ---------- WhatsApp floating button ---------- */

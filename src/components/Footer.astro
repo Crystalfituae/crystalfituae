@@ -26,6 +26,10 @@ const { minimal = false } = Astro.props;
   )}
   <div class="site-footer__bottom">
     <p>Crystal fit contracting LLC. All rights reserved</p>
+    <ul class="site-footer__legal">
+      <li><a href="/privacy-policy/">Privacy Policy</a></li>
+      <li><a href="/terms/">Terms of Use</a></li>
+    </ul>
     <ul class="socials">
       {site.socials.map((s) => <li><a href={s.href} target="_blank" rel="noopener" aria-label={s.name}><Icon name={s.name} /></a></li>)}
     </ul>

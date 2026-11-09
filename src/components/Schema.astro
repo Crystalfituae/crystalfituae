@@ -1,0 +1,30 @@
+---
+// schema.org structured data. The company block is on every page; pages add their own via `extra`.
+import { site } from '../data/site';
+interface Props { extra?: object[] }
+const { extra = [] } = Astro.props;
+const base = site.url;
+const org = {
+  '@context': 'https://schema.org',
+  '@type': 'GeneralContractor',
+  '@id': `${base}/#company`,
+  name: site.name,
+  alternateName: 'Crystal Fit',
+  url: `${base}/`,
+  logo: `${base}/favicon-192.png`,
+  image: `${base}/og-default.jpg`,
+  description: 'Design & build fit-out and interior design company in Dubai: cafes and restaurants, offices, retail, clinics and residential interiors across the UAE.',
+  telephone: site.phoneMobile,
+  email: site.email,
+  foundingDate: site.foundingYear,
+  address: { '@type': 'PostalAddress', streetAddress: site.streetAddress, addressLocality: 'Dubai', addressCountry: 'AE' },
+  geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
+  hasMap: site.mapUrl,
+  areaServed: [{ '@type': 'Country', name: 'United Arab Emirates' }],
+  knowsAbout: ['Fit-out', 'Interior design', 'Restaurant fit-out', 'Cafe fit-out', 'Office fit-out', 'Retail fit-out', 'Villa interior design', 'Turnkey project management'],
+  sameAs: site.socials.filter((s) => s.name !== 'whatsapp').map((s) => s.href),
+};
+const json = (o: object) => JSON.stringify(o).replace(/</g, '\\u003c');
+---
+<script type="application/ld+json" set:html={json(org)} />
+{extra.map((o) => <script type="application/ld+json" set:html={json({ '@context': 'https://schema.org', ...o })} />)}

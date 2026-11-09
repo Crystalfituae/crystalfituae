@@ -2,15 +2,18 @@
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 interface Slide { image: ImageMetadata; lines: string[]; button?: { label: string; href: string } }
-interface Props { slides: Slide[]; variant?: 'home' | 'inner'; place?: 'left' | 'right-top'; dark?: boolean; interval?: number }
-const { slides, variant = 'inner', place = 'left', dark = false, interval = 6500 } = Astro.props;
+interface Props { slides: Slide[]; variant?: 'home' | 'inner'; place?: 'left' | 'right-top'; dark?: boolean; interval?: number; h1?: string }
+const { slides, variant = 'inner', place = 'left', dark = false, interval = 6500, h1 } = Astro.props;
+// h1: the first slide's title becomes the page <h1>; the extra text is for search engines / screen readers only
 ---
 <section class:list={['hero', `hero--${variant}`, `hero--${place}`, { 'hero--dark': dark }]} data-interval={interval}>
   {slides.map((s, i) => (
     <div class:list={['hero__slide', { 'is-active': i === 0 }]}>
-      <Image src={s.image} alt="" class="hero__img" widths={[480, 800, 1080, 1440, 1920]} sizes="100vw" loading={i === 0 ? 'eager' : 'lazy'} fetchpriority={i === 0 ? 'high' : 'auto'} quality={72} />
+      <Image src={s.image} alt={s.lines.join(' ')} class="hero__img" widths={[480, 800, 1080, 1440, 1920]} sizes="100vw" loading={i === 0 ? 'eager' : 'lazy'} fetchpriority={i === 0 ? 'high' : 'auto'} quality={72} />
       <div class="hero__content">
-        <p class="hero__title" set:html={s.lines.join('<br>')} />
+        {i === 0 && h1 !== undefined
+          ? <h1 class="hero__title"><Fragment set:html={s.lines.join('<br>')} />{h1 && <span class="sr-only"> {h1}</span>}</h1>
+          : <p class="hero__title" set:html={s.lines.join('<br>')} />}
         {s.button && <a class="hero__btn" href={s.button.href}>{s.button.label}</a>}
       </div>
     </div>

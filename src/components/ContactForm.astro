@@ -25,6 +25,7 @@ import { site } from '../data/site';
         <button type="submit">Send</button>
       </div>
       <p class="cf__status" role="status" hidden></p>
+      <p class="cf__legal">By sending this form you agree to our <a href="/privacy-policy/">Privacy Policy</a>.</p>
     </form>
   </div>
 </section>
@@ -51,6 +52,7 @@ import { site } from '../data/site';
         const copyKey = f.dataset.keyCopy;
         if (topic === 'Project Inquiry' && copyKey) await send(f, copyKey).catch(() => {});
         st.textContent = 'Thank you for your message. It has been sent.';
+        (window as any).cfTrack?.('lead', { topic });
         f.reset();
       } catch {
         st.textContent = 'There was an error trying to send your message. Please try again later.';

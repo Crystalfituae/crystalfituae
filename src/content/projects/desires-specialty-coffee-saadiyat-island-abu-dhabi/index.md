@@ -1,6 +1,6 @@
 ---
-title: "Desire`s Specialty Coffee, Saadiyat Island, Abu-Dhabi"
-heading: "\"DesIre`s specialty cafe\""
+title: "Desire's Specialty Coffee, Saadiyat Island, Abu Dhabi"
+heading: "Desire's Specialty Cafe"
 order: 20
 listed: true
 size: quarter
@@ -41,8 +41,8 @@ gallery:
     size: quarter
   - image: "./img/15-392a431c-e15b-49b8-8e9f-e99c39ff4f53.jpg"
     size: quarter
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "Desire`s Specialty Coffee, Saadiyat Island, Abu-Dhabi — Interior Design in UAE | Crystal Fit"
-seoDescription: "Discover the Desire`s Specialty Coffee, Saadiyat Island, Abu-Dhabi project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Desire's Specialty Coffee, Abu Dhabi | Crystal Fit"
+seoDescription: "Discover the Desire's Specialty Coffee, Saadiyat Island, Abu Dhabi project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong> Saadiyat Island, Abu-Dhabi, UAE</p><p><strong>SIZE:</strong>&nbsp;85 sq.m.</p><p><strong>YEAR:</strong> 2023</p></div>
+<div class="pinfo__text"><p><strong>LOCATION:</strong> Saadiyat Island, Abu Dhabi, UAE</p><p><strong>SIZE:</strong>&nbsp;85 sq.m.</p><p><strong>YEAR:</strong> 2023</p></div>

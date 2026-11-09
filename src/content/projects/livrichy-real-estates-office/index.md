@@ -1,6 +1,6 @@
 ---
-title: "LIVRICHY Real Estates Office"
-heading: "\"LIVRICHY Real Estate Office\""
+title: "LIVRICHY Real Estate Office"
+heading: "LIVRICHY Real Estate Office"
 order: 19
 listed: true
 size: half
@@ -91,8 +91,8 @@ gallery:
   - image: "./img/27-img_0867.jpg"
     size: quarter
     title: "toilet"
-otherCases: ["mercure-gold-hotel-interior-design","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "LIVRICHY Real Estates Office — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "LIVRICHY Real Estate Office | Crystal Fit"
 seoDescription: "Discover the LIVRICHY Real Estates Office project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong> Dubai Hills, Park Square Tower, Dubai, UAE</p><p><strong>SIZE:</strong>&nbsp;270 sq.m.</p><p><strong>YEAR:</strong> 2023</p></div>

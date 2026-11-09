@@ -34,19 +34,20 @@ const slides = [
   { image: h6, lines: ['Turn key', 'Project management'] },
 ];
 const latest = [
-  { img: l1, span: 2, title: 'WALA Coffee & Roastery', sub: 'Al Qouz, Dubai, UAE', slug: 'wala-coffee-roastery' },
-  { img: l2, span: 1, title: 'Panmi Cafe', sub: 'Dubai Hills, Dubai', slug: 'fakhverk-house-architectural-project' },
+  { img: l1, span: 2, title: 'WALA Coffee & Roastery', sub: 'Al Quoz, Dubai, UAE', slug: 'wala-coffee-roastery' },
+  { img: l2, span: 1, title: 'Panmi Cafe', sub: 'Dubai Hills, Dubai', slug: 'panmi-coffee-shop-dubai-hills' },
   { img: l3, span: 2, title: 'Gari Tatintsian Gallery', sub: 'Dubai Design District', slug: 'gary-tatintsian-gallery' },
   { img: l4, span: 2, title: 'Roasters Specialty Coffee', sub: 'Dubai Hills', slug: 'roasters-dubai-hills' },
-  { img: l5, span: 2, title: 'YOY Neo Bistro Restaurant', sub: 'Shangri-La Hotel, Sheikh Zaed rd, Dubai, UAE', slug: 'restaurant-contractor-dubai-yoy-neo-bistro' },
+  { img: l5, span: 2, title: 'YOY Neo Bistro Restaurant', sub: 'Shangri-La Hotel, Sheikh Zayed Rd, Dubai, UAE', slug: 'restaurant-contractor-dubai-yoy-neo-bistro' },
   { img: l6, span: 2, title: 'Self.Space Studio', sub: 'Ghoshi City, Al Quoz, Dubai', slug: 'self-space-studio-dubai' },
-  { img: l7, span: 1, title: 'AMV Aethetic Clinic', sub: 'Bay Square, Dubai', slug: 'amv-aesthetic-clinic' },
+  { img: l7, span: 1, title: 'AMV Aesthetic Clinic', sub: 'Bay Square, Dubai', slug: 'amv-aesthetic-clinic' },
 ];
 import data from '../data/home-faq.json';
 const faqAll = data as [string, string][];
+const faqSchema = [{ '@type': 'FAQPage', mainEntity: faqAll.map(([q, ans]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: ans } })) }];
 ---
-<Base title="Crystal Fit — Design & Build Fit-Out Company in Dubai" description="Crystal Fit Contracting LLC is a Dubai-based design & build studio delivering commercial, F&B and residential fit-out projects across the UAE since 2014.">
-  <Hero slides={slides} variant="home" />
+<Base schema={faqSchema} title="Crystal Fit — Design & Build Fit-Out Company in Dubai" description="Crystal Fit Contracting LLC is a Dubai-based design & build studio delivering commercial, F&B and residential fit-out projects across the UAE since 2014.">
+  <Hero slides={slides} variant="home" h1="— Crystal Fit, design & build fit-out company in Dubai" />
 
   <section class="stats">
     <div class="stats__row">

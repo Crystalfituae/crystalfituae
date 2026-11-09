@@ -1,6 +1,6 @@
 ---
 title: "Roasters Specialty Coffee House, Dubai Hills"
-heading: "Roasters Specialty Coffee"
+heading: "Roasters Specialty Coffee, Dubai Hills"
 order: 7
 listed: true
 size: half
@@ -50,8 +50,8 @@ gallery:
     size: quarter
   - image: "./img/15-img_9718.jpg"
     size: half
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "Roasters Specialty Coffee House, Dubai Hills — Design & Build Contractor"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Roasters Specialty Coffee House, Dubai Hills | Crystal Fit"
 seoDescription: "Discover the Roasters Specialty Coffee House, Dubai Hills project by Crystal Fit in UAE → Exclusive interior design & fit-out contractor"
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai Hills</p><p><strong>SIZE:</strong>&nbsp;360 sq.m.&nbsp; TIMELINE: 4 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2025</span></p></div>

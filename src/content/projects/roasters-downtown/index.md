@@ -52,8 +52,8 @@ gallery:
     title: "vip"
   - image: "./img/14-img_0648.jpg"
     size: quarter
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "Roasters Specialty Coffee, Downtown — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Roasters Specialty Coffee, Downtown | Crystal Fit"
 seoDescription: "Discover the Roasters Specialty Coffee, Downtown project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Boulevard,&nbsp;<span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">Downtown Dubai, by Emaar</span><br>Dubai, UAE</p> <p><strong>SIZE:</strong>&nbsp;234 sq.m.</p> <p><strong>YEAR:</strong> 2023</p></div>

@@ -13,54 +13,54 @@ heroCol: 33
 gallery:
   - image: "./img/01-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: half
-    title: "Roasters Specialty Coffee interior design by KG Design photo 2"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 2"
   - image: "./img/02-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: quarter
-    title: "Roasters Specialty Coffee interior design by KG Design photo 3"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 3"
   - image: "./img/03-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: quarter
-    title: "Roasters Specialty Coffee interior design by KG Design photo 4"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 4"
   - image: "./img/04-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: half
-    title: "Roasters Specialty Coffee interior design by KG Design photo 5"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 5"
   - image: "./img/05-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: quarter
-    title: "Roasters Specialty Coffee interior design by KG Design photo 6"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 6"
   - image: "./img/06-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: quarter
-    title: "Roasters Specialty Coffee interior design by KG Design photo 7"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 7"
   - image: "./img/07-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: half
-    title: "Roasters Specialty Coffee interior design by KG Design photo 8"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 8"
   - image: "./img/08-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: quarter
-    title: "Roasters Specialty Coffee interior design by KG Design photo 9"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 9"
   - image: "./img/09-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: quarter
-    title: "Roasters Specialty Coffee interior design by KG Design photo 10"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 10"
   - image: "./img/10-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: half
-    title: "Roasters Specialty Coffee interior design by KG Design photo 11"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 11"
   - image: "./img/11-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: quarter
-    title: "Roasters Specialty Coffee interior design by KG Design photo 12"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 12"
   - image: "./img/12-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: quarter
-    title: "Roasters Specialty Coffee interior design by KG Design photo 13"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 13"
   - image: "./img/13-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: half
-    title: "Roasters Specialty Coffee interior design by KG Design photo 14"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 14"
   - image: "./img/14-roasters-specialty-coffee-interior-design-by-kg-design.jpg"
     size: quarter
-    title: "Roasters Specialty Coffee interior design by KG Design photo 15"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 15"
   - image: "./img/15-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: quarter
-    title: "Roasters Specialty Coffee interior design by KG Design photo 16"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 16"
   - image: "./img/16-roasters-specialty-coffee-interior-design-by-kg-design-photo.jpg"
     size: half
-    title: "Roasters Specialty Coffee interior design by KG Design photo 17"
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "Roasters Specialty Coffee, Jumeirah — Interior Design in UAE | Crystal Fit"
+    title: "Roasters Specialty Coffee interior design by Crystal Fit photo 17"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Roasters Specialty Coffee, Jumeirah | Crystal Fit"
 seoDescription: "Discover the Roasters Specialty Coffee, Jumeirah project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION: </strong>Al Wasl Rd. Jumeirah, UAE</p> <p><strong>SIZE:</strong> 360 sq.m</p> <p><strong>YEAR:</strong> 2018</p></div>

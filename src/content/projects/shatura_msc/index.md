@@ -1,6 +1,6 @@
 ---
-title: "Shatura MSK"
-heading: "Shatura_MSK"
+title: "Shatura Residential Complex, Moscow"
+heading: "Shatura Residential Complex, Moscow"
 order: 999
 listed: false
 size: half
@@ -41,7 +41,7 @@ fields:
     value: "February 2012"
   - label: "SIZE"
     value: "620 sq.m"
-seoTitle: "RESIDENTIAL COMPLEX SHATURA _MOSCOW — Interior Design in UAE | Crystal Fit"
+seoTitle: "Shatura Residential Complex, Moscow | Crystal Fit"
 seoDescription: "Discover the RESIDENTIAL COMPLEX SHATURA _MOSCOW project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 

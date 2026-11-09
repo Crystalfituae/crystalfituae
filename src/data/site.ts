@@ -6,6 +6,10 @@ export const site = {
   phoneOffice: '+97143202224',
   email: 'info@crystalfituae.com',
   address: 'Dubai, Al Quoz Industrial Area 3, str.19 D',
+  // structured data (schema.org) — same address/phone as the Google Business profile
+  streetAddress: '19D Street, Al Quoz Industrial Area 3',
+  geo: { lat: 25.1218654, lng: 55.2185395 },
+  foundingYear: '2014',
   mapUrl: 'https://maps.app.goo.gl/6d8yRjZRXKNBa2M89',
   // fixed: original used wa.me/+9710563386219 (extra 0 breaks the link)
   whatsapp: 'https://wa.me/971563386219',
@@ -29,6 +33,14 @@ export const site = {
   formKey: import.meta.env.PUBLIC_WEB3FORMS_KEY || 'bc4e80cb-ae26-45a9-b622-999b514d67ef',
   // Copy inbox, receives "Project Inquiry" only: kg@crystalfituae.com
   formKeyCopy: import.meta.env.PUBLIC_WEB3FORMS_KEY_COPY || '5e004c92-e461-4fe3-9f0e-e30756b08f2c',
+  // Tracking (empty = not loaded, no cookie banner). Set in hosting env vars or here.
+  // Google Analytics 4 measurement ID, e.g. G-XXXXXXXXXX
+  gaId: import.meta.env.PUBLIC_GA_ID || '',
+  // Google Ads conversion: tag ID (AW-XXXXXXXXX) and the "lead" conversion label
+  adsId: import.meta.env.PUBLIC_GADS_ID || '',
+  adsLeadLabel: import.meta.env.PUBLIC_GADS_LEAD_LABEL || '',
+  // Meta (Facebook/Instagram) Pixel ID, digits only
+  metaPixelId: import.meta.env.PUBLIC_META_PIXEL_ID || '',
 };
 
 export const categories = {
@@ -39,9 +51,9 @@ export const categories = {
 
 // "Other cases" carousel shown on every project page (same list as the original site)
 export const otherCases = [
-  'mercure-gold-hotel-interior-design', 'livrichy-real-estates-office', 'amv-aesthetic-clinic', 'beacon-coffee-shop-difc',
+  'mercure-gold-hotel-interior-design', 'livrichy-real-estates-office', 'amv-aesthetic-clinic', 'roasters-coffee-nad-al-sheba-mall',
   'the-game-premium-lounge', 'beacon-coffee-portable-kiosk', 'villa-windsor_dxb', 'restaurant-contractor-dubai-yoy-neo-bistro',
-  'nad-al-sheba-villa-moderna-dubai', 'nad-al-sheba-1-villa-moderna-interior',
+  'nad-al-sheba-villa-moderna-dubai',
 ];
 
 // "Trusted by the best" carousels (file names in src/assets/logos)

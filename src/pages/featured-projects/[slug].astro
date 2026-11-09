@@ -22,8 +22,20 @@ const listed = all.filter((x) => x.data.listed).sort((a, b) => a.data.order - b.
 const idx = listed.findIndex((x) => x.id === p.id);
 const prev = idx > 0 ? listed[idx - 1] : listed[listed.length - 1];
 const next = idx >= 0 && idx < listed.length - 1 ? listed[idx + 1] : listed[0];
+const pageUrl = new URL(`/featured-projects/${p.id}/`, Astro.site).href;
+const location = d.fields.find((f) => /location/i.test(f.label))?.value;
+const schema = [
+  { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Portfolio', item: new URL('/portfolio/', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: d.title, item: pageUrl },
+  ] },
+  { '@type': 'CreativeWork', name: d.title, url: pageUrl, description: d.seoDescription, image: new URL(og.src, Astro.site).href,
+    genre: 'Interior design and fit-out', creator: { '@id': new URL('/#company', Astro.site).href },
+    ...(location ? { locationCreated: { '@type': 'Place', name: location } } : {}) },
+];
 ---
-<Base title={d.seoTitle ?? `${d.title} | Crystal Fit`} description={d.seoDescription} image={og.src}>
+<Base title={d.seoTitle ?? `${d.title} | Crystal Fit`} description={d.seoDescription} image={og.src} schema={schema}>
   {d.template === 'modern' ? (
     <>
       <section class="pinfo">
@@ -43,7 +55,7 @@ const next = idx >= 0 && idx < listed.length - 1 ? listed[idx + 1] : listed[0];
           {d.gallery.map((g, i) => (
             <div class="pgallery__item" data-span={span12[g.size]} data-span-2={g.size === 'quarter' ? 1 : 2}>
               <a href={big[i].src} class="lb" data-lb={i} style={`aspect-ratio:${g.ratio ? `1/${g.ratio}` : `${g.image.width}/${g.image.height}`}`}>
-                <Image src={g.image} alt={g.title ?? d.title} widths={[360, 480, 640, 800, 1080, 1290]} sizes={g.size === 'quarter' ? '(min-width: 992px) 323px, (min-width: 768px) 50vw, 100vw' : '(min-width: 768px) 645px, 100vw'} quality={72} loading="lazy" />
+                <Image src={g.image} alt={g.title ? `${d.title} – ${g.title}` : `${d.title} – photo ${i + 1}`} widths={[360, 480, 640, 800, 1080, 1290]} sizes={g.size === 'quarter' ? '(min-width: 992px) 323px, (min-width: 768px) 50vw, 100vw' : '(min-width: 768px) 645px, 100vw'} quality={72} loading="lazy" />
               </a>
             </div>
           ))}
@@ -74,7 +86,7 @@ const next = idx >= 0 && idx < listed.length - 1 ? listed[idx + 1] : listed[0];
           <div class="pclassic__track">
             {d.gallery.map((g, i) => (
               <a class="pclassic__slide lb" href={big[i].src} data-lb={i}>
-                <Image src={g.image} alt={g.title ?? d.title} width={1320} height={720} widths={[330, 660, 1320]} sizes="(min-width: 768px) 660px, 330px" fit="cover" loading={i < 2 ? 'eager' : 'lazy'} />
+                <Image src={g.image} alt={g.title ? `${d.title} – ${g.title}` : `${d.title} – photo ${i + 1}`} width={1320} height={720} widths={[330, 660, 1320]} sizes="(min-width: 768px) 660px, 330px" fit="cover" loading={i < 2 ? 'eager' : 'lazy'} />
                 {g.title && <span class="pclassic__cap">{g.title}</span>}
               </a>
             ))}

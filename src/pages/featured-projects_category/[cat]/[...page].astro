@@ -19,13 +19,19 @@ export const getStaticPaths = (async ({ paginate }) => {
 const { page } = Astro.props;
 const cat = Astro.params.cat as keyof typeof categories;
 const label = cat === 'fb' ? 'Food & Beverage (F&B)' : categories[cat];
+const seoName = { commercial: 'Commercial Fit-Out Projects, Dubai', fb: 'Cafe & Restaurant Fit-Out Projects', residential: 'Residential Interior Projects, Dubai' };
+const seoDesc = {
+  commercial: 'Commercial fit-out projects by Crystal Fit: offices, retail, clinics, galleries and hotels delivered design & build across Dubai and the UAE.',
+  fb: 'Cafe, coffee shop and restaurant fit-outs by Crystal Fit in Dubai: Roasters, WALA, YOY Neo Bistro and more, from design to landlord approvals and handover.',
+  residential: 'Villa and apartment interior design and fit-out projects by Crystal Fit in Dubai, Sharjah and across the UAE.',
+};
 ---
-<Base title={`${label} Archives | Crystal Fit`} description={`${label} fit-out and interior design projects by Crystal Fit in Dubai.`} form={false}>
+<Base title={`${seoName[cat]}${page.currentPage > 1 ? ` – Page ${page.currentPage}` : ''} | Crystal Fit`} description={seoDesc[cat]} form={false}>
   <div class="catbar">
     <h4>{label}</h4>
     <ol class="catbar__crumbs"><li><a href="/">Home</a></li><li class="sep">/</li><li><a href="/portfolio/">Featured-Projects</a></li><li class="sep">/</li><li class="cur">{label}</li></ol>
   </div>
-  <h3 class="cattitle">Featured-Projects Category: <span>{label}</span></h3>
+  <h1 class="cattitle">Featured-Projects Category: <span>{label}</span></h1>
   <section class="catgrid">
     <Masonry id="catgrid" cols={[{ min: 768, n: 3 }, { min: 0, n: 1 }]}>
       {page.data.map((p) => (

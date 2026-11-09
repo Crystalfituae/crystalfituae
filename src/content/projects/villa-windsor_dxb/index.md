@@ -1,6 +1,6 @@
 ---
-title: "Al Mizhar, VIlla \"Windsor\""
-heading: "Al Mizhar, VIlla \"Windsor\""
+title: "Al Mizhar, Villa \"Windsor\""
+heading: "Al Mizhar, Villa \"Windsor\""
 order: 999
 listed: false
 size: half
@@ -38,7 +38,7 @@ fields:
     value: "2020"
   - label: "SIZE"
     value: "720 sq.m"
-seoTitle: "Al Mizhar Villa \"Windsor\" — Interior Design in UAE | Crystal Fit"
+seoTitle: "Al Mizhar, Villa \"Windsor\" | Crystal Fit"
 seoDescription: "Discover the Al Mizhar Villa \"Windsor\" project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 

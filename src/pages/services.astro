@@ -26,7 +26,7 @@ const blocks = [
     '&nbsp;',
     'Business in Dubai does not forgive you mistakes, and this is where hiring experienced and professional team of Designers comes to first place.',
     '&nbsp;',
-    'During almost 9 years on the market, Crystal fit contracting LLC team has successfully completed projects in most of the major Dubai Locations, and worked with the most possible landlords. You name it- we have it :Emaar, Nakheel, Trakhees ,Dubai Mall, Mall of the Emirates, Dubai Hills, Nakheel mall, Circle Mall, The Pointe, these are only few locations where we worked.',
+    'Since 2014, the Crystal Fit Contracting LLC team has successfully completed projects in most of the major Dubai Locations, and worked with the most possible landlords. You name it- we have it :Emaar, Nakheel, Trakhees ,Dubai Mall, Mall of the Emirates, Dubai Hills, Nakheel mall, Circle Mall, The Pointe, these are only few locations where we worked.',
     '&nbsp;',
     'Our key strengths in this field is not only design aesthetics but also experience based procedure know-how. We are certified and prequalified with varieties of the main vendors, registered with all government entities ready to be your reliable partner paving your way towards successful food concept in UAE with peace and confidence.'] },
   { dark: true, img: residential, title: 'RESIDENTIAL INTERIOR DESIGN', paras: [
@@ -41,13 +41,13 @@ const blocks = [
   { dark: true, img: turnkey, title: 'TURN KEY PROJECT MANAGEMENT', narrow: true, paras: [
     'Since 2014 we have been mastering our skills in Construction Project Management (CPM) and turn key project handling. CPM is an essential part of Fit out process at any construction work size and it is crucial for those who values their time and money.',
     '&nbsp;',
-    'Providing end to end turn key project management is an essential part of KG Design work model. By providing superior advice and decision-making experience across all stages of the project our team will mitigate any arising issues in a timely manner.',
+    'Providing end to end turn key project management is an essential part of Crystal Fit work model. By providing superior advice and decision-making experience across all stages of the project our team will mitigate any arising issues in a timely manner.',
     '&nbsp;',
     'Crystal fit contracting LLC project management will take care of cooperation between architects/designers, contractors, authorities and other stakeholders to ensure strong and fruitful performance with the highest quality that is delivered on time !'] },
 ];
 ---
-<Base title="Services — Interior Design & Fit-Out in Dubai | Crystal Fit" description="Retail and office fit-out, restaurant and café interior design, residential interiors, space planning and turnkey project management in Dubai.">
-  <Hero slides={[{ image: hero, lines: ['Our', 'Services'] }]} place="right-top" dark />
+<Base title="Interior Design & Fit-Out Services in Dubai | Crystal Fit" description="Retail and office fit-out, restaurant and café interior design, residential interiors, space planning and turnkey project management in Dubai.">
+  <Hero slides={[{ image: hero, lines: ['Our', 'Services'] }]} place="right-top" dark h1="— interior design & fit-out in Dubai" />
   <Breadcrumb current="Crystal fit contracting LLC UAE / SERVICES" />
   {blocks.map((b, i) => (
     <section class:list={['svc', b.dark ? 'svc--dark' : 'svc--light', { 'svc--narrow': b.narrow }]} style={`--h:${[820, 1097, 820, 925, 870][i]}px`}>
@@ -56,7 +56,7 @@ const blocks = [
           <h2 class="svc__title">{b.title}{b.dark && <span class="dot" aria-hidden="true"></span>}</h2>
           {b.paras.map((p) => <p set:html={p} />)}
         </div>
-        <div class="svc__media"><Image src={b.img} alt="" width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" /></div>
+        <div class="svc__media"><Image src={b.img} alt={b.title.toLowerCase().replace(/(^|[ /])\w/g, (c) => c.toUpperCase())} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" /></div>
       </div>
     </section>
   ))}

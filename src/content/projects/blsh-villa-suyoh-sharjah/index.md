@@ -59,8 +59,8 @@ gallery:
   - image: "./img/16-master_bedroom_1-1.jpg"
     size: quarter
     ratio: 1.000000
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "BLSH Villa, Suyoh, Sharjah — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "BLSH Villa, Suyoh, Sharjah | Crystal Fit"
 seoDescription: "Discover the BLSH Villa, Suyoh, Sharjah project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION: </strong><span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">Al Suyoh Suburb, Sharjah, UAE</span></p> <p><strong>SIZE:</strong> 480 sq.m</p> <p><strong>YEAR:</strong> 2015</p></div>

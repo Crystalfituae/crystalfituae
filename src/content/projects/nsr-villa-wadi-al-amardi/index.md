@@ -51,8 +51,8 @@ gallery:
     size: half
   - image: "./img/20-nsr-villa-design-by-kg-design-bathroom-photo-2.jpg"
     size: half
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "NSR Villa, Wadi Al Amardi — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "NSR Villa, Wadi Al Amardi | Crystal Fit"
 seoDescription: "Discover the NSR Villa, Wadi Al Amardi project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION: </strong>&nbsp;Wadi al Amardi, Dubai, UAE</p><p><strong>SIZE:</strong>&nbsp;620 sq.m</p><p><strong>YEAR:</strong>2021</p></div>

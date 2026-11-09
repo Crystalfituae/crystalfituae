@@ -1,6 +1,6 @@
 ---
 title: "YOY Neo Bistro Restaurant, Dubai"
-heading: "YOY NEO BISTRO RESTAURANT"
+heading: "YOY Neo Bistro Restaurant, Dubai"
 order: 12
 listed: true
 size: half
@@ -51,8 +51,8 @@ gallery:
     title: "Meeting room"
   - image: "./img/10-25-01-16-v003.jpg"
     size: quarter
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "YOY Neo Bistro Restaurant, Dubai — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "YOY Neo Bistro Restaurant, Dubai | Crystal Fit"
 seoDescription: "Discover the YOY Neo Bistro Restaurant, Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Shagri-La Hotel, Sheikh Zaed Road, Dubai, UAE<br></p> <p><strong>SIZE:</strong>&nbsp;350 sq.m. TIMELINE: 3 month.&nbsp;<br><span style="font-size: 18px; font-style: normal; font-family: Raleway, Helvetica, Arial, sans-serif; font-weight: 600;">YEAR:</span><span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">&nbsp;2024</span></p></div>

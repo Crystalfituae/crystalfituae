@@ -1,6 +1,6 @@
 ---
-title: "Hanah Chocolate Boutigue, Al Barsha 3, Dubai"
-heading: "\"Hanah chocolate\""
+title: "Hanah Chocolate Boutique, Al Barsha 3, Dubai"
+heading: "Hanah Chocolate"
 order: 22
 listed: true
 size: quarter
@@ -31,8 +31,8 @@ gallery:
     size: quarter
   - image: "./img/09-screenshot-2023-07-08-101350.jpg"
     size: quarter
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "Hanah Chocolate Boutigue, Al Barsha 3, Dubai — Interior Design in UAE | Crystal Fit"
-seoDescription: "Discover the Hanah Chocolate Boutigue, Al Barsha 3, Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Hanah Chocolate Boutique, Al Barsha | Crystal Fit"
+seoDescription: "Discover the Hanah Chocolate Boutique, Al Barsha 3, Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Al Barsha 3, Dubai UAE</p> <p><strong>SIZE:</strong>&nbsp;55 sq.m.</p> <p><strong>YEAR:</strong> 2023</p></div>

@@ -9,3 +9,12 @@
 /feed/                                                  /                                          301
 /wp-admin/*                                             /                                          301
 /wp-login.php                                           /                                          301
+# pages renamed so the URL matches the project (audit 2026-10)
+/featured-projects/beacon-coffee-shop-difc/                 /featured-projects/roasters-coffee-nad-al-sheba-mall/  301
+/featured-projects/fakhverk-house-architectural-project/    /featured-projects/panmi-coffee-shop-dubai-hills/      301
+/featured-projects/villa-interior-design-abu-dhabi/         /featured-projects/roasters-coffee-kiosk-dubai-mall/   301
+# duplicate pages merged into one
+/featured-projects/christies-back-office-difc-dubai/        /featured-projects/christiess-ofiice-interior-design-dubai/  301
+/featured-projects/nad-al-sheba-1-villa-moderna-interior/   /featured-projects/nad-al-sheba-villa-moderna-dubai/   301
+/projects-metro/                                            /portfolio/                                301
+/cookie-policy/   /privacy-policy/#cookies   301

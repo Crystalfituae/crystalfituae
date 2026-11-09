@@ -1,6 +1,6 @@
 ---
 title: "Cox’s Bazar Family Hotel, B+G+4+Roof"
-heading: "\"Family Boutique Hotel\""
+heading: "Family Boutique Hotel"
 order: 47
 listed: true
 size: half
@@ -35,8 +35,8 @@ gallery:
     size: quarter
   - image: "./img/12-20220511_cox-bazaar-presentation_1-18-scaled.jpg"
     size: quarter
-otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
-seoTitle: "Cox's Bazar Family Hotel, B+G+4+Roof — Interior Design in UAE | Crystal Fit"
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+seoTitle: "Cox’s Bazar Family Hotel, B+G+4+Roof | Crystal Fit"
 seoDescription: "Discover the Cox's Bazar Family Hotel, B+G+4+Roof project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Cox`s bazaar, Bangladesh<br>B+G+4+ROOF, 5 star Family Resort&nbsp;</p><p><strong>SIZE:</strong>&nbsp;8500 sq.m.</p><p><strong>YEAR:</strong> 2021</p></div>
+<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Cox's bazaar, Bangladesh<br>B+G+4+ROOF, 5 star Family Resort&nbsp;</p><p><strong>SIZE:</strong>&nbsp;8500 sq.m.</p><p><strong>YEAR:</strong> 2021</p></div>

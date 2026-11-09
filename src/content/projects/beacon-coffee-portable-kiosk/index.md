@@ -1,6 +1,6 @@
 ---
-title: "Beacon Coffee SHOP Portable Kiosk"
-heading: "Beacon Coffee SHOP Portable Kiosk"
+title: "Beacon Coffee Portable Kiosk"
+heading: "Beacon Coffee Portable Kiosk"
 order: 999
 listed: false
 size: half
@@ -26,7 +26,7 @@ fields:
     value: "2020"
   - label: "SIZE"
     value: "12 sq.m"
-seoTitle: "Beacon Coffee Portable Kiosk | KG DESIGN | Architecture & Interiors"
-seoDescription: "Beacon Coffee Portable Kiosk, by KG Design, provides quick and easy erectable structure, to serve seasonal expansion needs at all locations across UAE."
+seoTitle: "Beacon Coffee Portable Kiosk | Crystal Fit"
+seoDescription: "Beacon Coffee Portable Kiosk, by Crystal Fit, provides quick and easy erectable structure, to serve seasonal expansion needs at all locations across UAE."
 ---
 

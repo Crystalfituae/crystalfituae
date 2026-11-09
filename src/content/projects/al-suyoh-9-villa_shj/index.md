@@ -1,6 +1,6 @@
 ---
-title: "AL SUYOH SUBURB VILLA SHARJAH"
-heading: "AL SUYOH SUBURB VILLA_SHARJAH"
+title: "Al Suyoh Suburb Villa, Sharjah"
+heading: "Al Suyoh Suburb Villa, Sharjah"
 order: 999
 listed: false
 size: half
@@ -62,7 +62,7 @@ fields:
     value: "November 2017"
   - label: "SIZE"
     value: "720 sq.m"
-seoTitle: "AL SUYOH-9 VILLA_SHARJAH — Interior Design in UAE | Crystal Fit"
+seoTitle: "Al Suyoh Suburb Villa, Sharjah | Crystal Fit"
 seoDescription: "Discover the AL SUYOH-9 VILLA_SHARJAH project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
 ---
 

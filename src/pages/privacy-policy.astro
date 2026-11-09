@@ -1,0 +1,49 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+import { site } from '../data/site';
+---
+<LegalPage title="Privacy Policy | Crystal Fit" heading="Privacy Policy" updated="9 November 2026"
+  description="How Crystal Fit Contracting LLC collects, uses and protects personal data submitted through crystalfituae.com.">
+  <p>This policy explains how <strong>{site.name}</strong> (“Crystal Fit”, “we”, “us”), {site.address}, United Arab Emirates, handles personal data collected through <a href="/">crystalfituae.com</a>. We process personal data in line with the UAE Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data and other applicable laws.</p>
+
+  <h2>1. Data we collect</h2>
+  <ul>
+    <li><strong>Enquiry form:</strong> your name, e-mail, phone number, enquiry type, message, and the page from which you sent it.</li>
+    <li><strong>Direct contact:</strong> details you share when you call us, message us on WhatsApp or Instagram, or e-mail us.</li>
+    <li><strong>Advertising lead forms</strong> (Meta / Google): the details you enter in the form shown in the ad.</li>
+    <li><strong>Usage data</strong> (only if you accept cookies): pages visited, device and browser type, approximate location, and the ad or link that brought you to the site.</li>
+  </ul>
+
+  <h2>2. Why we use it</h2>
+  <ul>
+    <li>To reply to your enquiry, prepare proposals, quotations and BOQs, and deliver your project (pre-contract steps and performance of a contract).</li>
+    <li>To keep records of enquiries and projects (legal obligations and legitimate interest).</li>
+    <li>To measure which pages and ads bring enquiries and to improve our website and advertising (your consent).</li>
+  </ul>
+  <p>We do not sell your personal data.</p>
+
+  <h2>3. Who receives it</h2>
+  <ul>
+    <li><strong>Web3Forms</strong> — delivers enquiry-form messages to our company mailbox.</li>
+    <li><strong>Google Workspace</strong> — our company e-mail.</li>
+    <li><strong>Google (Analytics, Ads, Maps)</strong> and <strong>Meta (Facebook, Instagram)</strong> — website measurement and advertising, only after you accept cookies. The map on the Contact page is provided by Google Maps.</li>
+    <li><strong>Cloudflare</strong> — hosts and secures this website.</li>
+    <li>Our consultants, subcontractors and authorities where needed to deliver your project, or where required by law.</li>
+  </ul>
+  <p>Some of these providers process data outside the UAE. We use them only with appropriate safeguards.</p>
+
+  <h2 id="cookies">4. Cookies</h2>
+  <p>The website works without cookies. With your permission we use analytics and advertising cookies (Google Analytics, Google Ads, Meta Pixel) to count visits and enquiries and to show relevant ads. You can accept or decline in the banner. To change your choice later, clear this site’s data in your browser and reload the page. Declining does not limit any function of the site.</p>
+
+  <h2>5. How long we keep it</h2>
+  <p>Enquiries that do not become projects are kept for up to 24 months. Project records are kept for as long as required for warranty, accounting and legal purposes. Analytics data is kept for up to 14 months.</p>
+
+  <h2>6. Your rights</h2>
+  <p>You may ask us to access, correct, delete or restrict the use of your personal data, to stop using it for marketing, or to withdraw your consent at any time. Write to <a href={`mailto:${site.email}`}>{site.email}</a>; we will reply within 30 days.</p>
+
+  <h2>7. Security</h2>
+  <p>The site is served only over encrypted HTTPS connections. Access to enquiries is limited to staff who need it.</p>
+
+  <h2>8. Changes and contact</h2>
+  <p>We may update this policy; the date above shows the latest version. Questions: <a href={`mailto:${site.email}`}>{site.email}</a>, <a href={`tel:${site.phoneMobile}`}>{site.phoneMobileDisplay}</a>.</p>
+</LegalPage>
