@@ -1,0 +1,60 @@
+---
+title: "YOY Neo Bistro Restaurant, Dubai"
+heading: "YOY NEO BISTRO RESTAURANT"
+order: 12
+listed: true
+size: half
+categories: ["fb"]
+template: modern
+cover: "./img/13-25-01-16-v058.jpg"
+coverRatio: 0.666667
+hero: "./img/13-25-01-16-v058.jpg"
+heroCol: 50
+gallery:
+  - image: "./img/01-25-01-16-v640.jpg"
+    size: half
+    title: "bar"
+  - image: "./img/02-25-01-16-v624.jpg"
+    size: half
+    title: "bar hall"
+  - image: "./img/03-25-01-16-v508.jpg"
+    size: half
+    title: "Bar 1"
+  - image: "./img/04-25-01-16-v479.jpg"
+    size: quarter
+    title: "outdoor"
+  - image: "./img/05-25-01-16-v459.jpg"
+    size: quarter
+    title: "detail"
+  - image: "./img/06-25-01-16-v358.jpg"
+    size: half
+    title: "bar"
+  - image: "./img/07-25-01-16-v556.jpg"
+    size: quarter
+    title: "phasade"
+  - image: "./img/08-25-01-16-v330.jpg"
+    size: half
+    title: "phasade"
+  - image: "./img/09-25-01-16-v249.jpg"
+    size: half
+    title: "detail"
+  - image: "./img/10-25-01-16-v003.jpg"
+    size: half
+  - image: "./img/11-25-01-16-v198.jpg"
+    size: half
+    title: "bar seatign"
+  - image: "./img/12-25-01-16-v110.jpg"
+    size: half
+    title: "bar"
+  - image: "./img/13-25-01-16-v058.jpg"
+    size: half
+    title: "Meeting room"
+  - image: "./img/10-25-01-16-v003.jpg"
+    size: quarter
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
+seoTitle: "YOY Neo Bistro Restaurant, Dubai — Interior Design in UAE | Crystal Fit"
+seoDescription: "Discover the YOY Neo Bistro Restaurant, Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+---
+<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Shagri-La Hotel, Sheikh Zaed Road, Dubai, UAE<br></p> <p><strong>SIZE:</strong>&nbsp;350 sq.m. TIMELINE: 3 month.&nbsp;<br><span style="font-size: 18px; font-style: normal; font-family: Raleway, Helvetica, Arial, sans-serif; font-weight: 600;">YEAR:</span><span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">&nbsp;2024</span></p></div>
+
+<div class="pinfo__text"><p>The relocation and reinvention of the famous YOY Ukrainian fire cooking restaurant&nbsp; into a Michelin-star pursuit fine dining destination. Crystal fit Contracting managed to:</p><p><br></p><p>• Retained the full kitchen to avoid major government reinspection &amp; approvals</p><p>• Preserved FLS &amp; electrical systems with only minor adjustments</p><p>• Focused transformation through aesthetic upgrades in materials, colors, and lighting</p><p>• Integrated signature YOY elements to keep the brand’s identity while applying value engineering</p><p><br></p><p>A highlight of the project was the contribution of world-renowned Ukrainian lighting designer Mykola Kabluka, whose vision shaped the bespoke ceiling décor and lighting design, giving the venue its unique high-end twist.</p><p><br></p><p>Key challenges: delivering under short deadlines while revitalizing an existing space into something extraordinary.</p></div>

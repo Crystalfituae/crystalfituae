@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import Masonry from '../components/Masonry.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Logos from '../components/Logos.astro';
+import { logosInner } from '../data/site';
+import hero from '../assets/site/hero-portfolio.jpg';
+import '../styles/portfolio.css';
+
+const projects = (await getCollection('projects')).filter((p) => p.data.listed).sort((a, b) => a.data.order - b.data.order);
+const filters: [string, string][] = [['*', 'Show all'], ['fb', 'F&B'], ['commercial', 'Commercial'], ['residential', 'Residential']];
+---
+<Base title="Portfolio: Fit-Out & Interior Design Projects in Dubai | Crystal Fit" description="Explore Crystal Fit's portfolio of commercial, F&B and residential fit-out and interior design projects across Dubai and the UAE.">
+  <Hero slides={[{ image: hero, lines: ['Take a look', 'inside our wonderland'] }]} />
+  <Breadcrumb current="Crystal fit contracting LLC / Portfolio" />
+  <section class="ptitle"><h1>Check out our portfolio</h1></section>
+  <ul class="pfilter" aria-label="Filter projects by type">
+    {filters.map(([key, label]) => (
+      <li><a href={key === '*' ? '#' : `#${key}`} data-f={key} class:list={{ 'is-active': key === '*' }}>{label}<sup>{key === '*' ? projects.length : projects.filter((p) => p.data.categories.includes(key as any)).length}</sup></a></li>
+    ))}
+  </ul>
+  <section class="pgrid">
+    <Masonry id="portfolio-grid" class="pgrid__list">
+      {projects.map((p, i) => <ProjectCard p={p} eager={i < 2} />)}
+    </Masonry>
+  </section>
+  <script>
+    const grid = document.getElementById('portfolio-grid') as HTMLElement & { relayout?: () => void };
+    const links = [...document.querySelectorAll<HTMLAnchorElement>('.pfilter a')];
+    const apply = (f: string) => {
+      links.forEach((a) => a.classList.toggle('is-active', a.dataset.f === f));
+      grid.querySelectorAll<HTMLElement>('.pcard').forEach((c) => { c.hidden = f !== '*' && !c.dataset.cats!.split(' ').includes(f); });
+      grid.relayout?.();
+    };
+    links.forEach((a) => a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const f = a.dataset.f!;
+      history.replaceState(null, '', f === '*' ? location.pathname : `#${f}`);
+      apply(f);
+    }));
+    const h = location.hash.slice(1);
+    if (links.some((a) => a.dataset.f === h)) apply(h);
+  </script>
+  <CtaBand title="still having questions ?" label="Contact us" href="/contact/" />
+  <Logos list={logosInner} />
+</Base>

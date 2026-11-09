@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/site/logo.png';
+import { site } from '../data/site';
+const path = Astro.url.pathname;
+const isActive = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
+---
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="/" aria-label="Crystal Fit — home">
+      <Image src={logo} alt="Crystal Fit Design & Build" width={360} height={52} widths={[243, 360, 486, 720]} sizes="(max-width: 1024px) 243px, 360px" loading="eager" fetchpriority="high" format="webp" />
+    </a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+      <svg viewBox="0 0 139 139"><line x1="26.5" x2="112.5" y1="46.3" y2="46.3"/><line x1="26.5" x2="112.5" y1="69.5" y2="69.5"/><line x1="26.5" x2="112.5" y1="92.7" y2="92.7"/></svg>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        {site.nav.map((n) => <li><a href={n.href} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a></li>)}
+      </ul>
+    </nav>
+  </div>
+</header>
+<script>
+  const b = document.querySelector('.burger');
+  const n = document.getElementById('site-nav');
+  b?.addEventListener('click', () => {
+    const open = n!.classList.toggle('is-open');
+    b.setAttribute('aria-expanded', String(open));
+  });
+</script>

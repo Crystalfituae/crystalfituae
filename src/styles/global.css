@@ -1,0 +1,224 @@
+/* Crystal Fit — global styles (hand-written, replaces WP theme + Elementor CSS) */
+@import './fonts.css';
+
+:root {
+  --ink: #222;
+  --ink-2: #262626;
+  --text: #666;
+  --black: #000;
+  --footer: #181818;
+  --form-bg: #f0f0f0;
+  --line: #e2e2e2;
+  --ff-body: 'Poppins', sans-serif;
+  --ff-head: 'Raleway', Optima, sans-serif;
+  --ff-label: 'Roboto', Optima, sans-serif;
+  --boxed: 1140px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--ff-body);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25px;
+  color: var(--text);
+  background: #fff;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+p { margin: 0 0 16px; }
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: inherit; }
+ul { list-style: none; margin: 0; padding: 0; }
+button { font: inherit; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.boxed { max-width: var(--boxed); margin: 0 auto; padding: 0 10px; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  font-family: var(--ff-head);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: opacity .2s;
+}
+.btn:hover { opacity: .85; }
+.btn--white { background: #fff; color: #000; }
+.btn--black { background: #000; color: #fff; }
+.btn--light { font-weight: 300; }
+
+/* ---------- Header ---------- */
+.site-header {
+  position: relative;
+  z-index: 50;
+  height: 112px;
+  background: #fff;
+}
+.site-header__inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.site-header__logo img { width: 25vw; height: auto; }
+.site-nav ul { display: flex; gap: 16px; }
+.site-nav a {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding: 3px 0;
+  position: relative;
+}
+.site-nav a::after {
+  content: '';
+  position: absolute; left: 0; right: 0; bottom: -2px;
+  height: 1px; background: var(--ink);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .3s;
+}
+.site-nav a:hover::after, .site-nav a[aria-current='page']::after { transform: scaleX(1); }
+.burger { display: none; background: none; border: 0; padding: 0; cursor: pointer; color: var(--ink); }
+.burger svg { width: 42px; height: 42px; display: block; }
+.burger line { stroke: currentColor; stroke-width: 7; stroke-linecap: round; }
+
+@media (max-width: 1024px) {
+  .site-header { height: 101px; }
+  .site-header__inner { padding: 0 30px 0 20px; }
+  .site-header__logo img { width: 243px; height: 35px; }
+  .burger { display: block; }
+  .site-nav {
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.06);
+    display: none;
+  }
+  .site-nav.is-open { display: block; }
+  .site-nav ul { flex-direction: column; gap: 0; padding: 10px 20px 20px; }
+  .site-nav a { display: block; padding: 14px 0; border-bottom: 1px solid #eee; }
+  .site-nav a::after { display: none; }
+}
+
+/* ---------- Black CTA band ("Request a proposal", "Still having questions ?") ---------- */
+.cta-band { background: #000; padding: 50px 0; text-align: center; }
+.cta-band__title {
+  font-family: var(--ff-head);
+  font-size: 72px; line-height: 80px; font-weight: 200;
+  text-transform: uppercase; color: #fff;
+  margin: 0 0 20px;
+}
+@media (max-width: 767px) {
+  .cta-band { padding: 50px 20px; }
+  .cta-band__title { font-size: 35px; line-height: 48px; }
+}
+
+/* ---------- Trusted by the best (logo marquee) ---------- */
+.trusted { padding: 60px 0 80px; overflow: hidden; }
+.trusted__title {
+  font-family: var(--ff-head);
+  font-size: 26px; line-height: 28px; font-weight: 700;
+  text-transform: uppercase; color: #000; text-align: center;
+  margin: 0 0 36px;
+}
+.logos { overflow: hidden; max-width: 1213px; margin: 0 auto; }
+.logos__track { display: flex; gap: 40px; transition: transform .5s ease; }
+.logos__item { flex: 0 0 calc((100% - 240px) / 7); height: 139px; display: flex; align-items: center; justify-content: center; }
+.logos__item img { max-width: 100%; max-height: 139px; width: auto; height: auto; }
+@media (max-width: 1024px) { .logos { padding: 0 30px; } .logos__item { flex-basis: calc((100% - 120px) / 4); } }
+@media (max-width: 767px) {
+  .trusted__title { display: none; }
+  .trusted { padding: 40px 0; }
+  .logos { padding: 0 30px; }
+  .logos__item { flex-basis: calc((100% - 80px) / 3); height: 83px; }
+  .logos__item img { max-height: 83px; }
+}
+
+/* ---------- Contact form ---------- */
+.contact-form { background: var(--form-bg); padding: 81px 0 134px; }
+.contact-form__inner { max-width: 1193px; margin: 0 auto; }
+.contact-form__label { font-family: var(--ff-label); font-size: 14px; line-height: 25px; font-weight: 500; color: #7a7a7a; margin: 0 0 8px; }
+.contact-form__title { font-size: 18px; line-height: 24px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--ink); margin: 0 0 20px; }
+.cf { display: grid; grid-template-columns: 312px 312px 450px; column-gap: 29px; justify-content: space-between; }
+.cf__left { grid-column: 1 / 3; display: grid; grid-template-columns: 312px 312px; column-gap: 29px; row-gap: 118px; align-content: start; }
+.cf__right { grid-column: 3; display: grid; row-gap: 48px; align-content: start; }
+.cf input, .cf select, .cf textarea {
+  width: 100%;
+  font-family: var(--ff-body); font-size: 14px; font-weight: 400; line-height: 26px;
+  color: var(--ink); background: #fff;
+  border: 1px solid var(--line); border-radius: 0;
+  padding: 14px 24px; height: 56px;
+  outline: none;
+  -webkit-appearance: none; appearance: none;
+}
+.cf input::placeholder, .cf textarea::placeholder { color: var(--ink); opacity: 1; }
+.cf input:focus, .cf select:focus, .cf textarea:focus { border-color: #bbb; }
+.cf select {
+  padding: 0 42px 0 26px; cursor: pointer;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23222' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat right 18px center / 10px;
+}
+.cf textarea { height: 200px; resize: none; }
+.cf button {
+  width: 100%; height: 52px; border: 0; cursor: pointer;
+  background: var(--ink); color: #fff;
+  font-size: 12px; line-height: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+}
+.cf button:hover { background: #000; }
+.cf__status { grid-column: 1 / -1; margin-top: 16px; font-size: 14px; color: var(--ink); }
+.cf__hp { display: none; }
+@media (max-width: 1240px) {
+  .contact-form__inner { padding: 0 25px; }
+  .cf { grid-template-columns: 1fr 1fr 1.4fr; }
+  .cf__left { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 767px) {
+  .contact-form { padding: 40px 0 60px; }
+  .cf, .cf__left { display: grid; grid-template-columns: 1fr; row-gap: 41px; }
+  .cf__left, .cf__right { grid-column: auto; }
+  .cf__right { row-gap: 48px; }
+}
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--footer); color: #fff; }
+.site-footer__top { display: grid; grid-template-columns: 1fr 1fr; padding: 77px 40px 70px; }
+.site-footer__col { padding: 0 15px; }
+.site-footer h6 { font-size: 15px; line-height: 20px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #fff; margin: 0 0 25px; }
+.site-footer__contact a { display: flex; align-items: center; gap: 12px; line-height: 25px; }
+.site-footer__menu li + li { margin-top: 14px; }
+.site-footer__menu a { display: flex; align-items: center; gap: 12px; font-family: var(--ff-head); font-size: 14px; font-weight: 500; line-height: 25px; }
+.site-footer a:hover { opacity: .7; }
+.site-footer__bottom { display: flex; justify-content: space-between; align-items: center; padding: 27px 55px; border-top: 1px solid rgba(255,255,255,.06); height: 79px; }
+.site-footer__bottom p { margin: 0; }
+.socials { display: flex; gap: 20px; }
+.socials .ico { width: 12px; height: 12px; }
+@media (max-width: 767px) {
+  .site-footer__top { display: none; }
+  .site-footer__bottom { flex-direction: column; justify-content: center; gap: 12px; height: 130px; padding: 30px 15px; text-align: center; border: 0; }
+}
+
+/* ---------- WhatsApp floating button ---------- */
+.wa-fab {
+  position: fixed; right: 20px; bottom: 20px; z-index: 60;
+  width: 64px; height: 64px; border-radius: 50%;
+  background: #25d366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  transition: transform .2s;
+}
+.wa-fab:hover { transform: scale(1.06); }
+.wa-fab::after { content: ''; position: absolute; top: 6px; right: 6px; width: 12px; height: 12px; border-radius: 50%; background: #ff3b30; border: 2px solid #fff; }
+.wa-fab .ico { width: 32px; height: 32px; }
+
+/* ---------- Mobile base scale (matches original Elementor kit) ---------- */
+@media (max-width: 767px) {
+  body { font-size: 11.6667px; line-height: 20.8333px; }
+}

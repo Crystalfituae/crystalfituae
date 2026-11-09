@@ -1,0 +1,71 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+interface Slide { image: ImageMetadata; lines: string[]; button?: { label: string; href: string } }
+interface Props { slides: Slide[]; variant?: 'home' | 'inner'; place?: 'left' | 'right-top'; dark?: boolean; interval?: number }
+const { slides, variant = 'inner', place = 'left', dark = false, interval = 6500 } = Astro.props;
+---
+<section class:list={['hero', `hero--${variant}`, `hero--${place}`, { 'hero--dark': dark }]} data-interval={interval}>
+  {slides.map((s, i) => (
+    <div class:list={['hero__slide', { 'is-active': i === 0 }]}>
+      <Image src={s.image} alt="" class="hero__img" widths={[480, 800, 1080, 1440, 1920]} sizes="100vw" loading={i === 0 ? 'eager' : 'lazy'} fetchpriority={i === 0 ? 'high' : 'auto'} quality={72} />
+      <div class="hero__content">
+        <p class="hero__title" set:html={s.lines.join('<br>')} />
+        {s.button && <a class="hero__btn" href={s.button.href}>{s.button.label}</a>}
+      </div>
+    </div>
+  ))}
+</section>
+{slides.length > 1 && (
+<script is:inline>
+(function () {
+  var el = document.currentScript.previousElementSibling, sl = el.querySelectorAll('.hero__slide'), i = 0;
+  setInterval(function () {
+    var next = sl[(i + 1) % sl.length], img = next.querySelector('img');
+    if (img && !img.complete) { img.loading = 'eager'; return; }
+    sl[i].classList.remove('is-active'); i = (i + 1) % sl.length; next.classList.add('is-active');
+  }, +el.dataset.interval);
+  // warm up the 2nd slide after page load
+  addEventListener('load', function () { var im = sl[1] && sl[1].querySelector('img'); if (im) im.loading = 'eager'; });
+})();
+</script>
+)}
+<style is:global>
+  .hero { position: relative; overflow: hidden; height: 563px; background: #ddd; }
+  .hero--home { height: 800px; margin-bottom: 20px; }
+  .hero__slide { position: absolute; inset: 0; opacity: 0; transition: opacity .8s ease; }
+  .hero__slide.is-active { opacity: 1; z-index: 1; }
+  .hero__img { width: 100%; height: 100%; object-fit: cover; }
+  .hero__content { position: absolute; left: 38px; bottom: 109px; }
+  .hero--home .hero__content { bottom: 168px; }
+  .hero--right-top .hero__content { left: auto; right: 39px; bottom: auto; top: 42px; text-align: right; }
+  .hero__title {
+    margin: 0;
+    font-family: var(--ff-head); font-size: 60px; line-height: 75px; font-weight: 400;
+    letter-spacing: 5.25px; text-transform: uppercase; color: #fff;
+  }
+  .hero--home .hero__title { font-size: 53px; }
+  .hero--dark .hero__title { color: #000; }
+  .hero__btn {
+    display: inline-block; margin-top: 22px;
+    background: #fff; color: #000;
+    font-family: var(--ff-head); font-size: 14px; line-height: 21px; font-weight: 500;
+    padding: 8px 23px;
+  }
+  .hero__btn:hover { background: #000; color: #fff; }
+  .hero__slide .hero__content { opacity: 0; transform: translateY(10px); transition: opacity .55s .3s, transform .55s .3s; }
+  .hero__slide.is-active .hero__content { opacity: 1; transform: none; }
+  @media (max-width: 1024px) {
+    .hero { height: max(260px, 39vw); }
+    .hero--home { height: max(569px, 55vw); }
+  }
+  @media (max-width: 767px) {
+    .hero { height: 260px; }
+    .hero--home { height: 569px; margin-bottom: 0; }
+    .hero__content { left: 16px; bottom: 53px; }
+    .hero--home .hero__content { bottom: 155px; }
+    .hero--right-top .hero__content { right: 19px; top: 18px; }
+    .hero__title, .hero--home .hero__title { font-size: 23px; line-height: 28px; letter-spacing: 2.4375px; }
+    .hero__btn { font-size: 11px; line-height: 15px; padding: 8px 14px; margin-top: 22px; }
+  }
+</style>

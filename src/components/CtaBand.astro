@@ -1,0 +1,7 @@
+---
+const { title, label, href } = Astro.props;
+---
+<section class="cta-band">
+  <div class="cta-band__title">{title}</div>
+  <a class="btn btn--white btn--light" href={href}>{label}</a>
+</section>

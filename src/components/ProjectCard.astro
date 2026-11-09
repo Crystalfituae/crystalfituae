@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+import { categories } from '../data/site';
+const { p, sizes = '(min-width: 992px) 47vw, (min-width: 768px) 50vw, 100vw', eager = false } = Astro.props;
+const href = `/featured-projects/${p.id}/`;
+const span = p.data.size === 'quarter' ? 1 : 2;
+---
+<article class="pcard" data-span={span} data-span-2="1" data-cats={p.data.categories.join(' ')}>
+  <a href={href} class="pcard__media" style={`aspect-ratio:${p.data.coverRatio ? `1/${p.data.coverRatio}` : `${p.data.cover.width}/${p.data.cover.height}`}`}>
+    <Image src={p.data.cover} alt={p.data.title} widths={[360, 480, 640, 800, 1080, 1340]} sizes={sizes} quality={72} loading={eager ? 'eager' : 'lazy'} />
+    <span class="pcard__plus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+  </a>
+  <div class="pcard__body">
+    <h6 class="pcard__title"><a href={href}>{p.data.title}</a></h6>
+    <ul class="pcard__cats">
+      {p.data.categories.map((c: keyof typeof categories) => <li><a href={`/featured-projects_category/${c}/`}>{categories[c]}</a></li>)}
+    </ul>
+  </div>
+</article>

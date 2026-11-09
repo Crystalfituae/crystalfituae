@@ -1,0 +1,54 @@
+---
+title: "The Game Premium Lounge, JBR, Dubai"
+heading: "THE GAME PREMIUM LOUNGE, JBR"
+order: 21
+listed: true
+size: quarter
+categories: ["commercial"]
+template: modern
+cover: "./img/15-img_3164.jpg"
+coverRatio: 1.500000
+hero: "./img/07-img_3181.jpg"
+heroCol: 33
+gallery:
+  - image: "./img/01-img_3335.jpg"
+    size: half
+  - image: "./img/02-img_3154.jpg"
+    size: quarter
+  - image: "./img/03-img_3254.jpg"
+    size: quarter
+  - image: "./img/04-img_3250.jpg"
+    size: half
+  - image: "./img/05-img_3229.jpg"
+    size: quarter
+  - image: "./img/06-img_3205.jpg"
+    size: quarter
+  - image: "./img/07-img_3181.jpg"
+    size: quarter
+  - image: "./img/08-img_3191.jpg"
+    size: quarter
+  - image: "./img/09-2023-05-16-6.jpg"
+    size: quarter
+  - image: "./img/10-2023-05-16-2.jpg"
+    size: quarter
+  - image: "./img/11-2023-05-16-12.jpg"
+    size: quarter
+  - image: "./img/12-img_3109.jpg"
+    size: quarter
+  - image: "./img/13-img_3187.jpg"
+    size: quarter
+  - image: "./img/14-img_3156.jpg"
+    size: quarter
+  - image: "./img/15-img_3164.jpg"
+    size: quarter
+  - image: "./img/16-image.jpg"
+    size: quarter
+  - image: "./img/17-2023-05-16-3.jpg"
+    size: quarter
+  - image: "./img/18-2023-05-16-10.jpg"
+    size: quarter
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
+seoTitle: "The Game Premium Lounge, JBR, Dubai — Interior Design in UAE | Crystal Fit"
+seoDescription: "Discover the The Game Premium Lounge, JBR, Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+---
+<div class="pinfo__text"><p><strong>LOCATION: </strong>Jumeriah Beach Residence (JBR), Dubai, UAE</p><p><strong>SIZE:</strong> 240 sqm</p><p><strong>YEAR:</strong> 2023</p></div>

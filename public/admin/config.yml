@@ -1,0 +1,46 @@
+# Decap CMS — admin panel at https://crystalfituae.com/admin/
+# Each project lives in src/content/projects/<slug>/ (index.md + img/ folder).
+# After you save, the site rebuilds automatically (1–5 min) and photos are optimized during the build.
+backend:
+  name: github
+  repo: OWNER/crystalfit-site          # <- set after the GitHub repo is created
+  branch: main
+  base_url: https://OAUTH-PROXY.example # <- OAuth proxy URL (Cloudflare worker / Netlify)
+
+media_folder: src/assets/uploads
+public_folder: /src/assets/uploads
+locale: en
+
+collections:
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: src/content/projects
+    path: '{{slug}}/index'
+    media_folder: 'img'
+    public_folder: './img'
+    create: true
+    slug: '{{fields.slug}}'
+    summary: '{{order}} — {{title}}'
+    sortable_fields: ['order', 'title']
+    fields:
+      - { label: 'URL slug (latin, e.g. my-new-cafe)', name: slug, widget: string }
+      - { label: 'Title in portfolio grid', name: title, widget: string }
+      - { label: 'Title on project page', name: heading, widget: string, required: false }
+      - { label: 'Position in portfolio (0 = first)', name: order, widget: number, value_type: int, default: 0 }
+      - { label: 'Show in portfolio', name: listed, widget: boolean, default: true }
+      - { label: 'Tile width in portfolio', name: size, widget: select, options: [{ label: 'Wide (1/2)', value: half }, { label: 'Narrow (1/4)', value: quarter }], default: half }
+      - { label: Categories, name: categories, widget: select, multiple: true, options: [{ label: Commercial, value: commercial }, { label: 'Food & Beverage (F&B)', value: fb }, { label: Residential, value: residential }] }
+      - { label: Template, name: template, widget: hidden, default: modern }
+      - { label: 'Cover (portfolio tile)', name: cover, widget: image }
+      - { label: 'Main photo (next to description)', name: hero, widget: image, required: false }
+      - label: Gallery
+        name: gallery
+        widget: list
+        summary: '{{fields.size}} — {{fields.image}}'
+        fields:
+          - { label: Photo, name: image, widget: image }
+          - { label: Width, name: size, widget: select, options: [{ label: 'Wide (1/2)', value: half }, { label: 'Narrow (1/4)', value: quarter }], default: half }
+      - { label: 'SEO title', name: seoTitle, widget: string, required: false }
+      - { label: 'SEO description', name: seoDescription, widget: text, required: false }
+      - { label: 'Description (location, size, year, text)', name: body, widget: markdown }

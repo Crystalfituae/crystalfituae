@@ -1,0 +1,116 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Masonry from '../components/Masonry.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Logos from '../components/Logos.astro';
+import Icon from '../components/Icon.astro';
+import { logosHome } from '../data/site';
+import '../styles/portfolio.css';
+import '../styles/pages.css';
+
+import h1 from '../assets/site/home-1.jpg';
+import h2 from '../assets/site/home-2.jpg';
+import h3 from '../assets/site/home-3.jpg';
+import h4 from '../assets/site/home-4.jpg';
+import h5 from '../assets/site/home-5.jpg';
+import h6 from '../assets/site/home-6.jpg';
+import whatWeDo from '../assets/home/what-we-do.jpg';
+import l1 from '../assets/home/latest-1.jpg';
+import l2 from '../assets/home/latest-2.jpg';
+import l3 from '../assets/home/latest-3.jpg';
+import l4 from '../assets/home/latest-4.jpg';
+import l5 from '../assets/home/latest-5.jpg';
+import l6 from '../assets/home/latest-6.jpg';
+import l7 from '../assets/home/latest-7.jpg';
+
+const slides = [
+  { image: h1, lines: ['Building spaces', 'that inspire'], button: { label: 'VIEW PORTFOLIO', href: '/portfolio/' } },
+  { image: h2, lines: ['Commercial', 'fit-outs'] },
+  { image: h3, lines: ['One stop', 'design & build team'] },
+  { image: h4, lines: ['Health & wellness', 'designs'] },
+  { image: h5, lines: ['Premium', 'residential interiors'] },
+  { image: h6, lines: ['Turn key', 'Project management'] },
+];
+const latest = [
+  { img: l1, span: 2, title: 'WALA Coffee & Roastery', sub: 'Al Qouz, Dubai, UAE', slug: 'wala-coffee-roastery' },
+  { img: l2, span: 1, title: 'Panmi Cafe', sub: 'Dubai Hills, Dubai', slug: 'fakhverk-house-architectural-project' },
+  { img: l3, span: 2, title: 'Gari Tatintsian Gallery', sub: 'Dubai Design District', slug: 'gary-tatintsian-gallery' },
+  { img: l4, span: 2, title: 'Roasters Specialty Coffee', sub: 'Dubai Hills', slug: 'roasters-dubai-hills' },
+  { img: l5, span: 2, title: 'YOY Neo Bistro Restaurant', sub: 'Shangri-La Hotel, Sheikh Zaed rd, Dubai, UAE', slug: 'restaurant-contractor-dubai-yoy-neo-bistro' },
+  { img: l6, span: 2, title: 'Self.Space Studio', sub: 'Ghoshi City, Al Quoz, Dubai', slug: 'self-space-studio-dubai' },
+  { img: l7, span: 1, title: 'AMV Aethetic Clinic', sub: 'Bay Square, Dubai', slug: 'amv-aesthetic-clinic' },
+];
+import data from '../data/home-faq.json';
+const faqAll = data as [string, string][];
+---
+<Base title="Crystal Fit — Design & Build Fit-Out Company in Dubai" description="Crystal Fit Contracting LLC is a Dubai-based design & build studio delivering commercial, F&B and residential fit-out projects across the UAE since 2014.">
+  <Hero slides={slides} variant="home" />
+
+  <section class="stats">
+    <div class="stats__row">
+      <div class="stats__item">
+        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" stroke="#000" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M39.4 3H5.07A2.08 2.08 0 0 0 2.99 5.07V39.4c0 1.15.93 2.08 2.08 2.08H39.4c1.15 0 2.08-.93 2.08-2.08V5.07c0-1.15-.93-2.08-2.08-2.08Z"/><path d="M22.24 25.02a2.78 2.78 0 1 0 0-5.56 2.78 2.78 0 0 0 0 5.56Z"/><path d="M22.24 19.46V8.8"/><path d="m24.71 23.58 10.51 5.7"/></svg>
+        <div class="stats__text">On-Time Guarantee</div>
+      </div>
+      <div class="stats__item"><div class="stats__num">10+</div><div class="stats__text">Years in UAE Fit Outs</div></div>
+      <div class="stats__item"><div class="stats__num">200+</div><div class="stats__text">Handed Over Projects</div></div>
+      <div class="stats__item">
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M16.97 29.57c.26.24.59.36.92.36.33 0 .66-.12.92-.36l14.37-13.44a1.34 1.34 0 0 0-1.84-1.96L17.89 26.75l-6.22-5.82a1.34 1.34 0 1 0-1.84 1.96l7.14 6.68Z" fill="#000"/><path d="M38.42 2.36H4.08C2.93 2.36 2 3.3 2 4.44v34.34c0 1.15.93 2.08 2.08 2.08h34.34c1.15 0 2.08-.93 2.08-2.08V4.44c0-1.15-.93-2.08-2.08-2.08Z" stroke="#000" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="stats__text">Approved in UAE<br />Contractor</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wwd">
+    <div class="wwd__inner">
+      <div class="wwd__text">
+        <h2 class="wwd__title">What we do<span class="dot" aria-hidden="true"></span></h2>
+        <p><strong>Crystal Fit Contracting LLC</strong> is a Dubai-based design &amp; build studio operating across the GCC since 2014.</p>
+        <p>With over a decade of expertise in the local interior fit-out market, we provide a one-stop solution for clients in the Commercial, HoReCa (Hotels, Restaurants, Cafés), Residential, and Public sectors — delivering projects that prioritize time, quality, and a bespoke business approach.</p>
+        <p>&nbsp;</p>
+        <p>We provide end-to-end design &amp; build solutions, tailored to the needs of each client.</p>
+        <div class="wwd__btn"><a class="btn btn--white" href="/services/">Read more</a></div>
+      </div>
+      <div class="wwd__media">
+        <Image src={whatWeDo} alt="Crystal Fit team member" width={500} height={500} widths={[334, 500, 668, 1000]} sizes="(min-width: 768px) 500px, 334px" fit="cover" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="latest">
+    <h2 class="latest__title">LATEST Projects</h2>
+    <Masonry id="latest" class="latest__grid">
+      {latest.map((x) => (
+        <article class="pcard" data-span={x.span} data-span-2="1">
+          <a href={`/featured-projects/${x.slug}/`} class="pcard__media" style={`aspect-ratio:${x.img.width}/${x.img.height}`}>
+            <Image src={x.img} alt={x.title} widths={[360, 480, 640, 800, 1080, 1320]} sizes={x.span === 2 ? '(min-width: 768px) 50vw, 100vw' : '(min-width: 992px) 25vw, (min-width: 768px) 50vw, 100vw'} loading="lazy" />
+            <span class="pcard__plus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </a>
+          <div class="pcard__body">
+            <h6 class="pcard__title"><a href={`/featured-projects/${x.slug}/`}>{x.title}</a></h6>
+            <div class="pcard__sub">{x.sub}</div>
+          </div>
+        </article>
+      ))}
+    </Masonry>
+    <div class="latest__btn"><a class="btn btn--black" href="/portfolio/">View portfolio</a></div>
+  </section>
+
+  <CtaBand title="REQUEST A PROPOSAL" label="Contact us" href="/contact/" />
+
+  <section class="faq">
+    <h2 class="faq__title">FAQ</h2>
+    <div class="faq__list">
+      {faqAll.map(([q, a]) => (
+        <details class="faq__item">
+          <summary><span>{q}</span><Icon name="caret-right" size={10} class="faq__icon" /></summary>
+          <p>{a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <Logos list={logosHome} />
+</Base>

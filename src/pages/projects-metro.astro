@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Masonry from '../components/Masonry.astro';
+import { categories } from '../data/site';
+
+// same tiles and order as the original "projects-metro" page
+const tiles: [string, 1 | 2, number][] = [
+  ['beacon-coffee-shop-difc', 1, 1], ['beacon-coffee-portable-kiosk', 1, 1], ['villa-windsor_dxb', 2, 0.75],
+  ['nad-al-sheba-1-villa-moderna-interior', 1, 1], ['nad-al-sheba-villa-moderna-dubai', 2, 1], ['livrichy-real-estates-office', 1, 0.991],
+  ['fakhverk-house-architectural-project', 1, 1], ['west-gate-cinema-interior-design', 1, 1], ['restaurant-contractor-dubai-yoy-neo-bistro', 1, 1],
+];
+const all = await getCollection('projects');
+const items = tiles.map(([id, span, ratio]) => ({ p: all.find((x) => x.id === id)!, span, ratio })).filter((x) => x.p);
+---
+<Base title="Projects | Crystal Fit" form={false} minimalFooter>
+  <ul class="mfilter" role="tablist">
+    <li><button class="is-active" data-f="*">Show All</button></li>
+    {Object.entries(categories).map(([k, v]) => <li><button data-f={k}>{v}</button></li>)}
+  </ul>
+  <section class="metro">
+    <Masonry id="metro" cols={[{ min: 992, n: 4 }, { min: 768, n: 2 }, { min: 0, n: 1 }]}>
+      {items.map(({ p, span, ratio }) => (
+        <article class="metro__item" data-span={span} data-span-2="1" data-cats={p.data.categories.join(' ')}>
+          <a href={`/featured-projects/${p.id}/`} style={`aspect-ratio:1/${ratio}`}>
+            <Image src={p.data.cover} alt={p.data.title} widths={[360, 480, 720, 900]} sizes={span === 2 ? '50vw' : '(min-width: 992px) 25vw, 100vw'} loading="lazy" />
+            <span class="metro__meta"><b>{p.data.title}</b><span>{p.data.categories.map((c) => categories[c]).join(', ')}</span></span>
+          </a>
+        </article>
+      ))}
+    </Masonry>
+  </section>
+</Base>
+<script>
+  const grid = document.getElementById('metro')!;
+  document.querySelectorAll<HTMLButtonElement>('.mfilter button').forEach((b) => b.addEventListener('click', () => {
+    document.querySelectorAll('.mfilter button').forEach((x) => x.classList.toggle('is-active', x === b));
+    const f = b.dataset.f!;
+    grid.querySelectorAll<HTMLElement>('.metro__item').forEach((it) => { it.hidden = f !== '*' && !it.dataset.cats!.split(' ').includes(f); });
+    // re-layout visible items
+    const vis = [...grid.children] as HTMLElement[];
+    vis.forEach((it) => it.style.display = it.hidden ? 'none' : '');
+    window.dispatchEvent(new Event('resize'));
+  }));
+</script>
+<style>
+  .mfilter { display: flex; gap: 32px; list-style: none; margin: 0; padding: 0 10px 14px; }
+  .mfilter button { background: none; border: 0; padding: 4px 0; cursor: pointer; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #222; border-bottom: 1px solid transparent; }
+  .mfilter button.is-active { border-color: #222; }
+  .metro { padding: 0 7px; }
+  .metro__item { padding: 0 3px; margin-bottom: 6px; }
+  .metro__item[hidden] { display: none; }
+  .metro__item a { position: relative; display: block; overflow: hidden; background: #f3f3f3; }
+  .metro__item img { width: 100%; height: 100%; object-fit: cover; }
+  .metro__meta { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; padding: 20px; background: rgba(255,255,255,.9); opacity: 0; transition: opacity .3s; font-size: 13px; color: #444; }
+  .metro__meta b { font-size: 15px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #222; }
+  .metro__item a:hover .metro__meta { opacity: 1; }
+  @media (max-width: 767px) { .mfilter { flex-wrap: wrap; gap: 12px 20px; padding: 10px 15px 20px; } }
+</style>

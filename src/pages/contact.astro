@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Logos from '../components/Logos.astro';
+import Icon from '../components/Icon.astro';
+import { logosInner, site } from '../data/site';
+import '../styles/pages.css';
+import hero from '../assets/site/hero-contact.jpg';
+const follow = [
+  ['facebook-f', 'https://www.facebook.com/crystalfituae'], ['instagram', 'https://www.instagram.com/crystalfit_uae/'], ['pinterest', 'https://www.pinterest.com/kgdesignuae'],
+  ['linkedin', 'https://www.linkedin.com/company/66214155/'], ['whatsapp', site.whatsapp],
+];
+---
+<Base title="Contact Crystal Fit — Fit-Out Company in Al Quoz, Dubai" description="Get in touch with Crystal Fit Contracting LLC: Al Quoz Industrial Area 3, Dubai. Mobile +971 56 338 62 19, info@crystalfituae.com.">
+  <Hero slides={[{ image: hero, lines: ['Time to make', 'the first meeting'] }]} />
+  <Breadcrumb current="Crystal fit contracting LLC / Contact" />
+  <section class="contact">
+    <div class="contact__map">
+      <iframe title="Crystal Fit Contracting LLC on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.1200016477023!2d55.21853949999999!3d25.121865399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9047546b750094f%3A0x3658436cc35dfeeb!2sCrystal%20Fit%20Contracting%20LLC!5e1!3m2!1sen!2sae!4v1756805848307!5m2!1sen!2sae"></iframe>
+    </div>
+    <div class="contact__info">
+      <h1>Get in touch</h1>
+      <div class="contact__grid">
+        <div>
+          <h3>Location</h3>
+          <p>UAE, DUBAI,</p><p>Al Quoz Industrial Area 3,</p><p>Ghoshi Warehouse City, WH-132</p>
+          <a class="contact__btn" href={site.mapUrl} target="_blank" rel="noopener">GET DIRECTION</a>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <p>Mobile : <a href={`tel:${site.phoneMobile}`}>+ 971 (0) 56 338 62 19</a></p>
+          <p>Phone :<a href={`tel:${site.phoneOffice}`}>+ 971 (0) 4 320 22 24</a></p>
+          <p>Email : <a href={`mailto:${site.email}`}>{site.email}</a></p>
+        </div>
+        <div>
+          <h3>Our Hours</h3>
+          <p class="sm">MON – SAT 09:00 -18:00</p><p class="sm">SUN&nbsp; – OFF</p>
+        </div>
+        <div class="contact__follow">
+          <h3>Follow Us</h3>
+          <ul>{follow.map(([n, h]) => <li><a href={h} target="_blank" rel="noopener" aria-label={n}><Icon name={n} size={17} /></a></li>)}</ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <CtaBand title="still having questions ?" label="About us" href="/about-us/" />
+  <Logos list={logosInner} />
+</Base>

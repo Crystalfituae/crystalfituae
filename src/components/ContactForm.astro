@@ -1,0 +1,60 @@
+---
+import { site } from '../data/site';
+---
+<section class="contact-form" id="contact-form">
+  <div class="contact-form__inner">
+    <p class="contact-form__label">Contact Us</p>
+    <h5 class="contact-form__title">Let’s Talk Together</h5>
+    <form class="cf" action="https://api.web3forms.com/submit" method="POST" data-cf data-key-copy={site.formKeyCopy}>
+      <input type="hidden" name="access_key" value={site.formKey} />
+      <input type="hidden" name="from_name" value="crystalfituae.com" />
+      <input type="hidden" name="subject" value="" />
+      <input type="hidden" name="page" value="" />
+      <input type="checkbox" name="botcheck" class="cf__hp" tabindex="-1" autocomplete="off" />
+      <div class="cf__left">
+        <input type="text" name="name" placeholder="First Name (required)" required maxlength="400" aria-label="First name" />
+        <input type="email" name="email" placeholder="E-Mail (required)" required maxlength="400" aria-label="E-mail" />
+        <input type="tel" name="phone" placeholder="Phone (required)" required maxlength="40" aria-label="Phone" />
+        <select name="topic" aria-label="Enquiry type" required>
+          <option value="Project Inquiry" selected>Project Inquiry</option>
+          <option value="Collaborations">Collaborations</option>
+        </select>
+      </div>
+      <div class="cf__right">
+        <textarea name="message" placeholder="Message (required)" required maxlength="2000" aria-label="Message"></textarea>
+        <button type="submit">Send</button>
+      </div>
+      <p class="cf__status" role="status" hidden></p>
+    </form>
+  </div>
+</section>
+<script>
+  // Every enquiry goes to the main inbox (info@). "Project Inquiry" is also copied to the second inbox (kg@).
+  // Web3Forms ties one access key to one e-mail, so the copy is a second submission with the second key.
+  const send = (f: HTMLFormElement, key?: string) => {
+    const fd = new FormData(f);
+    if (key) fd.set('access_key', key);
+    return fetch(f.action, { method: 'POST', headers: { Accept: 'application/json' }, body: fd }).then((r) => r.json());
+  };
+  for (const f of document.querySelectorAll<HTMLFormElement>('form[data-cf]')) {
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const st = f.querySelector<HTMLElement>('.cf__status')!;
+      const btn = f.querySelector('button')!;
+      const topic = (f.elements.namedItem('topic') as HTMLSelectElement).value;
+      (f.elements.namedItem('subject') as HTMLInputElement).value = `${topic} — crystalfituae.com`;
+      (f.elements.namedItem('page') as HTMLInputElement).value = location.href;
+      btn.disabled = true; st.hidden = false; st.textContent = 'Sending…';
+      try {
+        const main = await send(f);
+        if (!main.success) throw new Error(main.message);
+        const copyKey = f.dataset.keyCopy;
+        if (topic === 'Project Inquiry' && copyKey) await send(f, copyKey).catch(() => {});
+        st.textContent = 'Thank you for your message. It has been sent.';
+        f.reset();
+      } catch {
+        st.textContent = 'There was an error trying to send your message. Please try again later.';
+      } finally { btn.disabled = false; }
+    });
+  }
+</script>

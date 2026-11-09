@@ -1,0 +1,63 @@
+---
+// Lightweight grid layout (replaces Isotope + Packery from the old theme, same placement rules).
+// Children: elements with data-span="1|2|…" (columns out of `cols`), optional data-span-<n> override.
+interface Props { id: string; class?: string; cols?: { min: number; n: number }[] }
+const { id, class: cls = '', cols = [{ min: 992, n: 4 }, { min: 768, n: 2 }, { min: 0, n: 1 }] } = Astro.props;
+---
+<div class={'masonry ' + cls} id={id} data-cols={JSON.stringify(cols)}>
+  <slot />
+</div>
+<script is:inline>
+(function () {
+  // --- Packery-style bin packing: each item goes to the top-most, then left-most free space it fits in ---
+  function overlaps(a, b) { return a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y; }
+  function contains(a, b) { return a.x <= b.x && a.y <= b.y && a.x + a.w >= b.x + b.w && a.y + a.h >= b.y + b.h; }
+  function split(s, r) {
+    if (!overlaps(s, r)) return null;
+    var out = [], sr = s.x + s.w, sb = s.y + s.h, rr = r.x + r.w, rb = r.y + r.h;
+    if (s.y < r.y) out.push({ x: s.x, y: s.y, w: s.w, h: r.y - s.y });
+    if (sr > rr) out.push({ x: rr, y: s.y, w: sr - rr, h: s.h });
+    if (sb > rb) out.push({ x: s.x, y: rb, w: s.w, h: sb - rb });
+    if (s.x < r.x) out.push({ x: s.x, y: s.y, w: r.x - s.x, h: s.h });
+    return out;
+  }
+  function merge(rs) {
+    for (var i = 0; i < rs.length; i++) for (var j = 0; j < rs.length; j++) {
+      if (i !== j && contains(rs[j], rs[i])) { rs.splice(i, 1); i = -1; break; }
+    }
+    rs.sort(function (a, b) { return a.y - b.y || a.x - b.x; });
+  }
+  function layout(el) {
+    var cfg = JSON.parse(el.dataset.cols), w = window.innerWidth, n = 1;
+    for (var i = 0; i < cfg.length; i++) if (w >= cfg[i].min) { n = cfg[i].n; break; }
+    var W = el.clientWidth, cw = W / n, spaces = [{ x: 0, y: 0, w: W, h: Infinity }], maxY = 0;
+    el.classList.add('is-js');
+    for (var j = 0; j < el.children.length; j++) {
+      var it = el.children[j];
+      if (it.hidden || it.style.display === 'none') continue;
+      var span = Math.min(n, +(it.getAttribute('data-span-' + n) || it.dataset.span || 1));
+      it.style.width = (100 * span / n) + '%';
+      var r = { w: span * cw, h: it.getBoundingClientRect().height + (parseFloat(getComputedStyle(it).marginBottom) || 0) };
+      for (var k = 0; k < spaces.length; k++) {
+        if (spaces[k].w >= r.w - 1 && spaces[k].h >= r.h - 1) { r.x = spaces[k].x; r.y = spaces[k].y; break; }
+      }
+      it.style.transform = 'translate(' + r.x + 'px,' + r.y + 'px)';
+      var next = [];
+      for (k = 0; k < spaces.length; k++) { var s = split(spaces[k], r); if (s) next.push.apply(next, s); else next.push(spaces[k]); }
+      spaces = next; merge(spaces);
+      maxY = Math.max(maxY, r.y + r.h);
+    }
+    el.style.height = maxY + 'px';
+  }
+  var el = document.currentScript.previousElementSibling;
+  el.relayout = function () { layout(el); };
+  layout(el);
+  var t; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(function () { layout(el); }, 100); });
+  if (document.fonts) document.fonts.ready.then(function () { layout(el); });
+})();
+</script>
+<style is:global>
+  .masonry { position: relative; display: flex; flex-wrap: wrap; }
+  .masonry.is-js { display: block; }
+  .masonry.is-js > * { position: absolute; top: 0; left: 0; transition: transform .4s ease, opacity .3s; }
+</style>

@@ -1,0 +1,36 @@
+---
+title: "Community Mall, Dubai Al Khawaneej 2 – Dubai"
+heading: "\"PARK VIEW MALL\""
+order: 48
+listed: true
+size: quarter
+categories: ["commercial","residential"]
+template: modern
+cover: "./img/06-community_mall_0000-scaled.jpg"
+coverRatio: 0.562667
+hero: "./img/10-community_mall_0002.jpg"
+heroCol: 50
+gallery:
+  - image: "./img/01-community_mall_0005-scaled.jpg"
+    size: half
+  - image: "./img/02-community_mall_0004-scaled.jpg"
+    size: quarter
+  - image: "./img/03-community_mall_0003-scaled.jpg"
+    size: half
+  - image: "./img/04-community_mall_0002-scaled.jpg"
+    size: quarter
+  - image: "./img/05-community_mall_0001-scaled.jpg"
+    size: half
+  - image: "./img/06-community_mall_0000-scaled.jpg"
+    size: half
+  - image: "./img/07-220808_design-presentation-community-mall-8-1.jpg"
+    size: half
+  - image: "./img/08-220808_design-presentation-community-mall-4-2.jpg"
+    size: quarter
+  - image: "./img/09-220808_design-presentation-community-mall-5-1.jpg"
+    size: quarter
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
+seoTitle: "Community Mall, Dubai Al Khawaneej 2 - Dubai — Interior Design in UAE | Crystal Fit"
+seoDescription: "Discover the Community Mall, Dubai Al Khawaneej 2 - Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+---
+<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai-Al Khawaneej 2<br>G+2+ROOF, Community Mall</p><p><strong>SIZE:</strong>&nbsp;13 500 sq.m.</p><p><strong>YEAR:</strong> 2021</p></div>

@@ -1,0 +1,10 @@
+---
+const { current } = Astro.props;
+---
+<nav class="crumbs" aria-label="Breadcrumb"><span><a href="/">Home</a> » <span>{current}</span></span></nav>
+<style>
+  .crumbs { padding: 80px 26px 0; height: 115px; font-size: 14px; line-height: 25px; color: #666; }
+  .crumbs > span { display: inline-block; padding-left: 10px; }
+  .crumbs a { color: #222; }
+  @media (max-width: 767px) { .crumbs { height: 111px; padding: 82px 26px 0; } .crumbs > span { font-size: 11.6667px; } }
+</style>

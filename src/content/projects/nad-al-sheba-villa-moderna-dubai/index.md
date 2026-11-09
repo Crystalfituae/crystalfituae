@@ -1,0 +1,50 @@
+---
+title: "Nad Al Sheba Villa Moderna, Dubai"
+heading: "NAD AL SHEBA, VILLA MODERNA, Dubai"
+order: 34
+listed: true
+size: quarter
+categories: ["residential"]
+template: modern
+cover: "./img/18-design-nad-al-sheba-villa-by-kg-design-main-1.jpg"
+coverRatio: 1.000000
+hero: "./img/17-design-nad-al-sheba-villa-by-kg-design-main.jpg"
+heroCol: 33
+gallery:
+  - image: "./img/01-design-nad-al-sheba-villa-by-kg-design-photo-2-1.jpg"
+    size: half
+  - image: "./img/02-design-nad-al-sheba-villa-by-kg-design-photo-3-1.jpg"
+    size: quarter
+  - image: "./img/03-design-nad-al-sheba-villa-by-kg-design-photo-4-1.jpg"
+    size: half
+  - image: "./img/04-design-nad-al-sheba-villa-by-kg-design-photo-5-1.jpg"
+    size: half
+  - image: "./img/05-design-nad-al-sheba-villa-by-kg-design-photo-7-1.jpg"
+    size: quarter
+  - image: "./img/06-design-nad-al-sheba-villa-by-kg-design-photo-6-1.jpg"
+    size: quarter
+  - image: "./img/07-design-nad-al-sheba-villa-by-kg-design-photo-9.jpg"
+    size: half
+  - image: "./img/08-design-nad-al-sheba-villa-by-kg-design-photo-8-1.jpg"
+    size: quarter
+  - image: "./img/09-design-nad-al-sheba-villa-by-kg-design-photo-10-scaled.jpg"
+    size: half
+  - image: "./img/10-design-nad-al-sheba-villa-by-kg-design-photo-14-scaled.jpg"
+    size: quarter
+  - image: "./img/11-design-nad-al-sheba-villa-by-kg-design-photo-13-1.jpg"
+    size: quarter
+  - image: "./img/12-design-nad-al-sheba-villa-by-kg-design-photo-16.jpg"
+    size: quarter
+  - image: "./img/13-design-nad-al-sheba-villa-by-kg-design-photo-20-scaled.jpg"
+    size: half
+  - image: "./img/14-design-nad-al-sheba-villa-by-kg-design-photo-18.jpg"
+    size: quarter
+  - image: "./img/15-design-nad-al-sheba-villa-by-kg-design-photo-19.jpg"
+    size: quarter
+  - image: "./img/16-design-nad-al-sheba-villa-by-kg-design-photo-17-rotated.jpg"
+    size: quarter
+otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-1-villa-moderna-interior"]
+seoTitle: "Nad Al Sheba Villa Moderna, Dubai — Interior Design in UAE | Crystal Fit"
+seoDescription: "Discover the Nad Al Sheba Villa Moderna, Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+---
+<div class="pinfo__text"><p><strong>LOCATION: </strong>Dubai, Nad Al Sheba 1</p><p><strong>SIZE:</strong> 2 170 sqm</p><p><strong>YEAR:</strong> 2015-2019</p></div>

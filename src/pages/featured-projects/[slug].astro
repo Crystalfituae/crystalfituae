@@ -1,0 +1,129 @@
+---
+import { getCollection, render } from 'astro:content';
+import { Image, getImage } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import Masonry from '../../components/Masonry.astro';
+import Icon from '../../components/Icon.astro';
+import { otherCases } from '../../data/site';
+import '../../styles/project.css';
+
+export async function getStaticPaths() {
+  const all = await getCollection('projects');
+  return all.map((p) => ({ params: { slug: p.id }, props: { p, all } }));
+}
+const { p, all } = Astro.props;
+const d = p.data;
+const { Content } = await render(p);
+const others = otherCases.map((s) => all.find((x) => x.id === s)).filter((x) => !!x);
+const og = await getImage({ src: d.cover, width: 1200, format: 'jpg' });
+const big = await Promise.all(d.gallery.map((g) => getImage({ src: g.image, width: Math.min(1600, g.image.width), format: 'webp', quality: 78 })));
+const listed = all.filter((x) => x.data.listed).sort((a, b) => a.data.order - b.data.order);
+const idx = listed.findIndex((x) => x.id === p.id);
+const prev = idx > 0 ? listed[idx - 1] : listed[listed.length - 1];
+const next = idx >= 0 && idx < listed.length - 1 ? listed[idx + 1] : listed[0];
+---
+<Base title={d.seoTitle ?? `${d.title} | Crystal Fit`} description={d.seoDescription} image={og.src}>
+  {d.template === 'modern' ? (
+    <>
+      <section class="pinfo">
+        <div class="pinfo__grid">
+          <div class="pinfo__media">
+            {d.hero && <Image src={d.hero} alt={d.heading ?? d.title} widths={[360, 480, 640, 800, 1080, 1260]} sizes="(min-width: 768px) 630px, 100vw" loading="eager" fetchpriority="high" />}
+          </div>
+          <div class="pinfo__body">
+            <h1 class="pinfo__title">{d.heading}</h1>
+            <Content />
+          </div>
+        </div>
+      </section>
+      <section class="pgallery">
+        <Masonry id="gallery" class="pgallery__grid">
+          {d.gallery.map((g, i) => (
+            <div class="pgallery__item" data-span={g.size === 'quarter' ? 1 : 2} data-span-2={g.size === 'quarter' ? 1 : 2}>
+              <a href={big[i].src} class="lb" data-lb={i} style={`aspect-ratio:${g.image.width}/${g.image.height}`}>
+                <Image src={g.image} alt={g.title ?? d.title} widths={[360, 480, 640, 800, 1080, 1290]} sizes={g.size === 'quarter' ? '(min-width: 992px) 323px, (min-width: 768px) 50vw, 100vw' : '(min-width: 768px) 645px, 100vw'} quality={72} loading="lazy" />
+              </a>
+            </div>
+          ))}
+        </Masonry>
+      </section>
+      <section class="others">
+        <div class="others__title">Other cases</div>
+        <div class="others__wrap">
+          <button class="others__nav others__nav--prev" type="button" aria-label="Previous" disabled><Icon name="chevron-left" size={12} /></button>
+          <div class="others__viewport">
+            <div class="others__track">
+              {others.map((o) => (
+                <a class="others__item" href={`/featured-projects/${o.id}/`}>
+                  <Image src={o.data.cover} alt={o.data.title} width={580} height={500} widths={[290, 580]} sizes="290px" fit="cover" loading="lazy" />
+                  <span class="others__label">{o.data.title}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+          <button class="others__nav others__nav--next" type="button" aria-label="Next"><Icon name="chevron-right" size={12} /></button>
+        </div>
+      </section>
+    </>
+  ) : (
+    <section class="pclassic">
+      <div class="pclassic__media">
+        <div class="pclassic__viewport">
+          <div class="pclassic__track">
+            {d.gallery.map((g, i) => (
+              <a class="pclassic__slide lb" href={big[i].src} data-lb={i}>
+                <Image src={g.image} alt={g.title ?? d.title} width={1320} height={720} widths={[330, 660, 1320]} sizes="(min-width: 768px) 660px, 330px" fit="cover" loading={i < 2 ? 'eager' : 'lazy'} />
+                {g.title && <span class="pclassic__cap">{g.title}</span>}
+              </a>
+            ))}
+          </div>
+        </div>
+        <div class="pclassic__dots">{d.gallery.map((_, i) => <button type="button" aria-label={`Slide ${i + 1}`} class:list={{ 'is-active': i === 0 }} />)}</div>
+      </div>
+      <div class="pclassic__body">
+        <h1 class="pclassic__title">{d.heading}</h1>
+        <Content />
+        {d.fields.map((f) => (<><h6>{f.label}</h6><p>{f.value}</p></>))}
+      </div>
+    </section>
+  )}
+  {d.template === 'classic' && (
+    <nav class="pnav" slot="after-form"><a href={`/featured-projects/${prev.id}/`}>Prev</a><a href={`/featured-projects/${next.id}/`}>Next</a></nav>
+  )}
+  <div class="lbox" hidden slot="after-form"><button class="lbox__close" aria-label="Close">×</button><button class="lbox__prev" aria-label="Previous">‹</button><img alt="" /><button class="lbox__next" aria-label="Next">›</button></div>
+</Base>
+<script>
+  // lightbox
+  const links = [...document.querySelectorAll<HTMLAnchorElement>('a.lb')];
+  const box = document.querySelector<HTMLElement>('.lbox')!;
+  const im = box.querySelector('img')!;
+  let cur = 0;
+  const show = (i: number) => { cur = (i + links.length) % links.length; im.src = links[cur].href; box.hidden = false; document.body.style.overflow = 'hidden'; };
+  const hide = () => { box.hidden = true; im.removeAttribute('src'); document.body.style.overflow = ''; };
+  links.forEach((a, i) => a.addEventListener('click', (e) => { e.preventDefault(); show(i); }));
+  box.querySelector('.lbox__close')!.addEventListener('click', hide);
+  box.querySelector('.lbox__prev')!.addEventListener('click', () => show(cur - 1));
+  box.querySelector('.lbox__next')!.addEventListener('click', () => show(cur + 1));
+  box.addEventListener('click', (e) => { if (e.target === box) hide(); });
+  addEventListener('keydown', (e) => { if (box.hidden) return; if (e.key === 'Escape') hide(); if (e.key === 'ArrowLeft') show(cur - 1); if (e.key === 'ArrowRight') show(cur + 1); });
+
+  // simple sliders: "Other cases" (arrows) and classic gallery (dots)
+  const slider = (vp: HTMLElement | null, prevB?: HTMLButtonElement | null, nextB?: HTMLButtonElement | null, dots?: NodeListOf<HTMLButtonElement>) => {
+    if (!vp) return;
+    const tr = vp.firstElementChild as HTMLElement; let i = 0;
+    const go = (n: number) => {
+      const first = tr.children[0] as HTMLElement; if (!first) return;
+      const step = first.getBoundingClientRect().width + (parseFloat(getComputedStyle(tr).columnGap) || 0);
+      const vis = Math.max(1, Math.round((vp.clientWidth + 1) / step)); const max = Math.max(0, tr.children.length - vis);
+      i = Math.max(0, Math.min(n, max)); tr.style.transform = `translateX(${-i * step}px)`;
+      if (prevB) prevB.disabled = i === 0; if (nextB) nextB.disabled = i === max;
+      dots?.forEach((d, k) => d.classList.toggle('is-active', k === i));
+    };
+    prevB?.addEventListener('click', () => go(i - 1)); nextB?.addEventListener('click', () => go(i + 1));
+    dots?.forEach((d, k) => d.addEventListener('click', () => go(k)));
+    let x0 = 0; vp.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+    vp.addEventListener('touchend', (e) => { const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) go(i + (dx < 0 ? 1 : -1)); });
+  };
+  slider(document.querySelector('.others__viewport'), document.querySelector('.others__nav--prev'), document.querySelector('.others__nav--next'));
+  slider(document.querySelector('.pclassic__viewport'), null, null, document.querySelectorAll('.pclassic__dots button'));
+</script>
