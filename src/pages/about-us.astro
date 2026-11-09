@@ -32,7 +32,7 @@ const units: [string, string][] = [
 ];
 const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC', url: new URL('/about-us/', Astro.site).href,
   mainEntity: { '@id': new URL('/#company', Astro.site).href } },
-  { '@type': 'Person', name: 'Konstantin Grytsan', jobTitle: 'CEO & Founder', worksFor: { '@id': new URL('/#company', Astro.site).href } }];
+  { '@type': 'Person', name: 'Konstantin Grytsan', jobTitle: 'CEO & Founder', worksFor: { '@id': new URL('/#company', Astro.site).href }, alumniOf: 'Heriot-Watt University', sameAs: ['https://www.linkedin.com/in/konstantin-grytsan-1082a968/'] }];
 ---
 <Base title="About Crystal Fit – Design & Build Fit-Out Team, Dubai" description="Dubai design & build fit-out team since 2014: 200+ projects for Roasters, Christie's, Mercure and Shangri-La. Approved by Emaar and Dubai Holding." schema={schema}>
   <Hero slides={[{ image: heroOffice, lines: ['Who we', 'are'] }]} dark h1="— about Crystal Fit Contracting LLC, design & build fit-out company in Dubai" />
@@ -66,8 +66,9 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
       </figure>
       <div class="team__bio">
         <p class="team__quote">“One team, one promise: spaces that work for the business behind them.”</p>
-        <p>Founder of Crystal Fit (2014). From a small design studio to a full design &amp; build contractor with 200+ projects — from specialty coffee chains to Christie’s, Mercure and private villas.</p>
-        <p>Personally leads every project, from the first concept to handover.</p>
+        <p>Architect and project manager. Konstantin’s career runs from Berlin and Moscow — business parks, hotels and mixed-use towers — to a 12,000 sqm private palace in Doha, before founding Crystal Fit in Dubai in 2014.</p>
+        <p>Today he leads a design &amp; build team with 200+ completed projects and personally guides each one from concept to handover.</p>
+        <p class="team__creds">Heriot-Watt University, Project Management · Certified ARCHICAD &amp; AutoCAD specialist · <a href="https://www.linkedin.com/in/konstantin-grytsan-1082a968/" target="_blank" rel="noopener">LinkedIn</a></p>
       </div>
     </div>
     <div class="team__grid">
@@ -111,6 +112,8 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
   .team__lead img { width: 487px; height: 487px; object-fit: cover; display: block; }
   .team__bio { font-family: var(--ff-head); font-size: 17px; line-height: 29px; font-weight: 300; color: #333; max-width: 560px; }
   .team__bio p { margin: 0 0 14px; }
+  .team__creds { font-size: 13px !important; line-height: 21px !important; letter-spacing: 1px; text-transform: uppercase; color: #777; }
+  .team__creds a { color: #000; text-decoration: underline; }
   .team__quote { font-size: 24px; line-height: 36px; font-weight: 400; font-style: italic; color: #000; border-left: 2px solid #000; padding-left: 20px; margin-bottom: 24px !important; }
   .team figure { margin: 0; }
   .team figcaption { padding-top: 16px; color: #000; font-family: var(--ff-head); text-transform: uppercase; }
