@@ -59,8 +59,8 @@ gallery:
   - image: "./img/18-img_0513-hdr.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
-seoTitle: "Anantara Penthouse | Crystal Fit"
-seoDescription: "Discover the Anantara Penthouse project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+seoTitle: "Anantara Penthouse – Apartment Interior Design | Crystal Fit"
+seoDescription: "Anantara Penthouse: apartment interior design by Crystal Fit in Palm Jumeirah (706 sqm, 2025). Turnkey design & build. Dubai fit-out since 2014."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Palm Jumeirah</p><p><strong>SIZE:</strong>&nbsp;706 sq.m.&nbsp; Shell &amp; Core to Handover – 8 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2025</span></p></div>
 

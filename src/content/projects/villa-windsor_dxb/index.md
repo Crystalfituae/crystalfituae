@@ -38,7 +38,7 @@ fields:
     value: "2020"
   - label: "SIZE"
     value: "720 sq.m"
-seoTitle: "Al Mizhar, Villa \"Windsor\" | Crystal Fit"
-seoDescription: "Discover the Al Mizhar Villa \"Windsor\" project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+seoTitle: "Al Mizhar, Villa \"Windsor\" | Villa Interior Design Dubai"
+seoDescription: "Al Mizhar, Villa \"Windsor\": villa interior design by Crystal Fit in Dubai, Al Mizhar 2, (720 sqm, 2020). Turnkey design & build. Dubai fit-out since 2014."
 ---
 

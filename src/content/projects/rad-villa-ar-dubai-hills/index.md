@@ -27,7 +27,7 @@ gallery:
     size: half
     title: "Design project RAD Villa AR Dubai Hills by Crystal Fit"
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
-seoTitle: "RAD Villa AR, Dubai Hills | Crystal Fit"
-seoDescription: "Discover the RAD Villa AR, Dubai Hills project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+seoTitle: "RAD Villa AR, Dubai Hills | Villa Interior Design Dubai"
+seoDescription: "RAD Villa AR, Dubai Hills: villa interior design by Crystal Fit (420 sqm, 2018). Turnkey design & build. Dubai interior design & fit-out company since 2014."
 ---
 <div class="pinfo__text"><p><strong>LOCATION: </strong>Dubai Hills, Dubai, UAE</p> <p><strong>SIZE:</strong> 420 sq.m</p> <p><strong>YEAR:</strong> 2018</p></div>

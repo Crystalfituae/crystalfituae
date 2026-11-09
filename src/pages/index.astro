@@ -46,7 +46,7 @@ import data from '../data/home-faq.json';
 const faqAll = data as [string, string][];
 const faqSchema = [{ '@type': 'FAQPage', mainEntity: faqAll.map(([q, ans]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: ans } })) }];
 ---
-<Base schema={faqSchema} title="Crystal Fit — Design & Build Fit-Out Company in Dubai" description="Crystal Fit Contracting LLC is a Dubai-based design & build studio delivering commercial, F&B and residential fit-out projects across the UAE since 2014.">
+<Base schema={faqSchema} title="Crystal Fit – Cafe, Restaurant & Office Fit-Out in Dubai" description="Design & build fit-out contractor in Dubai since 2014: 200+ cafes, restaurants, offices and villas. Approved by Emaar, Dubai Holding, TECOM & Nakheel.">
   <Hero slides={slides} variant="home" h1="— Crystal Fit, design & build fit-out company in Dubai" />
 
   <section class="stats">

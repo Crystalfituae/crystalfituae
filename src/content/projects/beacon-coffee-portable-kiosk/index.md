@@ -26,7 +26,7 @@ fields:
     value: "2020"
   - label: "SIZE"
     value: "12 sq.m"
-seoTitle: "Beacon Coffee Portable Kiosk | Crystal Fit"
-seoDescription: "Beacon Coffee Portable Kiosk, by Crystal Fit, provides quick and easy erectable structure, to serve seasonal expansion needs at all locations across UAE."
+seoTitle: "Beacon Coffee Portable Kiosk | Coffee Kiosk Fit-Out Dubai"
+seoDescription: "Beacon Coffee Portable Kiosk: coffee kiosk fit-out by Crystal Fit in Dubai, DIFC (12 sqm, 2020). Turnkey design & build. Dubai fit-out since 2014."
 ---
 

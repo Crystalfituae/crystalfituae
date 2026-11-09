@@ -13,7 +13,8 @@ const org = {
   url: `${base}/`,
   logo: `${base}/favicon-192.png`,
   image: `${base}/og-default.jpg`,
-  description: 'Design & build fit-out and interior design company in Dubai: cafes and restaurants, offices, retail, clinics and residential interiors across the UAE.',
+  description: 'Design & build fit-out contractor in Dubai since 2014. 200+ completed projects: specialty coffee shops, restaurants, offices, retail, clinics, galleries and villas. Works with major landlords and authorities: Emaar, Dubai Holding, TECOM, Nakheel, Dubai Municipality, Civil Defence, DEWA, Trakhees.',
+  slogan: 'One stop design & build team',
   telephone: site.phoneMobile,
   email: site.email,
   foundingDate: site.foundingYear,
@@ -22,6 +23,12 @@ const org = {
   hasMap: site.mapUrl,
   areaServed: [{ '@type': 'Country', name: 'United Arab Emirates' }],
   knowsAbout: ['Fit-out', 'Interior design', 'Restaurant fit-out', 'Cafe fit-out', 'Office fit-out', 'Retail fit-out', 'Villa interior design', 'Turnkey project management'],
+  makesOffer: [
+    ['Restaurant & cafe fit-out', 'Design and turnkey fit-out of cafes, coffee shops, restaurants and kiosks, including landlord and authority approvals.'],
+    ['Office & commercial fit-out', 'Offices, clinics, galleries, showrooms and retail units in malls and business districts.'],
+    ['Villa & apartment interior design', 'Residential interior design and fit-out of villas, penthouses and apartments.'],
+    ['Turnkey project management', 'Drawings, approvals (Emaar, Dubai Holding, TECOM, Nakheel, DM, DCD, DEWA), procurement, construction and handover.'],
+  ].map(([name, description]) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name, description, areaServed: 'Dubai, UAE' } })),
   sameAs: site.socials.filter((s) => s.name !== 'whatsapp').map((s) => s.href),
 };
 const json = (o: object) => JSON.stringify(o).replace(/</g, '\\u003c');

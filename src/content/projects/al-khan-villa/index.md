@@ -47,7 +47,7 @@ fields:
     value: "December 2019"
   - label: "SIZE"
     value: "450 sq.m"
-seoTitle: "Al Khan Villa, Sharjah | Crystal Fit"
-seoDescription: "Villa Interior Design in Sharjah AL Khan area, by Crystal Fit team. Design features Neo classic Interior in beige colors and black gold accents."
+seoTitle: "Al Khan Villa – Villa Interior Design Sharjah | Crystal Fit"
+seoDescription: "Al Khan Villa, Sharjah: villa interior design by Crystal Fit in Sharjah (450 sqm, 2019). Turnkey design & build. Dubai fit-out since 2014."
 ---
 

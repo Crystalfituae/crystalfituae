@@ -60,7 +60,7 @@ gallery:
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
 seoTitle: "Roasters Specialty Coffee, Sobha Hartland | Crystal Fit"
-seoDescription: "Restaurant Interior design Dubai. Project features design and build from shall & core to handover completely done by Crystal fit Contracting"
+seoDescription: "Roasters Specialty Coffee, Sobha Hartland: cafe fit-out by Crystal Fit in Dubai (180 sqm, 2024). Turnkey design & build with Sobha landlord approvals."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Sobha Hartland, Dubai, UAE</p><p><strong>SIZE:</strong>&nbsp;180 sq.m.&nbsp; TIMELINE: 3.5 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2024&nbsp;</span></p></div>
 

@@ -30,7 +30,7 @@ gallery:
   - image: "./img/09-220808_design-presentation-community-mall-5-1.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
-seoTitle: "Park View Mall, Al Khawaneej, Dubai | Crystal Fit"
-seoDescription: "Discover the Community Mall, Dubai Al Khawaneej 2 - Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+seoTitle: "Park View Community Mall, Al Khawaneej 2, Dubai"
+seoDescription: "Park View Community Mall, Al Khawaneej 2, Dubai: mall interior design by Crystal Fit (13 500 sqm, 2021). Turnkey design & build. Dubai fit-out since 2014."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai-Al Khawaneej 2<br>G+2+ROOF, Community Mall</p><p><strong>SIZE:</strong>&nbsp;13 500 sq.m.</p><p><strong>YEAR:</strong> 2021</p></div>

@@ -61,8 +61,8 @@ gallery:
   - image: "./img/20-img_7211.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
-seoTitle: "Gasteria Restaurant | Crystal Fit"
-seoDescription: "Crystal Fit delivered Gasteria Restaurant with full design & build services. Emaar-approved contractor in Dubai for F&B, retail & commercial fitouts"
+seoTitle: "Gasteria Restaurant – Restaurant Fit-Out Dubai | Crystal Fit"
+seoDescription: "Gasteria Restaurant: restaurant fit-out by Crystal Fit in BLVD Heights, Tower 1, Downtown Dubai (280 sqm, 2025). Turnkey design & build."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;BLVD Heights, Tower 1, Downtown Dubai</p><p><strong>SIZE:</strong>&nbsp;280 sq.m.&nbsp; TIMELINE: 4 month.&nbsp; Managed by Emaar<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2025</span></p></div>
 

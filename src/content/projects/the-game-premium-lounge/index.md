@@ -66,7 +66,7 @@ gallery:
     size: quarter
     ratio: 1.307190
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
-seoTitle: "The Game Premium Lounge, JBR, Dubai | Crystal Fit"
-seoDescription: "Discover the The Game Premium Lounge, JBR, Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+seoTitle: "The Game Premium Lounge, JBR – Lounge Fit-Out | Crystal Fit"
+seoDescription: "The Game Premium Lounge, JBR, Dubai: lounge fit-out by Crystal Fit (240 sqm, 2023). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: </strong>Jumeriah Beach Residence (JBR), Dubai, UAE</p><p><strong>SIZE:</strong> 240 sqm</p><p><strong>YEAR:</strong> 2023</p></div>
+<div class="pinfo__text"><p><strong>LOCATION: </strong>Jumeirah Beach Residence (JBR), Dubai, UAE</p><p><strong>SIZE:</strong> 240 sqm</p><p><strong>YEAR:</strong> 2023</p></div>

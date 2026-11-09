@@ -52,7 +52,7 @@ gallery:
     size: half
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
 seoTitle: "Roasters Specialty Coffee House, Dubai Hills | Crystal Fit"
-seoDescription: "Discover the Roasters Specialty Coffee House, Dubai Hills project by Crystal Fit in UAE → Exclusive interior design & fit-out contractor"
+seoDescription: "Roasters Specialty Coffee House, Dubai Hills: cafe fit-out by Crystal Fit (360 sqm, 2025). Turnkey design & build with Emaar landlord approvals."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai Hills</p><p><strong>SIZE:</strong>&nbsp;360 sq.m.&nbsp; TIMELINE: 4 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2025</span></p></div>
 

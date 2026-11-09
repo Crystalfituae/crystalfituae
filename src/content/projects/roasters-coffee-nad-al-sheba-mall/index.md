@@ -41,8 +41,8 @@ gallery:
   - image: "./img/10-img_6840-uluchsheno-um.-shuma-hdr.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
-seoTitle: "Roasters Coffee, Nad Al Sheba Mall | Crystal Fit"
-seoDescription: "Discover the Roasters Specialty Coffee, Nad Al Sheba Mall project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+seoTitle: "Roasters Specialty Coffee, Nad Al Sheba Mall | Crystal Fit"
+seoDescription: "Roasters Specialty Coffee, Nad Al Sheba Mall: cafe fit-out by Crystal Fit in Dubai (240 sqm, 2024). Turnkey design & build. Dubai fit-out since 2014."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Nad Al Sheba Mall,<span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">&nbsp;by Dubai Holding</span><br>Dubai, UAE&nbsp;<strong style="font-size: 18px;">SIZE:</strong><span style="font-size: 18px;">&nbsp;240 sq.m.&nbsp;</span><span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">TIMELINE: 3.5 month.&nbsp;</span></p><p><strong>YEAR:</strong> 2024</p></div>
 

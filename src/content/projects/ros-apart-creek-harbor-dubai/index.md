@@ -105,7 +105,7 @@ gallery:
     ratio: 0.880000
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
 seoTitle: "ROS Apartment, Creek Harbour, Dubai | Crystal Fit"
-seoDescription: "Discover the ROS APART, Creek Harbor, Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+seoDescription: "ROS Apartment, Creek Harbour, Dubai: apartment interior design by Crystal Fit (98 sqm, 2023). Turnkey design & build. Dubai fit-out since 2014."
 ---
 <div class="pinfo__text"><p>Project Description</p></div>
 

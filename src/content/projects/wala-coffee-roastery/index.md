@@ -68,8 +68,8 @@ gallery:
   - image: "./img/25-walacoffee_mandytoh_september2026_54.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
-seoTitle: "Wala Coffee & Roastery | Crystal Fit"
-seoDescription: "Discover the Wala Coffee & Roastery project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+seoTitle: "Wala Coffee & Roastery – Cafe Fit-Out Dubai | Crystal Fit"
+seoDescription: "Wala Coffee & Roastery: cafe fit-out by Crystal Fit in Al Quoz, Dubai (70 sqm, 2026). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
 ---
 <div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai Mall, Dubai</p><p><strong>SIZE:</strong>&nbsp;70 sq.m.&nbsp; TIMELINE: 1.5 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2026</span></p></div>
 

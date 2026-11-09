@@ -84,7 +84,7 @@ gallery:
     size: quarter
     title: "Interior design of STitle Brew Specialty Coffee Bay Square by Crystal Fit photo 25"
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
-seoTitle: "Title Brew Specialty Coffee, Bay Square | Crystal Fit"
-seoDescription: "Discover the Title Brew Specialty Coffee, Bay Square project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
+seoTitle: "Title Brew Specialty Coffee, Bay Square | Cafe Fit-Out Dubai"
+seoDescription: "Title Brew Specialty Coffee, Bay Square: cafe fit-out by Crystal Fit in Bay Square , Dubai (48 sqm, 2021). Turnkey design & build. Dubai fit-out since 2014."
 ---
 <div class="pinfo__text"><p><strong>LOCATION: Bay Square</strong>, Dubai, UAE</p><p><strong>SIZE:</strong> 48 sq.m.</p><p><strong>YEAR:</strong> 2021</p></div>

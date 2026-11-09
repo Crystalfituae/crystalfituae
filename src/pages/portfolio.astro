@@ -12,9 +12,11 @@ import hero from '../assets/site/hero-portfolio.jpg';
 import '../styles/portfolio.css';
 
 const projects = (await getCollection('projects')).filter((p) => p.data.listed).sort((a, b) => a.data.order - b.data.order);
+const listSchema = [{ '@type': 'CollectionPage', name: 'Crystal Fit portfolio', url: new URL('/portfolio/', Astro.site).href,
+  mainEntity: { '@type': 'ItemList', numberOfItems: projects.length, itemListElement: projects.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.data.title, url: new URL(`/featured-projects/${p.id}/`, Astro.site).href })) } }];
 const filters: [string, string][] = [['*', 'Show all'], ['fb', 'Food & Beverage (F&B)'], ['commercial', 'Commercial'], ['residential', 'Residential']];
 ---
-<Base title="Fit-Out & Interior Design Portfolio, Dubai | Crystal Fit" description="Explore Crystal Fit's portfolio of commercial, F&B and residential fit-out and interior design projects across Dubai and the UAE.">
+<Base schema={listSchema} title="Fit-Out & Interior Design Portfolio, Dubai | Crystal Fit" description="Completed fit-outs in Dubai and the UAE: specialty coffee shops, restaurants, offices, clinics and villas, approved by Emaar, Dubai Holding and TECOM.">
   <Hero slides={[{ image: hero, lines: ['Take a look', 'inside our wonderland'] }]} />
   <Breadcrumb current="Crystal fit contracting LLC / Portfolio" />
   <section class="ptitle"><h1>Check out our portfolio</h1></section>
