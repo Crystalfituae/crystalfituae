@@ -14,9 +14,9 @@ gallery:
   - image: "./img/01-fissman-store-design-by-kg-design-photo-2.jpg"
     size: half
   - image: "./img/02-fissman-store-design-by-kg-design-photo-3.jpg"
-    size: half
+    size: five12
   - image: "./img/03-fissman-store-design-by-kg-design-photo-4.jpg"
-    size: half
+    size: five12
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
 seoTitle: "Fissman, Circle Mall, JVC, Dubai — Interior Design in UAE | Crystal Fit"
 seoDescription: "Discover the Fissman, Circle Mall, JVC, Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."

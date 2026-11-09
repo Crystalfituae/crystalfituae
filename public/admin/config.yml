@@ -29,7 +29,7 @@ collections:
       - { label: 'Title on project page', name: heading, widget: string, required: false }
       - { label: 'Position in portfolio (0 = first)', name: order, widget: number, value_type: int, default: 0 }
       - { label: 'Show in portfolio', name: listed, widget: boolean, default: true }
-      - { label: 'Tile width in portfolio', name: size, widget: select, options: [{ label: 'Wide (1/2)', value: half }, { label: 'Narrow (1/4)', value: quarter }], default: half }
+      - { label: 'Tile width in portfolio', name: size, widget: select, options: [{ label: 'Wide (1/2)', value: half }, { label: 'Narrow (1/4)', value: quarter }, { label: '5/12', value: five12 }], default: half }
       - { label: Categories, name: categories, widget: select, multiple: true, options: [{ label: Commercial, value: commercial }, { label: 'Food & Beverage (F&B)', value: fb }, { label: Residential, value: residential }] }
       - { label: Template, name: template, widget: hidden, default: modern }
       - { label: 'Cover (portfolio tile)', name: cover, widget: image }
@@ -40,7 +40,7 @@ collections:
         summary: '{{fields.size}} — {{fields.image}}'
         fields:
           - { label: Photo, name: image, widget: image }
-          - { label: Width, name: size, widget: select, options: [{ label: 'Wide (1/2)', value: half }, { label: 'Narrow (1/4)', value: quarter }], default: half }
+          - { label: Width, name: size, widget: select, options: [{ label: 'Wide (1/2)', value: half }, { label: 'Narrow (1/4)', value: quarter }, { label: '5/12', value: five12 }], default: half }
       - { label: 'SEO title', name: seoTitle, widget: string, required: false }
       - { label: 'SEO description', name: seoDescription, widget: text, required: false }
       - { label: 'Description (location, size, year, text)', name: body, widget: markdown }

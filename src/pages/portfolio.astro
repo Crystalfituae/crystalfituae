@@ -42,8 +42,9 @@ const filters: [string, string][] = [['*', 'Show all'], ['fb', 'F&B'], ['commerc
       history.replaceState(null, '', f === '*' ? location.pathname : `#${f}`);
       apply(f);
     }));
-    const h = location.hash.slice(1);
-    if (links.some((a) => a.dataset.f === h)) apply(h);
+    const fromHash = () => { const h = location.hash.slice(1); apply(links.some((a) => a.dataset.f === h) ? h : '*'); };
+    addEventListener('hashchange', fromHash);
+    if (location.hash) fromHash();
   </script>
   <CtaBand title="still having questions ?" label="Contact us" href="/contact/" />
   <Logos list={logosInner} />

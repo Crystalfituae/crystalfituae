@@ -6,6 +6,7 @@ listed: true
 size: half
 categories: ["commercial","fb"]
 template: modern
+gallerySpacer: true
 cover: "./img/21-walacoffee_mandytoh_september2026_46.jpg"
 coverRatio: 0.667333
 hero: "./img/26-walacoffee_mandytoh_september2026_51-1.jpg"

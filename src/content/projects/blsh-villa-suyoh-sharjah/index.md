@@ -13,36 +13,52 @@ heroCol: 33
 gallery:
   - image: "./img/01-b_hall_2-1.jpg"
     size: half
+    ratio: 1.000000
   - image: "./img/02-ff_bedroom0000-1.jpg"
     size: quarter
+    ratio: 1.000000
   - image: "./img/03-ff_bedroom0001-1.jpg"
     size: quarter
+    ratio: 1.000000
   - image: "./img/04-ff_hal-1.jpg"
     size: half
+    ratio: 1.000000
   - image: "./img/05-ff_master-bathroom-1.jpg"
     size: quarter
+    ratio: 1.000000
   - image: "./img/06-ff_master-dresing-2-1.jpg"
     size: quarter
+    ratio: 1.000000
   - image: "./img/07-ff_son_bathroom_1-1.jpg"
     size: half
+    ratio: 1.000000
   - image: "./img/08-ff_master-dresing-1.jpg"
     size: quarter
+    ratio: 1.000000
   - image: "./img/09-gf_living_2-2-1.jpg"
     size: quarter
+    ratio: 1.000000
   - image: "./img/10-gf_living_hall_0001-1.jpg"
     size: half
+    ratio: 1.000000
   - image: "./img/11-gf_majalis_dinning_01-1.jpg"
     size: quarter
+    ratio: 1.000000
   - image: "./img/12-gf_majalis_dinning0001-1.jpg"
     size: quarter
+    ratio: 1.000000
   - image: "./img/13-gf_wash_2-1.jpg"
     size: half
+    ratio: 1.000000
   - image: "./img/14-gf_wash_20000-1.jpg"
     size: quarter
+    ratio: 1.000000
   - image: "./img/15-gf_wash_20001-1.jpg"
     size: quarter
+    ratio: 1.000000
   - image: "./img/16-master_bedroom_1-1.jpg"
     size: quarter
+    ratio: 1.000000
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
 seoTitle: "BLSH Villa, Suyoh, Sharjah — Interior Design in UAE | Crystal Fit"
 seoDescription: "Discover the BLSH Villa, Suyoh, Sharjah project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."

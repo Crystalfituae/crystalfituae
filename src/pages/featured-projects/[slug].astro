@@ -16,6 +16,7 @@ const d = p.data;
 const { Content } = await render(p);
 const others = otherCases.map((s) => all.find((x) => x.id === s)).filter((x) => !!x);
 const og = await getImage({ src: d.cover, width: 1200, format: 'jpg' });
+const span12: Record<string, number> = { half: 6, quarter: 3, five12: 5, full: 12 };
 const big = await Promise.all(d.gallery.map((g) => getImage({ src: g.image, width: Math.min(1600, g.image.width), format: 'webp', quality: 78 })));
 const listed = all.filter((x) => x.data.listed).sort((a, b) => a.data.order - b.data.order);
 const idx = listed.findIndex((x) => x.id === p.id);
@@ -37,10 +38,11 @@ const next = idx >= 0 && idx < listed.length - 1 ? listed[idx + 1] : listed[0];
         </div>
       </section>
       <section class="pgallery">
-        <Masonry id="gallery" class="pgallery__grid">
+        <Masonry id="gallery" class="pgallery__grid" cols={[{ min: 992, n: 12 }, { min: 768, n: 2 }, { min: 0, n: 1 }]}>
+          {d.gallerySpacer && <div class="pgallery__item pgallery__spacer" data-span="6" data-span-2="2" aria-hidden="true"></div>}
           {d.gallery.map((g, i) => (
-            <div class="pgallery__item" data-span={g.size === 'quarter' ? 1 : 2} data-span-2={g.size === 'quarter' ? 1 : 2}>
-              <a href={big[i].src} class="lb" data-lb={i} style={`aspect-ratio:${g.image.width}/${g.image.height}`}>
+            <div class="pgallery__item" data-span={span12[g.size]} data-span-2={g.size === 'quarter' ? 1 : 2}>
+              <a href={big[i].src} class="lb" data-lb={i} style={`aspect-ratio:${g.ratio ? `1/${g.ratio}` : `${g.image.width}/${g.image.height}`}`}>
                 <Image src={g.image} alt={g.title ?? d.title} widths={[360, 480, 640, 800, 1080, 1290]} sizes={g.size === 'quarter' ? '(min-width: 992px) 323px, (min-width: 768px) 50vw, 100vw' : '(min-width: 768px) 645px, 100vw'} quality={72} loading="lazy" />
               </a>
             </div>

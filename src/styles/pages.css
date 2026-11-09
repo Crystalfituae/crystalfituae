@@ -145,3 +145,7 @@
   .contact__grid { grid-template-columns: 1fr; padding-left: 0; }
   .contact__follow { display: none; }
 }
+/* "Latest projects" captions (measured on the original) */
+.latest .pcard__body { margin: 22px 0 0; }
+.latest .pcard__title { line-height: 19.9999px; margin-bottom: 8px; }
+.latest .pcard__sub { line-height: 24.0001px; }

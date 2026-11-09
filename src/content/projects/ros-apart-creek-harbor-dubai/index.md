@@ -14,72 +14,95 @@ gallery:
   - image: "./img/01-kgdesign_february_2023_18.jpg"
     size: half
     title: "Item 1"
+    ratio: 0.683000
   - image: "./img/02-kgdesign_february_2023_16.jpg"
     size: quarter
     title: "Item 3"
+    ratio: 1.000000
   - image: "./img/03-kgdesign_february_2023_31.jpg"
     size: quarter
     title: "Item 7"
+    ratio: 1.000000
   - image: "./img/04-kgdesign_february_2023_13.jpg"
     size: half
     title: "Item 4"
+    ratio: 1.000000
   - image: "./img/05-kgdesign_february_2023_17.jpg"
     size: quarter
     title: "Item 2"
+    ratio: 1.000000
   - image: "./img/06-kgdesign_february_2023_19.jpg"
     size: half
     title: "Item 9"
+    ratio: 0.683000
   - image: "./img/07-kgdesign_february_2023_51.jpg"
     size: quarter
     title: "Item 6"
+    ratio: 1.000000
   - image: "./img/08-kgdesign_february_2023_36.jpg"
     size: quarter
     title: "Item 8"
+    ratio: 1.000000
   - image: "./img/09-kgdesign_february_2023_46.jpg"
     size: quarter
     title: "Item 11"
+    ratio: 1.000000
   - image: "./img/10-kgdesign_february_2023_11.jpg"
     size: half
     title: "Item 5"
+    ratio: 0.683000
   - image: "./img/11-kgdesign_february_2023_39.jpg"
     size: half
     title: "Item 10"
+    ratio: 1.000000
   - image: "./img/12-kgdesign_february_2023_41.jpg"
     size: quarter
     title: "Item 15"
+    ratio: 0.715000
   - image: "./img/13-kgdesign_february_2023_56.jpg"
     size: quarter
     title: "Item 16"
+    ratio: 0.682000
   - image: "./img/14-kgdesign_february_2023_3.jpg"
     size: half
     title: "Item 17"
+    ratio: 1.000000
   - image: "./img/15-kgdesign_february_2023_38.jpg"
     size: quarter
     title: "Item 12"
+    ratio: 0.683000
   - image: "./img/16-kgdesign_february_2023_29.jpg"
     size: quarter
     title: "Item 20"
+    ratio: 1.000000
   - image: "./img/17-kgdesign_february_2023_1.jpg"
     size: half
     title: "Item 23"
+    ratio: 0.684000
   - image: "./img/18-kgdesign_february_2023_57.jpg"
     size: quarter
     title: "Item 18"
+    ratio: 1.000000
   - image: "./img/19-kgdesign_february_2023_24.jpg"
     size: quarter
     title: "Item 21"
+    ratio: 1.000000
   - image: "./img/20-kgdesign_february_2023_44.jpg"
     size: half
     title: "Item22"
+    ratio: 1.000000
   - image: "./img/21-photo_6010551485596809906_y.jpg"
     size: quarter
     title: "Item 24"
+    ratio: 1.041667
   - image: "./img/22-kgdesign_february_2023_21.jpg"
     size: quarter
     title: "Item 25"
+    ratio: 1.000000
   - image: "./img/23-floor-plan-1.jpg"
-    size: half
+    size: five12
     title: "Item 26"
+    ratio: 0.880000
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","beacon-coffee-shop-difc","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai","nad-al-sheba-1-villa-moderna-interior"]
 seoTitle: "ROS APART, Creek Harbor, Dubai — Interior Design in UAE | Crystal Fit"
 seoDescription: "Discover the ROS APART, Creek Harbor, Dubai project by Crystal Fit in UAE → Exclusive interior design & fit-out turnkey solutions."
