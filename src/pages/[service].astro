@@ -47,8 +47,9 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
         <ul class="sv__list">{s.deliver.map((d) => <li set:html={hl(d)} />)}</ul>
       </div>
       <div>
-        <h2 class="sv__h2">Approvals we handle</h2>
+        <h2 class="sv__h2 sv__appr-h">Approvals we handle</h2>
         <ul class="sv__tags">{s.approvals.map((a) => <li>{a}</li>)}</ul>
+        <p class="sv__all">We handle all landlord and authority approvals.</p>
       </div>
     </div>
   </section>
@@ -102,6 +103,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   .sv__list li { position: relative; padding: 0 0 14px 24px; font-size: 17px; line-height: 27px; font-weight: 300; color: #edeaea; }
   .sv__list li::before { content: ''; position: absolute; left: 0; top: 11px; width: 8px; height: 8px; background: #fff; border-radius: 50%; }
   .sv__tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0; }
+  .sv__all { display: none; }
   .sv__tags li { border: 1px solid rgba(255,255,255,.5); padding: 8px 14px; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
   .sv__steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; list-style: none; padding: 0; margin: 0; }
   .sv__num { font-size: 40px; font-weight: 200; color: #999; }
@@ -121,7 +123,9 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
     .sv__h2 { font-size: 26px; }
     .sv__intro p { font-size: 16px; line-height: 27px; }
     .sv__facts { grid-template-columns: repeat(2, 1fr); }
-    .sv__cols { grid-template-columns: 1fr; gap: 40px; }
+    .sv__cols { grid-template-columns: 1fr; gap: 20px; }
+    .sv__appr-h, .sv__tags { display: none; }
+    .sv__all { display: block; margin: 0; font-size: 17px; line-height: 27px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
     .sv__steps { grid-template-columns: 1fr; gap: 22px; }
     .sv__grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   }
