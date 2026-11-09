@@ -30,7 +30,7 @@ export const serviceProcess = process;
 export const services: Service[] = [
   {
     slug: 'cafe-restaurant-fit-out-dubai',
-    draft: true,
+    draft: false,
     title: 'Cafe & Restaurant Fit-Out in Dubai | Crystal Fit',
     description: 'Turnkey cafe, coffee shop and restaurant fit-out in Dubai: design, Emaar & Dubai Holding approvals, DM and Civil Defence permits, construction and handover.',
     heroLines: ['Food & Beverage', '(F&B) fit-out'],
@@ -60,7 +60,7 @@ export const services: Service[] = [
   },
   {
     slug: 'commercial-fit-out-dubai',
-    draft: true,
+    draft: false,
     title: 'Commercial Fit-Out in Dubai: Offices, Retail, Clinics',
     description: 'Office, retail, clinic and showroom fit-out in Dubai: design & build with landlord and authority approvals in DIFC, Dubai Mall, Bay Square, d3 and Dubai Hills.',
     heroLines: ['Commercial', 'fit-out'],
@@ -91,9 +91,9 @@ export const services: Service[] = [
   },
   {
     slug: 'villa-interior-design-dubai',
-    draft: true,
+    draft: false,
     title: 'Villa Interior Design & Fit-Out in Dubai | Crystal Fit',
-    description: 'Luxury villa, penthouse and apartment interior design and fit-out in Dubai: Dubai Hills, Palm Jumeirah, Al Mizhar, Bluewaters. Design, approvals and turnkey build.',
+    description: 'Villa, penthouse and apartment interior design and fit-out in Dubai: Dubai Hills, Palm Jumeirah, Al Mizhar, Bluewaters. Design, approvals and turnkey build.',
     heroLines: ['Residential', 'interiors'],
     h1: '— villa and apartment interior design and fit-out in Dubai',
     heroProject: 'anantara-penthouse',
@@ -120,7 +120,7 @@ export const services: Service[] = [
   },
   {
     slug: 'interior-design-consultancy-dubai',
-    draft: true,
+    draft: false,
     title: 'Interior Design & Fit-Out Consultancy Dubai | Crystal Fit',
     description: 'Interior design, space planning, technical drawings, landlord and authority approvals and project management consultancy for fit-outs in Dubai and the UAE.',
     heroLines: ['Design &', 'consultancy'],
