@@ -3,7 +3,7 @@
 # After you save, the site rebuilds automatically (1–5 min) and photos are optimized during the build.
 backend:
   name: github
-  repo: OWNER/crystalfit-site          # <- set after the GitHub repo is created
+  repo: Crystalfituae/crystalfituae
   branch: main
   base_url: https://OAUTH-PROXY.example # <- OAuth proxy URL (Cloudflare worker / Netlify)
 
