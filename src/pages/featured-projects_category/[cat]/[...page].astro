@@ -10,7 +10,7 @@ import catOrder from '../../../data/category-order.json';
 
 export const getStaticPaths = (async ({ paginate }) => {
   const rank = (c: string, id: string) => { const i = (catOrder as Record<string, string[]>)[c].indexOf(id); return i < 0 ? 999 : i; };
-  const all = (await getCollection('projects')).filter((p) => p.data.listed).sort((a, b) => a.data.order - b.data.order);
+  const all = (await getCollection('projects', ({ data }) => !data.draft)).filter((p) => p.data.listed).sort((a, b) => a.data.order - b.data.order);
   return (Object.keys(categories) as (keyof typeof categories)[]).flatMap((cat) =>
     paginate(all.filter((p) => p.data.categories.includes(cat)).sort((a, b) => rank(cat, a.id) - rank(cat, b.id)), { params: { cat }, pageSize: 10 }),
   );

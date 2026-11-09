@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 
 export const GET: APIRoute = async ({ site }) => {
-  const projects = await getCollection('projects');
+  const projects = await getCollection('projects', ({ data }) => !data.draft);
   const paths = ['/', '/about-us/', '/services/', '/portfolio/', '/contact/', '/privacy-policy/', '/terms/',
     '/featured-projects_category/commercial/', '/featured-projects_category/fb/', '/featured-projects_category/residential/',
     ...projects.map((p) => `/featured-projects/${p.id}/`)];

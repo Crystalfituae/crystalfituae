@@ -8,7 +8,7 @@ import { otherCases } from '../../data/site';
 import '../../styles/project.css';
 
 export async function getStaticPaths() {
-  const all = await getCollection('projects');
+  const all = await getCollection('projects', ({ data }) => !data.draft);
   return all.map((p) => ({ params: { slug: p.id }, props: { p, all } }));
 }
 const { p, all } = Astro.props;

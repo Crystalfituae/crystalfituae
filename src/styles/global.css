@@ -124,6 +124,9 @@ button { font: inherit; }
 
 /* ---------- Trusted by the best (logo marquee) ---------- */
 .trusted { padding: 60px 0 80px; overflow: hidden; }
+.trusted__approved { margin: -18px auto 34px; padding: 0 16px; text-align: center; font-family: var(--ff-head); font-size: 13px; line-height: 22px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #222; }
+.trusted__approved span { font-weight: 400; color: #666; }
+.trusted__approved span::before { content: '·'; margin: 0 10px; color: #bbb; }
 .trusted__title {
   font-family: var(--ff-head);
   font-size: 26px; line-height: 28px; font-weight: 700;
@@ -137,6 +140,8 @@ button { font: inherit; }
 @media (max-width: 1024px) { .logos { padding: 0 30px; } .logos__item { flex-basis: calc((100% - 120px) / 4); } }
 @media (max-width: 767px) {
   .trusted__title { display: none; }
+  .trusted__approved { margin: 0 auto 20px; font-size: 11px; letter-spacing: 1px; }
+  .trusted__approved span::before { margin: 0 6px; }
   .trusted { padding: 40px 0; }
   .logos { padding: 0 30px; }
   .logos__item { flex-basis: calc((100% - 80px) / 3); height: 83px; }

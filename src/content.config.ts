@@ -9,6 +9,7 @@ const projects = defineCollection({
       heading: z.string().optional(),          // title on project page
       order: z.number().default(999),          // position in portfolio grid
       listed: z.boolean().default(true),       // show in portfolio grid
+      draft: z.boolean().default(false),       // on hold: page is not built at all
       size: z.enum(['half', 'quarter']).default('half'), // tile width in portfolio grid
       categories: z.array(z.enum(['commercial', 'fb', 'residential'])).default([]),
       template: z.enum(['modern', 'classic']).default('modern'),

@@ -11,7 +11,7 @@ import { logosInner } from '../data/site';
 import hero from '../assets/site/hero-portfolio.jpg';
 import '../styles/portfolio.css';
 
-const projects = (await getCollection('projects')).filter((p) => p.data.listed).sort((a, b) => a.data.order - b.data.order);
+const projects = (await getCollection('projects', ({ data }) => !data.draft)).filter((p) => p.data.listed).sort((a, b) => a.data.order - b.data.order);
 const listSchema = [{ '@type': 'CollectionPage', name: 'Crystal Fit portfolio', url: new URL('/portfolio/', Astro.site).href,
   mainEntity: { '@type': 'ItemList', numberOfItems: projects.length, itemListElement: projects.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.data.title, url: new URL(`/featured-projects/${p.id}/`, Astro.site).href })) } }];
 const filters: [string, string][] = [['*', 'Show all'], ['fb', 'Food & Beverage (F&B)'], ['commercial', 'Commercial'], ['residential', 'Residential']];

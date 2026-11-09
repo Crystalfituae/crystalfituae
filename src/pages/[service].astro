@@ -1,0 +1,129 @@
+---
+// Service landing pages, content in src/data/services.ts
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Logos from '../components/Logos.astro';
+import { services, serviceProcess, type Service } from '../data/services';
+import { logosInner } from '../data/site';
+
+export async function getStaticPaths() {
+  return services.map((s) => ({ params: { service: s.slug }, props: { s } }));
+}
+const { s } = Astro.props as { s: Service };
+const all = await getCollection('projects', ({ data }) => !data.draft);
+const hero = all.find((p) => p.id === s.heroProject)!.data.cover;
+const projects = s.projects.map((id) => all.find((p) => p.id === id)).filter((p) => !!p);
+const url = new URL(`/${s.slug}/`, Astro.site).href;
+const schema = [
+  { '@type': 'Service', name: s.heroLines.join(' '), serviceType: s.heroLines.join(' '), url, description: s.description,
+    provider: { '@id': new URL('/#company', Astro.site).href }, areaServed: { '@type': 'City', name: 'Dubai' } },
+  { '@type': 'FAQPage', mainEntity: s.faq.filter(([, a]) => !a.includes('[CONFIRM')).map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
+  { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: new URL('/services/', Astro.site).href },
+    { '@type': 'ListItem', position: 3, name: s.heroLines.join(' '), item: url },
+  ] },
+];
+const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>${m}</mark>`);
+---
+<Base title={s.title} description={s.description} schema={schema} noindex={s.draft}>
+  {s.draft && <div class="sdraft">DRAFT — not published. Text in yellow must be confirmed.</div>}
+  <Hero slides={[{ image: hero, lines: s.heroLines }]} h1={s.h1} />
+  <Breadcrumb current={`Crystal fit contracting LLC / Services / ${s.heroLines.join(' ')}`} />
+
+  <section class="sv">
+    <div class="sv__intro">{s.intro.map((p) => <p set:html={hl(p)} />)}</div>
+    <ul class="sv__facts">{s.facts.map(([n, t]) => <li><b>{n}</b><span>{t}</span></li>)}</ul>
+  </section>
+
+  <section class="sv sv--dark">
+    <div class="sv__cols">
+      <div>
+        <h2 class="sv__h2">What we deliver<span class="dot" aria-hidden="true"></span></h2>
+        <ul class="sv__list">{s.deliver.map((d) => <li set:html={hl(d)} />)}</ul>
+      </div>
+      <div>
+        <h2 class="sv__h2">Approvals we handle</h2>
+        <ul class="sv__tags">{s.approvals.map((a) => <li>{a}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sv">
+    <h2 class="sv__h2">How we work</h2>
+    <ol class="sv__steps">{serviceProcess.map(([t, d], i) => <li><span class="sv__num">{String(i + 1).padStart(2, '0')}</span><h3>{t}</h3><p>{d}</p></li>)}</ol>
+  </section>
+
+  <section class="sv sv--grey">
+    <h2 class="sv__h2">Selected projects</h2>
+    <div class="sv__grid">
+      {projects.map((p) => (
+        <a class="sv__card" href={`/featured-projects/${p.id}/`}>
+          <Image src={p.data.cover} alt={p.data.title} width={640} height={480} widths={[320, 640]} sizes="(min-width: 992px) 25vw, (min-width: 600px) 50vw, 100vw" fit="cover" loading="lazy" quality={72} />
+          <span>{p.data.title}</span>
+        </a>
+      ))}
+    </div>
+    <p class="sv__more"><a class="btn btn--black" href="/portfolio/">View full portfolio</a></p>
+  </section>
+
+  <section class="sv">
+    <h2 class="sv__h2">FAQ</h2>
+    <div class="sv__faq">
+      {s.faq.map(([q, a]) => <details><summary>{q}</summary><p set:html={hl(a)} /></details>)}
+    </div>
+  </section>
+
+  <Logos list={logosInner} />
+  <CtaBand title="Planning a project?" label="Get a quote" href="#contact-form" />
+</Base>
+<style is:global>
+  .sdraft { position: sticky; top: 0; z-index: 50; background: #ffe066; color: #000; text-align: center; font-size: 13px; font-weight: 600; padding: 6px 12px; }
+  mark { background: #ffe066; padding: 0 2px; }
+  main:has(.sv) .hero__slide::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,.15) 70%); }
+  main:has(.sv) .hero__content { z-index: 1; }
+  .sv { max-width: 1260px; margin: 0 auto; padding: 60px 40px; font-family: var(--ff-head); color: #222; }
+  .sv--dark { max-width: none; background: #000; color: #fff; }
+  .sv--dark > * { max-width: 1180px; margin: 0 auto; }
+  .sv--grey { max-width: none; background: #f4f4f4; }
+  .sv--grey > * { max-width: 1180px; margin-left: auto; margin-right: auto; }
+  .sv__h2 { font-family: var(--ff-head); font-size: 34px; line-height: 1.25; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; margin-top: 0; margin-bottom: 30px; }
+  .sv__intro p { font-size: 18px; line-height: 30px; font-weight: 300; max-width: 900px; margin: 0 0 18px; }
+  .sv__facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; list-style: none; padding: 0; margin: 40px 0 0; }
+  .sv__facts li { border-top: 1px solid #222; padding-top: 14px; }
+  .sv__facts b { display: block; font-size: 34px; line-height: 1.2; font-weight: 600; }
+  .sv__facts span { font-size: 14px; line-height: 20px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+  .sv__cols { display: grid; grid-template-columns: 1.3fr 1fr; gap: 60px; }
+  .sv__list { margin: 0; padding: 0; list-style: none; }
+  .sv__list li { position: relative; padding: 0 0 14px 24px; font-size: 17px; line-height: 27px; font-weight: 300; color: #edeaea; }
+  .sv__list li::before { content: ''; position: absolute; left: 0; top: 11px; width: 8px; height: 8px; background: #fff; border-radius: 50%; }
+  .sv__tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0; }
+  .sv__tags li { border: 1px solid rgba(255,255,255,.5); padding: 8px 14px; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
+  .sv__steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; list-style: none; padding: 0; margin: 0; }
+  .sv__num { font-size: 40px; font-weight: 200; color: #999; }
+  .sv__steps h3 { font-size: 17px; line-height: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin: 8px 0; }
+  .sv__steps p { font-size: 15px; line-height: 24px; font-weight: 300; margin: 0; }
+  .sv__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .sv__card img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block; }
+  .sv__card span { display: block; padding: 12px 0 0; font-size: 15px; line-height: 21px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #222; }
+  .sv__more { text-align: center; margin: 40px 0 0; }
+  .sv__faq details { border-bottom: 1px solid #ddd; padding: 16px 0; }
+  .sv__faq summary { cursor: pointer; font-size: 18px; line-height: 26px; font-weight: 600; list-style: none; }
+  .sv__faq summary::after { content: '+'; float: right; font-weight: 300; }
+  .sv__faq details[open] summary::after { content: '–'; }
+  .sv__faq p { font-size: 16px; line-height: 27px; font-weight: 300; margin: 12px 0 0; max-width: 950px; }
+  @media (max-width: 991px) {
+    .sv { padding: 44px 16px; }
+    .sv__h2 { font-size: 26px; }
+    .sv__intro p { font-size: 16px; line-height: 27px; }
+    .sv__facts { grid-template-columns: repeat(2, 1fr); }
+    .sv__cols { grid-template-columns: 1fr; gap: 40px; }
+    .sv__steps { grid-template-columns: 1fr; gap: 22px; }
+    .sv__grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  }
+  @media (max-width: 599px) { .sv__grid { grid-template-columns: 1fr; } }
+</style>
