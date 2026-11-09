@@ -17,7 +17,7 @@ export const site = {
     { name: 'instagram', href: 'https://www.instagram.com/crystalfit_uae/' },
     // original pointed to the LinkedIn admin page; public company page:
     { name: 'linkedin-in', href: 'https://www.linkedin.com/company/66214155/' },
-    { name: 'pinterest', href: 'https://www.pinterest.com/kgdesignuae' },
+    { name: 'pinterest', href: 'https://www.pinterest.com/crystalfituae/' },
     { name: 'whatsapp', href: 'https://wa.me/971563386219' },
   ],
   nav: [
