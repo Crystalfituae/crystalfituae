@@ -88,6 +88,13 @@ button { font: inherit; }
   transition: transform .3s;
 }
 .site-nav a:hover::after, .site-nav a[aria-current='page']::after { transform: scaleX(1); }
+.site-nav .has-sub { position: relative; }
+.site-nav .caret { width: 9px; height: 6px; margin-left: 6px; vertical-align: 2px; }
+.site-nav .sub { position: absolute; top: 100%; left: -18px; z-index: 60; display: block; min-width: 230px; padding: 16px 18px 8px; margin-top: 0;
+  background: #fff; box-shadow: 0 10px 24px rgba(0,0,0,.08); opacity: 0; visibility: hidden; transform: translateY(6px); transition: opacity .2s, transform .2s, visibility .2s; }
+.site-nav .has-sub:hover .sub, .site-nav .has-sub:focus-within .sub { opacity: 1; visibility: visible; transform: none; }
+.site-nav .sub li { margin: 0 0 12px; }
+.site-nav .sub a { font-size: 13px; line-height: 18px; letter-spacing: 1px; white-space: nowrap; }
 .burger { display: none; background: none; border: 0; padding: 0; cursor: pointer; color: var(--ink); }
 .burger svg { width: 42px; height: 42px; display: block; }
 .burger line { stroke: currentColor; stroke-width: 7; stroke-linecap: round; }
@@ -107,6 +114,10 @@ button { font: inherit; }
   .site-nav ul { flex-direction: column; gap: 0; padding: 10px 20px 20px; }
   .site-nav a { display: block; padding: 14px 0; border-bottom: 1px solid #eee; }
   .site-nav a::after { display: none; }
+  .site-nav .caret { display: none; }
+  .site-nav .sub { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; min-width: 0; padding: 0 0 0 18px; }
+  .site-nav .sub li { margin: 0; }
+  .site-nav .sub a { padding: 11px 0; font-size: 13px; color: #555; }
 }
 
 /* ---------- Black CTA band ("Request a proposal", "Still having questions ?") ---------- */

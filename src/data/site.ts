@@ -24,7 +24,12 @@ export const site = {
   nav: [
     { label: 'Home', href: '/' },
     { label: 'About us', href: '/about-us/' },
-    { label: 'Services', href: '/services/' },
+    { label: 'Services', href: '/services/', children: [
+      { label: 'F&B', href: '/cafe-restaurant-fit-out-dubai/' },
+      { label: 'Commercial', href: '/commercial-fit-out-dubai/' },
+      { label: 'Residential', href: '/villa-interior-design-dubai/' },
+      { label: 'Design & Consultancy', href: '/interior-design-consultancy-dubai/' },
+    ] },
     { label: 'Portfolio', href: '/portfolio/' },
     { label: 'Contact us', href: '/contact/' },
   ],

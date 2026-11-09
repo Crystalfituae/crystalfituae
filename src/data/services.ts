@@ -1,5 +1,5 @@
 // Service landing pages (/<slug>/). draft: true = not in sitemap, noindex, "DRAFT" banner, not linked from the menu.
-// Text marked [CONFIRM …] must be checked by Crystal Fit before publishing.
+// No prices or timelines on the site (owner's decision).
 
 export interface Service {
   slug: string;
@@ -48,13 +48,12 @@ export const services: Service[] = [
       'Inspections, completion certificates and handover, 1-year warranty',
     ],
     approvals: ['Emaar Malls & Communities', 'Dubai Holding', 'Nakheel', 'TECOM / d3', 'Sobha', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA', 'Trakhees'],
-    facts: [['20+', 'F&B projects delivered'], ['9', 'Roasters coffee shops'], ['1.5–4', 'months, typical build'], ['10+', 'years in UAE fit-out']],
+    facts: [['20+', 'F&B projects delivered'], ['9', 'Roasters coffee shops'], ['1', 'team from design to handover'], ['10+', 'years in UAE fit-out']],
     faq: [
-      ['How long does a cafe fit-out take in Dubai?', 'A small kiosk or coffee shop (40–80 sqm) usually takes 6–8 weeks of works; a 200–350 sqm cafe or restaurant 3–4 months. Example: WALA Coffee & Roastery, 70 sqm — 1.5 months; Roasters Dubai Hills, 360 sqm — 4 months. Approvals typically add 2–6 weeks before works start.'],
-      ['How much does a cafe or restaurant fit-out cost in Dubai?', '[CONFIRM price range] The cost depends on size, kitchen scope and finishes. As a guide, a shell & core cafe fit-out in Dubai is typically between AED [___] and AED [___] per sq ft. We give a fixed BOQ after the site visit and concept.'],
       ['Do you handle Dubai Municipality and Civil Defence approvals?', 'Yes. We prepare the drawings and submit landlord NOC, Dubai Municipality food & public-health layout, Civil Defence and DEWA approvals, and attend all inspections until the completion certificate.'],
       ['Which landlords have you worked with?', 'Emaar (Dubai Mall, Dubai Hills, Downtown, Creek Harbour), Dubai Holding (Bay Square, Nad Al Sheba Mall), Nakheel (Palm Jumeirah), TECOM (d3), Sobha Hartland and others.'],
       ['Can you work with our own brand designer?', 'Yes. We can build from your designer’s concept and produce the technical and shop drawings needed for approvals, or deliver the full design ourselves.'],
+      ['How do I get a quotation?', 'Send us your floor plan or unit details through the form or WhatsApp. After a site visit and a short brief we prepare a detailed BOQ and a programme for your project.'],
     ],
     projects: ['wala-coffee-roastery', 'roasters-dubai-hills', 'panmi-coffee-shop-dubai-hills', 'restaurant-contractor-dubai-yoy-neo-bistro', 'roasters-palm-jumeirah-mall', 'kingdom_palace_doha', 'roasters-coffee-kiosk-dubai-mall', 'yoy-ukrainian-firecooking-restaurant-the-pointe-palm-jumeirah'],
   },
@@ -80,13 +79,12 @@ export const services: Service[] = [
       'Handover with 1-year warranty',
     ],
     approvals: ['Emaar', 'Dubai Holding', 'TECOM / d3', 'DIFC', 'Nakheel Malls', 'Dubai Health Authority (DHA)', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA'],
-    facts: [['200+', 'projects delivered'], ['3.5', 'months — AMV Clinic, 180 sqm'], ['2014', 'in business since'], ['1 year', 'warranty on works']],
+    facts: [['200+', 'projects delivered'], ['DHA', 'clinic approvals handled'], ['2014', 'in business since'], ['1 year', 'warranty on works']],
     faq: [
-      ['How long does an office or shop fit-out take in Dubai?', 'Kiosks typically take 4–6 weeks, shops and offices of 100–300 sqm 8–12 weeks of works, plus the landlord approval period. AMV Aesthetic Clinic (180 sqm) was delivered in 3.5 months including DHA approvals. [CONFIRM]'],
-      ['How much does a commercial fit-out cost in Dubai?', '[CONFIRM price range] Typically AED [___] – [___] per sq ft depending on MEP changes and finishes. We provide a detailed BOQ after the site visit.'],
       ['Do you get the landlord NOC and permits?', 'Yes. We prepare the drawings required by the landlord and authorities, submit them and follow up until permits and completion certificates are issued.'],
       ['Do you handle DHA approvals for clinics?', 'Yes. We design to DHA facility requirements and support the inspections until the facility licence is issued.'],
       ['Can you work while our office or mall is open?', 'Yes. We phase works and carry out noisy works at night or after hours as the building requires.'],
+      ['How do I get a quotation?', 'Send us your floor plan or unit details through the form or WhatsApp. After a site visit and a short brief we prepare a detailed BOQ and a programme for your project.'],
     ],
     projects: ['amv-aesthetic-clinic', 'christiess-ofiice-interior-design-dubai', 'livrichy-real-estates-office', 'gary-tatintsian-gallery', 'fissman-circle-mall-jvc-dubai', 'mercure-gold-hotel-interior-design', 'the-game-premium-lounge', 'self-space-studio-dubai'],
   },
@@ -114,8 +112,8 @@ export const services: Service[] = [
     facts: [['20+', 'villas and apartments'], ['85–2,170', 'sqm project size'], ['2014', 'in business since'], ['1 year', 'warranty on works']],
     faq: [
       ['Do you handle the community NOC for villa renovation?', 'Yes. We prepare drawings for the master developer (Emaar, Nakheel, Dubai Holding) and the authority permits before works start.'],
-      ['How long does a villa renovation take?', 'Depending on scope, 3–6 months for a full interior renovation of a 400–700 sqm villa. [CONFIRM]'],
       ['Can you only do the design?', 'Yes. We offer design-only packages, and turnkey design & build if you want one team for everything.'],
+      ['How do I get a quotation?', 'Send us your floor plan or unit details through the form or WhatsApp. After a site visit and a short brief we prepare a detailed BOQ and a programme for your project.'],
     ],
     projects: ['anantara-penthouse', 'luxury-fitout-dubai', 'gbl-villa-ar-dubai-hills', 'nad-al-sheba-villa-moderna-dubai', 'oth-villa-jumeirah-pearl', 'amr-villa-al-mizhar'],
   },
@@ -145,7 +143,7 @@ export const services: Service[] = [
       ['Can you do the design only, without the fit-out?', 'Yes. We deliver design and drawing packages that any contractor can build from, and can support you during tendering and construction.'],
       ['Can you check a unit before we sign the lease?', 'Yes. We review the landlord fit-out guide, services and layout and tell you what is feasible, the main risks and an indicative budget and timeline.'],
       ['Do you prepare drawings for authority approvals?', 'Yes — architectural, MEP, fire-fighting and shop drawings for landlord NOC, Dubai Municipality, Civil Defence, DEWA and DHA submissions.'],
-      ['How is design and consultancy priced?', '[CONFIRM] Design is priced per sq m or as a fixed fee depending on scope; project management as a fixed monthly fee or a percentage of the works.'],
+      ['How do I get a quotation?', 'Send us your floor plan or unit details through the form or WhatsApp. After a site visit and a short brief we prepare a detailed BOQ and a programme for your project.'],
     ],
     projects: ['gary-tatintsian-gallery', 'christiess-ofiice-interior-design-dubai', 'west-gate-cinema-interior-design', 'coxs-bazar-family-hotel-bg4roof', 'community-mall-dubai-al-khawaneej-2-dubai', 'mercure-gold-hotel-interior-design'],
   },
