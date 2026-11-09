@@ -27,7 +27,7 @@ const services: [string, string, string, ImageMetadata, string][] = [
   ['Residential', 'Villas, penthouses and apartments, from design to move-in.', '/villa-interior-design-dubai/', cover('anantara-penthouse'), 'pin'],
   ['Design & Consultancy', 'Concepts, 3D, technical drawings and approvals management.', '/interior-design-consultancy-dubai/', render, 'pen'],
 ];
-const stats: [string, string][] = [['10+', 'Years in UAE fit-out'], ['200+', 'Projects handed over'], ['1', 'Team from design to handover'], ['1 year', 'Warranty on works']];
+const stats: [string, string][] = [['2014', 'UAE grown since'], ['200+', 'Projects handed over'], ['1', 'Team from design to handover'], ['1 year', 'Warranty on works']];
 const logos = import.meta.glob<{ default: ImageMetadata }>('../assets/logos/*', { eager: true });
 const lg = (n: string) => Object.entries(logos).find(([k]) => k.endsWith('/' + n))![1].default;
 const approved: [string, string][] = [['emaar-logo-1.png', 'Emaar'], ['aw-dh-pv-pos-rgb-en-002.png', 'Dubai Holding'], ['tecom-group.png', 'TECOM'], ['nakheel-properties-logo-2.png', 'Nakheel'], ['dub-gov-300.png', 'Government of Dubai'], ['trakhees.png', 'Trakhees']];
@@ -57,7 +57,7 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   </section>
 
   <!-- 2. Numbers -->
-  <section class="hd-stats">{stats.map(([n, t]) => <div><b>{n}</b><span>{t}</span></div>)}</section>
+  <section class="hd-stats">{stats.map(([n, t]) => <div><span class="hd-stats__top">{n === '2014' ? t : ' '}</span><b>{n}</b><span>{n === '2014' ? '' : t}</span></div>)}<p class="hd-stats__line">UAE grown since 2014 · 200+ projects</p></section>
 
   <!-- 3. Services: 4 cards -->
   <section class="hd-dark"><div class="hd-sec">
@@ -124,7 +124,9 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .hd-hero__cap span { font-size: 13px; color: #666; }
   .hd-stats { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 1180px; margin: 0 auto; padding: 46px 40px; font-family: var(--ff-head); text-align: center; border-bottom: 1px solid #eee; }
   .hd-stats b { display: block; font-size: 46px; line-height: 1.1; font-weight: 300; }
-  .hd-stats span { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: #666; }
+  .hd-stats span { display: block; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: #666; }
+  .hd-stats span:empty { display: none; }
+  .hd-stats__line { display: none; }
   .hd-sec { max-width: 1260px; margin: 0 auto; padding: 70px 40px; font-family: var(--ff-head); }
   .hd-grey { max-width: none; background: #f4f4f4; }
   .hd-grey > * { max-width: 1180px; margin-left: auto; margin-right: auto; }
@@ -184,8 +186,9 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
     .hd-hero p { font-size: 16px; line-height: 25px; margin-bottom: 22px; }
     .hd-hero::after { background: linear-gradient(0deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.3) 60%, rgba(0,0,0,.1) 100%); }
     .hd-hero__cap { padding: 10px 16px; }
-    .hd-stats { grid-template-columns: repeat(2, 1fr); gap: 26px 10px; padding: 34px 16px; }
-    .hd-stats b { font-size: 36px; }
+    .hd-stats { display: block; padding: 22px 16px; }
+    .hd-stats > div { display: none; }
+    .hd-stats__line { display: block; margin: 0; font-size: 15px; line-height: 22px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #000; }
     .hd-sec { padding: 46px 16px; }
     .hd-h2 { font-size: 24px; margin-bottom: 24px; }
     .hd-h2--big { font-size: 30px; line-height: 40px; }
