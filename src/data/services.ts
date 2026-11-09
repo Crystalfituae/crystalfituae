@@ -33,15 +33,15 @@ export const services: Service[] = [
     draft: true,
     title: 'Cafe & Restaurant Fit-Out in Dubai | Crystal Fit',
     description: 'Turnkey cafe, coffee shop and restaurant fit-out in Dubai: design, Emaar & Dubai Holding approvals, DM and Civil Defence permits, construction and handover.',
-    heroLines: ['F&B', 'fit-out'],
+    heroLines: ['Food & Beverage', '(F&B) fit-out'],
     h1: '— cafe, coffee shop and restaurant fit-out company in Dubai',
     heroProject: 'roasters-dubai-hills',
     intro: [
       'Food & beverage is our strongest field. Since 2014 we have designed and built specialty coffee shops, kiosks, bistros and restaurants in Dubai’s main malls and communities — including nine Roasters Specialty Coffee branches, WALA Coffee & Roastery, YOY Neo Bistro at Shangri-La and Panmi Coffee in Dubai Hills.',
-      'An F&B opening in Dubai is a race against the rent-free period. Landlord design reviews, Dubai Municipality food-safety layout, Civil Defence, kitchen exhaust and gas approvals all have to move in parallel with construction. We run them as one programme, so the doors open on the agreed date.',
+      'A Food & Beverage (F&B) opening in Dubai is a race against the rent-free period. Landlord design reviews, Dubai Municipality food-safety layout, Civil Defence, kitchen exhaust and gas approvals all have to move in parallel with construction. We run them as one programme, so the doors open on the agreed date.',
     ],
     deliver: [
-      'Concept, 3D visuals and full F&B layout (bar, kitchen, storage, seating)',
+      'Concept, 3D visuals and full Food & Beverage (F&B) layout (bar, kitchen, storage, seating)',
       'Kitchen and bar equipment coordination with your suppliers',
       'Landlord NOC and authority approvals: Dubai Municipality (food & public health), Civil Defence, DEWA, Trakhees where needed',
       'MEP, HVAC, kitchen exhaust, fire-fighting and drainage works',
@@ -49,7 +49,7 @@ export const services: Service[] = [
       'Inspections, completion certificates and handover, 1-year warranty',
     ],
     approvals: ['Emaar Malls & Communities', 'Dubai Holding', 'Nakheel', 'TECOM / d3', 'Sobha', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA', 'Trakhees'],
-    facts: [['20+', 'F&B projects delivered'], ['9', 'Roasters coffee shops'], ['1', 'team from design to handover'], ['10+', 'years in UAE fit-out']],
+    facts: [['20+', 'Food & Beverage (F&B) projects delivered'], ['9', 'Roasters coffee shops'], ['1', 'team from design to handover'], ['10+', 'years in UAE fit-out']],
     faq: [
       ['Do you handle Dubai Municipality and Civil Defence approvals?', 'Yes. We prepare the drawings and submit landlord NOC, Dubai Municipality food & public-health layout, Civil Defence and DEWA approvals, and attend all inspections until the completion certificate.'],
       ['Which landlords have you worked with?', 'Emaar (Dubai Mall, Dubai Hills, Downtown, Creek Harbour), Dubai Holding (Bay Square, Nad Al Sheba Mall), Nakheel (Palm Jumeirah), TECOM (d3), Sobha Hartland and others.'],
@@ -129,12 +129,12 @@ export const services: Service[] = [
     heroImage: 'design-render-omakase.jpg', // Omakase restaurant concept render
     intro: [
       'Not every project needs a contractor from day one. We provide design and consultancy on its own: concept and interior design, space planning, technical and shop drawings for approvals, and project management on behalf of the owner.',
-      'Ten years of Dubai fit-outs mean we know what landlords and authorities will ask for. F&B operators, brands and investors use our team to check a unit before signing a lease, to prepare a design that passes approvals the first time, or to manage their contractor.',
+      'Ten years of Dubai fit-outs mean we know what landlords and authorities will ask for. Food & Beverage (F&B) operators, brands and investors use our team to check a unit before signing a lease, to prepare a design that passes approvals the first time, or to manage their contractor.',
     ],
     deliver: [
       'Concept and interior design, 3D visuals, material and furniture selection',
       'Space planning and test fits before you sign a lease',
-      'F&B technical consultancy: kitchen, bar and back-of-house layouts',
+      'Food & Beverage (F&B) technical consultancy: kitchen, bar and back-of-house layouts',
       'Technical, MEP and shop drawings for landlord and authority submissions',
       'Approvals management: landlord NOC, Dubai Municipality, Civil Defence, DEWA, DHA',
       'Construction project management, BOQ review and site supervision',

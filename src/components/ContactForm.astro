@@ -18,6 +18,7 @@ import { site } from '../data/site';
         <select name="topic" aria-label="Enquiry type" required>
           <option value="Project Inquiry" selected>Project Inquiry</option>
           <option value="Collaborations">Collaborations</option>
+          <option value="Recruitment">Recruitment</option>
         </select>
       </div>
       <div class="cf__right">
@@ -37,7 +38,14 @@ import { site } from '../data/site';
     if (key) fd.set('access_key', key);
     return fetch(f.action, { method: 'POST', headers: { Accept: 'application/json' }, body: fd }).then((r) => r.json());
   };
+  // "Apply now" links to /contact/?topic=recruitment#contact-form — preselect the topic
+  const wanted = new URLSearchParams(location.search).get('topic');
   for (const f of document.querySelectorAll<HTMLFormElement>('form[data-cf]')) {
+    if (wanted) {
+      const sel = f.elements.namedItem('topic') as HTMLSelectElement;
+      const opt = [...sel.options].find((o) => o.value.toLowerCase() === wanted.toLowerCase());
+      if (opt) { sel.value = opt.value; if (opt.value === 'Recruitment') (f.elements.namedItem('message') as HTMLTextAreaElement).placeholder = 'Tell us about yourself, the position you are interested in and a link to your CV / portfolio (required)'; }
+    }
     f.addEventListener('submit', async (e) => {
       e.preventDefault();
       const st = f.querySelector<HTMLElement>('.cf__status')!;
@@ -52,7 +60,7 @@ import { site } from '../data/site';
         const copyKey = f.dataset.keyCopy;
         if (topic === 'Project Inquiry' && copyKey) await send(f, copyKey).catch(() => {});
         st.textContent = 'Thank you for your message. It has been sent.';
-        (window as any).cfTrack?.('lead', { topic });
+        if (topic !== 'Recruitment') (window as any).cfTrack?.('lead', { topic });
         f.reset();
       } catch {
         st.textContent = 'There was an error trying to send your message. Please try again later.';

@@ -73,28 +73,12 @@
 .chk { font-size: 15px; margin-right: 6px; }
 .about__media { padding: 10px 50px 10px 0; }
 .about__media img { width: 475px; }
-.team { max-width: 1350px; margin: 0 auto; padding: 0 0 10px; }
-.team__title { font-family: var(--ff-head); font-size: 26px; line-height: 28px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: #000; margin: 0 0 50px 115px; }
-.team figure { margin: 0; }
-.team figcaption { padding-top: 18px; color: #000; font-family: var(--ff-head); text-transform: uppercase; }
-.team figcaption b { display: block; font-size: 14px; line-height: 21px; font-weight: 700; }
-.team figcaption span { display: block; font-size: 12px; line-height: 21px; font-weight: 400; }
-.team__lead { width: 487px; margin-left: 115px !important; }
-.team__lead img { width: 487px; height: 487px; object-fit: cover; }
-.team__grid { display: grid; grid-template-columns: repeat(5, 254px); column-gap: 20px; row-gap: 22px; padding: 10px 45px 0; }
-.team__grid img { width: 254px; height: 254px; object-fit: cover; }
 @media (max-width: 1100px) {
   .about { grid-template-columns: 1fr; }
   .about__media { display: none; }
-  .team__grid { grid-template-columns: repeat(3, 1fr); }
-  .team__grid img { width: 100%; height: auto; aspect-ratio: 1; }
 }
 @media (max-width: 767px) {
   .about__text { padding: 35px 10px 30px; }
-  .team__title { margin: 30px 10px 20px; }
-  .team__lead { width: auto; margin: 0 10px !important; }
-  .team__lead img { width: 100%; height: auto; aspect-ratio: 1; }
-  .team__grid { grid-template-columns: repeat(2, 1fr); padding: 20px 10px 0; column-gap: 10px; }
 }
 
 /* ---------- Services ---------- */

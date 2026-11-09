@@ -5,15 +5,19 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Logos from '../components/Logos.astro';
 import Icon from '../components/Icon.astro';
+import LineIcon from '../components/LineIcon.astro';
 import { logosInner, site } from '../data/site';
 import '../styles/pages.css';
 import hero from '../assets/site/hero-contact.jpg';
-const follow = [
-  ['facebook-f', 'https://www.facebook.com/crystalfituae'], ['instagram', 'https://www.instagram.com/crystalfit_uae/'], ['pinterest', 'https://www.pinterest.com/kgdesignuae'],
-  ['linkedin', 'https://www.linkedin.com/company/66214155/'], ['whatsapp', site.whatsapp],
+const follow = site.socials.map((s) => [s.name === 'linkedin-in' ? 'linkedin' : s.name, s.href]);
+const steps: [string, string, string][] = [
+  ['file', 'Send your brief', 'Floor plan, unit location and what you plan to open — via the form, WhatsApp or e-mail.'],
+  ['pin', 'Site visit', 'We visit the unit, check the landlord fit-out guide and discuss concept, scope and approvals.'],
+  ['clipboard', 'Proposal & BOQ', 'You receive a design proposal with a detailed BOQ and project programme.'],
 ];
+const schema = [{ '@type': 'ContactPage', name: 'Contact Crystal Fit', url: new URL('/contact/', Astro.site).href, mainEntity: { '@id': new URL('/#company', Astro.site).href } }];
 ---
-<Base title="Contact Crystal Fit – Fit-Out Contractor in Al Quoz, Dubai" description="Request a fit-out quote from Crystal Fit Contracting LLC, Al Quoz Industrial Area 3, Dubai. Call or WhatsApp +971 56 338 6219, e-mail info@crystalfituae.com.">
+<Base title="Contact Crystal Fit – Fit-Out Contractor in Al Quoz, Dubai" description="Request a fit-out quote from Crystal Fit Contracting LLC, Al Quoz Industrial Area 3, Dubai. Call or WhatsApp +971 56 338 6219, e-mail info@crystalfituae.com." schema={schema}>
   <Hero slides={[{ image: hero, lines: ['Time to make', 'the first meeting'] }]} />
   <Breadcrumb current="Crystal fit contracting LLC / Contact" />
   <section class="contact">
@@ -23,29 +27,56 @@ const follow = [
     </div>
     <div class="contact__info">
       <h1>Get in touch</h1>
+      <p class="contact__intro">Planning a cafe, restaurant, office, shop or villa in Dubai? Talk to our design &amp; build team in Al Quoz — we will advise on design, landlord approvals and the right next step.</p>
       <div class="contact__grid">
         <div>
-          <h3>Location</h3>
-          <p>UAE, DUBAI,</p><p>Al Quoz Industrial Area 3,</p><p>Ghoshi Warehouse City, WH-132</p>
-          <a class="contact__btn" href={site.mapUrl} target="_blank" rel="noopener">GET DIRECTION</a>
+          <h3><LineIcon name="pin" size={22} />Office &amp; workshop</h3>
+          <p>Ghoshi Warehouse City, WH-132<br />Al Quoz Industrial Area 3<br />Dubai, UAE</p>
+          <a class="contact__btn" href={site.mapUrl} target="_blank" rel="noopener">GET DIRECTIONS</a>
         </div>
         <div>
-          <h3>Contact Us</h3>
-          <p>Mobile : <a href={`tel:${site.phoneMobile}`}>+ 971 (0) 56 338 62 19</a></p>
-          <p>Phone :<a href={`tel:${site.phoneOffice}`}>+ 971 (0) 4 320 22 24</a></p>
-          <p>Email : <a href={`mailto:${site.email}`}>{site.email}</a></p>
+          <h3><LineIcon name="phone" size={22} />Call or write</h3>
+          <p>Mobile: <a href={`tel:${site.phoneMobile}`}>+971 56 338 6219</a><br />
+            Office: <a href={`tel:${site.phoneOffice}`}>+971 4 320 2224</a><br />
+            WhatsApp: <a href={site.whatsapp} target="_blank" rel="noopener">+971 56 338 6219</a><br />
+            Email: <a href={`mailto:${site.email}`}>{site.email}</a></p>
         </div>
         <div>
-          <h3>Our Hours</h3>
-          <p class="sm">MON – SAT 09:00 -18:00</p><p class="sm">SUN&nbsp; – OFF</p>
+          <h3><LineIcon name="clock" size={22} />Working hours</h3>
+          <p>Monday – Saturday: 09:00 – 18:00<br />Sunday: closed</p>
         </div>
         <div class="contact__follow">
-          <h3>Follow Us</h3>
+          <h3><LineIcon name="share" size={22} />Follow us</h3>
           <ul>{follow.map(([n, h]) => <li><a href={h} target="_blank" rel="noopener" aria-label={n}><Icon name={n} size={17} /></a></li>)}</ul>
         </div>
       </div>
     </div>
   </section>
+  <section class="next">
+    <h2 class="next__title">What happens next</h2>
+    <ol class="next__steps">
+      {steps.map(([i, t, d], n) => <li><span class="next__ico"><LineIcon name={i} size={30} stroke={1.3} /></span><b>{String(n + 1).padStart(2, '0')}</b><h3>{t}</h3><p>{d}</p></li>)}
+    </ol>
+  </section>
   <CtaBand title="still having questions ?" label="About us" href="/about-us/" />
   <Logos list={logosInner} />
 </Base>
+<style is:global>
+  .contact__intro { font-family: var(--ff-head); font-size: 17px; line-height: 28px; font-weight: 300; color: #333; max-width: 560px; margin: -26px 0 34px; }
+  .contact__grid h3 { display: flex; align-items: center; gap: 10px; }
+  .contact__grid h3 svg { flex: 0 0 auto; }
+  .contact__grid p { line-height: 30px; }
+  .next { max-width: 1180px; margin: 0 auto; padding: 70px 40px 60px; font-family: var(--ff-head); }
+  .next__title { font-size: 26px; line-height: 32px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; margin: 0 0 34px; }
+  .next__steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .next__steps li { border-top: 1px solid #ddd; padding-top: 22px; position: relative; }
+  .next__ico { display: inline-flex; width: 56px; height: 56px; align-items: center; justify-content: center; border: 1px solid #222; border-radius: 50%; }
+  .next__steps b { position: absolute; right: 0; top: 22px; font-size: 34px; font-weight: 200; color: #aaa; }
+  .next__steps h3 { font-size: 17px; line-height: 24px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin: 16px 0 6px; }
+  .next__steps p { font-size: 15px; line-height: 24px; font-weight: 300; color: #444; margin: 0; }
+  @media (max-width: 767px) {
+    .contact__intro { margin: -14px 0 26px; font-size: 16px; }
+    .next { padding: 40px 16px 30px; }
+    .next__steps { grid-template-columns: 1fr; gap: 26px; }
+  }
+</style>
