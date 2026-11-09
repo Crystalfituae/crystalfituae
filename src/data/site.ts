@@ -26,9 +26,9 @@ export const site = {
   ],
   // Web3Forms access keys (free, https://web3forms.com). One key = one inbox.
   // Main inbox, receives every enquiry: info@crystalfituae.com
-  formKey: import.meta.env.PUBLIC_WEB3FORMS_KEY ?? '',
+  formKey: import.meta.env.PUBLIC_WEB3FORMS_KEY || 'bc4e80cb-ae26-45a9-b622-999b514d67ef',
   // Copy inbox, receives "Project Inquiry" only: kg@crystalfituae.com
-  formKeyCopy: import.meta.env.PUBLIC_WEB3FORMS_KEY_COPY ?? '',
+  formKeyCopy: import.meta.env.PUBLIC_WEB3FORMS_KEY_COPY || '5e004c92-e461-4fe3-9f0e-e30756b08f2c',
 };
 
 export const categories = {
