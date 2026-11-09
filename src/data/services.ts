@@ -36,6 +36,7 @@ export const services: Service[] = [
     heroLines: ['Food & Beverage', '(F&B) fit-out'],
     h1: '— cafe, coffee shop and restaurant fit-out company in Dubai',
     heroProject: 'roasters-dubai-hills',
+    heroImage: 'hero-fnb-yoy-firecooking.jpg', // YOY Ukrainian Firecooking (old home slider)
     intro: [
       'Food & beverage is our strongest field. Since 2014 we have designed and built specialty coffee shops, kiosks, bistros and restaurants in Dubai’s main malls and communities — including nine Roasters Specialty Coffee branches, WALA Coffee & Roastery, YOY Neo Bistro at Shangri-La and Panmi Coffee in Dubai Hills.',
       'A Food & Beverage (F&B) opening in Dubai is a race against the rent-free period. Landlord design reviews, Dubai Municipality food-safety layout, Civil Defence, kitchen exhaust and gas approvals all have to move in parallel with construction. We run them as one programme, so the doors open on the agreed date.',
@@ -66,6 +67,7 @@ export const services: Service[] = [
     heroLines: ['Commercial', 'fit-out'],
     h1: '— office, retail and clinic fit-out company in Dubai',
     heroProject: 'gary-tatintsian-gallery',
+    heroImage: 'hero-commercial-selfspace.jpg', // SELF.SPACE studio (old home slider)
     intro: [
       'Offices, shops, clinics, galleries and studios — we design and build commercial spaces that represent your brand and work from day one. Our projects include Christie’s auction house and gallery office in DIFC, AMV Aesthetic Clinic in Bay Square, Gari Tatintsian Gallery in d3, LIVRICHY Real Estate in Dubai Hills, Fissman in Circle Mall and Mercure Gold Hotel.',
       'Every landlord and authority in Dubai has its own fit-out rules. We prepare the technical package, obtain the NOC and permits, and plan works around mall hours or occupied floors, so you hand over on the agreed date.',
