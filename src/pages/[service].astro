@@ -62,7 +62,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
     <ol class="sv__steps">{serviceProcess.map(([t, d], i) => <li><span class="sv__num">{String(i + 1).padStart(2, '0')}</span><h3>{t}</h3><p>{d}</p></li>)}</ol>
   </section>
 
-  <section class="sv sv--grey">
+  <section class="sv sv--dark sv--projects">
     <h2 class="sv__h2">Selected projects</h2>
     <div class="sv__grid">
       {projects.map((p) => (
@@ -72,7 +72,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
         </a>
       ))}
     </div>
-    <p class="sv__more"><a class="btn btn--black" href="/portfolio/">View full portfolio</a></p>
+    <p class="sv__more"><a class="btn btn--white" href="/portfolio/">View full portfolio</a></p>
   </section>
 
   <section class="sv">
@@ -115,7 +115,9 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   .sv__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
   .sv__card img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block; }
   .sv__card span { display: block; padding: 12px 0 0; font-size: 15px; line-height: 21px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #222; }
-  .sv__more { text-align: center; margin: 40px 0 0; }
+  .sv__more { text-align: center; margin-top: 40px; margin-bottom: 0; }
+  .sv--projects { border-top: 1px solid #222; }
+  .sv--dark .sv__card span { color: #fff; }
   .sv__faq details { border-bottom: 1px solid #ddd; padding: 16px 0; }
   .sv__faq summary { cursor: pointer; font-size: 18px; line-height: 26px; font-weight: 600; list-style: none; }
   .sv__faq summary::after { content: '+'; float: right; font-weight: 300; }
