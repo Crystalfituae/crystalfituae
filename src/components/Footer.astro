@@ -35,4 +35,14 @@ const { minimal = false } = Astro.props;
     </ul>
   </div>
 </footer>
+<button class="to-top" type="button" aria-label="Back to top" hidden><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script is:inline>
+(function () {
+  var b = document.querySelector('.to-top'); if (!b) return;
+  var on = false;
+  function upd() { var v = scrollY > 700; if (v !== on) { on = v; b.hidden = false; b.classList.toggle('is-on', v); } }
+  addEventListener('scroll', upd, { passive: true }); upd();
+  b.addEventListener('click', function () { scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); });
+})();
+</script>
 <a class="wa-fab" href={site.whatsapp} target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><Icon name="whatsapp" size={32} /></a>

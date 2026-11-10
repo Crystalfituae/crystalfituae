@@ -239,6 +239,10 @@ button { font: inherit; }
 .wa-fab:hover { transform: scale(1.06); }
 .wa-fab::after { content: ''; position: absolute; top: 6px; right: 6px; width: 12px; height: 12px; border-radius: 50%; background: #ff3b30; border: 2px solid #fff; }
 .wa-fab .ico { width: 32px; height: 32px; }
+.to-top { position: fixed; right: 32px; bottom: 104px; z-index: 59; width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(0,0,0,.18); background: rgba(255,255,255,.92); color: #000; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,.08); opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity .25s, transform .25s, visibility .25s, background .2s; }
+.to-top.is-on { opacity: 1; visibility: visible; transform: none; }
+.to-top:hover { background: #000; color: #fff; border-color: #000; }
+.to-top[hidden] { display: none; }
 
 /* ---------- Mobile base scale (matches original Elementor kit) ---------- */
 @media (max-width: 767px) {
