@@ -28,7 +28,7 @@ const services: [string, string, string, ImageMetadata, string][] = [
   ['Residential', 'Villas, penthouses and apartments, from design to move-in.', '/villa-interior-design-dubai/', cover('anantara-penthouse'), 'pin'],
   ['Design & Consultancy', 'Concepts, 3D, technical drawings and approvals management.', '/interior-design-consultancy-dubai/', render, 'pen'],
 ];
-const stats: [string, string][] = [['2014', 'UAE grown since'], ['200+', 'Projects handed over'], ['120 days', 'From shell & core to opening'], ['100%', 'Approvals handled in‑house']];
+const stats: [string, string][] = [['2014', 'UAE grown since'], ['200+', 'Projects handed over'], ['90 days', 'From shell & core to opening'], ['100%', 'Approvals handled in‑house']];
 const logos = import.meta.glob<{ default: ImageMetadata }>('../assets/logos/*', { eager: true });
 const lg = (n: string) => Object.entries(logos).find(([k]) => k.endsWith('/' + n))![1].default;
 const approved: [string, string][] = [['emaar-logo-1.png', 'Emaar'], ['aw-dh-pv-pos-rgb-en-002.png', 'Dubai Holding'], ['tecom-group.png', 'TECOM'], ['nakheel-properties-logo-2.png', 'Nakheel'], ['dub-gov-300.png', 'Government of Dubai'], ['trakhees.png', 'Trakhees'], ['dubai-civil-defense.png', 'Dubai Civil Defense'], ['dewa.png', 'DEWA'], ['vindico.png', 'Vindico'], ['1621791093880-1.png', 'IDAMA']];
