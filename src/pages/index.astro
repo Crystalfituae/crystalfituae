@@ -59,18 +59,6 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   <!-- 2. Numbers -->
   <section class="hd-stats">{stats.map(([n, t]) => <div><b>{n}</b><span>{t}</span></div>)}</section>
 
-  <!-- 3. Services: 4 cards -->
-  <section class="hd-dark"><div class="hd-sec">
-    <h2 class="hd-h2 hd-h2--big">What we do<span class="dot" aria-hidden="true"></span></h2>
-    <div class="hd-svc">
-      {services.map(([t, d, href, img, ico]) => (
-        <a class="hd-svc__card" href={href}>
-          <Image src={img} alt={t} width={600} height={420} widths={[320, 600]} sizes="(min-width: 992px) 25vw, (min-width: 600px) 50vw, 100vw" fit="cover" loading="lazy" quality={70} />
-          <div class="hd-svc__body"><h3>{t}</h3><p>{d}</p><span class="hd-more">Learn more →</span></div>
-        </a>
-      ))}
-    </div>
-  </div></section>
 
 
 
@@ -101,6 +89,19 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
     <div class="latest__btn"><a class="btn btn--black" href="/portfolio/">View portfolio</a></div>
   </section>
 
+
+  <!-- 3. Services: 4 cards -->
+  <section class="hd-dark"><div class="hd-sec">
+    <h2 class="hd-h2 hd-h2--big">What we do<span class="dot" aria-hidden="true"></span></h2>
+    <div class="hd-svc">
+      {services.map(([t, d, href, img, ico]) => (
+        <a class="hd-svc__card" href={href}>
+          <Image src={img} alt={t} width={600} height={420} widths={[320, 600]} sizes="(min-width: 992px) 25vw, (min-width: 600px) 50vw, 100vw" fit="cover" loading="lazy" quality={70} />
+          <div class="hd-svc__body"><h3>{t}</h3><p>{d}</p><span class="hd-more">Learn more →</span></div>
+        </a>
+      ))}
+    </div>
+  </div></section>
 
   <!-- FAQ: same style as the original home page -->
   <section class="faq">
