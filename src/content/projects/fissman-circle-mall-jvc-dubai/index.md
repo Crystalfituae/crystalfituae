@@ -21,8 +21,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Circle Mall, JVC, Dubai, UAE"
 area: 70
 year: "2022"
-scope: []
+scope: ["design", "fitout", "joinery"]
 approvals: []
 seoTitle: "Fissman, Circle Mall, JVC – Retail Fit-Out | Crystal Fit"
-seoDescription: "Fissman, Circle Mall, JVC, Dubai: retail fit-out by Crystal Fit (70 sqm, 2022). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
+seoDescription: "Fissman store, Circle Mall, JVC, Dubai: 70 sqm retail fit-out by Crystal Fit for the cookware brand."
 ---
+<div class="pinfo__text"><p>A 70 sqm <strong>retail store for the cookware brand Fissman</strong> in Circle Mall, Jumeirah Village Circle.<br><br>The store had to display hundreds of products without feeling crowded. Timber wall shelving with integrated lighting, freestanding display tables and a green ceiling feature keep the space bright, organised and easy to shop, with a fully glazed shopfront drawing visitors in.<br><br>Crystal Fit delivered the <strong>design and fit-out</strong>, including bespoke shelving and display joinery.</p></div>

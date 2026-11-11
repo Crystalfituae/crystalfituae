@@ -67,9 +67,9 @@ location: "Lime Garden, Dubai Hills, Dubai, UAE"
 area: 210
 year: "2026"
 timeline: "4 months"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["Emaar", "DDA (d3)", "DEWA"]
 seoTitle: "Panmi Coffee Shop Dubai Hills – Cafe Fit-Out | Crystal Fit"
-seoDescription: "Panmi Coffee Shop Dubai Hills: cafe fit-out by Crystal Fit (210 sqm, 2026). Turnkey design & build with Emaar landlord approvals. Dubai fit-out since 2014."
+seoDescription: "Panmi coffee shop, Lime Garden, Dubai Hills: 210 sqm design & build cafe fit-out by Crystal Fit, from shell & core to opening in 4 months."
 ---
-<div class="pinfo__text"><p>A complete <strong>design &amp; build Food &amp; Beverage (F&amp;B) fit-out delivered by Crystal Fit Contracting</strong>, transforming the space from shell &amp; core into a fully operational café under Emaar.<br><br>The project combines a soft, Asian-inspired interior with warm natural tones, terrazzo finishes, sculptural lighting and custom furniture. Behind the calm interior sits a technically demanding Food &amp; Beverage (F&amp;B) operation, including a <strong>full commercial kitchen, bakery, coffee bar and complete MEP infrastructure</strong>.<br><br>Crystal Fit managed the project end-to-end, including <strong>design and technical drawings, shell &amp; core works, full fit-out and MEP execution, LPG systems, authority submissions, DEWA, DDA and Emaar approvals, inspections, testing and final handover</strong>.<br><br>Despite the extensive approval and inspection requirements, the entire project was <strong>successfully completed and handed over within four months</strong>.</p></div>
+<div class="pinfo__text"><p>A 210 sqm <strong>Asian-inspired cafe</strong> in Lime Garden, Dubai Hills, with warm natural tones, terrazzo, sculptural lighting and custom furniture.<br><br>Behind the calm interior sits a technically demanding operation: a full <strong>commercial kitchen, bakery and coffee bar</strong>, LPG systems and complete MEP infrastructure – all through Emaar, DDA and DEWA approvals and inspections.<br><br>Crystal Fit designed and built the cafe <strong>from shell & core in four months</strong> – design and technical drawings, fit-out, MEP, authority submissions, testing and handover.</p></div>

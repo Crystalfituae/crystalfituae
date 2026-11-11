@@ -87,9 +87,9 @@ location: "Bluewaters, Dubai, UAE"
 area: 205
 year: "2025"
 timeline: "6 months"
-scope: []
-approvals: []
+scope: ["approvals", "fitout", "mep", "joinery"]
+approvals: ["Meraas"]
 seoTitle: "Bluewaters 4-Bedroom Apartment, Dubai | Crystal Fit"
-seoDescription: "Bluewaters 4-Bedroom Apartment, Dubai: apartment interior design by Crystal Fit (205 sqm, 2025). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Bluewaters 4-bedroom apartment, Dubai: 205 sqm luxury renovation by Crystal Fit in 6 months – demolition, MEP, bespoke joinery, natural stone."
 ---
-<div class="pinfo__text"><p>Complete <strong>luxury residential fit-out and renovation</strong> of a 4-bedroom apartment at Bluewaters, Dubai. The scope covered the entire project lifecycle, from <strong>authority and building management approvals through full demolition, shell-and-core preparation, MEP modifications, and complete interior fit-out to final handover</strong>.</p><p>The apartment was transformed using <strong>high-end bespoke joinery, premium natural stone, custom architectural details, decorative finishes and carefully coordinated lighting</strong>. Particular attention was given to material junctions, detailing and workmanship to achieve a refined, seamless finish throughout the residence.</p><p><strong>Crystal Fit Contracting delivered the complete fit-out execution, technical coordination, approvals and handover</strong>, turning the existing apartment into a fully customized luxury home.</p></div>
+<div class="pinfo__text"><p>A complete <strong>luxury renovation of a 4-bedroom apartment on Bluewaters</strong>, Dubai.<br><br>The scope covered the whole lifecycle: building management and authority approvals, full demolition, shell & core preparation, MEP modifications and new interiors. Particular attention went to <strong>material junctions and detailing</strong> – bespoke joinery, premium natural stone, decorative finishes and coordinated lighting meet seamlessly throughout.<br><br>Crystal Fit delivered the <strong>fit-out, technical coordination, approvals and handover</strong> in six months, turning an existing apartment into a fully customised home.</p></div>

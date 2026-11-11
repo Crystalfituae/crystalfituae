@@ -107,10 +107,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Creek Rise Tower 2, Dubai Creek Harbour, Dubai, UAE"
 area: 98
 year: "2023"
-scope: []
+scope: ["design", "fitout", "joinery"]
 approvals: []
 seoTitle: "ROS Apartment, Creek Harbour, Dubai | Crystal Fit"
-seoDescription: "ROS Apartment, Creek Harbour, Dubai: apartment interior design by Crystal Fit (98 sqm, 2023). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "ROS apartment, Creek Rise, Dubai Creek Harbour: 98 sqm apartment design & fit-out by Crystal Fit – oak joinery, kids' room, marble feature wall."
 ---
-<div class="pinfo__text"><p>Project Description</p></div>
-
+<div class="pinfo__text"><p>A 98 sqm <strong>family apartment in Creek Rise, Dubai Creek Harbour</strong>.<br><br>Warm oak joinery runs through the home – from the TV wall to the kitchen and a compact study corner. A marble feature wall and circular pendant define the living room, while the kids' room gets a playful pink wardrobe and integrated desk.<br><br>Crystal Fit delivered <strong>design and fit-out</strong>, with all built-in furniture made to measure.</p></div>

@@ -55,8 +55,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Wadi Al Amardi, Dubai, UAE"
 area: 620
 year: "2021"
-scope: []
+scope: ["design"]
 approvals: []
 seoTitle: "NSR Villa, Wadi Al Amardi | Villa Interior Design Dubai"
-seoDescription: "NSR Villa, Wadi Al Amardi: villa interior design by Crystal Fit in Dubai (620 sqm, 2021). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "NSR Villa, Wadi Al Amardi, Dubai: 620 sqm modern villa interior design by Crystal Fit – stone, timber panelling, linear lighting."
 ---
+<div class="pinfo__text"><p>A 620 sqm <strong>modern villa interior</strong> in Wadi Al Amardi, Dubai.<br><br>Large-format stone, timber wall panelling and linear ceiling lights create a calm, architectural interior. The living rooms open fully to the garden, the master bedroom is framed by a stone headboard wall, and bathrooms combine veined marble with bronze fittings.<br><br>Crystal Fit developed the <strong>complete interior design</strong> – space planning, concept, lighting, materials and 3D visualisation.</p></div>

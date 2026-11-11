@@ -81,8 +81,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "JBR Podium Level, Dubai, UAE"
 area: 450
 year: "2023"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "Muha Music & Fine Arts – Studio Fit-Out Dubai | Crystal Fit"
-seoDescription: "Muha Music & Fine Arts: studio fit-out by Crystal Fit in Dubai (450 sqm, 2023). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
+seoDescription: "Muha Music & Fine Arts, JBR, Dubai: 450 sqm music and arts school fit-out by Crystal Fit – classrooms, recording studio, dance halls."
 ---
+<div class="pinfo__text"><p>A 450 sqm <strong>music and fine arts school</strong> on the podium level of Jumeirah Beach Residence (JBR).<br><br>The programme included classrooms, a sound recording studio and booth, two dance halls, a gym, offices, pantry and washrooms. <strong>Acoustic separation</strong> between rooms was the key technical task, solved with dedicated wall and ceiling build-ups. Bold murals, colour-coded doors and playful furniture make the space inspiring for children.<br><br>Crystal Fit delivered the school <strong>turnkey</strong> – design, approvals, MEP, acoustics, joinery and fit-out.</p></div>

@@ -55,8 +55,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Gate Village, DIFC, Dubai, UAE"
 area: 320
 year: "2018"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout"]
+approvals: ["DIFC"]
 seoTitle: "Christie's Auction House, Art Gallery & Office, DIFC"
-seoDescription: "Christie's Auction House, Art Gallery & Office, DIFC: office fit-out by Crystal Fit in Dubai (320 sqm, 2018). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Christie's art gallery & office, Gate Village, DIFC: 320 sqm gallery and office fit-out by Crystal Fit for the world-famous auction house."
 ---
+<div class="pinfo__text"><p>An art gallery and office for <strong>Christie's auction house</strong> in Gate Village, DIFC – a minimal, gallery-grade space for exhibitions, private viewings and client meetings.<br><br>The design keeps the architecture quiet so that the objects speak: neutral walls, polished concrete-look floors, a sculptural reception desk and flexible track lighting for changing displays of watches, jewellery and fine art. Works were coordinated under DIFC requirements in a fully operational district.<br><br>Crystal Fit delivered the <strong>design and fit-out</strong> of the gallery and offices, including approvals and lighting.</p></div>

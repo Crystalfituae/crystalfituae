@@ -58,8 +58,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Dubai Creek Harbour, Dubai, UAE"
 area: 265
 year: "2024"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["Emaar", "DM", "DCD", "DEWA"]
 seoTitle: "Roasters Specialty Coffee, Creek Harbour | Crystal Fit"
-seoDescription: "Roasters Specialty Coffee, Creek Harbour: cafe fit-out by Crystal Fit (265 sqm, 2024). Turnkey design & build with Emaar landlord approvals."
+seoDescription: "Roasters Specialty Coffee, Dubai Creek Harbour: 265 sqm waterfront cafe design & fit-out by Crystal Fit with Emaar approvals."
 ---
+<div class="pinfo__text"><p>A 265 sqm <strong>waterfront cafe in Dubai Creek Harbour</strong> with a terrace facing the Creek and the Downtown skyline.<br><br>The centrepiece is a <strong>bar clad in textured stone</strong> with bronze lettering, set against a light, calm interior with exposed rafters, soft seating and greenery. The outdoor terrace extends the cafe towards the promenade.<br><br>Crystal Fit delivered <strong>design and fit-out</strong> under Emaar requirements – approvals, MEP, joinery and finishing.</p></div>

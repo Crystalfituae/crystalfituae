@@ -56,9 +56,9 @@ location: "Shangri-La Hotel, Sheikh Zayed Road, Dubai, UAE"
 area: 350
 year: "2024"
 timeline: "3 months"
-scope: []
+scope: ["design", "fitout", "joinery"]
 approvals: []
 seoTitle: "YOY Neo Bistro Restaurant – Restaurant Fit-Out | Crystal Fit"
-seoDescription: "YOY Neo Bistro Restaurant, Dubai: restaurant fit-out by Crystal Fit (350 sqm, 2024). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
+seoDescription: "YOY Neo Bistro, Shangri-La Hotel, Dubai: 350 sqm fine-dining restaurant transformation by Crystal Fit in 3 months."
 ---
-<div class="pinfo__text"><p>The relocation and reinvention of the famous YOY Ukrainian fire cooking restaurant&nbsp; into a Michelin-star pursuit fine dining destination. Crystal fit Contracting managed to:</p><p><br></p><p>• Retained the full kitchen to avoid major government reinspection &amp; approvals</p><p>• Preserved FLS &amp; electrical systems with only minor adjustments</p><p>• Focused transformation through aesthetic upgrades in materials, colors, and lighting</p><p>• Integrated signature YOY elements to keep the brand’s identity while applying value engineering</p><p><br></p><p>A highlight of the project was the contribution of world-renowned Ukrainian lighting designer Mykola Kabluka, whose vision shaped the bespoke ceiling décor and lighting design, giving the venue its unique high-end twist.</p><p><br></p><p>Key challenges: delivering under short deadlines while revitalizing an existing space into something extraordinary.</p></div>
+<div class="pinfo__text"><p>The relocation and reinvention of the famous <strong>YOY Ukrainian fire-cooking restaurant</strong> into a fine-dining destination at Shangri-La Hotel, Sheikh Zayed Road.<br><br>To deliver on a short deadline, the full kitchen, fire and life safety and electrical systems were retained with minor adjustments, avoiding major re-inspections. The transformation focused on materials, colours and lighting, with <strong>bespoke ceiling decor and lighting by Ukrainian designer Mykola Kabluka</strong> giving the venue its unique character.<br><br>Crystal Fit delivered the <strong>fit-out in three months</strong>, integrating YOY's signature elements and applying value engineering throughout.</p></div>

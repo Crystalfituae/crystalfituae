@@ -59,9 +59,9 @@ location: "Bay Square, Business Bay, Dubai, UAE"
 area: 180
 year: "2026"
 timeline: "3.5 months"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["Dubai Holding", "DHA", "DM", "DCD", "DEWA"]
 seoTitle: "AMV Aesthetic Clinic – Clinic Fit-Out Dubai | Crystal Fit"
-seoDescription: "AMV Aesthetic Clinic: clinic fit-out by Crystal Fit in Bay Square, Dubai (180 sqm, 2026). Turnkey design & build with Dubai Holding landlord approvals."
+seoDescription: "AMV Aesthetic Clinic, Bay Square, Dubai: 180 sqm turnkey clinic fit-out by Crystal Fit with Dubai Holding and DHA approvals, delivered in 3.5 months."
 ---
-<div class="pinfo__text"><p>A premium aesthetic clinic delivered by <strong>Crystal Fit Contracting</strong> on a full turnkey basis, from <strong>concept design and authority approvals through to construction and final handover</strong>.<br><br></p><p>The project was executed under the requirements of <strong>Dubai Holding</strong>, involving extensive landlord reviews, multiple inspections, and strict compliance throughout the fit-out process. Our team also managed the complete <strong>Dubai Health Authority (DHA)</strong> approval and coordination process, ensuring the clinic met all healthcare regulations and operational standards.<br><br></p><p>The interior combines elegant contemporary finishes with a functional clinical layout, featuring custom joinery, premium marble-look porcelain, decorative wall mouldings, bespoke reception, treatment rooms, luxury washrooms, integrated lighting, and high-quality MEP installations.<br><br></p><p>&nbsp;</p></div>
+<div class="pinfo__text"><p>A <strong>premium aesthetic clinic</strong> in Bay Square, Business Bay, combining elegant contemporary finishes with a precise clinical layout: bespoke reception, treatment rooms, luxury washrooms and back-of-house areas.<br><br>Healthcare projects leave no room for improvisation. The works were carried out under <strong>Dubai Holding</strong> requirements with extensive landlord reviews and multiple inspections, while our team managed the full <strong>Dubai Health Authority (DHA)</strong> approval and coordination process so the clinic met every medical and operational standard.<br><br>Crystal Fit delivered the project <strong>turnkey in 3.5 months</strong> – concept design, authority approvals, MEP, custom joinery, marble-look porcelain, decorative mouldings, integrated lighting and final handover.</p></div>

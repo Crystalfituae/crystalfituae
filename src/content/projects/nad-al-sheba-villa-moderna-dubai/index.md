@@ -47,8 +47,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Nad Al Sheba 1, Dubai, UAE"
 area: 2170
 year: "2015–2019"
-scope: []
+scope: ["design", "supervision"]
 approvals: []
 seoTitle: "Nad Al Sheba Villa Moderna | Villa Interior Design Dubai"
-seoDescription: "Nad Al Sheba Villa Moderna, Dubai: villa interior design by Crystal Fit (2 170 sqm, 2015). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Villa Moderna, Nad Al Sheba, Dubai: 2,170 sqm modern villa architecture and technical supervision by Crystal Fit, 2015–2019."
 ---
+<div class="pinfo__text"><p><strong>Villa Moderna</strong> is a 2,170 sqm private residence in Nad Al Sheba, Dubai – a sculptural composition of stone-clad volumes, deep cantilevers and wide glazing.<br><br>The bold cantilevered forms and precise stone cladding required close coordination between design and site. Feature elements such as <strong>backlit natural stone walls</strong> were developed and checked on site to achieve the intended result.<br><br>Crystal Fit provided the <strong>architectural design and technical supervision</strong> of the project from 2015 to 2019.</p></div>

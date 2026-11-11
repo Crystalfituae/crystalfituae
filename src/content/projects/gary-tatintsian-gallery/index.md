@@ -51,9 +51,9 @@ location: "Dubai Design District (d3), Dubai, UAE"
 area: 220
 year: "2025"
 timeline: "3 months"
-scope: []
-approvals: []
+scope: ["approvals", "fitout", "mep", "supervision"]
+approvals: ["TECOM", "DDA (d3)", "DCD", "DEWA"]
 seoTitle: "Gari Tatintsian Gallery – Gallery Fit-Out | Crystal Fit"
-seoDescription: "Gari Tatintsian Gallery: gallery fit-out by Crystal Fit in Dubai Design District (220 sqm, 2025). Turnkey design & build with TECOM landlord approvals."
+seoDescription: "Gari Tatintsian Gallery, Dubai Design District: 220 sqm art gallery fit-out by Crystal Fit, completed in 3 months with DDA, DCD, DEWA and TECOM approvals."
 ---
-<div class="pinfo__text"><p>Crystal Fit successfully delivered the fit-out of the <b>Gari Tatintsian Art Gallery</b> after several previous contractors were unable to complete the project or obtain the required approvals.<br><br></p><p>Our team carried out a full technical review of the existing works, rebuilding critical architectural and MEP elements where necessary to ensure compliance with all local regulations and quality standards. One of the key challenges was combining two separate units into a single gallery space while coordinating all technical documentation and approvals.</p><p>The project was completed with final approvals from <b>DDA, DCD, DEWA</b> and <b>TECOM</b>, leading to a successful handover.</p><p><br>The gallery features a minimalist exhibition space with seamless cementitious flooring, fire-rated decorative wall panels and refined finishes, creating a flexible environment for contemporary art exhibitions and high-profile visitors in the heart of Dubai Design District.</p></div>
+<div class="pinfo__text"><p>A minimalist <strong>contemporary art gallery in Dubai Design District (d3)</strong> – a flexible exhibition space for international artists and high-profile visitors.<br><br>Crystal Fit took over after <strong>several previous contractors</strong> had been unable to complete the project or obtain approvals. We carried out a full technical review, rebuilt critical architectural and MEP elements, and joined two separate units into one gallery while coordinating all documentation.<br><br>The project was completed in three months with <strong>final approvals from DDA, DCD, DEWA and TECOM</strong>. Seamless cementitious flooring, fire-rated decorative wall panels and refined finishes create a calm backdrop for contemporary art.</p></div>

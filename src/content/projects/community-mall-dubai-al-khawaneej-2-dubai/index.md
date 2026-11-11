@@ -33,8 +33,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Khawaneej 2, Dubai, UAE"
 area: 13500
 year: "2021"
-scope: []
+scope: ["design"]
 approvals: []
 seoTitle: "Park View Community Mall, Al Khawaneej 2, Dubai"
-seoDescription: "Park View Community Mall, Al Khawaneej 2, Dubai: mall interior design by Crystal Fit (13 500 sqm, 2021). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Park View community mall, Al Khawaneej 2, Dubai: 13,500 sqm G+2+roof mall architectural concept by Crystal Fit."
 ---
+<div class="pinfo__text"><p>An <strong>architectural concept for a G+2+roof community mall</strong> of 13,500 sqm in Al Khawaneej 2, Dubai, serving the surrounding residential neighbourhood.<br><br>The design combines a simple, efficient retail box with a striking entrance canopy of <strong>diagonal steel trusses</strong>, landscaped parking and a pedestrian bridge. Clean stone-look facades, large shopfront glazing and shaded outdoor areas create a welcoming, human-scale destination.<br><br>Crystal Fit developed the <strong>architectural concept, massing, facades and visualisation</strong>.</p></div>

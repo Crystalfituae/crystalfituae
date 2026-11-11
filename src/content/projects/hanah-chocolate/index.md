@@ -35,8 +35,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Barsha 3, Dubai, UAE"
 area: 55
 year: "2023"
-scope: []
+scope: ["design", "fitout", "joinery"]
 approvals: []
 seoTitle: "Hanah Chocolate Boutique, Al Barsha 3 | Cafe Fit-Out Dubai"
-seoDescription: "Hanah Chocolate Boutique, Al Barsha 3, Dubai: cafe fit-out by Crystal Fit (55 sqm, 2023). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
+seoDescription: "Hanah Chocolate boutique, Al Barsha, Dubai: 55 sqm chocolate shop design & fit-out by Crystal Fit – bronze drapes, curved lounge, glass display."
 ---
+<div class="pinfo__text"><p>A 55 sqm <strong>luxury chocolate boutique</strong> in Al Barsha, Dubai, designed like a jewellery store.<br><br>Wave-shaped <strong>bronze-toned wall panels</strong>, illuminated niches for gift boxes and a long glass display counter present the chocolates as precious objects, while a curved white lounge sofa invites guests to sit and taste.<br><br>Crystal Fit delivered <strong>design and fit-out</strong> – bespoke joinery, display counters, lighting and decorative finishes.</p></div>

@@ -56,8 +56,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "The Boulevard, Downtown Dubai, UAE"
 area: 234
 year: "2023"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["Emaar", "DM", "DCD", "DEWA"]
 seoTitle: "Roasters Specialty Coffee, Downtown | Cafe Fit-Out Dubai"
-seoDescription: "Roasters Specialty Coffee, Downtown: cafe fit-out by Crystal Fit in Dubai (234 sqm, 2023). Turnkey design & build with Emaar landlord approvals."
+seoDescription: "Roasters Specialty Coffee, The Boulevard, Downtown Dubai: 234 sqm cafe design & fit-out by Crystal Fit with Emaar approvals."
 ---
+<div class="pinfo__text"><p>A 234 sqm <strong>specialty coffee house on The Boulevard, Downtown Dubai</strong>, with views towards the Old Town.<br><br>Full-height glazing, lush planting and a light, airy palette blur the line between inside and the terrace. Green marble-top tables, soft upholstered chairs and a <strong>live-edge communal table</strong> create different seating moods for quick coffee or long meetings.<br><br>Crystal Fit delivered <strong>design and fit-out</strong> under Emaar requirements – approvals, MEP, joinery and finishing works.</p></div>

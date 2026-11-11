@@ -63,8 +63,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Wasl Road, Jumeirah, Dubai, UAE"
 area: 360
 year: "2018"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "Roasters Specialty Coffee, Jumeirah | Cafe Fit-Out Dubai"
-seoDescription: "Roasters Specialty Coffee, Jumeirah: cafe fit-out by Crystal Fit in Al Wasl Rd. Jumeirah (360 sqm, 2018). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Roasters Specialty Coffee, Al Wasl Road, Jumeirah: 360 sqm two-level cafe with rooftop terrace, design & fit-out by Crystal Fit."
 ---
+<div class="pinfo__text"><p>A 360 sqm <strong>standalone coffee house on Al Wasl Road, Jumeirah</strong>, spread over two levels with a rooftop terrace overlooking the city.<br><br>A white facade with brass lettering welcomes guests; inside, a <strong>backlit world map of coffee origins</strong> leads up the staircase, and terrazzo tables, white upholstery and colourful artwork create a bright, relaxed atmosphere.<br><br>Crystal Fit delivered <strong>design and fit-out</strong> – approvals, MEP, joinery, terrace works and finishing.</p></div>

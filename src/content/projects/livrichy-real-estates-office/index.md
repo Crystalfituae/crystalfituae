@@ -95,8 +95,9 @@ otherCases: ["mercure-gold-hotel-interior-design","amv-aesthetic-clinic","roaste
 location: "Park Square Tower, Dubai Hills, Dubai, UAE"
 area: 270
 year: "2023"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["Emaar", "DM", "DCD", "DEWA"]
 seoTitle: "LIVRICHY Real Estate Office – Office Fit-Out | Crystal Fit"
-seoDescription: "LIVRICHY Real Estate Office: office fit-out by Crystal Fit in Dubai Hills, Park Square Tower, Dubai (270 sqm, 2023). Turnkey design & build."
+seoDescription: "LIVRICHY real estate office, Park Square, Dubai Hills: 270 sqm office design & fit-out by Crystal Fit – reception, boardroom, CEO suite, library."
 ---
+<div class="pinfo__text"><p>A 270 sqm <strong>real estate office in Park Square, Dubai Hills</strong>, designed to impress clients from the first step.<br><br>The layout combines a representative reception and client lounge, a library, small meeting and Zoom rooms, a boardroom, CEO and GM offices and an open workspace. Premium finishes, bespoke reception counters and carefully layered lighting give the office a hospitality feel while keeping it practical for daily work.<br><br>Crystal Fit delivered the office <strong>turnkey</strong> – design, approvals, MEP, joinery and fit-out.</p></div>

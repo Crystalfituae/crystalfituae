@@ -20,9 +20,9 @@ gallery:
 location: "DIFC, Dubai, UAE"
 area: 12
 year: "2020"
-scope: []
+scope: ["design"]
 approvals: []
 seoTitle: "Beacon Coffee Portable Kiosk | Coffee Kiosk Fit-Out Dubai"
-seoDescription: "Beacon Coffee Portable Kiosk: coffee kiosk fit-out by Crystal Fit in Dubai, DIFC (12 sqm, 2020). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Beacon Coffee portable kiosk, DIFC, Dubai: 12 sqm glass-and-brass coffee kiosk design by Crystal Fit."
 ---
-
+<div class="pinfo__text"><p>A 12 sqm <strong>portable coffee kiosk</strong> for DIFC, designed as a jewel-like glasshouse: arched brass frames, fluted glass and a marble-clad counter.<br><br>The kiosk had to be compact, movable and fully functional – housing a complete espresso station, storage and service counter – while looking like a piece of furniture rather than a temporary booth in a premium lobby.<br><br>Crystal Fit developed the <strong>concept, 3D design and fabrication drawings</strong> for the kiosk.</p></div>

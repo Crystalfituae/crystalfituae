@@ -44,8 +44,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "The Dubai Mall, Dubai, UAE"
 area: 77
 year: "2021"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["Emaar"]
 seoTitle: "Roasters Specialty Coffee, Dubai Mall Island | Crystal Fit"
-seoDescription: "Roasters Specialty Coffee, Dubai Mall Island: cafe fit-out by Crystal Fit in The Dubai Mall, Dubai (77 sqm, 2021). Turnkey design & build."
+seoDescription: "Roasters Specialty Coffee island, The Dubai Mall: 77 sqm cafe island design & fit-out by Crystal Fit under Emaar requirements."
 ---
+<div class="pinfo__text"><p>A 77 sqm <strong>open cafe island inside The Dubai Mall</strong>, visible from every direction.<br><br>A sculptural black totem with the brand logo anchors the island, while the stone-clad bar, pastry display and grey upholstered seating form a clean, compact layout that works in one of the busiest malls in the world.<br><br>Crystal Fit delivered <strong>design and fit-out</strong> under Emaar and Dubai Mall requirements.</p></div>

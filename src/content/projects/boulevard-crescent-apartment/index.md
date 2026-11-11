@@ -68,8 +68,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Boulevard Crescent Tower 1, Downtown Dubai, UAE"
 area: 100
 year: "2023"
-scope: []
+scope: ["design", "fitout", "joinery"]
 approvals: []
 seoTitle: "Boulevard Crescent Apartment, Dubai | Crystal Fit"
-seoDescription: "Boulevard Crescent Apartment: apartment interior design by Crystal Fit in Dubai (100 sqm, 2023). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Boulevard Crescent apartment, Downtown Dubai: 100 sqm apartment design & fit-out by Crystal Fit – sculpted plaster walls, warm neutral palette."
 ---
+<div class="pinfo__text"><p>A 100 sqm <strong>Downtown Dubai apartment</strong> in Boulevard Crescent Tower 1, reworked into a calm, tactile home with a terrace overlooking the Boulevard.<br><br>The highlight is a <strong>hand-sculpted plaster relief wall</strong> in the dining area, lit with concealed linear lighting. Warm neutral tones, natural textures, bespoke wardrobes and a refreshed kitchen and bathrooms make the compact layout feel generous and cohesive.<br><br>Crystal Fit delivered <strong>design and fit-out</strong>, including custom joinery, decorative finishes and lighting.</p></div>

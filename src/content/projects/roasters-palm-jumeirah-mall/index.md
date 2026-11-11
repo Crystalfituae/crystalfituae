@@ -58,9 +58,9 @@ location: "Palm Jumeirah Mall, Dubai, UAE"
 area: 235
 year: "2025"
 timeline: "3 months"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "Roasters Specialty Coffee, Palm Jumeirah Mall | Crystal Fit"
-seoDescription: "Roasters Specialty Coffee, Palm Jumeirah Mall: cafe fit-out by Crystal Fit in Dubai (235 sqm, 2025). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Roasters Specialty Coffee, Palm Jumeirah Mall: 235 sqm cafe fit-out by Crystal Fit in 3 months – coffee bar, lounge, retail display, kitchen."
 ---
-<div class="pinfo__text"><p>Designed and built with a focus on craftsmanship and refined aesthetics, this project reflects the brand’s dedication to quality and detail at every level.<br><br>Project Highlights<br>• Elegant coffee bar featuring premium equipment and custom joinery finishes<br>• Inviting lounge and seating areas designed for comfort and ambiance<br>• Specialty display counters and retail shelving for coffee beans and merchandise<br>• Back-of-house fit-out including full kitchen and storage areas<br>• Seamless coordination of MEP services to preserve design integrity</p><p>Challenges &amp; Solutions<br>• Navigating stringent mall and authority approval processes with multiple inspections and documentation stages<br>• Upholding exceptional standards of build quality and finish to meet both client and designer expectations<br>• Executing complex signature design elements, including custom lighting, textured finishes, and bespoke furniture pieces</p><p><span style="color: rgba(0, 0, 0, 0.9); font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal;">&nbsp;</span></p></div>
+<div class="pinfo__text"><p>A 235 sqm <strong>specialty coffee house in Palm Jumeirah Mall</strong> with an elegant coffee bar, lounge seating, retail display and full back-of-house kitchen.<br><br>The project navigated <strong>stringent mall and authority approvals</strong> with multiple inspections, while complex signature elements – custom lighting, textured finishes and bespoke furniture – were executed to the designer's exact intent with seamless MEP coordination.<br><br>Crystal Fit delivered the <strong>design and fit-out in three months</strong>, including joinery, MEP and approvals.</p></div>

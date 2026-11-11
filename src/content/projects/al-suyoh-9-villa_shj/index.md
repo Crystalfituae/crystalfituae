@@ -56,9 +56,9 @@ gallery:
 location: "Al Suyoh, Sharjah, UAE"
 area: 720
 year: "2017"
-scope: []
+scope: ["design"]
 approvals: []
 seoTitle: "Al Suyoh Suburb Villa – Villa Interior Design | Crystal Fit"
-seoDescription: "Al Suyoh Suburb Villa, Sharjah: villa interior design by Crystal Fit in Sharjah (720 sqm, 2017). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Al Suyoh Villa, Sharjah: 720 sqm villa interior design by Crystal Fit – oriental majlis, family living, cinema room and bespoke bathrooms."
 ---
-
+<div class="pinfo__text"><p>A 720 sqm family villa in Al Suyoh, Sharjah, where <strong>contemporary living spaces meet oriental details</strong>: a formal majlis and dining room with arabesque patterns, a bright family living area, an entertainment room and a series of individually designed bathrooms.<br><br>The challenge was to balance the traditional hospitality spaces expected in an Emirati home with relaxed, modern family areas. Layered ceilings with integrated lighting, natural stone, timber panelling and patterned mosaics give every room its own identity without losing the overall harmony.<br><br>Crystal Fit delivered the <strong>full interior design</strong> – space planning, concept, 3D visualisation, finishes and furniture selection.</p></div>

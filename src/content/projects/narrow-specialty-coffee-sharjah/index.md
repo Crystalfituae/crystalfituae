@@ -45,8 +45,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Layyeh, Sharjah, UAE"
 area: 35
 year: "2018"
-scope: []
+scope: ["design", "fitout", "joinery"]
 approvals: []
 seoTitle: "Narrow Specialty Coffee – Cafe Fit-Out Sharjah | Crystal Fit"
-seoDescription: "Narrow Specialty Coffee, Sharjah: cafe fit-out by Crystal Fit in Al Layyeh, Sharjah (35 sqm, 2018). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Narrow Specialty Coffee, Al Layyeh, Sharjah: 35 sqm specialty coffee shop design & fit-out by Crystal Fit."
 ---
+<div class="pinfo__text"><p>A 35 sqm <strong>specialty coffee shop in Sharjah</strong> that proves a small space can have a strong identity.<br><br>A grey microcement bar, navy blue retail shelving for coffee beans, built-in banquette seating and soft concealed lighting make the most of every centimetre, keeping the focus on the coffee and the barista.<br><br>Crystal Fit delivered <strong>design and fit-out</strong>, including the bar counter and bespoke joinery.</p></div>

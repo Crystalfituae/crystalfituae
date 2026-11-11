@@ -55,9 +55,9 @@ location: "Dubai Hills, Dubai, UAE"
 area: 360
 year: "2025"
 timeline: "4 months"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["Emaar"]
 seoTitle: "Roasters Specialty Coffee House, Dubai Hills | Crystal Fit"
-seoDescription: "Roasters Specialty Coffee House, Dubai Hills: cafe fit-out by Crystal Fit (360 sqm, 2025). Turnkey design & build with Emaar landlord approvals."
+seoDescription: "Roasters Specialty Coffee, Dubai Hills: 360 sqm turnkey cafe fit-out by Crystal Fit within a 4-month lease-free period, Emaar approvals."
 ---
-<div class="pinfo__text"><p>We’re proud to have delivered <strong>Roasters Specialty Coffee</strong>, a refined café destination located in <strong>Dubai Hills</strong>, within the <strong>Emaar Community</strong>. The 360 sqm space was brought to life as a complete turnkey project, from first sketch to opening day.<br><br></p><p><strong>Project Highlights</strong></p><p>• <strong>Full Turnkey Delivery:</strong> Design, drawings, authority approvals, procurement, construction, and operational support all handled by one dedicated team<br>• <strong>Design &amp; Implementation:</strong> Executed by <strong>Crystal Fit Contracting</strong>, ensuring continuity, precision, and accountability throughout the process<br>• <strong>Material Palette:</strong> Premium finishes define the space, including terrazzo flooring, frameless doors, high-gloss veneer wood panels, and high-grade stainless steel for a crisp, contemporary aesthetic<br>• <strong>Efficient Execution:</strong> All works were successfully completed within a <strong>four-month lease-free period</strong>, allowing the client to open on schedule without compromise</p><p>From concept development to final handover, the project was managed seamlessly under one roof, ensuring quality control, speed, and clarity at every stage.</p><p>&nbsp;</p><p>Roasters Specialty Coffee now stands as a welcoming, design-forward space that blends material richness with operational efficiency, crafted to serve both community and craft.</p></div>
+<div class="pinfo__text"><p>A 360 sqm <strong>specialty coffee house in Dubai Hills</strong>, within the Emaar community.<br><br>Terrazzo flooring, frameless doors, high-gloss veneer panels and high-grade stainless steel create a crisp, contemporary space. All works were completed <strong>within the four-month lease-free period</strong>, allowing the client to open on schedule.<br><br>Crystal Fit delivered the cafe <strong>turnkey</strong> – design, drawings, Emaar and authority approvals, procurement, construction and opening support, all under one roof.</p></div>

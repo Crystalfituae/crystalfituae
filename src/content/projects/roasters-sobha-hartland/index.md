@@ -63,9 +63,9 @@ location: "Sobha Hartland, Dubai, UAE"
 area: 180
 year: "2024"
 timeline: "3.5 months"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["Sobha"]
 seoTitle: "Roasters Specialty Coffee, Sobha Hartland | Crystal Fit"
-seoDescription: "Roasters Specialty Coffee, Sobha Hartland: cafe fit-out by Crystal Fit in Dubai (180 sqm, 2024). Turnkey design & build with Sobha landlord approvals."
+seoDescription: "Roasters Specialty Coffee, Sobha Hartland, Dubai: 180 sqm retail-to-cafe conversion by Crystal Fit in 3.5 months."
 ---
-<div class="pinfo__text"><p>Transformation of a 180 sqm retail shell &amp; core unit into a fully operational Food &amp; Beverage (F&amp;B) facility, complete with an in-house kitchen, bar, and seating area.&nbsp; <br><br>Crystal fit Contracting managed to deal with:</p><p>• Technical &amp; Approval Complexity converting retail into Food &amp; Beverage (F&amp;B) required extensive administrative work, provision of fresh air &amp; make-up air, and customized MEP solutions.</p><p>• Power Limitations – with only 34kW available and no additional load possible, we carefully handpicked and engineered the equipment setup for maximum efficiency.</p><p>• Structural Works – the existing fragile staircase was replaced with a new granite-finished metal structure, ensuring both safety and aesthetics</p><p>•&nbsp; Bespoke stainless-steel bar and metal-finish joinery panels, combining durability with a bold aesthetic statement.</p></div>
+<div class="pinfo__text"><p>Conversion of a 180 sqm <strong>retail shell & core unit into a full cafe</strong> with kitchen, bar and seating in Sobha Hartland, Dubai.<br><br>Changing the use from retail to F&B required extensive approvals, <strong>fresh-air and make-up air</strong> provisions and customised MEP. With only 34 kW available, equipment was carefully selected and engineered for efficiency. A fragile existing staircase was replaced with a new granite-finished steel structure.<br><br>Crystal Fit delivered the cafe <strong>turnkey in 3.5 months</strong>, including a bespoke stainless-steel bar and metal-finish joinery panels.</p></div>

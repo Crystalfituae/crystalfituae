@@ -60,8 +60,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Merano Tower, Business Bay, Dubai, UAE"
 area: 85
 year: "2021"
-scope: []
+scope: ["design", "fitout", "joinery"]
 approvals: []
 seoTitle: "Merano Tower Apartment, Business Bay, Dubai | Crystal Fit"
-seoDescription: "Merano Tower Apartment, Business Bay: apartment interior design by Crystal Fit in Dubai (85 sqm, 2021). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Merano Tower apartment, Business Bay: 85 sqm apartment design & fit-out by Crystal Fit – fluted panels, arched mirror, warm timber."
 ---
+<div class="pinfo__text"><p>An 85 sqm <strong>apartment in Merano Tower, Business Bay</strong>, refreshed into a calm, hotel-like home.<br><br>Grey <strong>fluted wall panels</strong>, an arched mirror niche, velvet upholstery and warm timber floors give the bedroom a boutique-hotel feel, while the living room stays light and minimal with soft curves and full-height curtains.<br><br>Crystal Fit delivered <strong>design and fit-out</strong>, including wall panelling, joinery and lighting.</p></div>

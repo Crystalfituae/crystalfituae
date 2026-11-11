@@ -43,9 +43,9 @@ location: "Ghoshi Warehouse City, Al Quoz 3, Dubai, UAE"
 area: 250
 year: "2025"
 timeline: "3 months"
-scope: []
-approvals: []
+scope: ["design", "approvals", "fitout", "mep", "joinery"]
+approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "SELF.SPACE AI-Powered Self-Portrait Studio | Crystal Fit"
-seoDescription: "SELF.SPACE AI-Powered Self-Portrait Studio: studio fit-out by Crystal Fit (250 sqm, 2025). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
+seoDescription: "SELF.SPACE studio, Al Quoz, Dubai: 250 sqm AI-powered photo studio fit-out by Crystal Fit in 3 months, DM, DCD and DEWA approvals in-house."
 ---
-<div class="pinfo__text"><p>We’re proud to have recently completed Self.Space Studio, Dubai’s first AI-powered photo studio — a 250 sqm industrial premise reimagined into a cozy, atmospheric space where creativity thrives.<br><br></p> <p>Key Highlights:</p> <p>3 Professional Studios (30–35 sqm each) equipped with cycloramas, changing rooms, and dedicated makeup tables.<br><br></p> <p>Design Concept: Luxury industrial style featuring polished concrete floors, metallic wall panels, micro shadow skirting, and frameless doors finished with pressed metallic sheets for a sleek, minimalist look.<br><br></p> <p>Thoughtful Layout: Space include welcoming lounge areas, reception, toilets, and ample storage for maximum comfort and convenience.<br><br></p> <p>Despite tight deadlines and sourcing premium materials from overseas, our team delivered the project on time, ensuring the highest standards of quality and uniqueness.</p> <p>All approvals — DCD, DEWA, and DM — were handled in-house, ensuring a seamless process from concept to completion.</p></div>
+<div class="pinfo__text"><p><strong>SELF.SPACE</strong> is Dubai's first AI-powered self-portrait studio – a 250 sqm industrial unit in Al Quoz turned into a cosy, atmospheric creative space.<br><br>Three professional studios with cycloramas, changing rooms and make-up tables sit alongside a lounge, reception and storage. The <strong>luxury industrial style</strong> uses polished concrete floors, metallic wall panels, shadow-gap skirting and frameless doors clad in pressed metal sheets.<br><br>Despite tight deadlines and overseas sourcing, Crystal Fit delivered the studio <strong>in three months</strong>, handling DCD, DEWA and DM approvals in-house.</p></div>

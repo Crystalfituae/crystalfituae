@@ -53,10 +53,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Safa Park Complex, Dubai, UAE"
 area: 120
 year: "2019"
-scope: []
+scope: ["design", "fitout", "joinery"]
 approvals: []
 seoTitle: "Studio Paper, Al Safa Park Complex | Retail Fit-Out Dubai"
-seoDescription: "Studio Paper, Al Safa Park Complex: retail fit-out by Crystal Fit in Dubai (120 sqm, 2019). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
+seoDescription: "Studio Paper, Al Safa Park Complex, Dubai: 120 sqm print studio & brew bar design & fit-out by Crystal Fit."
 ---
-<div class="pinfo__text"><p>STUDIO PAPER</p></div>
-
+<div class="pinfo__text"><p><strong>Studio Paper</strong> is a 120 sqm print and design studio with a brew bar in Al Safa Park Complex, Dubai.<br><br>Herringbone timber floors, white walls for rotating poster displays, a playful tiger rug and graphic signage create a creative, gallery-like setting where visitors can shop prints and stay for coffee and cake.<br><br>Crystal Fit delivered <strong>design and fit-out</strong>, including display joinery and the cafe counter.</p></div>

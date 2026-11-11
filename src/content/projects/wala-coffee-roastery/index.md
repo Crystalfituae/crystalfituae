@@ -72,9 +72,9 @@ location: "Al Quoz, Dubai, UAE"
 area: 450
 year: "2025"
 timeline: "4.5 months"
-scope: []
-approvals: []
+scope: ["approvals", "fitout", "mep", "joinery"]
+approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "Wala Coffee & Roastery – Cafe Fit-Out Dubai | Crystal Fit"
-seoDescription: "Wala Coffee & Roastery: cafe fit-out by Crystal Fit in Al Quoz, Dubai (450 sqm, 2025). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
+seoDescription: "Wala Coffee & Roastery, Al Quoz, Dubai: 450 sqm cafe and roastery fit-out by Crystal Fit from shell & core in 4.5 months."
 ---
-<div class="pinfo__text"><p>A bright, contemporary coffee space defined by <strong>natural textures, warm timber, brass details and clean architectural lines</strong>. <br><br>The open ceiling, feature lighting, custom joinery and integrated greenery create a spacious yet welcoming atmosphere, while <strong>Ethiopian-inspired elements</strong> reflect the origins and culture of coffee.<br><br>The interior combines the <strong>specialty coffee bar, retail display, lounge and communal seating areas</strong> within one cohesive space. Bespoke furniture, decorative wall features and carefully integrated lighting create a balance between functionality and a refined, relaxed customer experience.<br><br><strong>Crystal Fit Contracting</strong> delivered the complete <strong>Food &amp; Beverage (F&amp;B) fit-out in Dubai from shell &amp; core to final handover</strong>, including civil and MEP works, HVAC, bespoke joinery, specialist finishes, lighting, glass and metal works, together with all required <strong>landlord and authority approvals, inspections and commissioning</strong>.</p></div>
+<div class="pinfo__text"><p>A bright, contemporary <strong>coffee house and roastery</strong> in Al Quoz, defined by natural textures, warm timber, brass details and clean architectural lines, with <strong>Ethiopian-inspired elements</strong> reflecting the origins of coffee.<br><br>The 450 sqm space combines a specialty coffee bar, retail display, lounge and communal seating. An open ceiling, feature lighting, custom joinery and integrated greenery keep the large volume welcoming, while bespoke furniture balances function and a relaxed customer experience.<br><br>Crystal Fit delivered the complete <strong>F&amp;B fit-out from shell & core to handover in 4.5 months</strong> – civil and MEP works, HVAC, joinery, specialist finishes, lighting, glass and metal works, approvals, inspections and commissioning.</p></div>

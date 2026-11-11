@@ -39,8 +39,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Cox’s Bazar, Bangladesh"
 area: 8500
 year: "2021"
-scope: []
+scope: ["design"]
 approvals: []
 seoTitle: "Cox’s Bazar Family Hotel, B+G+4+Roof | Crystal Fit"
-seoDescription: "Cox’s Bazar Family Hotel, B+G+4+Roof: hotel interior design by Crystal Fit in Bangladesh (8500 sqm, 2021). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Family boutique hotel, Cox's Bazar, Bangladesh: 8,500 sqm B+G+4+roof 5-star resort concept by Crystal Fit."
 ---
+<div class="pinfo__text"><p>A <strong>5-star family resort</strong> of 8,500 sqm (B+G+4+roof) on the coast of Cox's Bazar, Bangladesh.<br><br>The building mass is carved to provide <strong>cross ventilation and self-shading</strong>, frame the approach and give every room a waterfront view. Terraced balconies with soft curves, roof pools and gardens, restaurants, play areas and outdoor dining create a relaxed resort experience for families.<br><br>Crystal Fit developed the <strong>architectural concept</strong> – massing studies, amenities programme, facades and visualisation.</p></div>

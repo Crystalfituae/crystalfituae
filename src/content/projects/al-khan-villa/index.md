@@ -41,9 +41,9 @@ gallery:
 location: "Al Khan, Sharjah, UAE"
 area: 450
 year: "2019"
-scope: []
+scope: ["design"]
 approvals: []
 seoTitle: "Al Khan Villa – Villa Interior Design Sharjah | Crystal Fit"
-seoDescription: "Al Khan Villa, Sharjah: villa interior design by Crystal Fit in Sharjah (450 sqm, 2019). Turnkey design & build. Dubai fit-out since 2014."
+seoDescription: "Al Khan Villa, Sharjah: 450 sqm classic villa interior design by Crystal Fit – marble halls, majlis, bespoke bedrooms and powder rooms."
 ---
-
+<div class="pinfo__text"><p>A <strong>classic villa interior</strong> for a family residence in Al Khan, Sharjah, combining warm Crema Marfil marble, panelled walls, crystal chandeliers and rich floral wallpapers.<br><br>The brief asked for an elegant, formal look in the reception areas and a softer, more personal mood in the private rooms. Each space received its own character – from the <strong>main hall and majlis</strong> to dining, master bedrooms, kids' room and statement powder rooms – while a consistent palette of marble, gold accents and moulded ceilings keeps the house cohesive.<br><br>Crystal Fit developed the <strong>complete interior design package</strong>: concept, 3D visualisation, material and furniture selection, ready for execution.</p></div>
