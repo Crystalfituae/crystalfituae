@@ -31,7 +31,7 @@ const services: [string, string, string, ImageMetadata, string][] = [
 const stats: [string, string][] = [['2014', 'UAE grown since'], ['200+', 'Projects handed over'], ['1', 'Team from design to handover'], ['1 year', 'Warranty on works']];
 const logos = import.meta.glob<{ default: ImageMetadata }>('../assets/logos/*', { eager: true });
 const lg = (n: string) => Object.entries(logos).find(([k]) => k.endsWith('/' + n))![1].default;
-const approved: [string, string][] = [['emaar-logo-1.png', 'Emaar'], ['aw-dh-pv-pos-rgb-en-002.png', 'Dubai Holding'], ['tecom-group.png', 'TECOM'], ['nakheel-properties-logo-2.png', 'Nakheel'], ['dub-gov-300.png', 'Government of Dubai'], ['trakhees.png', 'Trakhees']];
+const approved: [string, string][] = [['emaar-logo-1.png', 'Emaar'], ['aw-dh-pv-pos-rgb-en-002.png', 'Dubai Holding'], ['tecom-group.png', 'TECOM'], ['nakheel-properties-logo-2.png', 'Nakheel'], ['dub-gov-300.png', 'Government of Dubai'], ['trakhees.png', 'Trakhees'], ['dubai-civil-defense.png', 'Dubai Civil Defense'], ['dewa.png', 'DEWA'], ['vindico.png', 'Vindico'], ['1621791093880-1.png', 'IDAMA']];
 const latestBig = [
   { img: l1, span: 2, title: 'WALA Coffee & Roastery', sub: 'Al Quoz, Dubai, UAE', slug: 'wala-coffee-roastery' },
   { img: l2, span: 1, title: 'Panmi Cafe', sub: 'Dubai Hills, Dubai', slug: 'panmi-coffee-shop-dubai-hills' },
@@ -61,11 +61,6 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
 
 
 
-  <!-- 6. Approvals as logos -->
-  <section class="hd-approved">
-    <h2 class="hd-h2">We deliver to the standards of</h2>
-    <div class="hd-approved__vp"><ul>{[...approved, ...approved].map(([f, n], i) => <li aria-hidden={i >= approved.length ? 'true' : undefined} class:list={{ 'hd-dup': i >= approved.length, 'hd-noinv': f.startsWith('emaar') }}><Image src={lg(f)} alt={i >= approved.length ? '' : `${n} logo`} widths={[160, 320]} sizes="160px" loading="lazy" /></li>)}</ul></div>
-  </section>
 
   <!-- 7. Latest projects: same large masonry layout as the current home page -->
   <section class="latest">
@@ -85,6 +80,12 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
       ))}
     </Masonry>
     <div class="latest__btn"><a class="btn btn--black" href="/portfolio/">View portfolio</a></div>
+  </section>
+
+  <!-- 6. Approvals as logos -->
+  <section class="hd-approved">
+    <h2 class="hd-h2">We deliver to the standards of</h2>
+    <div class="hd-approved__vp"><ul>{[...approved, ...approved].map(([f, n], i) => <li aria-hidden={i >= approved.length ? 'true' : undefined} class:list={{ 'hd-dup': i >= approved.length, 'hd-noinv': f.startsWith('emaar'), 'hd-white': f === 'dewa.png' || f === 'dubai-civil-defense.png', 'hd-wide': f === 'dewa.png' || f === 'dubai-civil-defense.png' }}><Image src={lg(f)} alt={i >= approved.length ? '' : `${n} logo`} widths={[160, 320]} sizes="160px" loading="lazy" /></li>)}</ul></div>
   </section>
 
 
@@ -163,10 +164,12 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .hd-steps h3 { font-size: 17px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin: 4px 0 4px; }
   .hd-steps p { font-size: 14px; line-height: 21px; color: #555; margin: 0; }
   .hd-approved { text-align: center; padding: 70px 40px; background: #000; color: #fff; font-family: var(--ff-head); }
-  .hd-approved ul { list-style: none; margin: 0 auto; padding: 0; max-width: 1100px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 30px; align-items: center; }
+  .hd-approved ul { list-style: none; margin: 0 auto; padding: 0; max-width: 1100px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 44px 30px; align-items: center; }
   .hd-approved img { max-width: 130px; max-height: 80px; width: auto; height: auto; margin: 0 auto; display: block; filter: grayscale(1) invert(1) contrast(1.6) brightness(1.15); mix-blend-mode: screen; }
   .hd-approved .hd-h2 { color: #fff; }
   .hd-approved .hd-noinv img { filter: grayscale(1) contrast(1.4); }
+  .hd-approved .hd-white img { filter: brightness(0) invert(1); mix-blend-mode: normal; }
+  .hd-approved .hd-wide img { max-width: 200px; max-height: 84px; }
   .hd-dup { display: none; }
   .hd-approved p { margin: 30px 0 0; font-size: 14px; letter-spacing: 1px; color: #555; }
   .hd-proj { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px 22px; }
@@ -206,7 +209,7 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
     .hd-steps b { margin: 0; }
     .hd-approved { padding: 44px 16px; }
     .hd-approved__vp { overflow: hidden; margin: 0 -16px; }
-    .hd-approved ul { display: flex; gap: 36px; width: max-content; max-width: none; background: #000; animation: hd-logos 22s linear infinite; }
+    .hd-approved ul { display: flex; gap: 36px; width: max-content; max-width: none; background: #000; animation: hd-logos 36s linear infinite; }
     .hd-approved li { flex: 0 0 auto; }
     .hd-approved img { max-width: 100px; max-height: 56px; }
     .hd-dup { display: list-item; }
