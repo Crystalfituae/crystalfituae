@@ -50,10 +50,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Dubai Design District (d3), Dubai, UAE"
 area: 220
 year: "2025"
-timeline: "3 months"
 scope: ["approvals", "fitout", "mep", "supervision"]
 approvals: ["TECOM", "DDA (d3)", "DCD", "DEWA"]
 seoTitle: "Gari Tatintsian Gallery – Gallery Fit-Out | Crystal Fit"
-seoDescription: "Gari Tatintsian Gallery, Dubai Design District: 220 sqm art gallery fit-out by Crystal Fit, completed in 3 months with DDA, DCD, DEWA and TECOM approvals."
+seoDescription: "Gari Tatintsian Gallery, Dubai Design District: 220 sqm art gallery fit-out by Crystal Fit with DDA, DCD, DEWA and TECOM approvals."
 ---
-<div class="pinfo__text"><p>A minimalist <strong>contemporary art gallery in Dubai Design District (d3)</strong> – a flexible exhibition space for international artists and high-profile visitors.<br><br>Crystal Fit took over after <strong>several previous contractors</strong> had been unable to complete the project or obtain approvals. We carried out a full technical review, rebuilt critical architectural and MEP elements, and joined two separate units into one gallery while coordinating all documentation.<br><br>The project was completed in three months with <strong>final approvals from DDA, DCD, DEWA and TECOM</strong>. Seamless cementitious flooring, fire-rated decorative wall panels and refined finishes create a calm backdrop for contemporary art.</p></div>
+<div class="pinfo__text"><p>A minimalist <strong>contemporary art gallery in Dubai Design District (d3)</strong> – a flexible exhibition space for international artists and high-profile visitors.<br><br>Crystal Fit took over after <strong>several previous contractors</strong> had been unable to complete the project or obtain approvals. We carried out a full technical review, rebuilt critical architectural and MEP elements, and joined two separate units into one gallery while coordinating all documentation.<br><br>The project was completed with <strong>final approvals from DDA, DCD, DEWA and TECOM</strong>. Seamless cementitious flooring, fire-rated decorative wall panels and refined finishes create a calm backdrop for contemporary art.</p></div>

@@ -62,10 +62,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Palm Jumeirah, Dubai, UAE"
 area: 706
 year: "2025"
-timeline: "8 months (shell & core to handover)"
 scope: ["design", "approvals", "fitout", "mep", "joinery"]
 approvals: []
 seoTitle: "Anantara Penthouse – Apartment Interior Design | Crystal Fit"
-seoDescription: "Anantara Penthouse, Palm Jumeirah: 706 sqm luxury penthouse fit-out by Crystal Fit from shell & core to handover in 8 months – onyx wall, spiral stair, pool."
+seoDescription: "Anantara Penthouse, Palm Jumeirah: 706 sqm luxury penthouse fit-out by Crystal Fit from shell & core to turnkey handover – onyx wall, spiral stair, pool."
 ---
-<div class="pinfo__text"><p>A 706 sqm <strong>luxury penthouse at Anantara The Palm</strong> with four bedrooms, maid's room, gym, office and a private pool – taken from shell & core to turnkey handover.<br><br>Signature features include a <strong>backlit onyx feature wall</strong> and a hand-painted spiral staircase. Structural modifications converted a sloped roof into a panoramic balcony with full approvals, and the swimming pool was completely refurbished, re-waterproofed and re-tiled in Bali stone.<br><br>Crystal Fit handled <strong>in-house design and execution</strong> in eight months: blockwork, insulation, MEP and sanitary installations, premium large-format tiling, bespoke joinery and all finishing works.</p></div>
+<div class="pinfo__text"><p>A 706 sqm <strong>luxury penthouse at Anantara The Palm</strong> with four bedrooms, maid's room, gym, office and a private pool – taken from shell & core to turnkey handover.<br><br>Signature features include a <strong>backlit onyx feature wall</strong> and a hand-painted spiral staircase. Structural modifications converted a sloped roof into a panoramic balcony with full approvals, and the swimming pool was completely refurbished, re-waterproofed and re-tiled in Bali stone.<br><br>Crystal Fit handled <strong>in-house design and execution</strong>: blockwork, insulation, MEP and sanitary installations, premium large-format tiling, bespoke joinery and all finishing works.</p></div>

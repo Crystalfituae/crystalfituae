@@ -71,10 +71,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Quoz, Dubai, UAE"
 area: 450
 year: "2025"
-timeline: "4.5 months"
 scope: ["approvals", "fitout", "mep", "joinery"]
 approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "Wala Coffee & Roastery – Cafe Fit-Out Dubai | Crystal Fit"
-seoDescription: "Wala Coffee & Roastery, Al Quoz, Dubai: 450 sqm cafe and roastery fit-out by Crystal Fit from shell & core in 4.5 months."
+seoDescription: "Wala Coffee & Roastery, Al Quoz, Dubai: 450 sqm cafe and roastery fit-out by Crystal Fit from shell & core."
 ---
-<div class="pinfo__text"><p>A bright, contemporary <strong>coffee house and roastery</strong> in Al Quoz, defined by natural textures, warm timber, brass details and clean architectural lines, with <strong>Ethiopian-inspired elements</strong> reflecting the origins of coffee.<br><br>The 450 sqm space combines a specialty coffee bar, retail display, lounge and communal seating. An open ceiling, feature lighting, custom joinery and integrated greenery keep the large volume welcoming, while bespoke furniture balances function and a relaxed customer experience.<br><br>Crystal Fit delivered the complete <strong>F&amp;B fit-out from shell & core to handover in 4.5 months</strong> – civil and MEP works, HVAC, joinery, specialist finishes, lighting, glass and metal works, approvals, inspections and commissioning.</p></div>
+<div class="pinfo__text"><p>A bright, contemporary <strong>coffee house and roastery</strong> in Al Quoz, defined by natural textures, warm timber, brass details and clean architectural lines, with <strong>Ethiopian-inspired elements</strong> reflecting the origins of coffee.<br><br>The 450 sqm space combines a specialty coffee bar, retail display, lounge and communal seating. An open ceiling, feature lighting, custom joinery and integrated greenery keep the large volume welcoming, while bespoke furniture balances function and a relaxed customer experience.<br><br>Crystal Fit delivered the complete <strong>F&amp;B fit-out from shell & core to handover</strong> – civil and MEP works, HVAC, joinery, specialist finishes, lighting, glass and metal works, approvals, inspections and commissioning.</p></div>

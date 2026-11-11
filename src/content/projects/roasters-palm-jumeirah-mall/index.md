@@ -57,10 +57,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Palm Jumeirah Mall, Dubai, UAE"
 area: 235
 year: "2025"
-timeline: "3 months"
 scope: ["design", "approvals", "fitout", "mep", "joinery"]
 approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "Roasters Specialty Coffee, Palm Jumeirah Mall | Crystal Fit"
-seoDescription: "Roasters Specialty Coffee, Palm Jumeirah Mall: 235 sqm cafe fit-out by Crystal Fit in 3 months – coffee bar, lounge, retail display, kitchen."
+seoDescription: "Roasters Specialty Coffee, Palm Jumeirah Mall: 235 sqm cafe fit-out by Crystal Fit – coffee bar, lounge, retail display, kitchen."
 ---
-<div class="pinfo__text"><p>A 235 sqm <strong>specialty coffee house in Palm Jumeirah Mall</strong> with an elegant coffee bar, lounge seating, retail display and full back-of-house kitchen.<br><br>The project navigated <strong>stringent mall and authority approvals</strong> with multiple inspections, while complex signature elements – custom lighting, textured finishes and bespoke furniture – were executed to the designer's exact intent with seamless MEP coordination.<br><br>Crystal Fit delivered the <strong>design and fit-out in three months</strong>, including joinery, MEP and approvals.</p></div>
+<div class="pinfo__text"><p>A 235 sqm <strong>specialty coffee house in Palm Jumeirah Mall</strong> with an elegant coffee bar, lounge seating, retail display and full back-of-house kitchen.<br><br>The project navigated <strong>stringent mall and authority approvals</strong> with multiple inspections, while complex signature elements – custom lighting, textured finishes and bespoke furniture – were executed to the designer's exact intent with seamless MEP coordination.<br><br>Crystal Fit delivered the <strong>design and fit-out</strong>, including joinery, MEP and approvals.</p></div>

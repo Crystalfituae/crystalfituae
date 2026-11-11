@@ -54,10 +54,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Dubai Hills, Dubai, UAE"
 area: 360
 year: "2025"
-timeline: "4 months"
 scope: ["design", "approvals", "fitout", "mep", "joinery"]
 approvals: ["Emaar"]
 seoTitle: "Roasters Specialty Coffee House, Dubai Hills | Crystal Fit"
-seoDescription: "Roasters Specialty Coffee, Dubai Hills: 360 sqm turnkey cafe fit-out by Crystal Fit within a 4-month lease-free period, Emaar approvals."
+seoDescription: "Roasters Specialty Coffee, Dubai Hills: 360 sqm turnkey cafe fit-out by Crystal Fit, Emaar approvals."
 ---
-<div class="pinfo__text"><p>A 360 sqm <strong>specialty coffee house in Dubai Hills</strong>, within the Emaar community.<br><br>Terrazzo flooring, frameless doors, high-gloss veneer panels and high-grade stainless steel create a crisp, contemporary space. All works were completed <strong>within the four-month lease-free period</strong>, allowing the client to open on schedule.<br><br>Crystal Fit delivered the cafe <strong>turnkey</strong> – design, drawings, Emaar and authority approvals, procurement, construction and opening support, all under one roof.</p></div>
+<div class="pinfo__text"><p>A 360 sqm <strong>specialty coffee house in Dubai Hills</strong>, within the Emaar community.<br><br>Terrazzo flooring, frameless doors, high-gloss veneer panels and high-grade stainless steel create a crisp, contemporary space. All works were completed <strong>within the lease-free period</strong>, allowing the client to open on schedule.<br><br>Crystal Fit delivered the cafe <strong>turnkey</strong> – design, drawings, Emaar and authority approvals, procurement, construction and opening support, all under one roof.</p></div>

@@ -58,10 +58,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Bay Square, Business Bay, Dubai, UAE"
 area: 180
 year: "2026"
-timeline: "3.5 months"
 scope: ["design", "approvals", "fitout", "mep", "joinery"]
 approvals: ["Dubai Holding", "DHA", "DM", "DCD", "DEWA"]
 seoTitle: "AMV Aesthetic Clinic – Clinic Fit-Out Dubai | Crystal Fit"
-seoDescription: "AMV Aesthetic Clinic, Bay Square, Dubai: 180 sqm turnkey clinic fit-out by Crystal Fit with Dubai Holding and DHA approvals, delivered in 3.5 months."
+seoDescription: "AMV Aesthetic Clinic, Bay Square, Dubai: 180 sqm turnkey clinic fit-out by Crystal Fit with Dubai Holding and DHA approvals."
 ---
-<div class="pinfo__text"><p>A <strong>premium aesthetic clinic</strong> in Bay Square, Business Bay, combining elegant contemporary finishes with a precise clinical layout: bespoke reception, treatment rooms, luxury washrooms and back-of-house areas.<br><br>Healthcare projects leave no room for improvisation. The works were carried out under <strong>Dubai Holding</strong> requirements with extensive landlord reviews and multiple inspections, while our team managed the full <strong>Dubai Health Authority (DHA)</strong> approval and coordination process so the clinic met every medical and operational standard.<br><br>Crystal Fit delivered the project <strong>turnkey in 3.5 months</strong> – concept design, authority approvals, MEP, custom joinery, marble-look porcelain, decorative mouldings, integrated lighting and final handover.</p></div>
+<div class="pinfo__text"><p>A <strong>premium aesthetic clinic</strong> in Bay Square, Business Bay, combining elegant contemporary finishes with a precise clinical layout: bespoke reception, treatment rooms, luxury washrooms and back-of-house areas.<br><br>Healthcare projects leave no room for improvisation. The works were carried out under <strong>Dubai Holding</strong> requirements with extensive landlord reviews and multiple inspections, while our team managed the full <strong>Dubai Health Authority (DHA)</strong> approval and coordination process so the clinic met every medical and operational standard.<br><br>Crystal Fit delivered the project <strong>turnkey</strong> – concept design, authority approvals, MEP, custom joinery, marble-look porcelain, decorative mouldings, integrated lighting and final handover.</p></div>

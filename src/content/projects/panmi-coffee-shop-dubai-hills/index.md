@@ -66,10 +66,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Lime Garden, Dubai Hills, Dubai, UAE"
 area: 210
 year: "2026"
-timeline: "4 months"
 scope: ["design", "approvals", "fitout", "mep", "joinery"]
 approvals: ["Emaar", "DDA (d3)", "DEWA"]
 seoTitle: "Panmi Coffee Shop Dubai Hills – Cafe Fit-Out | Crystal Fit"
-seoDescription: "Panmi coffee shop, Lime Garden, Dubai Hills: 210 sqm design & build cafe fit-out by Crystal Fit, from shell & core to opening in 4 months."
+seoDescription: "Panmi coffee shop, Lime Garden, Dubai Hills: 210 sqm design & build cafe fit-out by Crystal Fit, from shell & core to opening."
 ---
-<div class="pinfo__text"><p>A 210 sqm <strong>Asian-inspired cafe</strong> in Lime Garden, Dubai Hills, with warm natural tones, terrazzo, sculptural lighting and custom furniture.<br><br>Behind the calm interior sits a technically demanding operation: a full <strong>commercial kitchen, bakery and coffee bar</strong>, LPG systems and complete MEP infrastructure – all through Emaar, DDA and DEWA approvals and inspections.<br><br>Crystal Fit designed and built the cafe <strong>from shell & core in four months</strong> – design and technical drawings, fit-out, MEP, authority submissions, testing and handover.</p></div>
+<div class="pinfo__text"><p>A 210 sqm <strong>Asian-inspired cafe</strong> in Lime Garden, Dubai Hills, with warm natural tones, terrazzo, sculptural lighting and custom furniture.<br><br>Behind the calm interior sits a technically demanding operation: a full <strong>commercial kitchen, bakery and coffee bar</strong>, LPG systems and complete MEP infrastructure – all through Emaar, DDA and DEWA approvals and inspections.<br><br>Crystal Fit designed and built the cafe <strong>from shell & core</strong> – design and technical drawings, fit-out, MEP, authority submissions, testing and handover.</p></div>

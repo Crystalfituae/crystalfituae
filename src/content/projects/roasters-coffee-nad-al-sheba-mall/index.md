@@ -44,10 +44,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Nad Al Sheba Mall, Dubai, UAE"
 area: 240
 year: "2024"
-timeline: "3.5 months"
 scope: ["design", "approvals", "fitout", "mep", "joinery"]
 approvals: ["Dubai Holding"]
 seoTitle: "Roasters Specialty Coffee, Nad Al Sheba Mall | Crystal Fit"
-seoDescription: "Roasters Specialty Coffee, Nad Al Sheba Mall, Dubai: 240 sqm turnkey cafe fit-out by Crystal Fit in 3.5 months under Dubai Holding."
+seoDescription: "Roasters Specialty Coffee, Nad Al Sheba Mall, Dubai: 240 sqm turnkey cafe fit-out by Crystal Fit under Dubai Holding."
 ---
-<div class="pinfo__text"><p>A 240 sqm <strong>destination cafe in Nad Al Sheba Mall</strong>, developed under Dubai Holding.<br><br>The interior combines warm wood flooring, a <strong>natural slate stone bar</strong> and bespoke decorative wall panels for a cosy yet bold atmosphere. The project went through an extensive approval process and rigorous landlord inspections; careful coordination met every requirement without compromising the design.<br><br>Crystal Fit delivered the cafe <strong>turnkey in 3.5 months</strong> – design development, technical drawings, approvals, procurement, construction and opening support.</p></div>
+<div class="pinfo__text"><p>A 240 sqm <strong>destination cafe in Nad Al Sheba Mall</strong>, developed under Dubai Holding.<br><br>The interior combines warm wood flooring, a <strong>natural slate stone bar</strong> and bespoke decorative wall panels for a cosy yet bold atmosphere. The project went through an extensive approval process and rigorous landlord inspections; careful coordination met every requirement without compromising the design.<br><br>Crystal Fit delivered the cafe <strong>turnkey</strong> – design development, technical drawings, approvals, procurement, construction and opening support.</p></div>

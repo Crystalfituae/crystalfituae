@@ -62,10 +62,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Sobha Hartland, Dubai, UAE"
 area: 180
 year: "2024"
-timeline: "3.5 months"
 scope: ["design", "approvals", "fitout", "mep", "joinery"]
 approvals: ["Sobha"]
 seoTitle: "Roasters Specialty Coffee, Sobha Hartland | Crystal Fit"
-seoDescription: "Roasters Specialty Coffee, Sobha Hartland, Dubai: 180 sqm retail-to-cafe conversion by Crystal Fit in 3.5 months."
+seoDescription: "Roasters Specialty Coffee, Sobha Hartland, Dubai: 180 sqm retail-to-cafe conversion by Crystal Fit."
 ---
-<div class="pinfo__text"><p>Conversion of a 180 sqm <strong>retail shell & core unit into a full cafe</strong> with kitchen, bar and seating in Sobha Hartland, Dubai.<br><br>Changing the use from retail to F&B required extensive approvals, <strong>fresh-air and make-up air</strong> provisions and customised MEP. With only 34 kW available, equipment was carefully selected and engineered for efficiency. A fragile existing staircase was replaced with a new granite-finished steel structure.<br><br>Crystal Fit delivered the cafe <strong>turnkey in 3.5 months</strong>, including a bespoke stainless-steel bar and metal-finish joinery panels.</p></div>
+<div class="pinfo__text"><p>Conversion of a 180 sqm <strong>retail shell & core unit into a full cafe</strong> with kitchen, bar and seating in Sobha Hartland, Dubai.<br><br>Changing the use from retail to F&B required extensive approvals, <strong>fresh-air and make-up air</strong> provisions and customised MEP. With only 34 kW available, equipment was carefully selected and engineered for efficiency. A fragile existing staircase was replaced with a new granite-finished steel structure.<br><br>Crystal Fit delivered the cafe <strong>turnkey</strong>, including a bespoke stainless-steel bar and metal-finish joinery panels.</p></div>

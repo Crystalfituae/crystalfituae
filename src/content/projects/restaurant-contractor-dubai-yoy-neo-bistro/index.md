@@ -55,10 +55,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Shangri-La Hotel, Sheikh Zayed Road, Dubai, UAE"
 area: 350
 year: "2024"
-timeline: "3 months"
 scope: ["design", "fitout", "joinery"]
 approvals: []
 seoTitle: "YOY Neo Bistro Restaurant – Restaurant Fit-Out | Crystal Fit"
-seoDescription: "YOY Neo Bistro, Shangri-La Hotel, Dubai: 350 sqm fine-dining restaurant transformation by Crystal Fit in 3 months."
+seoDescription: "YOY Neo Bistro, Shangri-La Hotel, Dubai: 350 sqm fine-dining restaurant transformation by Crystal Fit."
 ---
-<div class="pinfo__text"><p>The relocation and reinvention of the famous <strong>YOY Ukrainian fire-cooking restaurant</strong> into a fine-dining destination at Shangri-La Hotel, Sheikh Zayed Road.<br><br>To deliver on a short deadline, the full kitchen, fire and life safety and electrical systems were retained with minor adjustments, avoiding major re-inspections. The transformation focused on materials, colours and lighting, with <strong>bespoke ceiling decor and lighting by Ukrainian designer Mykola Kabluka</strong> giving the venue its unique character.<br><br>Crystal Fit delivered the <strong>fit-out in three months</strong>, integrating YOY's signature elements and applying value engineering throughout.</p></div>
+<div class="pinfo__text"><p>The relocation and reinvention of the famous <strong>YOY Ukrainian fire-cooking restaurant</strong> into a fine-dining destination at Shangri-La Hotel, Sheikh Zayed Road.<br><br>To deliver on a short deadline, the full kitchen, fire and life safety and electrical systems were retained with minor adjustments, avoiding major re-inspections. The transformation focused on materials, colours and lighting, with <strong>bespoke ceiling decor and lighting by Ukrainian designer Mykola Kabluka</strong> giving the venue its unique character.<br><br>Crystal Fit delivered the <strong>fit-out</strong>, integrating YOY's signature elements and applying value engineering throughout.</p></div>

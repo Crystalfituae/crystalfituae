@@ -64,10 +64,9 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "BLVD Heights Tower 1, Downtown Dubai, UAE"
 area: 280
 year: "2025"
-timeline: "4 months"
 scope: ["design", "approvals", "supervision"]
 approvals: ["Emaar"]
 seoTitle: "Gasteria Restaurant – Restaurant Fit-Out Dubai | Crystal Fit"
-seoDescription: "Gasteria restaurant, BLVD Heights, Downtown Dubai: 280 sqm neo-classic restaurant fit-out managed by Crystal Fit in 4 months, 51 Emaar inspections."
+seoDescription: "Gasteria restaurant, BLVD Heights, Downtown Dubai: 280 sqm neo-classic restaurant fit-out managed by Crystal Fit, 51 Emaar inspections."
 ---
-<div class="pinfo__text"><p><strong>Gasteria</strong> is an all-day dining restaurant in BLVD Heights, Downtown Dubai, with neo-classic interiors: delicate ceiling mouldings, book-matched natural stone, wooden floors, a <strong>4.5 m feature bottle display</strong>, an open show kitchen with pizza oven and an elegant front-of-house bar.<br><br>The project combined a shell & core fit-out with facade renovation, overseas long-lead custom orders and complex architectural junctions between high-end materials – all on a tight schedule and through <strong>51 internal Emaar inspections</strong>.<br><br>Crystal Fit was responsible for <strong>technical design, drawings, approvals and execution management</strong>, coordinating the concept designer, civil, kitchen and MEP teams to hand over in four months.</p></div>
+<div class="pinfo__text"><p><strong>Gasteria</strong> is an all-day dining restaurant in BLVD Heights, Downtown Dubai, with neo-classic interiors: delicate ceiling mouldings, book-matched natural stone, wooden floors, a <strong>4.5 m feature bottle display</strong>, an open show kitchen with pizza oven and an elegant front-of-house bar.<br><br>The project combined a shell & core fit-out with facade renovation, overseas long-lead custom orders and complex architectural junctions between high-end materials – all on a tight schedule and through <strong>51 internal Emaar inspections</strong>.<br><br>Crystal Fit was responsible for <strong>technical design, drawings, approvals and execution management</strong>, coordinating the concept designer, civil, kitchen and MEP teams through to handover.</p></div>

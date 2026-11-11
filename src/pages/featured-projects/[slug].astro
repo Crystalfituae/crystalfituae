@@ -28,7 +28,6 @@ const facts = [
   ['Location', d.location],
   ['Size', d.area ? `${d.area.toLocaleString('en-US')} sq.m` : undefined],
   ['Year', d.year],
-  ['Timeline', d.timeline],
   ['Scope', Object.keys(scopeLabels).filter((k) => d.scope.includes(k as any)).map((k) => scopeLabels[k]).join(' · ') || undefined],
   ['Approvals', d.approvals.join(' · ') || undefined],
 ].filter((f): f is [string, string] => !!f[1]);
