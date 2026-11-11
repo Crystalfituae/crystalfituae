@@ -28,7 +28,7 @@ const services: [string, string, string, ImageMetadata, string][] = [
   ['Residential', 'Villas, penthouses and apartments, from design to move-in.', '/villa-interior-design-dubai/', cover('anantara-penthouse'), 'pin'],
   ['Design & Consultancy', 'Concepts, 3D, technical drawings and approvals management.', '/interior-design-consultancy-dubai/', render, 'pen'],
 ];
-const stats: [string, string][] = [['2014', 'UAE grown since'], ['200+', 'Projects handed over'], ['90 days', 'From shell & core to opening'], ['100%', 'Approvals handled in‑house']];
+const stats: [string, string][] = [['2014', 'UAE grown since'], ['200+', 'Projects handed over'], ['90 days', 'Shell & core to opening'], ['100%', 'Approvals in‑house']];
 const logos = import.meta.glob<{ default: ImageMetadata }>('../assets/logos/*', { eager: true });
 const lg = (n: string) => Object.entries(logos).find(([k]) => k.endsWith('/' + n))![1].default;
 const approved: [string, string][] = [['emaar-logo-1.png', 'Emaar'], ['aw-dh-pv-pos-rgb-en-002.png', 'Dubai Holding'], ['tecom-group.png', 'TECOM'], ['nakheel-properties-logo-2.png', 'Nakheel'], ['dub-gov-300.png', 'Government of Dubai'], ['trakhees.png', 'Trakhees'], ['dubai-civil-defense.png', 'Dubai Civil Defense'], ['dewa.png', 'DEWA'], ['vindico.png', 'Vindico'], ['1621791093880-1.png', 'IDAMA']];
@@ -56,7 +56,7 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   </section>
 
   <!-- 2. Numbers -->
-  <section class="hd-stats">{stats.map(([n, t]) => <div><b>{n}</b><span>{t}</span></div>)}</section>
+  <section class="hd-stats">{stats.map(([n, t]) => { const [num, ...unit] = n.split(' '); return <div><b>{num}{unit.length > 0 && <small> {unit.join(' ')}</small>}</b><span>{t}</span></div>; })}</section>
 
 
 
@@ -128,6 +128,7 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .hd-btn--line { border: 1px solid #fff; color: #fff; }
   .hd-stats { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 1180px; margin: 0 auto; padding: 64px 40px; font-family: var(--ff-head); text-align: center; border-bottom: 1px solid #eee; }
   .hd-stats b { display: block; font-size: 62px; line-height: 1.1; font-weight: 600; color: #000; margin-bottom: 10px; }
+  .hd-stats b small { font-size: .45em; font-weight: 600; letter-spacing: .5px; }
   .hd-stats span { display: block; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; color: #222; }
   .hd-sec { max-width: 1260px; margin: 0 auto; padding: 70px 40px; font-family: var(--ff-head); }
   .hd-grey { max-width: none; background: #f4f4f4; }
