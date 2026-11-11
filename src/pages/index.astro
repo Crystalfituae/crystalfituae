@@ -64,7 +64,7 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   <!-- 6. Approvals as logos -->
   <section class="hd-approved">
     <h2 class="hd-h2">We deliver to the standards of</h2>
-    <div class="hd-approved__vp"><ul>{[...approved, ...approved].map(([f, n], i) => <li aria-hidden={i >= approved.length ? 'true' : undefined} class:list={{ 'hd-dup': i >= approved.length }}><Image src={lg(f)} alt={i >= approved.length ? '' : `${n} logo`} widths={[160, 320]} sizes="160px" loading="lazy" /></li>)}</ul></div>
+    <div class="hd-approved__vp"><ul>{[...approved, ...approved].map(([f, n], i) => <li aria-hidden={i >= approved.length ? 'true' : undefined} class:list={{ 'hd-dup': i >= approved.length, 'hd-noinv': f.startsWith('emaar') }}><Image src={lg(f)} alt={i >= approved.length ? '' : `${n} logo`} widths={[160, 320]} sizes="160px" loading="lazy" /></li>)}</ul></div>
   </section>
 
   <!-- 7. Latest projects: same large masonry layout as the current home page -->
@@ -162,9 +162,11 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .hd-steps b { display: block; margin-top: 14px; font-size: 13px; color: #999; letter-spacing: 2px; }
   .hd-steps h3 { font-size: 17px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin: 4px 0 4px; }
   .hd-steps p { font-size: 14px; line-height: 21px; color: #555; margin: 0; }
-  .hd-approved { text-align: center; padding: 60px 40px; background: #fafafa; font-family: var(--ff-head); }
+  .hd-approved { text-align: center; padding: 70px 40px; background: #000; color: #fff; font-family: var(--ff-head); }
   .hd-approved ul { list-style: none; margin: 0 auto; padding: 0; max-width: 1100px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 30px; align-items: center; }
-  .hd-approved img { max-width: 130px; max-height: 80px; width: auto; height: auto; margin: 0 auto; display: block; filter: grayscale(1); mix-blend-mode: multiply; }
+  .hd-approved img { max-width: 130px; max-height: 80px; width: auto; height: auto; margin: 0 auto; display: block; filter: grayscale(1) invert(1) contrast(1.6) brightness(1.15); mix-blend-mode: screen; }
+  .hd-approved .hd-h2 { color: #fff; }
+  .hd-approved .hd-noinv img { filter: grayscale(1) contrast(1.4); }
   .hd-dup { display: none; }
   .hd-approved p { margin: 30px 0 0; font-size: 14px; letter-spacing: 1px; color: #555; }
   .hd-proj { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px 22px; }
@@ -204,7 +206,7 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
     .hd-steps b { margin: 0; }
     .hd-approved { padding: 44px 16px; }
     .hd-approved__vp { overflow: hidden; margin: 0 -16px; }
-    .hd-approved ul { display: flex; gap: 36px; width: max-content; max-width: none; background: #fafafa; animation: hd-logos 22s linear infinite; }
+    .hd-approved ul { display: flex; gap: 36px; width: max-content; max-width: none; background: #000; animation: hd-logos 22s linear infinite; }
     .hd-approved li { flex: 0 0 auto; }
     .hd-approved img { max-width: 100px; max-height: 56px; }
     .hd-dup { display: list-item; }
