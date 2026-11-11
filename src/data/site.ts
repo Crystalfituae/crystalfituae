@@ -11,6 +11,7 @@ export const site = {
   geo: { lat: 25.1218654, lng: 55.2185395 },
   foundingYear: '2014',
   mapUrl: 'https://maps.app.goo.gl/6d8yRjZRXKNBa2M89',
+  mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.1200016477023!2d55.21853949999999!3d25.121865399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9047546b750094f%3A0x3658436cc35dfeeb!2sCrystal%20Fit%20Contracting%20LLC!5e1!3m2!1sen!2sae!4v1756805848307!5m2!1sen!2sae',
   // fixed: original used wa.me/+9710563386219 (extra 0 breaks the link)
   whatsapp: 'https://wa.me/971563386219',
   socials: [
