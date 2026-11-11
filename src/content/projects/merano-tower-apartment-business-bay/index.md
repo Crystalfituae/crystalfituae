@@ -57,7 +57,11 @@ gallery:
     size: half
     title: "Design of Merano Tower Apartments in Business Bay by Crystal Fit Kitchen photo 2"
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Merano Tower, Business Bay, Dubai, UAE"
+area: 85
+year: "2021"
+scope: []
+approvals: []
 seoTitle: "Merano Tower Apartment, Business Bay, Dubai | Crystal Fit"
 seoDescription: "Merano Tower Apartment, Business Bay: apartment interior design by Crystal Fit in Dubai (85 sqm, 2021). Turnkey design & build. Dubai fit-out since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: Merano Tower,&nbsp;</strong>Business Bay, Dubai, UAE</p><p><strong>SIZE:</strong> 85 sq.m</p><p><strong>YEAR:</strong> 2021</p></div>

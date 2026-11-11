@@ -4,7 +4,7 @@ import { Image, getImage } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import Masonry from '../../components/Masonry.astro';
 import Icon from '../../components/Icon.astro';
-import { otherCases } from '../../data/site';
+import { otherCases, scopeLabels } from '../../data/site';
 import '../../styles/project.css';
 
 export async function getStaticPaths() {
@@ -23,7 +23,15 @@ const idx = listed.findIndex((x) => x.id === p.id);
 const prev = idx > 0 ? listed[idx - 1] : listed[listed.length - 1];
 const next = idx >= 0 && idx < listed.length - 1 ? listed[idx + 1] : listed[0];
 const pageUrl = new URL(`/featured-projects/${p.id}/`, Astro.site).href;
-const location = d.fields.find((f) => /location/i.test(f.label))?.value;
+const location = d.location;
+const facts = [
+  ['Location', d.location],
+  ['Size', d.area ? `${d.area.toLocaleString('en-US')} sq.m` : undefined],
+  ['Year', d.year],
+  ['Timeline', d.timeline],
+  ['Scope', Object.keys(scopeLabels).filter((k) => d.scope.includes(k as any)).map((k) => scopeLabels[k]).join(' · ') || undefined],
+  ['Approvals', d.approvals.join(' · ') || undefined],
+].filter((f): f is [string, string] => !!f[1]);
 const schema = [
   { '@type': 'BreadcrumbList', itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
@@ -45,6 +53,7 @@ const schema = [
           </div>
           <div class="pinfo__body">
             <h1 class="pinfo__title">{d.heading}</h1>
+            {facts.length > 0 && <div class="pinfo__text pfacts">{facts.map(([k, v]) => <p><strong>{k.toUpperCase()}:</strong> {v}</p>)}</div>}
             <Content />
           </div>
         </div>
@@ -96,8 +105,8 @@ const schema = [
       </div>
       <div class="pclassic__body">
         <h1 class="pclassic__title">{d.heading}</h1>
+        {facts.map(([k, v]) => (<><h6>{k}</h6><p>{v}</p></>))}
         <Content />
-        {d.fields.map((f) => (<><h6>{f.label}</h6><p>{f.value}</p></>))}
       </div>
     </section>
   )}

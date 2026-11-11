@@ -44,7 +44,11 @@ gallery:
   - image: "./img/16-design-nad-al-sheba-villa-by-kg-design-photo-17-rotated.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro"]
+location: "Nad Al Sheba 1, Dubai, UAE"
+area: 2170
+year: "2015–2019"
+scope: []
+approvals: []
 seoTitle: "Nad Al Sheba Villa Moderna | Villa Interior Design Dubai"
 seoDescription: "Nad Al Sheba Villa Moderna, Dubai: villa interior design by Crystal Fit (2 170 sqm, 2015). Turnkey design & build. Dubai fit-out since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: </strong>Dubai, Nad Al Sheba 1</p><p><strong>SIZE:</strong> 2 170 sqm</p><p><strong>YEAR:</strong> 2015-2019</p></div>

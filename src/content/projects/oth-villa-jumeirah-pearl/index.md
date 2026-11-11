@@ -93,7 +93,11 @@ gallery:
     size: quarter
     title: "Interior Design OTH Villa Jumeirah Pearl by Crystal Fit Bathroom photo 2"
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Pearl Jumeirah, Dubai, UAE"
+area: 650
+year: "2020"
+scope: []
+approvals: []
 seoTitle: "OTH Villa, Jumeirah Pearl | Villa Interior Design Dubai"
 seoDescription: "OTH Villa, Jumeirah Pearl: villa interior design by Crystal Fit in Pearl Jumeirah, Dubai (650 sqm, 2020). Turnkey design & build. Dubai fit-out since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: </strong>Pearl Jumeirah, Dubai, UAE</p><p><strong>SIZE:</strong>&nbsp;650 sq.m.</p><p><strong>YEAR:</strong> 2020</p></div>

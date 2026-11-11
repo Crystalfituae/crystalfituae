@@ -66,7 +66,11 @@ gallery:
   - image: "./img/27-interior-design-of-mercure-gold-hotel-by-kg-design-studio-ph.jpg"
     size: quarter
 otherCases: ["livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Al Mina Road, Dubai, UAE"
+area: 1670
+year: "2016"
+scope: []
+approvals: []
 seoTitle: "Mercure Gold Hotel – Hotel Interior Design | Crystal Fit"
 seoDescription: "Mercure Gold Hotel, Dubai: hotel interior design by Crystal Fit (1,670 sqm, 2016). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: </strong>Dubai, Al Mina Road</p><p><strong>SIZE:</strong> 1’670 sqm</p><p><strong>YEAR:</strong> <span style="color: #000000;">2016</span></p></div>

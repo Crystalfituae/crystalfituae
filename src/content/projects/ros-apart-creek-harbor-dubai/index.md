@@ -104,9 +104,13 @@ gallery:
     title: "Item 26"
     ratio: 0.880000
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Creek Rise Tower 2, Dubai Creek Harbour, Dubai, UAE"
+area: 98
+year: "2023"
+scope: []
+approvals: []
 seoTitle: "ROS Apartment, Creek Harbour, Dubai | Crystal Fit"
 seoDescription: "ROS Apartment, Creek Harbour, Dubai: apartment interior design by Crystal Fit (98 sqm, 2023). Turnkey design & build. Dubai fit-out since 2014."
 ---
 <div class="pinfo__text"><p>Project Description</p></div>
 
-<div class="pinfo__text"><p><strong>LOCATION:&nbsp;</strong><span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">UAE,&nbsp;</span><span style="font-size: 18px;">Dubai, Creek Harbor, Creek Rise Tower 2,&nbsp;</span></p><p><strong>SIZE:</strong> 98 sqm</p><p><strong>YEAR:</strong> 2023</p></div>

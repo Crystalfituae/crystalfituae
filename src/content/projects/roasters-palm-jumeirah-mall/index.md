@@ -54,9 +54,13 @@ gallery:
   - image: "./img/16-img_3733-hdr.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Palm Jumeirah Mall, Dubai, UAE"
+area: 235
+year: "2025"
+timeline: "3 months"
+scope: []
+approvals: []
 seoTitle: "Roasters Specialty Coffee, Palm Jumeirah Mall | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee, Palm Jumeirah Mall: cafe fit-out by Crystal Fit in Dubai (235 sqm, 2025). Turnkey design & build. Dubai fit-out since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Palm Jumeirah Mall,<span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">&nbsp;by Dubai Retail</span><br>Dubai, UAE&nbsp;<strong style="font-size: 18px;">SIZE:</strong><span style="font-size: 18px;">&nbsp;235 sq.m.&nbsp;</span><span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">TIMELINE: 3 month.&nbsp;</span></p><p><strong>YEAR:</strong> 2025</p></div>
-
 <div class="pinfo__text"><p>Designed and built with a focus on craftsmanship and refined aesthetics, this project reflects the brand’s dedication to quality and detail at every level.<br><br>Project Highlights<br>• Elegant coffee bar featuring premium equipment and custom joinery finishes<br>• Inviting lounge and seating areas designed for comfort and ambiance<br>• Specialty display counters and retail shelving for coffee beans and merchandise<br>• Back-of-house fit-out including full kitchen and storage areas<br>• Seamless coordination of MEP services to preserve design integrity</p><p>Challenges &amp; Solutions<br>• Navigating stringent mall and authority approval processes with multiple inspections and documentation stages<br>• Upholding exceptional standards of build quality and finish to meet both client and designer expectations<br>• Executing complex signature design elements, including custom lighting, textured finishes, and bespoke furniture pieces</p><p><span style="color: rgba(0, 0, 0, 0.9); font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal;">&nbsp;</span></p></div>

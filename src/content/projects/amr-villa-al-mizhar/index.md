@@ -84,7 +84,11 @@ gallery:
     size: half
     title: "Interior design of AMR Villa by Crystal Fit bathroom photo 7"
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Al Mizhar, Dubai, UAE"
+area: 440
+year: "2019"
+scope: []
+approvals: []
 seoTitle: "AMR Villa, Al Mizhar – Villa Interior Design | Crystal Fit"
 seoDescription: "AMR Villa, Al Mizhar: villa interior design by Crystal Fit in Dubai (440 sqm, 2019). Turnkey design & build. Dubai interior design & fit-out company since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: </strong>AL MIZHAR, Dubai, UAE</p> <p><strong>SIZE:</strong> 440 sq.m</p> <p><strong>YEAR:</strong> 2019</p></div>

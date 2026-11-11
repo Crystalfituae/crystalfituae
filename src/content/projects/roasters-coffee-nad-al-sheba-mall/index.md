@@ -41,9 +41,13 @@ gallery:
   - image: "./img/10-img_6840-uluchsheno-um.-shuma-hdr.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Nad Al Sheba Mall, Dubai, UAE"
+area: 240
+year: "2024"
+timeline: "3.5 months"
+scope: []
+approvals: []
 seoTitle: "Roasters Specialty Coffee, Nad Al Sheba Mall | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee, Nad Al Sheba Mall: cafe fit-out by Crystal Fit in Dubai (240 sqm, 2024). Turnkey design & build. Dubai fit-out since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Nad Al Sheba Mall,<span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">&nbsp;by Dubai Holding</span><br>Dubai, UAE&nbsp;<strong style="font-size: 18px;">SIZE:</strong><span style="font-size: 18px;">&nbsp;240 sq.m.&nbsp;</span><span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">TIMELINE: 3.5 month.&nbsp;</span></p><p><strong>YEAR:</strong> 2024</p></div>
-
 <div class="pinfo__text"><p>We’re proud to have completed <strong>Roasters Specialty Coffee</strong> at <strong>Nad Al Sheba Mall</strong>, a destination café developed under <strong>Dubai Holding</strong>. The project was delivered as a fully integrated turnkey fit-out, guided from concept to opening by a single, dedicated team.<br><br></p><p><strong>Project Highlights</strong></p><p>• <strong>End-to-End Turnkey Delivery:</strong> Design development, technical drawings, authority approvals, procurement, construction, and opening support all managed in-house<br>• <strong>Material &amp; Palette:</strong> A cozy yet bold interior language combining warm wood flooring with natural slate stone bar cladding and bespoke decorative wall panels, creating depth, texture, and a strong sense of place<br>• <strong>Design &amp; Execution:</strong> Seamlessly coordinated to balance visual impact with operational efficiency in a high-traffic mall environment<br>• <strong>Challenges &amp; Solutions:</strong> The project navigated an extensive approval process and rigorous landlord inspections. Through careful coordination and detailed compliance management, all requirements were met without compromising the design intent</p><p>Despite the complexities associated with mall regulations and stakeholder reviews, the café was delivered to the highest standards of quality and finish.</p><p>Roasters Specialty Coffee at Nad Al Sheba Mall now offers an inviting, grounded atmosphere, where material richness and thoughtful detailing elevate the everyday coffee experience.</p></div>

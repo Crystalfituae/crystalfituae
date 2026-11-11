@@ -60,7 +60,11 @@ gallery:
   - image: "./img/17-img_1780-uluchsheno-um.-shuma-hdr.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Sobha Hartland, Dubai, UAE"
+area: 180
+year: "2025"
+scope: []
+approvals: []
 seoTitle: "Irish Harp Pub – Restaurant Fit-Out Doha | Crystal Fit"
 seoDescription: "Irish Harp Pub, Doha: restaurant fit-out by Crystal Fit in Doha (180 sqm, 2025). Turnkey design & build. Dubai interior design & fit-out company since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Sobha Hartland by<br>Dubai, UAE</p><p><strong>SIZE:</strong>&nbsp;180 sq.m.</p><p><strong>YEAR:</strong> 2025</p></div>

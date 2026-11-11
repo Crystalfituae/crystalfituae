@@ -55,7 +55,11 @@ gallery:
   - image: "./img/15-img_2514.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Dubai Creek Harbour, Dubai, UAE"
+area: 265
+year: "2024"
+scope: []
+approvals: []
 seoTitle: "Roasters Specialty Coffee, Creek Harbour | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee, Creek Harbour: cafe fit-out by Crystal Fit (265 sqm, 2024). Turnkey design & build with Emaar landlord approvals."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai Creek Harbour,&nbsp;<span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">by Emaar</span><br>Dubai, UAE</p><p><strong>SIZE:</strong>&nbsp;265 sq.m.</p><p><strong>YEAR:</strong> 2024</p></div>

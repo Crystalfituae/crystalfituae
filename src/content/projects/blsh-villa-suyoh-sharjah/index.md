@@ -60,7 +60,11 @@ gallery:
     size: quarter
     ratio: 1.000000
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Al Suyoh, Sharjah, UAE"
+area: 480
+year: "2015"
+scope: []
+approvals: []
 seoTitle: "BLSH Villa, Suyoh – Villa Interior Design | Crystal Fit"
 seoDescription: "BLSH Villa, Suyoh, Sharjah: villa interior design by Crystal Fit in Al Suyoh Suburb, Sharjah (480 sqm, 2015). Turnkey design & build. Dubai fit-out since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: </strong><span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">Al Suyoh Suburb, Sharjah, UAE</span></p> <p><strong>SIZE:</strong> 480 sq.m</p> <p><strong>YEAR:</strong> 2015</p></div>

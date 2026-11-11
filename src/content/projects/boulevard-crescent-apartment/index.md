@@ -65,7 +65,11 @@ gallery:
     size: half
     title: "Terrace"
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Boulevard Crescent Tower 1, Downtown Dubai, UAE"
+area: 100
+year: "2023"
+scope: []
+approvals: []
 seoTitle: "Boulevard Crescent Apartment, Dubai | Crystal Fit"
 seoDescription: "Boulevard Crescent Apartment: apartment interior design by Crystal Fit in Dubai (100 sqm, 2023). Turnkey design & build. Dubai fit-out since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong> Dubai Downtown, Boulevard Crescent Tower 1, UAE</p><p><strong>SIZE:</strong>&nbsp;100 sq.m.</p><p><strong>YEAR:</strong> 2023</p></div>

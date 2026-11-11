@@ -55,9 +55,13 @@ gallery:
   - image: "./img/18-02.jpg"
     size: half
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Bay Square, Business Bay, Dubai, UAE"
+area: 180
+year: "2026"
+timeline: "3.5 months"
+scope: []
+approvals: []
 seoTitle: "AMV Aesthetic Clinic – Clinic Fit-Out Dubai | Crystal Fit"
 seoDescription: "AMV Aesthetic Clinic: clinic fit-out by Crystal Fit in Bay Square, Dubai (180 sqm, 2026). Turnkey design & build with Dubai Holding landlord approvals."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Bay Square, Dubai</p><p><strong>SIZE:</strong>&nbsp;180 sq.m.&nbsp; TIMELINE: 3.5 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2026</span></p></div>
-
 <div class="pinfo__text"><p>A premium aesthetic clinic delivered by <strong>Crystal Fit Contracting</strong> on a full turnkey basis, from <strong>concept design and authority approvals through to construction and final handover</strong>.<br><br></p><p>The project was executed under the requirements of <strong>Dubai Holding</strong>, involving extensive landlord reviews, multiple inspections, and strict compliance throughout the fit-out process. Our team also managed the complete <strong>Dubai Health Authority (DHA)</strong> approval and coordination process, ensuring the clinic met all healthcare regulations and operational standards.<br><br></p><p>The interior combines elegant contemporary finishes with a functional clinical layout, featuring custom joinery, premium marble-look porcelain, decorative wall mouldings, bespoke reception, treatment rooms, luxury washrooms, integrated lighting, and high-quality MEP installations.<br><br></p><p>&nbsp;</p></div>

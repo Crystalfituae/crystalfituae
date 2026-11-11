@@ -63,9 +63,13 @@ gallery:
   - image: "./img/23-panmi_mandytoh_october2026_63-scaled.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Lime Garden, Dubai Hills, Dubai, UAE"
+area: 210
+year: "2026"
+timeline: "4 months"
+scope: []
+approvals: []
 seoTitle: "Panmi Coffee Shop Dubai Hills – Cafe Fit-Out | Crystal Fit"
 seoDescription: "Panmi Coffee Shop Dubai Hills: cafe fit-out by Crystal Fit (210 sqm, 2026). Turnkey design & build with Emaar landlord approvals. Dubai fit-out since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai Hills, Lime Garden, Dubai</p><p><strong>SIZE:</strong>&nbsp;210 sq.m.&nbsp; TIMELINE: 4 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2026</span></p></div>
-
 <div class="pinfo__text"><p>A complete <strong>design &amp; build Food &amp; Beverage (F&amp;B) fit-out delivered by Crystal Fit Contracting</strong>, transforming the space from shell &amp; core into a fully operational café under Emaar.<br><br>The project combines a soft, Asian-inspired interior with warm natural tones, terrazzo finishes, sculptural lighting and custom furniture. Behind the calm interior sits a technically demanding Food &amp; Beverage (F&amp;B) operation, including a <strong>full commercial kitchen, bakery, coffee bar and complete MEP infrastructure</strong>.<br><br>Crystal Fit managed the project end-to-end, including <strong>design and technical drawings, shell &amp; core works, full fit-out and MEP execution, LPG systems, authority submissions, DEWA, DDA and Emaar approvals, inspections, testing and final handover</strong>.<br><br>Despite the extensive approval and inspection requirements, the entire project was <strong>successfully completed and handed over within four months</strong>.</p></div>

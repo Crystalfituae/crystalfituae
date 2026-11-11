@@ -59,9 +59,13 @@ gallery:
   - image: "./img/18-img_0513-hdr.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Palm Jumeirah, Dubai, UAE"
+area: 706
+year: "2025"
+timeline: "8 months (shell & core to handover)"
+scope: []
+approvals: []
 seoTitle: "Anantara Penthouse – Apartment Interior Design | Crystal Fit"
 seoDescription: "Anantara Penthouse: apartment interior design by Crystal Fit in Palm Jumeirah (706 sqm, 2025). Turnkey design & build. Dubai fit-out since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Palm Jumeirah</p><p><strong>SIZE:</strong>&nbsp;706 sq.m.&nbsp; Shell &amp; Core to Handover – 8 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2025</span></p></div>
-
 <div class="pinfo__text"><p>Completed a full-scope luxury penthouse fit-out at Anantara The Palm Dubai Resort, spanning over 700 sqm from shell-and-core to turnkey handover. The project included in-house design and execution, covering blockwork, insulation, MEP, sanitary installations, and premium large-format tiling.</p> <p>The penthouse features 4 bedrooms, a maid’s room, gym, and office, highlighted by a bespoke backlit onyx feature wall and a hand-painted spiral staircase. Structural modifications included converting a sloped roof into a panoramic balcony with full approvals. The swimming pool was fully refurbished, rewaterproofed, and retiled with Bali stone for an elevated luxury finish</p></div>

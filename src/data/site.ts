@@ -63,3 +63,15 @@ export const otherCases = [
 // "Trusted by the best" carousels (file names in src/assets/logos)
 export const logosHome = ['dub-gov-300.png', 'emaar-logo-1.png', 'aw-dh-pv-pos-rgb-en-002.png', 'tecom-group.png', 'nakheel-properties-logo-2.png', '1621791093880-1.png', 'vindico.png', 'dubai-police-300.png', 'trakhees.png', 'roasters-png.png', 'brew-png.png', 'yoy-2.png', 'christie-s-logo-7b51158dc3-seeklogo-com-.png', 'logo-black.png', 'the-game-logo-1.png', '118507871-400x300-1.png', 'muha-logo-bw-1.png', 'narrow-300.png', 'fissman-logo-1.png', 'paper-logo-1.png', 'desires-logo.png', 'download-1.png', 'mercure-150.png', 'osha150.png', 'img-2642.png'];
 export const logosInner = ['dub-gov-300.png', 'nakheel-properties-logo-2.png', 'emaar-logo-1.png', 'aw-dh-pv-pos-rgb-en-002.png', '1621791093880-1.png', 'vindico.png', 'dubai-police-300.png', 'christie-s-logo-7b51158dc3-seeklogo-com-.png', 'roasters-png.png', 'yoy-2.png', 'brew-png.png', 'the-game-logo-1.png', 'mercure-150.png', 'narrow-300.png', 'img-2642.png', 'fissman-logo-1.png', 'paper-logo-1.png', 'desires-logo.png', 'download-1.png', 'osha150.png'];
+
+// Project page: "Scope" labels (order = display order)
+export const scopeLabels: Record<string, string> = {
+  design: 'Design',
+  approvals: 'Approvals',
+  fitout: 'Fit-out',
+  mep: 'MEP',
+  joinery: 'Joinery',
+  supervision: 'Technical supervision',
+};
+// Project page: approval authorities / landlords (suggested names; any other text also works)
+export const approvalOptions = ['Emaar', 'TECOM', 'Dubai Holding', 'Nakheel', 'Meraas', 'DMCC', 'DIFC', 'DDA (d3)', 'Individual', 'DM', 'DCD', 'DEWA', 'Trakhees', 'DHA', 'Sharjah Municipality', 'SEWA'];

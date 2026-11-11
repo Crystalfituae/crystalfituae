@@ -47,9 +47,13 @@ gallery:
   - image: "./img/14-img_3169-2-scaled.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Dubai Design District (d3), Dubai, UAE"
+area: 220
+year: "2025"
+timeline: "3 months"
+scope: []
+approvals: []
 seoTitle: "Gari Tatintsian Gallery – Gallery Fit-Out | Crystal Fit"
 seoDescription: "Gari Tatintsian Gallery: gallery fit-out by Crystal Fit in Dubai Design District (220 sqm, 2025). Turnkey design & build with TECOM landlord approvals."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai Design District</p><p><strong>SIZE:</strong>&nbsp;220 sq.m.&nbsp; TIMELINE: 3 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2025</span></p></div>
-
 <div class="pinfo__text"><p>Crystal Fit successfully delivered the fit-out of the <b>Gari Tatintsian Art Gallery</b> after several previous contractors were unable to complete the project or obtain the required approvals.<br><br></p><p>Our team carried out a full technical review of the existing works, rebuilding critical architectural and MEP elements where necessary to ensure compliance with all local regulations and quality standards. One of the key challenges was combining two separate units into a single gallery space while coordinating all technical documentation and approvals.</p><p>The project was completed with final approvals from <b>DDA, DCD, DEWA</b> and <b>TECOM</b>, leading to a successful handover.</p><p><br>The gallery features a minimalist exhibition space with seamless cementitious flooring, fire-rated decorative wall panels and refined finishes, creating a flexible environment for contemporary art exhibitions and high-profile visitors in the heart of Dubai Design District.</p></div>

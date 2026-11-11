@@ -78,7 +78,11 @@ gallery:
     size: half
     title: "Gym"
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "JBR Podium Level, Dubai, UAE"
+area: 450
+year: "2023"
+scope: []
+approvals: []
 seoTitle: "Muha Music & Fine Arts – Studio Fit-Out Dubai | Crystal Fit"
 seoDescription: "Muha Music & Fine Arts: studio fit-out by Crystal Fit in Dubai (450 sqm, 2023). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong> Jumeirah Beach Residence, JBR,<br>&nbsp;Podium Level, Dubai, UAE</p> <p><strong>SIZE:</strong>&nbsp;450 sq.m.</p> <p><strong>YEAR:</strong> 2023</p></div>

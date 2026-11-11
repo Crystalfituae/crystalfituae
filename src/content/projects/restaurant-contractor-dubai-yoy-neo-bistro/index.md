@@ -52,9 +52,13 @@ gallery:
   - image: "./img/10-25-01-16-v003.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","nad-al-sheba-villa-moderna-dubai"]
+location: "Shangri-La Hotel, Sheikh Zayed Road, Dubai, UAE"
+area: 350
+year: "2024"
+timeline: "3 months"
+scope: []
+approvals: []
 seoTitle: "YOY Neo Bistro Restaurant – Restaurant Fit-Out | Crystal Fit"
 seoDescription: "YOY Neo Bistro Restaurant, Dubai: restaurant fit-out by Crystal Fit (350 sqm, 2024). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Shangri-La Hotel, Sheikh Zayed Road, Dubai, UAE<br></p> <p><strong>SIZE:</strong>&nbsp;350 sq.m. TIMELINE: 3 month.&nbsp;<br><span style="font-size: 18px; font-style: normal; font-family: Raleway, Helvetica, Arial, sans-serif; font-weight: 600;">YEAR:</span><span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">&nbsp;2024</span></p></div>
-
 <div class="pinfo__text"><p>The relocation and reinvention of the famous YOY Ukrainian fire cooking restaurant&nbsp; into a Michelin-star pursuit fine dining destination. Crystal fit Contracting managed to:</p><p><br></p><p>• Retained the full kitchen to avoid major government reinspection &amp; approvals</p><p>• Preserved FLS &amp; electrical systems with only minor adjustments</p><p>• Focused transformation through aesthetic upgrades in materials, colors, and lighting</p><p>• Integrated signature YOY elements to keep the brand’s identity while applying value engineering</p><p><br></p><p>A highlight of the project was the contribution of world-renowned Ukrainian lighting designer Mykola Kabluka, whose vision shaped the bespoke ceiling décor and lighting design, giving the venue its unique high-end twist.</p><p><br></p><p>Key challenges: delivering under short deadlines while revitalizing an existing space into something extraordinary.</p></div>

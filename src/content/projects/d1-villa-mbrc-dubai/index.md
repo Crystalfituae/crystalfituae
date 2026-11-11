@@ -42,7 +42,11 @@ gallery:
   - image: "./img/15-district1-villa-apartment-design-by-kg-design-photo-15.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "District One, MBR City, Dubai, UAE"
+area: 450
+year: "2018"
+scope: []
+approvals: []
 seoTitle: "D1, Villa, MBRC – Villa Interior Design Dubai | Crystal Fit"
 seoDescription: "D1, Villa, MBRC, Dubai: villa interior design by Crystal Fit in District 1, Villa, MBRC, Dubai (450 sqm, 2018). Turnkey design & build."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: </strong>District 1, Villa, MBRC, Dubai, UAE</p><p><strong>SIZE:</strong>&nbsp;450 sq.m.</p><p><strong>YEAR:</strong>&nbsp;2018</p></div>

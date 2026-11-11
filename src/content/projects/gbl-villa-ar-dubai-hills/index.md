@@ -39,7 +39,11 @@ gallery:
     size: quarter
     title: "Project GBL Villa AR Dubai Hills by Crystal Fit photo 10"
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Dubai Hills Estate, Dubai, UAE"
+area: 540
+year: "2022"
+scope: []
+approvals: []
 seoTitle: "GBL Villa AR, Dubai Hills | Villa Interior Design Dubai"
 seoDescription: "GBL Villa AR, Dubai Hills: villa interior design by Crystal Fit (540 sqm, 2022). Turnkey design & build. Dubai interior design & fit-out company since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: </strong>DUBAI HILLS, Dubai, UAE</p> <p><strong>SIZE:</strong> 540 sq.m</p> <p><strong>YEAR:</strong> 2022</p></div>

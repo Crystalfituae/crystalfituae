@@ -41,7 +41,11 @@ gallery:
   - image: "./img/10-img_8857.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "The Dubai Mall, Dubai, UAE"
+area: 77
+year: "2021"
+scope: []
+approvals: []
 seoTitle: "Roasters Specialty Coffee, Dubai Mall Island | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee, Dubai Mall Island: cafe fit-out by Crystal Fit in The Dubai Mall, Dubai (77 sqm, 2021). Turnkey design & build."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: The&nbsp;</strong>Dubai Mall, Dubai, UAE</p><p><strong>SIZE:</strong>&nbsp;77 sq.m</p><p><strong>YEAR:</strong> 2021</p></div>

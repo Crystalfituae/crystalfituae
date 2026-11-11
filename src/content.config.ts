@@ -19,7 +19,14 @@ const projects = defineCollection({
       heroCol: z.number().optional(),
       gallery: z.array(z.object({ image: image(), size: z.enum(['half', 'quarter', 'five12', 'full']).default('half'), ratio: z.number().optional(), title: z.string().optional() })).default([]),
       gallerySpacer: z.boolean().default(false), // reproduces an empty first tile of the old site's gallery
-      fields: z.array(z.object({ label: z.string(), value: z.string() })).default([]), // classic template info rows
+      // unified project facts (shown on every project page in this order)
+      location: z.string().optional(),         // "Area, City, Country"
+      area: z.number().optional(),             // sq.m
+      year: z.string().optional(),             // year completed, e.g. "2025" or "2015–2019"
+      timeline: z.string().optional(),         // optional, e.g. "4 months"
+      scope: z.array(z.enum(['design', 'approvals', 'fitout', 'mep', 'joinery', 'supervision'])).default([]),
+      approvals: z.array(z.string()).default([]), // authorities / landlords: Emaar, TECOM, DM, DCD, DEWA…
+      fields: z.array(z.object({ label: z.string(), value: z.string() })).default([]), // legacy, unused
       otherCases: z.array(z.string()).default([]),
       seoTitle: z.string().optional(),
       seoDescription: z.string().optional(),

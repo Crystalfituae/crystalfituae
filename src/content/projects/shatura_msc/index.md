@@ -32,15 +32,11 @@ gallery:
   - image: "./img/08-lift-lobby-interior-contemporary-modern-1kg-design.jpg"
     size: full
     title: "Lift Lobby"
-fields:
-  - label: "Architect"
-    value: "Konstantin Grytsan"
-  - label: "Location"
-    value: "Shatura, Moscow, Russian Federation"
-  - label: "Project Year"
-    value: "February 2012"
-  - label: "SIZE"
-    value: "620 sq.m"
+location: "Shatura, Moscow Region, Russia"
+area: 620
+year: "2012"
+scope: []
+approvals: []
 seoTitle: "Shatura Residential Complex | Residential Design Moscow"
 seoDescription: "Shatura Residential Complex, Moscow: residential design by Crystal Fit in Moscow (620 sqm, 2012). Turnkey design & build. Dubai fit-out since 2014."
 ---

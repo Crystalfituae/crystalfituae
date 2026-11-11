@@ -53,15 +53,11 @@ gallery:
   - image: "./img/15-main-hall-chocolate-interior-modern-contemporary-1kg-design-.jpg"
     size: full
     title: "Main Hall"
-fields:
-  - label: "Architect"
-    value: "Konstantin Grytsan"
-  - label: "Location"
-    value: "Al Suyoh Suburb, Sharjah, UAE"
-  - label: "Project Year"
-    value: "November 2017"
-  - label: "SIZE"
-    value: "720 sq.m"
+location: "Al Suyoh, Sharjah, UAE"
+area: 720
+year: "2017"
+scope: []
+approvals: []
 seoTitle: "Al Suyoh Suburb Villa – Villa Interior Design | Crystal Fit"
 seoDescription: "Al Suyoh Suburb Villa, Sharjah: villa interior design by Crystal Fit in Sharjah (720 sqm, 2017). Turnkey design & build. Dubai fit-out since 2014."
 ---

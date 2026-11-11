@@ -50,9 +50,13 @@ gallery:
   - image: "./img/13-399881753_5iumryok31jyxnjsn3hposhtfmdoxplw24ybwmt4zho.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Al Safa Park Complex, Dubai, UAE"
+area: 120
+year: "2019"
+scope: []
+approvals: []
 seoTitle: "Studio Paper, Al Safa Park Complex | Retail Fit-Out Dubai"
 seoDescription: "Studio Paper, Al Safa Park Complex: retail fit-out by Crystal Fit in Dubai (120 sqm, 2019). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
 ---
 <div class="pinfo__text"><p>STUDIO PAPER</p></div>
 
-<div class="pinfo__text"><p><strong>LOCATION: Al Safa Park Complex, Dubai, UAE</strong></p><p><strong>SIZE:</strong> 120 sq.m</p><p><strong>YEAR:</strong> 2019</p></div>

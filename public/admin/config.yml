@@ -41,6 +41,12 @@ collections:
         fields:
           - { label: Photo, name: image, widget: image }
           - { label: Width, name: size, widget: select, options: [{ label: 'Wide (1/2)', value: half }, { label: 'Narrow (1/4)', value: quarter }, { label: '5/12', value: five12 }], default: half }
+      - { label: 'Location (Area, City, Country)', name: location, widget: string, required: false }
+      - { label: 'Size, sq.m', name: area, widget: number, value_type: int, required: false }
+      - { label: 'Year completed', name: year, widget: string, required: false }
+      - { label: 'Timeline (optional, e.g. 4 months)', name: timeline, widget: string, required: false }
+      - { label: Scope, name: scope, widget: select, multiple: true, required: false, options: [{ label: Design, value: design }, { label: Approvals, value: approvals }, { label: Fit-out, value: fitout }, { label: MEP, value: mep }, { label: Joinery, value: joinery }, { label: Technical supervision, value: supervision }] }
+      - { label: 'Approvals (authorities / landlords)', name: approvals, widget: select, multiple: true, required: false, options: ['Emaar', 'TECOM', 'Dubai Holding', 'Nakheel', 'Meraas', 'DMCC', 'DIFC', 'DDA (d3)', 'Individual', 'DM', 'DCD', 'DEWA', 'Trakhees', 'DHA', 'Sharjah Municipality', 'SEWA'] }
       - { label: 'SEO title', name: seoTitle, widget: string, required: false }
       - { label: 'SEO description', name: seoDescription, widget: text, required: false }
-      - { label: 'Description (location, size, year, text)', name: body, widget: markdown }
+      - { label: 'Description (SEO text, 80–150 words)', name: body, widget: markdown }

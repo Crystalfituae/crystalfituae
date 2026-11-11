@@ -32,15 +32,11 @@ gallery:
   - image: "./img/08-big-purple-modern-contemporary-cinema-design-in-kenia-vox-re.jpg"
     size: full
     title: "Purple cinema hall side"
-fields:
-  - label: "Architect"
-    value: "Konstantin Grytsan"
-  - label: "Location"
-    value: "Nairobi, Kenya"
-  - label: "Project Year"
-    value: "2019"
-  - label: "SIZE"
-    value: "2, 100 sq.m"
+location: "Nairobi, Kenya"
+area: 2100
+year: "2019"
+scope: []
+approvals: []
 seoTitle: "West Gate Cinema – Cinema Interior Design | Crystal Fit"
 seoDescription: "West Gate Cinema, Nairobi: cinema interior design by Crystal Fit in Nairobi (2,100 sqm, 2019). Turnkey design & build. Dubai fit-out since 2014."
 ---

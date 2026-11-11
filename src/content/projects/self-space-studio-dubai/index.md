@@ -39,9 +39,13 @@ gallery:
     size: half
     title: "bar seatign"
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Ghoshi Warehouse City, Al Quoz 3, Dubai, UAE"
+area: 250
+year: "2025"
+timeline: "3 months"
+scope: []
+approvals: []
 seoTitle: "SELF.SPACE AI-Powered Self-Portrait Studio | Crystal Fit"
 seoDescription: "SELF.SPACE AI-Powered Self-Portrait Studio: studio fit-out by Crystal Fit (250 sqm, 2025). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Ghoshi Warehouse City, Al Quoz 3, Dubai</p> <p><strong>SIZE:</strong>&nbsp;250 sq.m.&nbsp; TIMELINE: 3 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2025</span></p></div>
-
 <div class="pinfo__text"><p>We’re proud to have recently completed Self.Space Studio, Dubai’s first AI-powered photo studio — a 250 sqm industrial premise reimagined into a cozy, atmospheric space where creativity thrives.<br><br></p> <p>Key Highlights:</p> <p>3 Professional Studios (30–35 sqm each) equipped with cycloramas, changing rooms, and dedicated makeup tables.<br><br></p> <p>Design Concept: Luxury industrial style featuring polished concrete floors, metallic wall panels, micro shadow skirting, and frameless doors finished with pressed metallic sheets for a sleek, minimalist look.<br><br></p> <p>Thoughtful Layout: Space include welcoming lounge areas, reception, toilets, and ample storage for maximum comfort and convenience.<br><br></p> <p>Despite tight deadlines and sourcing premium materials from overseas, our team delivered the project on time, ensuring the highest standards of quality and uniqueness.</p> <p>All approvals — DCD, DEWA, and DM — were handled in-house, ensuring a seamless process from concept to completion.</p></div>

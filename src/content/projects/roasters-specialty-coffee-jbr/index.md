@@ -45,7 +45,11 @@ gallery:
     size: half
     title: "Roasters Specialty Coffee JBR interior design by Crystal Fit photo 11"
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Amwaj, JBR, Dubai, UAE"
+area: 280
+year: "2021"
+scope: []
+approvals: []
 seoTitle: "Roasters Specialty Coffee, JBR – Cafe Fit-Out | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee, JBR: cafe fit-out by Crystal Fit in Dubai (280 sqm, 2021). Turnkey design & build. Approved by Emaar, Dubai Holding & TECOM."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: </strong>Amwaj, Jumeirah Beach Residence (JBR),<br>Dubai, UAE</p> <p><strong>SIZE:</strong> 280 sq.m.</p> <p><strong>YEAR:</strong> 2021</p></div>

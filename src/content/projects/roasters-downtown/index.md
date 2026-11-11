@@ -53,7 +53,11 @@ gallery:
   - image: "./img/14-img_0648.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "The Boulevard, Downtown Dubai, UAE"
+area: 234
+year: "2023"
+scope: []
+approvals: []
 seoTitle: "Roasters Specialty Coffee, Downtown | Cafe Fit-Out Dubai"
 seoDescription: "Roasters Specialty Coffee, Downtown: cafe fit-out by Crystal Fit in Dubai (234 sqm, 2023). Turnkey design & build with Emaar landlord approvals."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Boulevard,&nbsp;<span style="font-family: Raleway, Optima; font-size: 18px; font-style: normal; font-weight: 500;">Downtown Dubai, by Emaar</span><br>Dubai, UAE</p> <p><strong>SIZE:</strong>&nbsp;234 sq.m.</p> <p><strong>YEAR:</strong> 2023</p></div>

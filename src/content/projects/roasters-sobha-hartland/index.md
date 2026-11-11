@@ -59,9 +59,13 @@ gallery:
   - image: "./img/17-img_1780-uluchsheno-um.-shuma-hdr.jpg"
     size: quarter
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Sobha Hartland, Dubai, UAE"
+area: 180
+year: "2024"
+timeline: "3.5 months"
+scope: []
+approvals: []
 seoTitle: "Roasters Specialty Coffee, Sobha Hartland | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee, Sobha Hartland: cafe fit-out by Crystal Fit in Dubai (180 sqm, 2024). Turnkey design & build with Sobha landlord approvals."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Sobha Hartland, Dubai, UAE</p><p><strong>SIZE:</strong>&nbsp;180 sq.m.&nbsp; TIMELINE: 3.5 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2024&nbsp;</span></p></div>
-
 <div class="pinfo__text"><p>Transformation of a 180 sqm retail shell &amp; core unit into a fully operational Food &amp; Beverage (F&amp;B) facility, complete with an in-house kitchen, bar, and seating area.&nbsp; <br><br>Crystal fit Contracting managed to deal with:</p><p>• Technical &amp; Approval Complexity converting retail into Food &amp; Beverage (F&amp;B) required extensive administrative work, provision of fresh air &amp; make-up air, and customized MEP solutions.</p><p>• Power Limitations – with only 34kW available and no additional load possible, we carefully handpicked and engineered the equipment setup for maximum efficiency.</p><p>• Structural Works – the existing fragile staircase was replaced with a new granite-finished metal structure, ensuring both safety and aesthetics</p><p>•&nbsp; Bespoke stainless-steel bar and metal-finish joinery panels, combining durability with a bold aesthetic statement.</p></div>

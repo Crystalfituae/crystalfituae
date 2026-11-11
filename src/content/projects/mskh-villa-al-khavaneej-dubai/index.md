@@ -50,7 +50,11 @@ gallery:
     size: half
     ratio: 1.000000
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Al Khawaneej, Dubai, UAE"
+area: 620
+year: "2017"
+scope: []
+approvals: []
 seoTitle: "MSKH Villa, Al Khawaneej | Villa Interior Design Dubai"
 seoDescription: "MSKH Villa, Al Khawaneej, Dubai: villa interior design by Crystal Fit (620 sqm, 2017). Turnkey design & build. Dubai fit-out since 2014."
 ---
-<div class="pinfo__text"><p><strong>LOCATION: </strong>Al Khawaneej, Dubai, UAE</p> <p><strong>SIZE:</strong> 620 sq.m.</p> <p><strong>YEAR:</strong> 2017</p></div>

@@ -51,9 +51,13 @@ gallery:
   - image: "./img/15-img_9718.jpg"
     size: half
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "Dubai Hills, Dubai, UAE"
+area: 360
+year: "2025"
+timeline: "4 months"
+scope: []
+approvals: []
 seoTitle: "Roasters Specialty Coffee House, Dubai Hills | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee House, Dubai Hills: cafe fit-out by Crystal Fit (360 sqm, 2025). Turnkey design & build with Emaar landlord approvals."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong>&nbsp;Dubai Hills</p><p><strong>SIZE:</strong>&nbsp;360 sq.m.&nbsp; TIMELINE: 4 month.&nbsp;&nbsp;<br><strong style="font-size: 18px;">YEAR:</strong><span style="font-size: 18px;"> 2025</span></p></div>
-
 <div class="pinfo__text"><p>We’re proud to have delivered <strong>Roasters Specialty Coffee</strong>, a refined café destination located in <strong>Dubai Hills</strong>, within the <strong>Emaar Community</strong>. The 360 sqm space was brought to life as a complete turnkey project, from first sketch to opening day.<br><br></p><p><strong>Project Highlights</strong></p><p>• <strong>Full Turnkey Delivery:</strong> Design, drawings, authority approvals, procurement, construction, and operational support all handled by one dedicated team<br>• <strong>Design &amp; Implementation:</strong> Executed by <strong>Crystal Fit Contracting</strong>, ensuring continuity, precision, and accountability throughout the process<br>• <strong>Material Palette:</strong> Premium finishes define the space, including terrazzo flooring, frameless doors, high-gloss veneer wood panels, and high-grade stainless steel for a crisp, contemporary aesthetic<br>• <strong>Efficient Execution:</strong> All works were successfully completed within a <strong>four-month lease-free period</strong>, allowing the client to open on schedule without compromise</p><p>From concept development to final handover, the project was managed seamlessly under one roof, ensuring quality control, speed, and clarity at every stage.</p><p>&nbsp;</p><p>Roasters Specialty Coffee now stands as a welcoming, design-forward space that blends material richness with operational efficiency, crafted to serve both community and craft.</p></div>

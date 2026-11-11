@@ -75,7 +75,11 @@ gallery:
     size: quarter
     title: "YOY Ukrainian Firecooking Restaurant interior design by Crystal Fit photo 22"
 otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office","amv-aesthetic-clinic","roasters-coffee-nad-al-sheba-mall","the-game-premium-lounge","beacon-coffee-portable-kiosk","villa-windsor_dxb","restaurant-contractor-dubai-yoy-neo-bistro","nad-al-sheba-villa-moderna-dubai"]
+location: "The Pointe, Palm Jumeirah, Dubai, UAE"
+area: 222
+year: "2022"
+scope: []
+approvals: []
 seoTitle: "YOY Restaurant, The Pointe – Fit-Out Dubai | Crystal Fit"
 seoDescription: "YOY Ukrainian Firecooking Restaurant, The Pointe, Palm Jumeirah: restaurant fit-out by Crystal Fit (222 sqm, 2022). Turnkey design & build."
 ---
-<div class="pinfo__text"><p><strong>LOCATION:</strong> The Pointe Mall, Palm Jumeirah, Dubai, UAE</p><p><strong>SIZE:</strong>&nbsp;222 sq.m.</p><p><strong>YEAR:</strong> 2022</p></div>

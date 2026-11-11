@@ -38,15 +38,11 @@ gallery:
   - image: "./img/10-female-master-bedroom-elegant-classic1-interior-1kg-design.jpg"
     size: full
     title: "Bedroom option 2"
-fields:
-  - label: "Architect"
-    value: "Konstantin Grytsan"
-  - label: "Location"
-    value: "Al Khan, Sharjah, UAE"
-  - label: "Project Year"
-    value: "December 2019"
-  - label: "SIZE"
-    value: "450 sq.m"
+location: "Al Khan, Sharjah, UAE"
+area: 450
+year: "2019"
+scope: []
+approvals: []
 seoTitle: "Al Khan Villa – Villa Interior Design Sharjah | Crystal Fit"
 seoDescription: "Al Khan Villa, Sharjah: villa interior design by Crystal Fit in Sharjah (450 sqm, 2019). Turnkey design & build. Dubai fit-out since 2014."
 ---
