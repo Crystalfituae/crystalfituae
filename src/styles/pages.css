@@ -20,7 +20,7 @@
 }
 
 /* ---------- Home: what we do ---------- */
-.wwd { background: var(--dark); }
+.wwd { background: #000; }
 .wwd__inner { max-width: 1260px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; min-height: 660px; }
 .wwd__text { padding: 60px 99px 60px 0; color: #edeaea; font-family: var(--ff-head); font-size: 17px; line-height: 30px; }
 .wwd__text strong { font-family: var(--ff-body); font-weight: 600; }
@@ -65,7 +65,7 @@
 }
 
 /* ---------- About ---------- */
-.about { background: var(--dark); display: grid; grid-template-columns: 1fr 525px; color: #fff; font-family: var(--ff-head); font-size: 17px; line-height: 30.36px; font-weight: 300; }
+.about { background: #000; display: grid; grid-template-columns: 1fr 525px; color: #fff; font-family: var(--ff-head); font-size: 17px; line-height: 30.36px; font-weight: 300; }
 .about__text { padding: 11px 20px 30px 45px; }
 .about__text p { margin: 0 0 16px; }
 .about__checks li { margin: 0; }
@@ -83,7 +83,7 @@
 
 /* ---------- Services ---------- */
 .svc { padding: 60px 0; min-height: var(--h, auto); }
-.svc--dark { background: var(--dark); color: #fff; }
+.svc--dark { background: #000; color: #fff; }
 .svc--light { background: #fff; color: #000; }
 .svc__inner { max-width: 1260px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; }
 .svc--light .svc__text { order: 2; text-align: right; padding-left: 10px; }
@@ -116,7 +116,7 @@
 .contact__grid p { font-family: var(--ff-head); font-size: 16px; line-height: 28.8px; font-weight: 300; color: #54595f; margin: 0 0 16px; }
 .contact__grid p.sm { font-size: 15px; line-height: 26.8px; margin-bottom: 18px; }
 .contact__grid a { color: #222; }
-.contact__btn { display: inline-block; margin-top: 16px; background: var(--dark); color: #fff !important; font-family: var(--ff-head); font-size: 15px; line-height: 15px; font-weight: 500; padding: 12px 24px; }
+.contact__btn { display: inline-block; margin-top: 16px; background: #000; color: #fff !important; font-family: var(--ff-head); font-size: 15px; line-height: 15px; font-weight: 500; padding: 12px 24px; }
 .contact__follow ul { display: flex; gap: 5px; }
 .contact__follow a { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: #000 !important; transition: transform .2s; }
 .contact__follow a:hover { transform: scale(1.1); }

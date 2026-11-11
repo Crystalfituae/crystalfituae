@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 const all = import.meta.glob<{ default: ImageMetadata }>('../assets/logos/*', { eager: true });
 const byName = (n: string) => Object.entries(all).find(([k]) => k.endsWith('/' + n))?.[1].default;
-const { list, title = true, approved = true } = Astro.props;
+const { list, title = true } = Astro.props;
 const names: Record<string, string> = {
   'dub-gov-300.png': 'Government of Dubai', 'emaar-logo-1.png': 'Emaar', 'aw-dh-pv-pos-rgb-en-002.png': 'Dubai Holding', 'tecom-group.png': 'TECOM Group',
   'nakheel-properties-logo-2.png': 'Nakheel', '1621791093880-1.png': 'IDAMA Facilities Management', 'vindico.png': 'Vindico', 'dubai-police-300.png': 'Dubai Police',
@@ -17,24 +17,9 @@ const logos = (list as string[]).map((n) => ({ img: byName(n), alt: `${names[n] 
 ---
 <section class="trusted">
   {title && <div class="trusted__title">trusted by the best</div>}
-  {/* visible line about landlord approvals */}
-  {approved && <p class="trusted__approved">Approved Contractor In <span>Emaar</span><span>Dubai Holding</span><span>TECOM</span><span>Nakheel</span><span>Dubai Municipality</span><span>Civil Defence</span></p>}
-  <div class="logos" data-logos>
-    <div class="logos__track">
-      {logos.map((l) => <div class="logos__item"><Image src={l.img} alt={l.alt} widths={[139, 278]} sizes="139px" loading="lazy" /></div>)}
-    </div>
+  <div class="logos">
+    <ul class="logos__track">
+      {[...logos, ...logos].map((l, i) => <li class="logos__item" aria-hidden={i >= logos.length ? 'true' : undefined}><Image src={l.img} alt={i >= logos.length ? '' : l.alt} widths={[139, 278]} sizes="139px" loading="lazy" /></li>)}
+    </ul>
   </div>
 </section>
-<script is:inline>
-(function () {
-  var el = document.currentScript.previousElementSibling.querySelector('[data-logos]'), tr = el.firstElementChild, i = 0, hover = false;
-  el.addEventListener('mouseenter', function () { hover = true; }); el.addEventListener('mouseleave', function () { hover = false; });
-  setInterval(function () {
-    if (hover || document.hidden) return;
-    var n = innerWidth < 768 ? 3 : innerWidth < 1025 ? 4 : 7, max = tr.children.length - n;
-    i = i >= max ? 0 : Math.min(i + 3, max);
-    var it = tr.children[0], step = it.getBoundingClientRect().width + 40;
-    tr.style.transform = 'translateX(' + (-i * step) + 'px)';
-  }, 5000);
-})();
-</script>

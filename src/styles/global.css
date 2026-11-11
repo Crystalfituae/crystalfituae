@@ -6,9 +6,8 @@
   --ink-2: #262626;
   --text: #666;
   --black: #000;
-  --dark: #3e3e3e;     /* main dark tone (no pure black on the site) */
-  --dark-2: #4a4a4a;
-  --footer: #3e3e3e;
+  --dark: #3e3e3e;     /* dark grey for headings / numbers (text only) */
+  --footer: #181818;
   --form-bg: #f0f0f0;
   --line: #e2e2e2;
   --ff-body: 'Poppins', sans-serif;
@@ -52,7 +51,7 @@ button { font: inherit; }
 }
 .btn:hover { opacity: .85; }
 .btn--white { background: #fff; color: #000; }
-.btn--black { background: var(--dark); color: #fff; }
+.btn--black { background: #000; color: #fff; }
 .btn--light { font-weight: 300; }
 
 /* ---------- Header ---------- */
@@ -123,7 +122,7 @@ button { font: inherit; }
 }
 
 /* ---------- Black CTA band ("Request a proposal", "Still having questions ?") ---------- */
-.cta-band { background: var(--dark); padding: 50px 0; text-align: center; }
+.cta-band { background: #000; padding: 50px 0; text-align: center; }
 .cta-band__title {
   font-family: var(--ff-head);
   font-size: 72px; line-height: 80px; font-weight: 200;
@@ -137,29 +136,25 @@ button { font: inherit; }
 
 /* ---------- Trusted by the best (logo marquee) ---------- */
 .trusted { padding: 60px 0 80px; overflow: hidden; }
-.trusted__approved { margin: -18px auto 34px; padding: 0 16px; text-align: center; font-family: var(--ff-head); font-size: 13px; line-height: 22px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; color: #555; }
-.trusted__approved span { font-weight: 700; color: #000; }
-.trusted__approved span:first-child { margin-left: 8px; }
-.trusted__approved span + span::before { content: '·'; margin: 0 10px; color: #bbb; }
 .trusted__title {
   font-family: var(--ff-head);
   font-size: 26px; line-height: 28px; font-weight: 700;
   text-transform: uppercase; color: #000; text-align: center;
   margin: 0 0 36px;
 }
-.logos { overflow: hidden; max-width: 1213px; margin: 0 auto; }
-.logos__track { display: flex; gap: 40px; transition: transform .5s ease; }
-.logos__item { flex: 0 0 calc((100% - 240px) / 7); height: 139px; display: flex; align-items: center; justify-content: center; }
-.logos__item img { max-width: 100%; max-height: 139px; width: auto; height: auto; }
-@media (max-width: 1024px) { .logos { padding: 0 30px; } .logos__item { flex-basis: calc((100% - 120px) / 4); } }
+.logos { --lg-gap: 70px; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.logos__track { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: var(--lg-gap); width: max-content; animation: logos-run 60s linear infinite; }
+.logos__track:hover { animation-play-state: paused; }
+.logos__item { flex: 0 0 auto; width: 139px; height: 110px; display: flex; align-items: center; justify-content: center; }
+.logos__item img { max-width: 100%; max-height: 100%; width: auto; height: auto; }
+@keyframes logos-run { to { transform: translateX(calc(-50% - var(--lg-gap) / 2)); } }
+@media (prefers-reduced-motion: reduce) { .logos__track { animation: none; } }
 @media (max-width: 767px) {
   .trusted__title { display: none; }
-  .trusted__approved { margin: 0 auto 20px; font-size: 11px; letter-spacing: 1px; }
-  .trusted__approved span + span::before { margin: 0 6px; }
   .trusted { padding: 40px 0; }
-  .logos { padding: 0 30px; }
-  .logos__item { flex-basis: calc((100% - 80px) / 3); height: 83px; }
-  .logos__item img { max-height: 83px; }
+  .logos { --lg-gap: 40px; }
+  .logos__item { width: 100px; height: 70px; }
+  .logos__track { animation-duration: 45s; }
 }
 
 /* ---------- Contact form ---------- */
@@ -188,10 +183,10 @@ button { font: inherit; }
 .cf textarea { height: 200px; resize: none; }
 .cf button {
   width: 100%; height: 52px; border: 0; cursor: pointer;
-  background: var(--dark); color: #fff;
+  background: var(--ink); color: #fff;
   font-size: 12px; line-height: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
 }
-.cf button:hover { background: #555; }
+.cf button:hover { background: #000; }
 .cf__status { grid-column: 1 / -1; margin-top: 16px; font-size: 14px; color: var(--ink); }
 .cf__hp { display: none; }
 .cf__legal { grid-column: 1 / -1; margin: 14px 0 0; font-size: 12px; line-height: 18px; color: #777; }
@@ -243,7 +238,7 @@ button { font: inherit; }
 .wa-fab .ico { width: 32px; height: 32px; }
 .to-top { position: fixed; right: 32px; bottom: 104px; z-index: 59; width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(0,0,0,.18); background: rgba(255,255,255,.92); color: #000; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,.08); opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity .25s, transform .25s, visibility .25s, background .2s; }
 .to-top.is-on { opacity: 1; visibility: visible; transform: none; }
-.to-top:hover { background: var(--dark); color: #fff; border-color: var(--dark); }
+.to-top:hover { background: #000; color: #fff; border-color: #000; }
 .to-top[hidden] { display: none; }
 
 /* ---------- Mobile base scale (matches original Elementor kit) ---------- */
