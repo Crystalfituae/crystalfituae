@@ -50,7 +50,7 @@ const blocks = [
   <Hero slides={[{ image: hero, lines: ['Our', 'Services'] }]} place="right-top" dark h1="— interior design & fit-out in Dubai" />
   <Breadcrumb current="Crystal fit contracting LLC UAE / SERVICES" />
   {blocks.map((b, i) => (
-    <section class:list={['svc', b.dark ? 'svc--dark' : 'svc--light', { 'svc--narrow': b.narrow }]} style={`--h:${[820, 1097, 820, 925, 870][i]}px`}>
+    <section id={['commercial', 'fnb', 'residential', 'consultancy', 'project-management'][i]} class:list={['svc', b.dark ? 'svc--dark' : 'svc--light', { 'svc--narrow': b.narrow }]} style={`--h:${[820, 1097, 820, 925, 870][i]}px`}>
       <div class="svc__inner">
         <div class="svc__text">
           <h2 class="svc__title">{b.title}{b.dark && <span class="dot" aria-hidden="true"></span>}</h2>

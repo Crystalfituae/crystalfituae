@@ -14,9 +14,9 @@ const photos = import.meta.glob<{ default: ImageMetadata }>('../assets/about/tea
 const ph = (n: string) => photos[`../assets/about/team-${n}.jpg`].default;
 // [photo key or '' if no photo yet, name, role] — 6 per row
 const team = [
-  ['alina', 'Alina D.', 'Business Development Manager'], ['vladimir', 'Vladimir H.', 'Project Manager'], ['', 'Kiranraj', 'MEP Engineer'],
-  ['', 'Alam', 'Site Foreman'], ['', 'Hema', 'Document Controller'], ['', 'Athira', 'Office Administrator'],
-  ['gerin', 'Gerin K.', 'Designer'], ['thejus', 'Thejus T.', 'Designer'], ['', 'Sofia', 'Designer'],
+  ['alina', 'Alina D.', 'Business Development Manager'], ['vladimir', 'Vladimir H.', 'Project Manager'], ['kiranraj', 'Kiranraj', 'MEP Engineer'],
+  ['alam', 'Alam', 'Site Foreman'], ['hema', 'Hema', 'Document Controller'], ['athira', 'Athira', 'Office Administrator'],
+  ['gerin', 'Gerin K.', 'Designer'], ['thejus', 'Thejus T.', 'Designer'], ['sofia', 'Sofia', 'Designer'],
   ['saba', 'Saba F.', 'Procurement Designer'], ['dhanesh', 'Dhanesh T.', '3D Visualizer'], ['abishikth', 'Abishikth', 'Head of Accounts'],
 ];
 const initials = (n: string) => n.replace(/\./g, '').split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase();
@@ -43,13 +43,11 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
     <div class="team__lead team__lead--rev">
       <div class="team__bio">
         <p class="ab-kicker">About Crystal Fit</p>
-        <p class="team__quote">“We design it, we build it — and we stand behind every detail.”</p>
-        <p>Crystal Fit Contracting LLC is a Dubai design &amp; build company founded in 2014. Our own designers, engineers, project managers and builders take every space from the first sketch to opening day — 200+ cafes, restaurants, offices, clinics and villas across the UAE.</p>
-        <ul class="team__mottos">
-          <li>Design, approvals, MEP and fit-out under one roof.</li>
-          <li>Transparent BOQs and programmes we keep.</li>
-          <li>Trusted by Emaar, Dubai Holding, TECOM and Nakheel.</li>
-        </ul>
+        <p class="team__quote">Crystal Fit Contracting LLC is a Dubai-based design &amp; build studio operating across the GCC and MENA region since 2014.</p>
+        <p>With over a decade of expertise in the local interior fit-out market, we provide a one-stop solution for clients in the Commercial, HoReCa (Hotels, Restaurants, Cafés), Residential, and Public sectors — delivering projects that prioritize time, quality, and a bespoke business approach.</p>
+        <p>Our portfolio features 200+ successfully completed projects across Dubai, reflecting our ability to transform spaces into inspiring, functional, and brand-driven environments.</p>
+        <p>At Crystal Fit, we are selective with our approaches, suppliers, and contractors to ensure the highest quality standards, making us a trusted partner for businesses and individuals alike.</p>
+        <p class="ab-cta-line">Let’s elevate your spaces — enhancing both lifestyle and business success — with our professional design &amp; build services.</p>
       </div>
       <figure>
         <Image src={builder} alt="Crystal Fit builder pointing at the company logo on his T-shirt" width={487} height={487} widths={[487, 974]} sizes="(min-width: 768px) 487px, 100vw" fit="cover" position="top" loading="lazy" quality={75} />
@@ -126,6 +124,8 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
 
   .team { max-width: 1350px; margin: 0 auto; padding-left: 40px; padding-right: 40px; }
   .team--intro { padding-top: 80px; padding-bottom: 80px; }
+  .team--intro .team__quote { font-style: normal; }
+  .ab-cta-line { font-weight: 500; color: #000; }
   .team__lead.team__lead--rev { grid-template-columns: 1fr 487px; }
   .team--ceo { background: #fff; padding-top: 80px; padding-bottom: 80px; }
   .team__lead { display: grid; grid-template-columns: 487px 1fr; gap: 60px; align-items: center; }

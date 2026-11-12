@@ -17,29 +17,17 @@ import l3 from '../assets/home/latest-3.jpg';
 import l4 from '../assets/home/latest-4.jpg';
 import l5 from '../assets/home/latest-5.jpg';
 import l6 from '../assets/home/latest-6.jpg';
-import render from '../assets/services/design-render-omakase.jpg';
 import l7 from '../assets/home/latest-7.jpg';
-import turnkey from '../assets/services/turnkey.jpg';
 
 const all = await getCollection('projects', ({ data }) => !data.draft);
 const cover = (id: string) => all.find((p) => p.id === id)!.data.cover;
-// What we do: [title, one-line summary, what is included, link, photo]
-const services: [string, string, string[], string, ImageMetadata][] = [
-  ['F&B Design & Build', 'Cafes, coffee shops, restaurants and kiosks — from concept to opening day.',
-    ['Concept, 3D and menu-led layouts', 'Kitchen & bar design with full MEP', 'Landlord, DM food safety and Civil Defence approvals', 'Turnkey fit-out, inspections and handover'],
-    '/cafe-restaurant-fit-out-dubai/', cover('roasters-dubai-hills')],
-  ['Commercial Fit-outs', 'Offices, clinics, retail, galleries and hotels that work for your business.',
-    ['Space planning and interior design', 'Partitions, ceilings, flooring and joinery', 'HVAC, electrical, fire alarm and fire-fighting', 'Emaar, TECOM, DHA and DCD approvals'],
-    '/commercial-fit-out-dubai/', cover('gary-tatintsian-gallery')],
-  ['Residential Interiors', 'Villas, townhouses, penthouses and apartments — from design to move-in.',
-    ['Interior design and 3D visuals', 'Full renovation and remodelling', 'Bespoke kitchens, wardrobes and joinery', 'Bathrooms, terraces, pools and gardens'],
-    '/villa-interior-design-dubai/', cover('anantara-penthouse')],
-  ['Design and Technical Consultancy', 'Design and technical packages you can build from and get approved.',
-    ['Concept design and 3D renders', 'Architectural, MEP and shop drawings', 'Unit selection and feasibility advice', 'Landlord NOC and authority approvals'],
-    '/interior-design-consultancy-dubai/', render],
-  ['Project Management', 'One team responsible for programme, budget and quality on site.',
-    ['Transparent BOQ and clear contract scope', 'Programme, site supervision and weekly reports', 'Coordination of trades, suppliers and consultants', 'Inspections, snagging and handover'],
-    '/contact/', turnkey],
+// What we do: [title, short line, anchor on /services/]
+const services: [string, string, string][] = [
+  ['F&B Design & Build', 'Cafes, coffee shops & restaurants', '/services/#fnb'],
+  ['Commercial Fit-outs', 'Offices, clinics, retail & galleries', '/services/#commercial'],
+  ['Residential Interiors', 'Villas, townhouses & apartments', '/services/#residential'],
+  ['Design and Technical Consultancy', 'Concepts, drawings & approvals', '/services/#consultancy'],
+  ['Project Management', 'Programme, budget & quality on site', '/services/#project-management'],
 ];
 const stats: [string, string][] = [['2014', 'UAE grown since'], ['200+', 'Projects handed over'], ['90 days', 'Shell & core to opening'], ['100%', 'Approvals in‑house']];
 const logos = import.meta.glob<{ default: ImageMetadata }>('../assets/logos/*', { eager: true });
@@ -102,21 +90,12 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   </section>
 
 
-  <!-- 3. Services: 5 cards in one row with what is included -->
+  <!-- 3. What we do: clickable numbered list -> sections of /services/ -->
   <section class="hd-dark"><div class="hd-sec hd-sec--wide">
     <h2 class="hd-h2 hd-h2--big">What we do<span class="dot" aria-hidden="true"></span></h2>
-    <div class="hd-svc">
-      {services.map(([t, d, list, href, img]) => (
-        <a class="hd-svc__card" href={href}>
-          <Image src={img} alt={t} width={800} height={480} widths={[400, 800]} sizes="(min-width: 1100px) 20vw, (min-width: 600px) 50vw, 100vw" fit="cover" loading="lazy" quality={70} />
-          <div class="hd-svc__body">
-            <h3>{t}</h3><p>{d}</p>
-            <ul class="hd-svc__list">{list.map((li) => <li>{li}</li>)}</ul>
-            <span class="hd-more">{href === '/contact/' ? 'Discuss your project →' : 'Learn more →'}</span>
-          </div>
-        </a>
-      ))}
-    </div>
+    <ol class="hd-list">
+      {services.map(([t, d, href], i) => <li><a href={href}><em>0{i + 1}</em><b>{t}</b><span>{d}</span><i aria-hidden="true">→</i></a></li>)}
+    </ol>
   </div></section>
 
   <!-- FAQ: same style as the original home page -->
@@ -156,32 +135,22 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .hd-dark { background: #000; color: #fff; }
   .hd-dark .hd-h2 { color: #fff; }
   .hd-h2--big { font-size: 43px; line-height: 60px; font-weight: 400; letter-spacing: 0; }
-  .hd-dark .hd-svc__card { background: #111; border-color: #222; color: #fff; }
-  .hd-dark .hd-svc__card:hover { box-shadow: 0 12px 30px rgba(255,255,255,.06); }
-  .hd-dark .hd-svc__body p { color: #bdbdbd; }
   .hd-dark .hd-more { color: #fff; }
-  /* What we do: 5 cards in one row on desktop */
-  .hd-sec--wide { max-width: 1440px; }
-  .hd-svc { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
-  .hd-svc .hd-svc__body { padding: 18px 16px 20px; }
-  .hd-svc .hd-svc__body h3 { font-size: 15px; line-height: 21px; letter-spacing: .8px; min-height: 42px; }
-  .hd-svc .hd-svc__body p { font-size: 14px; line-height: 21px; min-height: 63px; }
-  .hd-svc__list li { font-size: 13px !important; line-height: 19px !important; }
-  @media (max-width: 1099px) {
-    .hd-svc { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-    .hd-svc__card:last-child { grid-column: span 2; }
-    .hd-svc__card:last-child img { aspect-ratio: 2/1; }
-    .hd-svc .hd-svc__body h3, .hd-svc .hd-svc__body p { min-height: 0; }
+  .hd-sec--wide { max-width: 1360px; }
+  /* What we do: numbered list (variant B) */
+  .hd-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid #333; }
+  .hd-list a { display: grid; grid-template-columns: 60px 1fr 1fr 30px; align-items: center; gap: 20px; padding: 20px 4px; border-bottom: 1px solid #333; color: #fff; transition: padding .2s, background .2s; }
+  .hd-list a:hover { background: #111; padding-left: 14px; }
+  .hd-list em { font-style: normal; font-size: 14px; color: #777; letter-spacing: 2px; }
+  .hd-list b { font-size: 20px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+  .hd-list span { font-size: 16px; font-weight: 300; color: #bbb; }
+  .hd-list i { font-style: normal; font-size: 20px; text-align: right; }
+  @media (max-width: 991px) {
+    .hd-list a { grid-template-columns: 36px 1fr 24px; gap: 4px 12px; }
+    .hd-list span { grid-column: 2; grid-row: 2; font-size: 14px; }
+    .hd-list b { font-size: 16px; }
+    .hd-list i { grid-column: 3; grid-row: 1 / span 2; }
   }
-  .hd-svc__list { list-style: none; margin: 0 0 18px; padding: 14px 0 0; border-top: 1px solid #2a2a2a; flex: 1; }
-  .hd-svc__list li { position: relative; padding-left: 16px; font-size: 14px; line-height: 21px; font-weight: 300; color: #d6d6d6; margin-bottom: 7px; }
-  .hd-svc__list li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; background: #fff; }
-  .hd-svc__card { display: flex; flex-direction: column; background: #fff; border: 1px solid #e6e6e6; color: #000; transition: box-shadow .25s, transform .25s; }
-  .hd-svc__card:hover { box-shadow: 0 12px 30px rgba(0,0,0,.08); transform: translateY(-3px); }
-  .hd-svc__card img { width: 100%; height: auto; aspect-ratio: 10/7; object-fit: cover; display: block; }
-  .hd-svc__body { padding: 20px 20px 22px; display: flex; flex-direction: column; flex: 1; }
-  .hd-svc__body h3 { font-size: 17px; line-height: 24px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 8px; }
-  .hd-svc__body p { font-size: 15px; line-height: 23px; font-weight: 300; color: #444; margin: 0 0 14px; }
   .hd-ticker { overflow: hidden; background: #000; color: #fff; padding: 22px 0; font-family: var(--ff-head); }
   .hd-ticker__track { display: flex; gap: 0; width: max-content; animation: hd-tick 40s linear infinite; }
   .hd-ticker span { font-size: 26px; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; white-space: nowrap; }
@@ -252,5 +221,5 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
     .hd-proj { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
     .hd-quotes { grid-template-columns: 1fr; }
   }
-  @media (max-width: 599px) { .hd-svc, .hd-proj { grid-template-columns: 1fr; } .hd-svc__card:last-child { grid-column: span 1; } .hd-svc__card:last-child img { aspect-ratio: 10/7; } }
+  @media (max-width: 599px) { .hd-proj { grid-template-columns: 1fr; } }
 </style>
