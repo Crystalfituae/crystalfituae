@@ -3,9 +3,10 @@
 
 :root {
   /* ---- Type scale: one size per role (see .claude/skills/website/SKILL.md) ---- */
-  --fs-h1: 60px;    --lh-h1: 72px;     /* hero / banner titles */
-  --fs-h2: 52px;    --lh-h2: 60px;     /* section titles (thin 200) */
-  --fs-h2c: 40px;   --lh-h2c: 50px;    /* titles inside a text column */
+  /* nothing may be bigger than the logo: logo = 25vw wide, its capitals = 2.5vw high = Raleway at 3.5vw */
+  --fs-h1: 3.5vw;   --lh-h1: 1.2;      /* hero / banner titles = logo size */
+  --fs-h2: min(44px, 3.1vw); --lh-h2: 1.2; /* section titles (thin 200), a bit smaller than the logo */
+  --fs-h2c: min(40px, 2.8vw); --lh-h2c: 1.25; /* titles inside a text column */
   --fs-h3: 20px;    --lh-h3: 28px;     /* item / step / sub-block titles */
   --fs-card: 15px;  --lh-card: 21px;   /* card, tile, person names */
   --fs-lead: 22px;  --lh-lead: 34px;   /* lead paragraph, quote */
@@ -14,7 +15,7 @@
   --fs-small: 14px; --lh-small: 22px;  /* meta, categories, fields */
   --fs-label: 13px; --lh-label: 20px;  /* eyebrow labels, filters, small links */
   --fs-cap: 12px;   --lh-cap: 18px;    /* roles, legal */
-  --fs-stat: 62px;  --lh-stat: 68px;   /* key numbers */
+  --fs-stat: 3.5vw; --lh-stat: 1.1;    /* key numbers = logo size */
   --fs-btn: 14px;   --lh-btn: 20px;    /* buttons */
 
   --ink: #222;
@@ -247,11 +248,15 @@ button { font: inherit; }
 .to-top[hidden] { display: none; }
 
 
+/* tablet: logo is fixed at 243px (capitals ~24px) */
+@media (max-width: 1024px) {
+  :root { --fs-h1: 34px; --fs-h2: 30px; --fs-stat: 34px; }
+}
 /* type scale on phones */
 @media (max-width: 767px) {
   :root {
-    --fs-h1: 30px;    --lh-h1: 38px;
-    --fs-h2: 30px;    --lh-h2: 38px;
+    --fs-h1: 30px;
+    --fs-h2: 28px;
     --fs-h2c: 26px;   --lh-h2c: 34px;
     --fs-h3: 17px;    --lh-h3: 24px;
     --fs-card: 14px;  --lh-card: 19px;
@@ -261,7 +266,7 @@ button { font: inherit; }
     --fs-small: 13px; --lh-small: 20px;
     --fs-label: 12px; --lh-label: 18px;
     --fs-cap: 11px;   --lh-cap: 16px;
-    --fs-stat: 46px;  --lh-stat: 52px;
+    --fs-stat: 34px;
     --fs-btn: 13px;   --lh-btn: 18px;
   }
 }
