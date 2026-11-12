@@ -16,10 +16,9 @@ const ph = (n: string) => photos[`../assets/about/team-${n}.jpg`].default;
 // [photo key or '' if no photo yet, name, role] — 6 per row
 const team = [
   ['alina', 'Alina D.', 'Business Development Manager'], ['vladimir', 'Vladimir H.', 'Project Manager'], ['', 'Kiranraj', 'MEP Engineer'],
-  ['', 'Alam', 'Site Foreman'], ['stepan', 'Stepan R.', 'Site Coordinator'], ['', 'Hema', 'Document Controller'],
+  ['', 'Alam', 'Site Foreman'], ['', 'Hema', 'Document Controller'], ['', 'Athira', 'Office Administrator'],
   ['gerin', 'Gerin K.', 'Designer'], ['thejus', 'Thejus T.', 'Designer'], ['', 'Sofia', 'Designer'],
   ['saba', 'Saba F.', 'Procurement Designer'], ['dhanesh', 'Dhanesh T.', '3D Visualizer'], ['abishikth', 'Abishikth', 'Head of Accounts'],
-  ['', 'Athira', 'Office Administrator'],
 ];
 const initials = (n: string) => n.replace(/\./g, '').split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase();
 const why: [string, string, string][] = [
