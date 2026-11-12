@@ -12,7 +12,8 @@ import { services, serviceProcess, type Service } from '../data/services';
 import { logosInner } from '../data/site';
 
 export async function getStaticPaths() {
-  return services.map((s) => ({ params: { service: s.slug }, props: { s } }));
+  // landing pages switched off by owner 2026-11-12 (old /services/ layout kept); URLs 301 -> /services/#section
+  return [] as { params: { service: string }; props: { s: Service } }[];
 }
 const { s } = Astro.props as { s: Service };
 const all = await getCollection('projects', ({ data }) => !data.draft);
