@@ -111,21 +111,22 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
   <Logos list={logosInner} />
 </Base>
 <style is:global>
-  .ab-band { background: #000; color: #fff; padding: 70px 40px; text-align: center; }
-  .ab-band__title { font-family: var(--ff-head); font-size: 46px; line-height: 1.15; font-weight: 400; letter-spacing: 6px; text-transform: uppercase; margin: 0; }
+  .ab-band { background: #000; color: #fff; padding: 50px 20px; text-align: center; }
+  /* same as .cta-band__title (LETS GROW TOGETHER) */
+  .ab-band__title, .ab-h2 { font-family: var(--ff-head); font-size: 72px; line-height: 80px; font-weight: 200; letter-spacing: 0; text-transform: uppercase; margin: 0; }
   .team__mottos { list-style: none; margin: 0 0 18px; padding: 0; }
   .team__mottos li { position: relative; padding-left: 18px; margin-bottom: 8px; font-weight: 500; color: #000; }
   .team__mottos li::before { content: ''; position: absolute; left: 0; top: 12px; width: 7px; height: 7px; background: #000; }
   .team__grid--6 { grid-template-columns: repeat(6, 1fr) !important; }
   .team__ph { aspect-ratio: 1; background: #e9e9e9; display: flex; align-items: center; justify-content: center; font-family: var(--ff-head); font-size: 40px; font-weight: 300; letter-spacing: 3px; color: #9a9a9a; }
   @media (max-width: 1100px) { .team__grid--6 { grid-template-columns: repeat(3, 1fr) !important; } }
-  @media (max-width: 767px) { .team__grid--6 { grid-template-columns: repeat(2, 1fr) !important; } .ab-band { padding: 46px 16px; } .ab-band__title { font-size: 28px; letter-spacing: 3px; } }
+  @media (max-width: 767px) { .team__grid--6 { grid-template-columns: repeat(2, 1fr) !important; } .ab-band { padding: 50px 20px; } .ab-band__title, .ab-h2 { font-size: 35px; line-height: 48px; } }
   .ab-intro { background: #000; color: #fff; display: grid; grid-template-columns: 1fr 40%; gap: 60px; align-items: center; padding: 30px 50px 70px 45px; font-family: var(--ff-head); font-size: 17px; line-height: 30px; font-weight: 300; }
   .ab-intro p { margin: 0 0 16px; }
   .ab-intro p strong { font-weight: 600; }
   .ab-lead { font-size: 21px !important; line-height: 34px !important; }
   .ab-intro__media img { width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; display: block; }
-  .ab-h2 { font-family: var(--ff-head); font-size: 42px; line-height: 1.15; font-weight: 400; letter-spacing: 4px; text-transform: uppercase; margin: 0 0 34px; }
+  .ab-h2 { margin: 0 0 34px; color: #000; }
   .ab-story { max-width: 1350px; margin: 0 auto; padding: 80px 40px 70px; color: #000; }
   .ab-story__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; font-family: var(--ff-head); font-size: 17px; line-height: 30px; font-weight: 300; color: #333; }
   .ab-story__cols p { margin: 0; border-top: 1px solid #000; padding-top: 20px; }
@@ -137,7 +138,7 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
     .ab-intro { grid-template-columns: 1fr; gap: 30px; padding: 30px 16px 50px; }
     .ab-story { padding: 50px 16px; }
     .ab-story__cols { grid-template-columns: 1fr; gap: 26px; }
-    .ab-h2 { font-size: 30px; letter-spacing: 2px; margin-bottom: 24px; }
+    .ab-h2 { margin-bottom: 24px; }
     .ab-facts { padding: 50px 16px; }
     .ab-facts__nums { grid-template-columns: repeat(2, 1fr); row-gap: 30px; }
     .ab-facts__nums b { font-size: 46px; letter-spacing: 2px; }
