@@ -102,13 +102,13 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   </section>
 
 
-  <!-- 3. Services: 5 cards (3 + 2) with what is included -->
-  <section class="hd-dark"><div class="hd-sec">
+  <!-- 3. Services: 5 cards in one row with what is included -->
+  <section class="hd-dark"><div class="hd-sec hd-sec--wide">
     <h2 class="hd-h2 hd-h2--big">What we do<span class="dot" aria-hidden="true"></span></h2>
     <div class="hd-svc">
       {services.map(([t, d, list, href, img]) => (
         <a class="hd-svc__card" href={href}>
-          <Image src={img} alt={t} width={800} height={480} widths={[400, 800]} sizes="(min-width: 992px) 50vw, (min-width: 600px) 50vw, 100vw" fit="cover" loading="lazy" quality={70} />
+          <Image src={img} alt={t} width={800} height={480} widths={[400, 800]} sizes="(min-width: 1100px) 20vw, (min-width: 600px) 50vw, 100vw" fit="cover" loading="lazy" quality={70} />
           <div class="hd-svc__body">
             <h3>{t}</h3><p>{d}</p>
             <ul class="hd-svc__list">{list.map((li) => <li>{li}</li>)}</ul>
@@ -160,10 +160,19 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .hd-dark .hd-svc__card:hover { box-shadow: 0 12px 30px rgba(255,255,255,.06); }
   .hd-dark .hd-svc__body p { color: #bdbdbd; }
   .hd-dark .hd-more { color: #fff; }
-  .hd-svc { display: grid; grid-template-columns: repeat(6, 1fr); gap: 22px; }
-  .hd-svc__card { grid-column: span 2; }
-  .hd-svc__card:nth-child(n+4) { grid-column: span 3; }
-  .hd-svc__card:nth-child(n+4) img { aspect-ratio: 2/1; }
+  /* What we do: 5 cards in one row on desktop */
+  .hd-sec--wide { max-width: 1440px; }
+  .hd-svc { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  .hd-svc .hd-svc__body { padding: 18px 16px 20px; }
+  .hd-svc .hd-svc__body h3 { font-size: 15px; line-height: 21px; letter-spacing: .8px; min-height: 42px; }
+  .hd-svc .hd-svc__body p { font-size: 14px; line-height: 21px; min-height: 63px; }
+  .hd-svc__list li { font-size: 13px !important; line-height: 19px !important; }
+  @media (max-width: 1099px) {
+    .hd-svc { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .hd-svc__card:last-child { grid-column: span 2; }
+    .hd-svc__card:last-child img { aspect-ratio: 2/1; }
+    .hd-svc .hd-svc__body h3, .hd-svc .hd-svc__body p { min-height: 0; }
+  }
   .hd-svc__list { list-style: none; margin: 0 0 18px; padding: 14px 0 0; border-top: 1px solid #2a2a2a; flex: 1; }
   .hd-svc__list li { position: relative; padding-left: 16px; font-size: 14px; line-height: 21px; font-weight: 300; color: #d6d6d6; margin-bottom: 7px; }
   .hd-svc__list li::before { content: ''; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; background: #fff; }
@@ -230,9 +239,6 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
     .hd-sec { padding: 46px 16px; }
     .hd-h2 { font-size: 24px; margin-bottom: 24px; }
     .hd-h2--big { font-size: 30px; line-height: 40px; }
-    .hd-svc { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-    .hd-svc__card, .hd-svc__card:nth-child(n+4) { grid-column: span 1; }
-    .hd-svc__card:last-child { grid-column: span 2; }
     .hd-ticker span { font-size: 18px; }
     .hd-steps { grid-template-columns: 1fr; gap: 22px; }
     .hd-steps::before { left: 32px; right: auto; top: 10px; bottom: 10px; border-top: 0; border-left: 1px dashed #bbb; }
@@ -246,5 +252,5 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
     .hd-proj { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
     .hd-quotes { grid-template-columns: 1fr; }
   }
-  @media (max-width: 599px) { .hd-svc, .hd-proj { grid-template-columns: 1fr; } .hd-svc__card:last-child { grid-column: span 1; } .hd-svc__card:nth-child(n+4) img { aspect-ratio: 10/7; } }
+  @media (max-width: 599px) { .hd-svc, .hd-proj { grid-template-columns: 1fr; } .hd-svc__card:last-child { grid-column: span 1; } .hd-svc__card:last-child img { aspect-ratio: 10/7; } }
 </style>
