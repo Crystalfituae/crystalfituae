@@ -3,6 +3,7 @@ title: "Fairfield Apartment, Dubai Marina"
 heading: "Fairfield Apartment, Dubai Marina"
 order: 12.5
 listed: true
+draft: true  # removed from portfolio by owner 2026-11-12
 size: quarter
 categories: ["residential"]
 template: modern
