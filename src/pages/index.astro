@@ -41,7 +41,7 @@ const latestBig = [
   { img: l6, span: 2, title: 'Self.Space Studio', sub: 'Ghoshi City, Al Quoz, Dubai', slug: 'self-space-studio-dubai' },
   { img: l7, span: 1, title: 'AMV Aesthetic Clinic', sub: 'Bay Square, Dubai', slug: 'amv-aesthetic-clinic' },
 ];
-const faq = (data as [string, string][]).slice(0, 6);
+const faq = data as [string, string][];
 const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }];
 ---
 <Base schema={faqSchema} title="Crystal Fit – Cafe, Restaurant & Office Fit-Out in Dubai" description="Design & build fit-out contractor in Dubai since 2014: 200+ cafes, restaurants, offices and villas. Approved by Emaar, Dubai Holding, TECOM & Nakheel.">
