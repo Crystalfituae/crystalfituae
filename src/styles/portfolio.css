@@ -1,5 +1,5 @@
 .ptitle { padding: 50px 10px; text-align: center; }
-.ptitle h1 { font-family: var(--ff-head); font-size: 50px; line-height: 50px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--ink-2); }
+.ptitle h1 { font-family: var(--ff-head); font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: 200; letter-spacing: 0; text-transform: uppercase; color: var(--ink-2); }
 .pgrid { padding: 45px 30px 0; }
 .pgrid__list { margin: 0 -20px; }
 
@@ -11,8 +11,8 @@
 .pcard__media:hover .pcard__plus { opacity: 1; transform: none; }
 .pcard__media:hover img { transform: scale(1.04); }
 .pcard__body { margin: 20px 0 20px; }
-.pcard__title { font-family: var(--ff-head); font-size: 15px; line-height: 20.984px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--ink); margin: 0 0 8px; }
-.pcard__cats { display: flex; flex-wrap: wrap; font-size: 14px; line-height: 24.984px; color: #666; }
+.pcard__title { font-family: var(--ff-head); font-size: var(--fs-card); line-height: var(--lh-card); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--ink); margin: 0 0 8px; }
+.pcard__cats { font-size: var(--fs-small); line-height: var(--lh-small); display: flex; flex-wrap: wrap; color: #666; }
 .pcard__cats li:not(:last-child)::after { content: ','; margin-right: 8px; }
 .pcard a:hover { opacity: .85; }
 
@@ -21,20 +21,20 @@
   .pgrid { padding: 16px 16px 0; }
   .pgrid__list { margin: 0; }
   .pcard { padding: 0; }
-  .pcard__title { font-size: 12.5px; line-height: 16.67px; letter-spacing: .83px; margin-bottom: 8px; }
-  .pcard__cats { font-size: 11.6667px; line-height: 16px; }
+  .pcard__title { margin-bottom: 8px; }
+
   .pcard__plus { width: 32px; height: 32px; margin: -16px 0 0 -16px; }
 }
 
 /* type filter (Show all / F&B / Commercial / Residential) — fits into the original gap above the grid */
 .ptitle { padding-bottom: 25px; }
 .pfilter { display: flex; justify-content: flex-start; gap: 40px; height: 25px; margin: 0; padding: 0 30px; list-style: none; }
-.pfilter a { position: relative; display: inline-block; font-family: var(--ff-head); font-size: 13px; line-height: 20px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #222; padding-bottom: 3px; }
+.pfilter a { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; position: relative; display: inline-block; color: #222; padding-bottom: 3px; }
 .pfilter a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: #222; transform: scaleX(0); transform-origin: left; transition: transform .3s; }
 .pfilter a:hover::after, .pfilter a.is-active::after { transform: scaleX(1); }
 .pfilter sup { font-size: 9px; font-weight: 500; letter-spacing: 0; color: #999; margin-left: 3px; }
 @media (max-width: 767px) {
   .pfilter { flex-wrap: wrap; justify-content: flex-start; gap: 8px 20px; height: auto; padding: 4px 16px 6px; }
-  .pfilter a { font-size: 11px; letter-spacing: 1px; white-space: nowrap; }
+  .pfilter a { white-space: nowrap; }
   .pfilter sup { display: none; }
 }

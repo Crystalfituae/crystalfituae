@@ -2,6 +2,21 @@
 @import './fonts.css';
 
 :root {
+  /* ---- Type scale: one size per role (see .claude/skills/website/SKILL.md) ---- */
+  --fs-h1: 60px;    --lh-h1: 72px;     /* hero / banner titles */
+  --fs-h2: 64px;    --lh-h2: 72px;     /* section titles (thin 200) */
+  --fs-h2c: 40px;   --lh-h2c: 50px;    /* titles inside a text column */
+  --fs-h3: 20px;    --lh-h3: 28px;     /* item / step / sub-block titles */
+  --fs-card: 15px;  --lh-card: 21px;   /* card, tile, person names */
+  --fs-lead: 22px;  --lh-lead: 34px;   /* lead paragraph, quote */
+  --fs-body: 17px;  --lh-body: 29px;   /* running text */
+  --fs-q: 17px;     --lh-q: 26px;      /* FAQ questions */
+  --fs-small: 14px; --lh-small: 22px;  /* meta, categories, fields */
+  --fs-label: 13px; --lh-label: 20px;  /* eyebrow labels, filters, small links */
+  --fs-cap: 12px;   --lh-cap: 18px;    /* roles, legal */
+  --fs-stat: 62px;  --lh-stat: 68px;   /* key numbers */
+  --fs-btn: 14px;   --lh-btn: 20px;    /* buttons */
+
   --ink: #222;
   --ink-2: #262626;
   --text: #666;
@@ -12,7 +27,7 @@
   --line: #e2e2e2;
   --ff-body: 'Poppins', sans-serif;
   --ff-head: 'Raleway', Optima, sans-serif;
-  --ff-label: 'Roboto', Optima, sans-serif;
+  --ff-label: var(--ff-body); /* Poppins (Roboto dropped) */
   --boxed: 1140px;
 }
 
@@ -40,12 +55,7 @@ button { font: inherit; }
 
 /* ---------- Buttons ---------- */
 .btn {
-  display: inline-block;
-  font-family: var(--ff-head);
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; display: inline-block;
   padding: 10px 20px;
   transition: opacity .2s;
 }
@@ -124,22 +134,18 @@ button { font: inherit; }
 /* ---------- Black CTA band ("Request a proposal", "Still having questions ?") ---------- */
 .cta-band { background: #000; padding: 50px 0; text-align: center; }
 .cta-band__title {
-  font-family: var(--ff-head);
-  font-size: 72px; line-height: 80px; font-weight: 200;
-  text-transform: uppercase; color: #fff;
+  font-family: var(--ff-head); font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: 200; letter-spacing: 0; text-transform: uppercase; color: #fff;
   margin: 0 0 20px;
 }
 @media (max-width: 767px) {
   .cta-band { padding: 50px 20px; }
-  .cta-band__title { font-size: 35px; line-height: 48px; }
+
 }
 
 /* ---------- Trusted by the best (logo marquee) ---------- */
 .trusted { padding: 60px 0 80px; overflow: hidden; }
 .trusted__title {
-  font-family: var(--ff-head);
-  font-size: 26px; line-height: 28px; font-weight: 700;
-  text-transform: uppercase; color: #000; text-align: center;
+  font-family: var(--ff-head); font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: 200; letter-spacing: 0; text-transform: uppercase; color: #000; text-align: center;
   margin: 0 0 36px;
 }
 .logos { --lg-gap: 70px; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
@@ -160,8 +166,8 @@ button { font: inherit; }
 /* ---------- Contact form ---------- */
 .contact-form { background: var(--form-bg); padding: 81px 0 134px; }
 .contact-form__inner { max-width: 1193px; margin: 0 auto; }
-.contact-form__label { font-family: var(--ff-label); font-size: 14px; line-height: 25px; font-weight: 500; color: #7a7a7a; margin: 0 0 8px; }
-.contact-form__title { font-size: 18px; line-height: 24px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--ink); margin: 0 0 20px; }
+.contact-form__label { font-size: var(--fs-small); line-height: var(--lh-small); font-family: var(--ff-label); font-weight: 500; color: #7a7a7a; margin: 0 0 8px; }
+.contact-form__title { font-family: var(--ff-head); font-size: var(--fs-h3); line-height: var(--lh-h3); font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: var(--ink); margin: 0 0 20px; }
 .cf { display: grid; grid-template-columns: 312px 312px 450px; column-gap: 29px; justify-content: space-between; }
 .cf__left { grid-column: 1 / 3; display: grid; grid-template-columns: 312px 312px; column-gap: 29px; row-gap: 118px; align-content: start; }
 .cf__right { grid-column: 3; display: grid; row-gap: 48px; align-content: start; }
@@ -182,14 +188,13 @@ button { font: inherit; }
 }
 .cf textarea { height: 200px; resize: none; }
 .cf button {
-  width: 100%; height: 52px; border: 0; cursor: pointer;
+  font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; width: 100%; height: 52px; border: 0; cursor: pointer;
   background: var(--ink); color: #fff;
-  font-size: 12px; line-height: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
 }
 .cf button:hover { background: #000; }
-.cf__status { grid-column: 1 / -1; margin-top: 16px; font-size: 14px; color: var(--ink); }
+.cf__status { font-size: var(--fs-small); line-height: var(--lh-small); grid-column: 1 / -1; margin-top: 16px; color: var(--ink); }
 .cf__hp { display: none; }
-.cf__legal { grid-column: 1 / -1; margin: 14px 0 0; font-size: 12px; line-height: 18px; color: #777; }
+.cf__legal { font-size: var(--fs-cap); line-height: var(--lh-cap); grid-column: 1 / -1; margin: 14px 0 0; color: #777; }
 .cf__legal a { text-decoration: underline; }
 @media (max-width: 1240px) {
   .contact-form__inner { padding: 0 25px; }
@@ -207,14 +212,14 @@ button { font: inherit; }
 .site-footer { background: var(--footer); color: #fff; }
 .site-footer__top { display: grid; grid-template-columns: 1fr 1fr; padding: 77px 40px 70px; }
 .site-footer__col { padding: 0 15px; }
-.site-footer h6 { font-size: 15px; line-height: 20px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #fff; margin: 0 0 25px; }
+.site-footer h6 { font-family: var(--ff-head); font-size: var(--fs-card); line-height: var(--lh-card); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #fff; margin: 0 0 25px; }
 .site-footer__contact a { display: flex; align-items: center; gap: 12px; line-height: 25px; }
 .site-footer__menu li + li { margin-top: 14px; }
-.site-footer__menu a { display: flex; align-items: center; gap: 12px; font-family: var(--ff-head); font-size: 14px; font-weight: 500; line-height: 25px; }
+.site-footer__menu a { font-size: var(--fs-small); line-height: var(--lh-small); display: flex; align-items: center; gap: 12px; font-family: var(--ff-head); font-weight: 500; }
 .site-footer a:hover { opacity: .7; }
 .site-footer__bottom { display: flex; justify-content: space-between; align-items: center; padding: 27px 55px; border-top: 1px solid rgba(255,255,255,.06); height: 79px; }
 .site-footer__bottom p { margin: 0; }
-.site-footer__legal { display: flex; gap: 18px; list-style: none; margin: 0; padding: 0; font-size: 12px; }
+.site-footer__legal { font-size: var(--fs-cap); line-height: var(--lh-cap); display: flex; gap: 18px; list-style: none; margin: 0; padding: 0; }
 .site-footer__legal a { color: inherit; opacity: .75; }
 .site-footer__legal a:hover { opacity: 1; }
 .socials { display: flex; gap: 20px; }
@@ -240,6 +245,26 @@ button { font: inherit; }
 .to-top.is-on { opacity: 1; visibility: visible; transform: none; }
 .to-top:hover { background: #000; color: #fff; border-color: #000; }
 .to-top[hidden] { display: none; }
+
+
+/* type scale on phones */
+@media (max-width: 767px) {
+  :root {
+    --fs-h1: 30px;    --lh-h1: 38px;
+    --fs-h2: 34px;    --lh-h2: 42px;
+    --fs-h2c: 26px;   --lh-h2c: 34px;
+    --fs-h3: 17px;    --lh-h3: 24px;
+    --fs-card: 14px;  --lh-card: 19px;
+    --fs-lead: 19px;  --lh-lead: 29px;
+    --fs-body: 16px;  --lh-body: 27px;
+    --fs-q: 16px;     --lh-q: 24px;
+    --fs-small: 13px; --lh-small: 20px;
+    --fs-label: 12px; --lh-label: 18px;
+    --fs-cap: 11px;   --lh-cap: 16px;
+    --fs-stat: 46px;  --lh-stat: 52px;
+    --fs-btn: 13px;   --lh-btn: 18px;
+  }
+}
 
 /* ---------- Mobile base scale (matches original Elementor kit) ---------- */
 @media (max-width: 767px) {

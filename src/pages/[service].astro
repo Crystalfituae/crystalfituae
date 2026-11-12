@@ -95,42 +95,42 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   .sv--dark > * { max-width: 1180px; margin: 0 auto; }
   .sv--grey { max-width: none; background: #f4f4f4; }
   .sv--grey > * { max-width: 1180px; margin-left: auto; margin-right: auto; }
-  .sv__h2 { font-family: var(--ff-head); font-size: 34px; line-height: 1.25; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; margin-top: 0; margin-bottom: 30px; }
-  .sv__intro p { font-size: 18px; line-height: 30px; font-weight: 300; max-width: 900px; margin: 0 0 18px; }
+  .sv__h2 { font-family: var(--ff-head); font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: 200; letter-spacing: 0; text-transform: uppercase; margin-top: 0; margin-bottom: 30px; }
+  .sv__intro p { font-family: var(--ff-head); font-size: var(--fs-lead); line-height: var(--lh-lead); font-weight: 400; letter-spacing: 0; max-width: 900px; margin: 0 0 18px; }
   .sv__facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; list-style: none; padding: 0; margin: 40px 0 0; }
   .sv__facts li { border-top: 1px solid #222; padding-top: 14px; }
-  .sv__facts b { display: block; font-size: 34px; line-height: 1.2; font-weight: 600; }
-  .sv__facts span { font-size: 14px; line-height: 20px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+  .sv__facts b { font-family: var(--ff-head); font-size: var(--fs-stat); line-height: var(--lh-stat); font-weight: 700; letter-spacing: 1px; font-variant-numeric: lining-nums; display: block; }
+  .sv__facts span { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 400; letter-spacing: 0; text-transform: none; color: #666; }
   .sv__cols { display: grid; grid-template-columns: 1.3fr 1fr; gap: 60px; }
   .sv__list { margin: 0; padding: 0; list-style: none; }
-  .sv__list li { position: relative; padding: 0 0 14px 24px; font-size: 17px; line-height: 27px; font-weight: 300; color: #edeaea; }
+  .sv__list li { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 300; letter-spacing: 0; position: relative; padding: 0 0 14px 24px; color: #edeaea; }
   .sv__list li::before { content: ''; position: absolute; left: 0; top: 11px; width: 8px; height: 8px; background: #fff; border-radius: 50%; }
   .sv__tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0; }
-  .sv__all { display: none; }
-  .sv__tags li { border: 1px solid rgba(255,255,255,.5); padding: 8px 14px; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
+  .sv__all { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; display: none; }
+  .sv__tags li { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid rgba(255,255,255,.5); padding: 8px 14px; }
   .sv__steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; list-style: none; padding: 0; margin: 0; }
   .sv__num { font-size: 40px; font-weight: 200; color: #999; }
-  .sv__steps h3 { font-size: 17px; line-height: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin: 8px 0; }
-  .sv__steps p { font-size: 15px; line-height: 24px; font-weight: 300; margin: 0; }
+  .sv__steps h3 { font-family: var(--ff-head); font-size: var(--fs-h3); line-height: var(--lh-h3); font-weight: 500; letter-spacing: 1px; text-transform: uppercase; margin: 8px 0; }
+  .sv__steps p { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 300; letter-spacing: 0; margin: 0; }
   .sv__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
   .sv__card img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block; }
-  .sv__card span { display: block; padding: 12px 0 0; font-size: 15px; line-height: 21px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #222; }
+  .sv__card span { font-family: var(--ff-head); font-size: var(--fs-card); line-height: var(--lh-card); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; display: block; padding: 12px 0 0; color: #222; }
   .sv__more { text-align: center; margin-top: 40px; margin-bottom: 0; }
   .sv--projects { border-top: 1px solid #222; }
   .sv--dark .sv__card span { color: #fff; }
   .sv__faq details { border-bottom: 1px solid #ddd; padding: 16px 0; }
-  .sv__faq summary { cursor: pointer; font-size: 18px; line-height: 26px; font-weight: 600; list-style: none; }
+  .sv__faq summary { font-family: var(--ff-head); font-size: var(--fs-q); line-height: var(--lh-q); font-weight: 500; letter-spacing: 0; cursor: pointer; list-style: none; }
   .sv__faq summary::after { content: '+'; float: right; font-weight: 300; }
   .sv__faq details[open] summary::after { content: '–'; }
-  .sv__faq p { font-size: 16px; line-height: 27px; font-weight: 300; margin: 12px 0 0; max-width: 950px; }
+  .sv__faq p { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 300; letter-spacing: 0; margin: 12px 0 0; max-width: 950px; }
   @media (max-width: 991px) {
     .sv { padding: 44px 16px; }
-    .sv__h2 { font-size: 26px; }
-    .sv__intro p { font-size: 16px; line-height: 27px; }
+
+
     .sv__facts { grid-template-columns: repeat(2, 1fr); }
     .sv__cols { grid-template-columns: 1fr; gap: 20px; }
     .sv__appr-h, .sv__tags { display: none; }
-    .sv__all { display: block; margin: 0; font-size: 17px; line-height: 27px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+    .sv__all { display: block; margin: 0; font-weight: 600; text-transform: uppercase; }
     .sv__steps { grid-template-columns: 1fr; gap: 22px; }
     .sv__grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   }

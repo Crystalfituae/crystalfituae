@@ -53,11 +53,11 @@ const schema = [{ '@type': 'ContactPage', name: 'Contact Crystal Fit', url: new 
   main:has(.contact) .hero__slide::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.6), rgba(0,0,0,.25) 55%, rgba(0,0,0,0) 80%); }
   main:has(.contact) .hero__img { object-position: 50% 62%; }
   main:has(.contact) .hero__content { z-index: 1; }
-  .contact__intro { font-family: var(--ff-head); font-size: 17px; line-height: 28px; font-weight: 300; color: #333; max-width: 560px; margin: -26px 0 34px; }
+  .contact__intro { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 300; letter-spacing: 0; color: #333; max-width: 560px; margin: -26px 0 34px; }
   .contact__grid h3 { display: flex; align-items: center; gap: 10px; }
   .contact__grid h3 svg { flex: 0 0 auto; }
   .contact__grid p { line-height: 30px; }
   @media (max-width: 767px) {
-    .contact__intro { margin: -14px 0 26px; font-size: 16px; }
+    .contact__intro { margin: -14px 0 26px; }
   }
 </style>

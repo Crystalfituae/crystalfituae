@@ -116,39 +116,39 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .hd-hero__img { width: 100%; height: 100%; object-fit: cover; }
   .hd-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.35) 50%, rgba(0,0,0,0) 80%); }
   .hd-hero__content { position: absolute; z-index: 1; left: 60px; top: 50%; transform: translateY(-50%); max-width: 600px; color: #fff; font-family: var(--ff-head); }
-  .hd-hero h1 { font-size: 58px; line-height: 66px; font-weight: 400; letter-spacing: 4px; text-transform: uppercase; margin: 0 0 22px; }
-  .hd-hero p { font-size: 20px; line-height: 31px; font-weight: 300; margin: 0 0 32px; }
+  .hd-hero h1 { font-family: var(--ff-head); font-size: var(--fs-h1); line-height: var(--lh-h1); font-weight: 400; letter-spacing: 4px; text-transform: uppercase; margin: 0 0 22px; }
+  .hd-hero p { font-family: var(--ff-head); font-size: var(--fs-lead); line-height: var(--lh-lead); font-weight: 400; letter-spacing: 0; margin: 0 0 32px; }
   .hd-hero__btns { display: flex; gap: 14px; flex-wrap: wrap; }
-  .hd-btn { display: inline-block; padding: 15px 30px; font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+  .hd-btn { font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; display: inline-block; padding: 15px 30px; }
   .hd-btn--white { background: #fff; color: #000; }
   .hd-btn--line { border: 1px solid #fff; color: #fff; }
   .hd-stats { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 1180px; margin: 0 auto; padding: 64px 40px; font-family: var(--ff-head); text-align: center; }
-  .hd-stats b { display: block; font-family: var(--ff-head); font-size: 62px; line-height: 1.1; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-variant-numeric: lining-nums; color: #000; margin-bottom: 12px; }
+  .hd-stats b { font-family: var(--ff-head); font-size: var(--fs-stat); line-height: var(--lh-stat); font-weight: 700; letter-spacing: 1px; font-variant-numeric: lining-nums; display: block; color: #000; margin-bottom: 12px; }
   .hd-stats b small { font-size: .42em; font-weight: 700; letter-spacing: 1px; }
-  .hd-stats span { display: block; font-family: var(--ff-head); font-size: 17px; line-height: 26px; letter-spacing: 0; text-transform: none; font-weight: 400; color: #333; }
+  .hd-stats span { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 400; letter-spacing: 0; text-transform: none; display: block; color: #333; }
   .hd-sec { max-width: 1260px; margin: 0 auto; padding: 70px 40px; font-family: var(--ff-head); }
   .hd-grey { max-width: none; background: #f4f4f4; }
   .hd-grey > * { max-width: 1180px; margin-left: auto; margin-right: auto; }
-  .hd-h2 { font-family: var(--ff-head); font-size: 32px; line-height: 1.2; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin-top: 0; margin-bottom: 34px; }
+  .hd-h2 { font-family: var(--ff-head); font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: 200; letter-spacing: 0; text-transform: uppercase; margin-top: 0; margin-bottom: 34px; }
   .hd-head { display: flex; justify-content: space-between; align-items: baseline; }
-  .hd-more { font-size: 13px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #000; }
+  .hd-more { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #000; }
   .hd-dark { background: #000; color: #fff; }
   .hd-dark .hd-h2 { color: #fff; }
-  .hd-h2--big { font-size: 43px; line-height: 60px; font-weight: 400; letter-spacing: 0; }
+  .hd-h2--big { font-family: var(--ff-head); font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: 200; letter-spacing: 0; text-transform: uppercase; }
   .hd-dark .hd-more { color: #fff; }
   .hd-sec--wide { max-width: 1360px; }
   /* What we do: numbered list (variant B) */
   .hd-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid #333; }
   .hd-list a { display: grid; grid-template-columns: 60px 1fr 1fr 30px; align-items: center; gap: 20px; padding: 20px 4px; border-bottom: 1px solid #333; color: #fff; transition: padding .2s, background .2s; }
   .hd-list a:hover { background: #111; padding-left: 14px; }
-  .hd-list em { font-style: normal; font-size: 14px; color: #777; letter-spacing: 2px; }
-  .hd-list b { font-size: 20px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
-  .hd-list span { font-size: 16px; font-weight: 300; color: #bbb; }
+  .hd-list em { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-style: normal; color: #777; }
+  .hd-list b { font-family: var(--ff-head); font-size: var(--fs-h3); line-height: var(--lh-h3); font-weight: 500; letter-spacing: 1px; text-transform: uppercase; }
+  .hd-list span { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 300; letter-spacing: 0; color: #bbb; }
   .hd-list i { font-style: normal; font-size: 20px; text-align: right; }
   @media (max-width: 991px) {
     .hd-list a { grid-template-columns: 36px 1fr 24px; gap: 4px 12px; }
-    .hd-list span { grid-column: 2; grid-row: 2; font-size: 14px; }
-    .hd-list b { font-size: 16px; }
+    .hd-list span { grid-column: 2; grid-row: 2; }
+
     .hd-list i { grid-column: 3; grid-row: 1 / span 2; }
   }
   .hd-ticker { overflow: hidden; background: #000; color: #fff; padding: 22px 0; font-family: var(--ff-head); }
@@ -163,8 +163,8 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .hd-steps li { position: relative; text-align: center; padding: 0 10px; }
   .hd-steps__ico { position: relative; display: inline-flex; width: 64px; height: 64px; align-items: center; justify-content: center; border: 1px solid #222; border-radius: 50%; background: #fff; }
   .hd-steps b { display: block; margin-top: 14px; font-size: 13px; color: #999; letter-spacing: 2px; }
-  .hd-steps h3 { font-size: 17px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin: 4px 0 4px; }
-  .hd-steps p { font-size: 14px; line-height: 21px; color: #555; margin: 0; }
+  .hd-steps h3 { font-family: var(--ff-head); font-size: var(--fs-h3); line-height: var(--lh-h3); font-weight: 500; letter-spacing: 1px; text-transform: uppercase; margin: 4px 0 4px; }
+  .hd-steps p { font-size: var(--fs-small); line-height: var(--lh-small); color: #555; margin: 0; }
   .hd-approved { --lg-gap: 80px; text-align: center; padding: 70px 0; background: #fff; color: var(--dark); font-family: var(--ff-head); }
   .hd-approved__vp { background: #fff; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
   .hd-approved ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: var(--lg-gap); width: max-content; background: #fff; animation: hd-logos 50s linear infinite; }
@@ -179,11 +179,11 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .latest--dark .pcard__media { background: #111; }
   .latest--dark .btn--black { background: #fff; color: #000; }
   .hd-approved .hd-wide img { max-width: 200px; max-height: 84px; }
-  .hd-approved p { margin: 30px 0 0; font-size: 14px; letter-spacing: 1px; color: #555; }
+  .hd-approved p { font-size: var(--fs-small); line-height: var(--lh-small); margin: 30px 0 0; color: #555; }
   .hd-proj { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px 22px; }
   .hd-proj a { color: #000; }
   .hd-proj img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block; }
-  .hd-proj h3 { font-size: 16px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin: 14px 0 2px; }
+  .hd-proj h3 { font-family: var(--ff-head); font-size: var(--fs-card); line-height: var(--lh-card); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin: 14px 0 2px; }
   .hd-proj span { font-size: 14px; color: #c0392b; }
   .hd-quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
   .hd-quotes figure { margin: 0; background: #fff; padding: 28px; }
@@ -191,23 +191,23 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .hd-quotes b { display: block; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
   .hd-quotes span { font-size: 13px; color: #777; }
   .hd-faq details { border-bottom: 1px solid #ddd; padding: 16px 0; }
-  .hd-faq summary { cursor: pointer; font-size: 17px; font-weight: 600; list-style: none; }
+  .hd-faq summary { font-family: var(--ff-head); font-size: var(--fs-q); line-height: var(--lh-q); font-weight: 500; letter-spacing: 0; cursor: pointer; list-style: none; }
   .hd-faq summary::after { content: '+'; float: right; font-weight: 300; }
   .hd-faq details[open] summary::after { content: '–'; }
-  .hd-faq p { font-size: 15px; line-height: 25px; color: #444; margin: 12px 0 0; }
+  .hd-faq p { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 300; letter-spacing: 0; color: #444; margin: 12px 0 0; }
   @media (max-width: 991px) {
     .hd-hero { height: 600px; }
     .hd-hero__content { left: 20px; right: 20px; top: auto; bottom: 90px; transform: none; }
-    .hd-hero h1 { font-size: 34px; line-height: 42px; letter-spacing: 2px; }
-    .hd-hero p { font-size: 16px; line-height: 25px; margin-bottom: 22px; }
+
+    .hd-hero p { margin-bottom: 22px; }
     .hd-hero::after { background: linear-gradient(0deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.3) 60%, rgba(0,0,0,.1) 100%); }
     .hd-stats { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 40px 16px; }
-    .hd-stats b { font-size: 48px; margin-bottom: 6px; }
-    .hd-stats span { font-size: 15px; line-height: 22px; }
+    .hd-stats b { margin-bottom: 6px; }
+
     .hd-stats > div:nth-child(n+3) { display: none; }
     .hd-sec { padding: 46px 16px; }
-    .hd-h2 { font-size: 24px; margin-bottom: 24px; }
-    .hd-h2--big { font-size: 30px; line-height: 40px; }
+    .hd-h2 { margin-bottom: 24px; }
+
     .hd-ticker span { font-size: 18px; }
     .hd-steps { grid-template-columns: 1fr; gap: 22px; }
     .hd-steps::before { left: 32px; right: auto; top: 10px; bottom: 10px; border-top: 0; border-left: 1px dashed #bbb; }
