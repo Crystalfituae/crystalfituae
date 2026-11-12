@@ -124,7 +124,7 @@ const faqSchema = [{ '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@ty
   .hd-btn--line { border: 1px solid #fff; color: #fff; }
   .hd-stats { display: grid; grid-template-columns: repeat(4, 1fr); max-width: 1180px; margin: 0 auto; padding: 64px 40px; font-family: var(--ff-head); text-align: center; }
   .hd-stats b { font-family: var(--ff-head); font-size: var(--fs-stat); line-height: var(--lh-stat); font-weight: 700; letter-spacing: 1px; font-variant-numeric: lining-nums; display: block; color: #000; margin-bottom: 12px; }
-  .hd-stats b small { font-size: .42em; font-weight: 700; letter-spacing: 1px; }
+  .hd-stats b small { font-size: .42em; line-height: 0; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; } /* keep the line box of "90 days" equal to the others */
   .hd-stats span { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 400; letter-spacing: 0; text-transform: none; display: block; color: #333; }
   .hd-sec { max-width: 1260px; margin: 0 auto; padding: 70px 40px; font-family: var(--ff-head); }
   .hd-grey { max-width: none; background: #f4f4f4; }
