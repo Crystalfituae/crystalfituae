@@ -3,6 +3,7 @@ title: "Omakase Restaurant (3D concept)"
 heading: "Omakase Restaurant, Interior Design Concept"
 order: 20.5
 listed: true
+draft: true  # removed from portfolio by owner 2026-11-12
 size: half
 categories: ["fb"]
 template: modern
