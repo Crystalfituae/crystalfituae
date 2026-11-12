@@ -34,14 +34,7 @@ const why: [string, string, string][] = [
 ];
 // TODO numbers to be confirmed by the owner
 const facts: [string, string][] = [['200+', 'Projects completed'], ['38', 'Projects in Emaar properties'], ['58', 'Projects with Dubai Holding'], ['10', 'Projects in TECOM']];
-const units: [string, string, string][] = [
-  ['pen', 'Interior design studio', 'Concepts, space planning, material and furniture selection.'],
-  ['cube', '3D visualisation', 'Photorealistic renders so you see the space before it is built.'],
-  ['ruler', 'Technical & shop drawings', 'Architectural, joinery and approval drawing packages.'],
-  ['bolt', 'MEP engineering', 'HVAC, electrical, plumbing, drainage and fire-fighting coordination.'],
-  ['clipboard', 'Project management', 'Programme, budget, procurement and weekly client reporting.'],
-  ['helmet', 'Site supervision', 'Site coordinators, HSE, quality control and snagging to handover.'],
-];
+
 const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC', url: new URL('/about-us/', Astro.site).href,
   mainEntity: { '@id': new URL('/#company', Astro.site).href } },
   { '@type': 'Person', name: 'Konstantin Grytsan', jobTitle: 'CEO & Founder', worksFor: { '@id': new URL('/#company', Astro.site).href }, alumniOf: 'Heriot-Watt University', sameAs: ['https://www.linkedin.com/in/konstantin-grytsan-1082a968/'] }];
@@ -74,21 +67,15 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
     </div>
   </section>
 
-  <!-- 3. Facts: projects by landlord + approvals know-how -->
+  <!-- 3. Facts: projects by landlord -->
   <section class="ab-facts">
     <div class="ab-facts__nums">
       {facts.map(([n, t]) => <div><b>{n}</b><span>{t}</span></div>)}
     </div>
-    <p class="ab-facts__text"><strong>We know the approvals.</strong> We work every day with the fit-out guides of Emaar, Dubai Holding, TECOM and Nakheel and with the requirements of Dubai Municipality, Civil Defence and DEWA. We know what each landlord expects — so drawings are approved first time and the site is never stopped by avoidable mistakes.</p>
+
   </section>
 
-  <section class="units">
-    <h2 class="units__title">One in-house team for every stage</h2>
-    <p class="units__sub">Designers, engineers and site specialists work as one team, backed by a network of trusted subcontractors and manufacturers.</p>
-    <ul class="units__grid">
-      {units.map(([i, t, d]) => <li><LineIcon name={i} size={34} stroke={1.3} /><h3>{t}</h3><p>{d}</p></li>)}
-    </ul>
-  </section>
+
 
   <!-- 4. Team behind the magic: band, CEO block, team grid 6 per row -->
   <section class="ab-band"><h2 class="ab-band__title">Team behind the magic</h2></section>
@@ -143,11 +130,9 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
   .ab-story__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; font-family: var(--ff-head); font-size: 17px; line-height: 30px; font-weight: 300; color: #333; }
   .ab-story__cols p { margin: 0; border-top: 1px solid #000; padding-top: 20px; }
   .ab-facts { background: #3e3e3e; color: #fff; padding: 70px 40px; font-family: var(--ff-head); }
-  .ab-facts__nums { max-width: 1180px; margin: 0 auto 44px; display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; gap: 20px; }
+  .ab-facts__nums { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; gap: 20px; }
   .ab-facts__nums b { display: block; font-size: 62px; line-height: 1.1; font-weight: 800; letter-spacing: 4px; font-variant-numeric: lining-nums; margin-bottom: 10px; }
   .ab-facts__nums span { display: block; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; color: #ddd; }
-  .ab-facts__text { max-width: 860px; margin: 0 auto; text-align: center; font-size: 18px; line-height: 31px; font-weight: 300; color: #eee; }
-  .ab-facts__text strong { display: block; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #fff; margin-bottom: 8px; }
   @media (max-width: 991px) {
     .ab-intro { grid-template-columns: 1fr; gap: 30px; padding: 30px 16px 50px; }
     .ab-story { padding: 50px 16px; }
