@@ -32,18 +32,36 @@ const { id, class: cls = '', cols = [{ min: 992, n: 4 }, { min: 768, n: 2 }, { m
     for (var i = 0; i < cfg.length; i++) if (w >= cfg[i].min) { n = cfg[i].n; break; }
     var W = el.clientWidth, cw = W / n, spaces = [{ x: 0, y: 0, w: W, h: Infinity }], maxY = 0;
     el.classList.add('is-js');
+    // measure every visible item first
+    var items = [];
     for (var j = 0; j < el.children.length; j++) {
       var it = el.children[j];
       if (it.hidden || it.style.display === 'none') continue;
       var span = Math.min(n, +(it.getAttribute('data-span-' + n) || it.dataset.span || 1));
       it.style.width = (100 * span / n) + '%';
-      var r = { w: span * cw, h: it.getBoundingClientRect().height + (parseFloat(getComputedStyle(it).marginBottom) || 0) };
-      for (var k = 0; k < spaces.length; k++) {
-        if (spaces[k].w >= r.w - 1 && spaces[k].h >= r.h - 1) { r.x = spaces[k].x; r.y = spaces[k].y; break; }
+      items.push({ el: it, w: span * cw });
+    }
+    for (j = 0; j < items.length; j++) {
+      var cs = getComputedStyle(items[j].el);
+      items[j].h = items[j].el.getBoundingClientRect().height + (parseFloat(cs.marginBottom) || 0);
+    }
+    // place: top-most/left-most free space first; a hole is filled by the nearest following item that fits
+    // (looks up to LOOK items ahead, so the overall order stays the same and no gaps are left behind)
+    var LOOK = 6, rest = items.slice();
+    while (rest.length) {
+      var pick = -1, at = null;
+      for (var k = 0; k < spaces.length && pick < 0; k++) {
+        var sp = spaces[k];
+        for (var q = 0; q < Math.min(LOOK, rest.length); q++) {
+          if (sp.w >= rest[q].w - 1 && sp.h >= rest[q].h - 1) { pick = q; at = sp; break; }
+        }
       }
-      it.style.transform = 'translate(' + r.x + 'px,' + r.y + 'px)';
+      if (pick < 0) { pick = 0; at = spaces[spaces.length - 1]; }
+      var r = { x: at.x, y: at.y, w: rest[pick].w, h: rest[pick].h };
+      rest[pick].el.style.transform = 'translate(' + r.x + 'px,' + r.y + 'px)';
+      rest.splice(pick, 1);
       var next = [];
-      for (k = 0; k < spaces.length; k++) { var s = split(spaces[k], r); if (s) next.push.apply(next, s); else next.push(spaces[k]); }
+      for (k = 0; k < spaces.length; k++) { var s2 = split(spaces[k], r); if (s2) next.push.apply(next, s2); else next.push(spaces[k]); }
       spaces = next; merge(spaces);
       maxY = Math.max(maxY, r.y + r.h);
     }
