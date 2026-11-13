@@ -97,6 +97,7 @@
 .svc--narrow .svc__title { max-width: 544px; }
 .svc--narrow .svc__text p { max-width: 464px; line-height: 30px; color: #edeaea; }
 .svc--narrow .svc__media { padding-left: 32px; }
+.svc__more { display: none; }
 @media (max-width: 767px) {
   .svc { padding: 40px 10px; min-height: 0; }
   .svc__inner { grid-template-columns: 1fr; }
@@ -105,6 +106,10 @@
   .svc__title { margin-bottom: 20px; }
   .svc__text p { margin-bottom: 14px; }
   .svc__media img { width: 100%; height: auto; aspect-ratio: 5 / 7; }
+  /* phones: first paragraph, the rest behind "Read more" */
+  .svc__text:not(.is-open) p:nth-of-type(n+2) { display: none; }
+  .svc__more { display: inline-block; margin-top: 4px; padding: 10px 0 4px; background: none; border: 0; border-bottom: 1px solid currentColor; color: inherit; cursor: pointer;
+    font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
 }
 
 /* ---------- Contact ---------- */

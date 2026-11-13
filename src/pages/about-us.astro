@@ -62,7 +62,7 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
       {story.map(([when, t, d]) => <li><span class="ab-miles__when">{when}</span><h3>{t}</h3><p>{d}</p></li>)}
     </ol>
     <div class="ab-nums">
-      {facts.map(([n, t]) => <div><b>{n}</b><span>{t}</span></div>)}
+      {facts.map(([n, t], i) => <div class:list={{ 'ab-nums--desk': i === 0 || i === 3 }}><b>{n}</b><span>{t}</span></div>)}
     </div>
   </section>
 
@@ -147,7 +147,6 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
   .ab-team { background: #000; color: #fff; padding: 70px 40px 80px; }
   .ab-team__title { text-align: center; margin: 0 0 50px; }
   /* form under the black CTA band: white */
-  body:has(.ab-team) .contact-form { background: #fff; }
   .ab-team .team__grid { max-width: 1270px; margin: 0 auto; display: grid; grid-template-columns: repeat(6, 1fr); column-gap: 20px; row-gap: 30px; padding: 0; }
   .ab-team figure { margin: 0; }
   .ab-team img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; display: block; }
@@ -172,6 +171,7 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
     .ab-miles li { border-top: 0; padding: 0 0 30px 26px; }
     .ab-miles li::before { left: -7px; top: 4px; }
     .ab-nums { grid-template-columns: repeat(2, 1fr); row-gap: 30px; padding-top: 0; }
+    .ab-nums--desk { display: none; } /* phone: only Emaar + Dubai Holding (owner 2026-11-13) */
 
 
     .team { padding-left: 16px; padding-right: 16px; }

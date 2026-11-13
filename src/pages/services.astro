@@ -56,6 +56,7 @@ const blocks = [
         <div class="svc__text">
           <h2 class="svc__title">{b.title}{b.dark && <span class="dot" aria-hidden="true"></span>}</h2>
           {b.paras.map((p) => <p set:html={p} />)}
+          {b.paras.length > 1 && <button type="button" class="svc__more" aria-expanded="false">Read more</button>}
         </div>
         <div class="svc__media"><Image src={b.img} alt={`${b.title.toLowerCase().replace(/(^|[ /])\w/g, (c) => c.toUpperCase())} by Crystal Fit, Dubai`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" /></div>
       </div>
@@ -64,3 +65,11 @@ const blocks = [
   <Logos list={logosInner} />
   <CtaBand title="still having questions ?" label="Contact us" href="/contact/" />
 </Base>
+<script>
+  // phones: first paragraph + "Read more" (desktop shows the full text, the button is hidden there)
+  document.querySelectorAll<HTMLButtonElement>('.svc__more').forEach((btn) => btn.addEventListener('click', () => {
+    const open = btn.parentElement!.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', String(open));
+    btn.textContent = open ? 'Read less' : 'Read more';
+  }));
+</script>

@@ -19,6 +19,7 @@ const schema = [{ '@type': 'ContactPage', name: 'Contact Crystal Fit', url: new 
     <div class="contact__map">
       <iframe title="Crystal Fit Contracting LLC on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.1200016477023!2d55.21853949999999!3d25.121865399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9047546b750094f%3A0x3658436cc35dfeeb!2sCrystal%20Fit%20Contracting%20LLC!5e1!3m2!1sen!2sae!4v1756805848307!5m2!1sen!2sae"></iframe>
+      <a class="contact__dir" href={site.directionsUrl} target="_blank" rel="noopener">Get directions<span aria-hidden="true">→</span></a>
     </div>
     <div class="contact__info">
       <h1>Get in touch</h1>
@@ -27,7 +28,6 @@ const schema = [{ '@type': 'ContactPage', name: 'Contact Crystal Fit', url: new 
         <div>
           <h3><LineIcon name="pin" size={22} />Office &amp; workshop</h3>
           <p>Al Quoz Industrial 3<br />Ghoshi Warehouse City WH-132<br />Dubai, UAE</p>
-          <a class="contact__btn" href={site.mapUrl} target="_blank" rel="noopener">GET DIRECTIONS</a>
         </div>
         <div>
           <h3><LineIcon name="phone" size={22} />Call or write</h3>
@@ -57,6 +57,13 @@ const schema = [{ '@type': 'ContactPage', name: 'Contact Crystal Fit', url: new 
   .contact__grid h3 { display: flex; align-items: center; gap: 10px; }
   .contact__grid h3 svg { flex: 0 0 auto; }
   .contact__grid p { line-height: 30px; }
+  /* Get directions: black bar right under the map, opens Google Maps route to the office */
+  .contact__dir { display: flex; justify-content: space-between; align-items: center; width: 575px; max-width: 100%; box-sizing: border-box; background: #000; color: #fff !important; padding: 18px 24px;
+    font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; transition: background .2s; }
+  .contact__dir span { font-size: 20px; transition: transform .2s; }
+  .contact__dir:hover { background: #333; }
+  .contact__dir:hover span { transform: translateX(6px); }
+  @media (max-width: 1240px) { .contact__dir { width: 100%; } }
   @media (max-width: 767px) {
     .contact__intro { margin: -14px 0 26px; }
   }

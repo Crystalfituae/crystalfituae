@@ -11,6 +11,8 @@ export const site = {
   geo: { lat: 25.1218654, lng: 55.2185395 },
   foundingYear: '2014',
   mapUrl: 'https://maps.app.goo.gl/6d8yRjZRXKNBa2M89',
+  // route from the visitor's location to the Crystal Fit pin (WH-132, 19D Street, Ghoshi Warehouse City, Al Quoz Industrial 3)
+  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=25.1218654%2C55.2185395&travelmode=driving',
   mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.1200016477023!2d55.21853949999999!3d25.121865399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9047546b750094f%3A0x3658436cc35dfeeb!2sCrystal%20Fit%20Contracting%20LLC!5e1!3m2!1sen!2sae!4v1756805848307!5m2!1sen!2sae',
   // fixed: original used wa.me/+9710563386219 (extra 0 breaks the link)
   whatsapp: 'https://wa.me/971563386219',
@@ -62,9 +64,11 @@ export const otherCases = [
   'nad-al-sheba-villa-moderna-dubai',
 ];
 
-// "Trusted by the best" carousels (file names in src/assets/logos)
-export const logosHome = ['dub-gov-300.png', 'emaar-logo-1.png', 'aw-dh-pv-pos-rgb-en-002.png', 'tecom-group.png', 'nakheel-properties-logo-2.png', '1621791093880-1.png', 'vindico.png', 'dubai-police-300.png', 'trakhees.png', 'roasters-png.png', 'brew-png.png', 'yoy-2.png', 'christie-s-logo-7b51158dc3-seeklogo-com-.png', 'logo-black.png', 'the-game-logo-1.png', '118507871-400x300-1.png', 'muha-logo-bw-1.png', 'narrow-300.png', 'fissman-logo-1.png', 'paper-logo-1.png', 'desires-logo.png', 'download-1.png', 'mercure-150.png', 'osha150.png', 'img-2642.png'];
-export const logosInner = ['dub-gov-300.png', 'nakheel-properties-logo-2.png', 'emaar-logo-1.png', 'aw-dh-pv-pos-rgb-en-002.png', '1621791093880-1.png', 'vindico.png', 'dubai-police-300.png', 'christie-s-logo-7b51158dc3-seeklogo-com-.png', 'roasters-png.png', 'yoy-2.png', 'brew-png.png', 'the-game-logo-1.png', 'mercure-150.png', 'narrow-300.png', 'img-2642.png', 'fissman-logo-1.png', 'paper-logo-1.png', 'desires-logo.png', 'download-1.png', 'osha150.png'];
+// "Trusted by the best" carousels = CLIENTS only (Commercial + F&B), file names in src/assets/logos.
+// Developers, landlords and authorities (Emaar, Dubai Holding, TECOM, Nakheel, Trakhees, Gov. of Dubai, Dubai Police,
+// IDAMA, Three Diamonds, Vindico) are not clients - they stay only in the home "We deliver to the standards of" strip.
+export const logosHome = ['roasters-png.png', 'christie-s-logo-7b51158dc3-seeklogo-com-.png', 'mercure-150.png', 'yoy-2.png', 'livrichy.png', 'brew-png.png', 'the-game-logo-1.png', 'logo-black.png', 'muha-logo-bw-1.png', 'desires-logo.png', 'narrow-300.png', 'hanah.png', 'fissman-logo-1.png', 'paper-logo-1.png', 'img-2642.png', 'download-1.png', 'osha150.png'];
+export const logosInner = logosHome;
 
 // Project page: "Scope" labels (order = display order)
 export const scopeLabels: Record<string, string> = {
