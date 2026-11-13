@@ -67,7 +67,7 @@ export const otherCases = [
 // "Trusted by the best" carousels = CLIENTS only (Commercial + F&B), file names in src/assets/logos.
 // Developers, landlords and authorities (Emaar, Dubai Holding, TECOM, Nakheel, Trakhees, Gov. of Dubai, Dubai Police,
 // IDAMA, Three Diamonds, Vindico) are not clients - they stay only in the home "We deliver to the standards of" strip.
-export const logosHome = ['roasters-png.png', 'christie-s-logo-7b51158dc3-seeklogo-com-.png', 'mercure-150.png', 'yoy-2.png', 'livrichy.png', 'brew-png.png', 'the-game-logo-1.png', 'logo-black.png', 'muha-logo-bw-1.png', 'desires-logo.png', 'narrow-300.png', 'hanah.png', 'fissman-logo-1.png', 'paper-logo-1.png', 'img-2642.png', 'download-1.png', 'osha150.png'];
+export const logosHome = ['roasters-png.png', 'wala.png', 'christie-s-logo-7b51158dc3-seeklogo-com-.png', 'panmi.png', 'mercure-150.png', 'amv.png', 'yoy-2.png', 'livrichy.png', 'selfspace.png', 'brew-png.png', 'the-game-logo-1.png', 'logo-black.png', 'muha-logo-bw-1.png', 'desires-logo.png', 'narrow-300.png', 'hanah.png', 'fissman-logo-1.png', 'paper-logo-1.png', 'img-2642.png', 'download-1.png', 'osha150.png'];
 export const logosInner = logosHome;
 
 // Project page: "Scope" labels (order = display order)
