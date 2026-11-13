@@ -35,7 +35,7 @@ gallery:
 location: "Shatura, Moscow Region, Russia"
 area: 620
 year: "2012"
-scope: ["design"]
+scope: ["design", "pm"]
 approvals: []
 seoTitle: "Shatura Residential Complex | Residential Design Moscow"
 seoDescription: "Shatura residential complex, Moscow Region: 620 sqm lobby and common areas interior design by Crystal Fit."

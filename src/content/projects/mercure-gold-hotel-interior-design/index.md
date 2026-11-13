@@ -69,7 +69,7 @@ otherCases: ["livrichy-real-estates-office","amv-aesthetic-clinic","roasters-cof
 location: "Al Mina Road, Dubai, UAE"
 area: 1670
 year: "2016"
-scope: ["design", "approvals", "fitout", "joinery"]
+scope: ["design", "approvals", "fitout", "joinery", "pm"]
 approvals: ["DM", "DCD"]
 seoTitle: "Mercure Gold Hotel – Hotel Interior Design | Crystal Fit"
 seoDescription: "Mercure Gold Hotel, Al Mina Road, Dubai: 1,670 sqm hotel lobby and restaurant interior design & fit-out by Crystal Fit."

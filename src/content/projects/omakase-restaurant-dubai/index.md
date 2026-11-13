@@ -32,7 +32,7 @@ gallery:
 otherCases: ["wala-coffee-roastery","panmi-coffee-shop-dubai-hills","yoy-ukrainian-firecooking-restaurant-the-pointe-palm-jumeirah","restaurant-contractor-dubai-yoy-neo-bistro","kingdom_palace_doha","the-game-premium-lounge","roasters-dubai-hills","title-brew-specialty-coffee-bay-square","muha-music-fine-arts"]
 location: "Dubai, UAE"
 year: "2025"
-scope: ["design"]
+scope: ["design", "pm"]
 approvals: []
 seoTitle: "Omakase Restaurant Interior Design, Dubai | Crystal Fit"
 seoDescription: "Omakase restaurant interior design concept by Crystal Fit, Dubai: a red lacquered chef's counter, sculpted ceiling and moody, low-lit dining room."

@@ -48,7 +48,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Amwaj, JBR, Dubai, UAE"
 area: 280
 year: "2021"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "Roasters Specialty Coffee, JBR – Cafe Fit-Out | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee, Amwaj, JBR, Dubai: 280 sqm cafe design & fit-out by Crystal Fit – double-height space, green velvet lounge."

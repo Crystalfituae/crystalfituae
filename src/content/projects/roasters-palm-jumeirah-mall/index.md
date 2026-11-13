@@ -57,7 +57,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Palm Jumeirah Mall, Dubai, UAE"
 area: 235
 year: "2025"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "Roasters Specialty Coffee, Palm Jumeirah Mall | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee, Palm Jumeirah Mall: 235 sqm cafe fit-out by Crystal Fit – coffee bar, lounge, retail display, kitchen."

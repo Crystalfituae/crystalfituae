@@ -87,7 +87,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Bay Square, Business Bay, Dubai, UAE"
 area: 48
 year: "2021"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["Dubai Holding", "DM", "DCD", "DEWA"]
 seoTitle: "Title Brew Specialty Coffee, Bay Square | Cafe Fit-Out Dubai"
 seoDescription: "Title Brew Specialty Coffee, Bay Square, Business Bay: 48 sqm coffee shop design & fit-out by Crystal Fit – terrazzo, fluted bar, copper accents."

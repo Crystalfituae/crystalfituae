@@ -24,7 +24,7 @@ const projects = defineCollection({
       area: z.number().optional(),             // sq.m
       year: z.string().optional(),             // year completed, e.g. "2025" or "2015–2019"
       timeline: z.string().optional(),         // optional, e.g. "4 months"
-      scope: z.array(z.enum(['design', 'approvals', 'fitout', 'mep', 'joinery', 'supervision'])).default([]),
+      scope: z.array(z.enum(['design', 'approvals', 'fitout', 'mep', 'joinery', 'supervision', 'pm'])).default([]),
       approvals: z.array(z.string()).default([]), // authorities / landlords: Emaar, TECOM, DM, DCD, DEWA…
       fields: z.array(z.object({ label: z.string(), value: z.string() })).default([]), // legacy, unused
       otherCases: z.array(z.string()).default([]),

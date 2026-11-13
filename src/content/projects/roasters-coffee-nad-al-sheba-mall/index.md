@@ -44,7 +44,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Nad Al Sheba Mall, Dubai, UAE"
 area: 240
 year: "2024"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["Dubai Holding"]
 seoTitle: "Roasters Specialty Coffee, Nad Al Sheba Mall | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee, Nad Al Sheba Mall, Dubai: 240 sqm turnkey cafe fit-out by Crystal Fit under Dubai Holding."

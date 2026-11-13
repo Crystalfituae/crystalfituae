@@ -41,7 +41,7 @@ gallery:
 otherCases: ["springs-townhouse-dubai","luxury-fitout-dubai","boulevard-crescent-apartment","anantara-penthouse","merano-tower-apartment-business-bay","wala-coffee-roastery","panmi-coffee-shop-dubai-hills","amv-aesthetic-clinic","gary-tatintsian-gallery"]
 location: "Dubai Marina, Dubai, UAE"
 year: "2024"
-scope: ["design", "fitout", "joinery"]
+scope: ["design", "fitout", "joinery", "pm"]
 approvals: []
 seoTitle: "Fairfield Apartment, Dubai Marina | Crystal Fit"
 seoDescription: "Fairfield apartment in Dubai Marina: renovation by Crystal Fit with a marble-clad kitchen island, wall panelling, herringbone floors and new bathrooms."

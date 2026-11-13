@@ -58,7 +58,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Bay Square, Business Bay, Dubai, UAE"
 area: 180
 year: "2026"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["Dubai Holding", "DHA", "DM", "DCD", "DEWA"]
 seoTitle: "AMV Aesthetic Clinic – Clinic Fit-Out Dubai | Crystal Fit"
 seoDescription: "AMV Aesthetic Clinic, Bay Square, Dubai: 180 sqm turnkey clinic fit-out by Crystal Fit with Dubai Holding and DHA approvals."

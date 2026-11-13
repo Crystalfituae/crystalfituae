@@ -54,7 +54,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Dubai Hills, Dubai, UAE"
 area: 360
 year: "2025"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["Emaar"]
 seoTitle: "Roasters Specialty Coffee House, Dubai Hills | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee, Dubai Hills: 360 sqm turnkey cafe fit-out by Crystal Fit, Emaar approvals."

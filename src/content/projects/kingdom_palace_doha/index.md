@@ -64,7 +64,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "BLVD Heights Tower 1, Downtown Dubai, UAE"
 area: 280
 year: "2025"
-scope: ["design", "approvals", "supervision"]
+scope: ["design", "approvals", "supervision", "pm"]
 approvals: ["Emaar"]
 seoTitle: "Gasteria Restaurant – Restaurant Fit-Out Dubai | Crystal Fit"
 seoDescription: "Gasteria restaurant, BLVD Heights, Downtown Dubai: 280 sqm neo-classic restaurant fit-out managed by Crystal Fit, 51 Emaar inspections."

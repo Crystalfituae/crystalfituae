@@ -55,7 +55,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Shangri-La Hotel, Sheikh Zayed Road, Dubai, UAE"
 area: 350
 year: "2024"
-scope: ["design", "fitout", "joinery"]
+scope: ["design", "fitout", "joinery", "pm"]
 approvals: []
 seoTitle: "YOY Neo Bistro Restaurant – Restaurant Fit-Out | Crystal Fit"
 seoDescription: "YOY Neo Bistro, Shangri-La Hotel, Dubai: 350 sqm fine-dining restaurant transformation by Crystal Fit."

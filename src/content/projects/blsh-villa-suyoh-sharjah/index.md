@@ -63,7 +63,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Suyoh, Sharjah, UAE"
 area: 480
 year: "2015"
-scope: ["design"]
+scope: ["design", "pm"]
 approvals: []
 seoTitle: "BLSH Villa, Suyoh – Villa Interior Design | Crystal Fit"
 seoDescription: "BLSH Villa, Al Suyoh, Sharjah: 480 sqm villa interior design by Crystal Fit – wood-panelled hall, marble floors, oriental bathrooms."

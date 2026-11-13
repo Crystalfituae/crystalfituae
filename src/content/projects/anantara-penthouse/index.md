@@ -62,7 +62,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Palm Jumeirah, Dubai, UAE"
 area: 706
 year: "2025"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: []
 seoTitle: "Anantara Penthouse – Apartment Interior Design | Crystal Fit"
 seoDescription: "Anantara Penthouse, Palm Jumeirah: 706 sqm luxury penthouse fit-out by Crystal Fit from shell & core to turnkey handover – onyx wall, spiral stair, pool."

@@ -32,7 +32,7 @@ gallery:
 location: "Al Mizhar 2, Dubai, UAE"
 area: 720
 year: "2020"
-scope: ["design", "supervision"]
+scope: ["design", "supervision", "pm"]
 approvals: []
 seoTitle: "Al Mizhar, Villa \"Windsor\" | Villa Interior Design Dubai"
 seoDescription: "Villa Windsor, Al Mizhar 2, Dubai: 720 sqm classic villa architecture and stone selection by Crystal Fit."

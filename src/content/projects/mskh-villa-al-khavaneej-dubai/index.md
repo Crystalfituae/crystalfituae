@@ -53,7 +53,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Khawaneej, Dubai, UAE"
 area: 620
 year: "2017"
-scope: ["design"]
+scope: ["design", "pm"]
 approvals: []
 seoTitle: "MSKH Villa, Al Khawaneej | Villa Interior Design Dubai"
 seoDescription: "MSKH Villa, Al Khawaneej, Dubai: 620 sqm contemporary villa interior design by Crystal Fit – double-height hall, stone and timber."

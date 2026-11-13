@@ -63,7 +63,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Sobha Hartland, Dubai, UAE"
 area: 180
 year: "2025"
-scope: []
+scope: ["pm"]
 approvals: []
 seoTitle: "Irish Harp Pub – Restaurant Fit-Out Doha | Crystal Fit"
 seoDescription: "Irish Harp Pub, Doha: restaurant fit-out by Crystal Fit in Doha (180 sqm, 2025). Turnkey design & build. Dubai interior design & fit-out company since 2014."

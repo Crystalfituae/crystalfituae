@@ -93,7 +93,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Dubai Hills Estate, Dubai, UAE"
 area: 420
 year: "2018"
-scope: ["design"]
+scope: ["design", "pm"]
 approvals: []
 seoTitle: "RAD Villa, Dubai Hills – Villa Interior Design | Crystal Fit"
 seoDescription: "RAD Villa, Dubai Hills Estate: 420 sqm luxury villa interior design by Crystal Fit – onyx feature wall, floating stair, stone and bronze."

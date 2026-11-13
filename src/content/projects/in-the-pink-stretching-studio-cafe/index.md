@@ -80,7 +80,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Dubai Hills, Dubai, UAE"
 area: 280
 year: "2024"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["Emaar", "DM", "DCD", "DEWA"]
 seoTitle: "In the Pink, Stretching Studio, Cafe | Cafe Fit-Out Dubai"
 seoDescription: "In The Pink stretching studio & cafe, Dubai Hills: 280 sqm wellness fit-out by Crystal Fit from shell & core, 50+ Emaar inspections."

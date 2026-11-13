@@ -78,7 +78,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "The Pointe, Palm Jumeirah, Dubai, UAE"
 area: 222
 year: "2022"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["Nakheel", "DM", "DCD", "DEWA"]
 seoTitle: "YOY Restaurant, The Pointe – Fit-Out Dubai | Crystal Fit"
 seoDescription: "YOY Ukrainian fire-cooking restaurant, The Pointe, Palm Jumeirah: 222 sqm restaurant design & fit-out by Crystal Fit."

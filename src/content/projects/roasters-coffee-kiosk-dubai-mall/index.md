@@ -43,7 +43,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "The Dubai Mall, Dubai, UAE"
 area: 70
 year: "2026"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["Emaar"]
 seoTitle: "Roasters Specialty Coffee Kiosk, Dubai Mall | Crystal Fit"
 seoDescription: "Roasters coffee kiosk, The Dubai Mall: 70 sqm design & build kiosk fit-out by Crystal Fit – stainless steel, illuminated mesh."

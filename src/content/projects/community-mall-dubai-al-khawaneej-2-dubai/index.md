@@ -33,7 +33,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Khawaneej 2, Dubai, UAE"
 area: 13500
 year: "2021"
-scope: ["design"]
+scope: ["design", "pm"]
 approvals: []
 seoTitle: "Park View Community Mall, Al Khawaneej 2, Dubai"
 seoDescription: "Park View community mall, Al Khawaneej 2, Dubai: 13,500 sqm G+2+roof mall architectural concept by Crystal Fit."

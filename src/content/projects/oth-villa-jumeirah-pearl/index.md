@@ -96,7 +96,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Pearl Jumeirah, Dubai, UAE"
 area: 650
 year: "2020"
-scope: ["design"]
+scope: ["design", "pm"]
 approvals: []
 seoTitle: "OTH Villa, Jumeirah Pearl | Villa Interior Design Dubai"
 seoDescription: "OTH Villa, Pearl Jumeirah, Dubai: 650 sqm luxury villa interior design by Crystal Fit – book-matched marble, home cinema, library."

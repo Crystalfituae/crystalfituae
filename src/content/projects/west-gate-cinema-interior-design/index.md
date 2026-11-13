@@ -35,7 +35,7 @@ gallery:
 location: "Nairobi, Kenya"
 area: 2100
 year: "2019"
-scope: ["design"]
+scope: ["design", "pm"]
 approvals: []
 seoTitle: "West Gate Cinema – Cinema Interior Design | Crystal Fit"
 seoDescription: "West Gate Cinema, Nairobi, Kenya: 2,100 sqm six-hall cinema interior design by Crystal Fit – VIP, kids and Dolby Atmos halls."

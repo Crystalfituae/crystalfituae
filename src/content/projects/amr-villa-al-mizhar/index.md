@@ -87,7 +87,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Mizhar, Dubai, UAE"
 area: 440
 year: "2019"
-scope: ["design"]
+scope: ["design", "pm"]
 approvals: []
 seoTitle: "AMR Villa, Al Mizhar – Villa Interior Design | Crystal Fit"
 seoDescription: "AMR Villa, Al Mizhar, Dubai: 440 sqm villa interior design by Crystal Fit – neo-classic living, dining, bedrooms and marble bathrooms."

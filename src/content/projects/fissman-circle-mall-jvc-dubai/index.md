@@ -21,7 +21,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Circle Mall, JVC, Dubai, UAE"
 area: 70
 year: "2022"
-scope: ["design", "fitout", "joinery"]
+scope: ["design", "fitout", "joinery", "pm"]
 approvals: []
 seoTitle: "Fissman, Circle Mall, JVC – Retail Fit-Out | Crystal Fit"
 seoDescription: "Fissman store, Circle Mall, JVC, Dubai: 70 sqm retail fit-out by Crystal Fit for the cookware brand."

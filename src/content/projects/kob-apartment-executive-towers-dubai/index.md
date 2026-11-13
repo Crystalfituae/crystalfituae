@@ -31,7 +31,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Executive Towers, Business Bay, Dubai, UAE"
 area: 180
 year: "2017"
-scope: ["design", "fitout", "joinery"]
+scope: ["design", "fitout", "joinery", "pm"]
 approvals: []
 seoTitle: "KOB Apartment, Executive towers, Dubai | Crystal Fit"
 seoDescription: "KOB apartment, Executive Towers, Business Bay: 180 sqm apartment design & fit-out by Crystal Fit – padded headboard walls, timber kitchen."

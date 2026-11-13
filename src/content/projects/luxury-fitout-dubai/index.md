@@ -86,7 +86,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Bluewaters, Dubai, UAE"
 area: 205
 year: "2025"
-scope: ["approvals", "fitout", "mep", "joinery"]
+scope: ["approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["Meraas"]
 seoTitle: "Bluewaters 4-Bedroom Apartment, Dubai | Crystal Fit"
 seoDescription: "Bluewaters 4-bedroom apartment, Dubai: 205 sqm luxury renovation by Crystal Fit – demolition, MEP, bespoke joinery, natural stone."

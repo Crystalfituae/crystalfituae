@@ -69,7 +69,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "JBR, Dubai, UAE"
 area: 240
 year: "2023"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "The Game Premium Lounge, JBR – Lounge Fit-Out | Crystal Fit"
 seoDescription: "The Game premium gaming lounge, JBR, Dubai: 240 sqm gaming and cinema lounge fit-out by Crystal Fit – starry ceiling, RGB lighting."

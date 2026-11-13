@@ -42,7 +42,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Dubai Hills Estate, Dubai, UAE"
 area: 540
 year: "2022"
-scope: ["design"]
+scope: ["design", "pm"]
 approvals: []
 seoTitle: "GBL Villa AR, Dubai Hills | Villa Interior Design Dubai"
 seoDescription: "GBL Villa, Dubai Hills Estate: 540 sqm contemporary villa architecture by Crystal Fit – travertine facades, timber louvres, pool terrace."

@@ -71,7 +71,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Quoz, Dubai, UAE"
 area: 450
 year: "2025"
-scope: ["approvals", "fitout", "mep", "joinery"]
+scope: ["approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "Wala Coffee & Roastery – Cafe Fit-Out Dubai | Crystal Fit"
 seoDescription: "Wala Coffee & Roastery, Al Quoz, Dubai: 450 sqm cafe and roastery fit-out by Crystal Fit from shell & core."

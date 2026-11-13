@@ -45,7 +45,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Saadiyat Island, Abu Dhabi, UAE"
 area: 85
 year: "2023"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: []
 seoTitle: "Desire's Specialty Coffee, Saadiyat Island, Abu Dhabi"
 seoDescription: "Desire's Specialty Cafe, Saadiyat Island, Abu Dhabi: 85 sqm specialty coffee shop design & fit-out by Crystal Fit."

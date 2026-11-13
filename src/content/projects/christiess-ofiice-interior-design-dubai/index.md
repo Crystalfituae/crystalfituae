@@ -55,7 +55,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Gate Village, DIFC, Dubai, UAE"
 area: 320
 year: "2018"
-scope: ["design", "approvals", "fitout"]
+scope: ["design", "approvals", "fitout", "pm"]
 approvals: ["DIFC"]
 seoTitle: "Christie's Auction House, Art Gallery & Office, DIFC"
 seoDescription: "Christie's art gallery & office, Gate Village, DIFC: 320 sqm gallery and office fit-out by Crystal Fit for the world-famous auction house."

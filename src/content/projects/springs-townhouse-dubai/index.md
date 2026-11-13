@@ -70,7 +70,7 @@ gallery:
 otherCases: ["luxury-fitout-dubai","anantara-penthouse","boulevard-crescent-apartment","rad-villa-dubai-hills","merano-tower-apartment-business-bay","wala-coffee-roastery","panmi-coffee-shop-dubai-hills","amv-aesthetic-clinic","gary-tatintsian-gallery"]
 location: "The Springs, Dubai, UAE"
 year: "2024"
-scope: ["design", "fitout", "joinery"]
+scope: ["design", "fitout", "joinery", "pm"]
 approvals: []
 seoTitle: "Springs Townhouse Renovation, Dubai | Crystal Fit"
 seoDescription: "Springs townhouse renovation in Dubai by Crystal Fit: new kitchen, bathrooms, wall panelling, bespoke joinery and a garden with plunge pool and deck."

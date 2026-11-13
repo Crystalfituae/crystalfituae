@@ -53,7 +53,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Al Safa Park Complex, Dubai, UAE"
 area: 120
 year: "2019"
-scope: ["design", "fitout", "joinery"]
+scope: ["design", "fitout", "joinery", "pm"]
 approvals: []
 seoTitle: "Studio Paper, Al Safa Park Complex | Retail Fit-Out Dubai"
 seoDescription: "Studio Paper, Al Safa Park Complex, Dubai: 120 sqm print studio & brew bar design & fit-out by Crystal Fit."

@@ -42,7 +42,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Ghoshi Warehouse City, Al Quoz 3, Dubai, UAE"
 area: 250
 year: "2025"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["DM", "DCD", "DEWA"]
 seoTitle: "SELF.SPACE AI-Powered Self-Portrait Studio | Crystal Fit"
 seoDescription: "SELF.SPACE studio, Al Quoz, Dubai: 250 sqm AI-powered photo studio fit-out by Crystal Fit, DM, DCD and DEWA approvals in-house."

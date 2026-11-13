@@ -62,7 +62,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Sobha Hartland, Dubai, UAE"
 area: 180
 year: "2024"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 approvals: ["Sobha"]
 seoTitle: "Roasters Specialty Coffee, Sobha Hartland | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee, Sobha Hartland, Dubai: 180 sqm retail-to-cafe conversion by Crystal Fit."

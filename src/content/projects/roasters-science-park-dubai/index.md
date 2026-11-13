@@ -56,7 +56,7 @@ gallery:
 otherCases: ["roasters-dubai-hills","roasters-downtown","roasters-sobha-hartland","wala-coffee-roastery","panmi-coffee-shop-dubai-hills","roasters-palm-jumeirah-mall","title-brew-specialty-coffee-bay-square","restaurant-contractor-dubai-yoy-neo-bistro","mercure-gold-hotel-interior-design"]
 location: "Dubai Science Park, Dubai, UAE"
 year: "2026"
-scope: ["design", "approvals", "fitout", "mep", "joinery"]
+scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
 seoTitle: "Roasters Specialty Coffee, Dubai Science Park | Crystal Fit"
 seoDescription: "Roasters Specialty Coffee in Dubai Science Park: double-height cafe with travertine bar, lounge and gallery wall, designed and built by Crystal Fit."
 ---

@@ -45,7 +45,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "District One, MBR City, Dubai, UAE"
 area: 450
 year: "2018"
-scope: ["design", "fitout", "joinery"]
+scope: ["design", "fitout", "joinery", "pm"]
 approvals: []
 seoTitle: "D1, Villa, MBRC – Villa Interior Design Dubai | Crystal Fit"
 seoDescription: "District One villa, MBR City, Dubai: 450 sqm villa interior design & fit-out by Crystal Fit – light neo-classic living, nursery, master suite."
