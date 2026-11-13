@@ -8,7 +8,7 @@ categories: ["fb"]
 template: modern
 cover: "./img/01-bar-front-wide.jpg"
 coverRatio: 0.666667
-hero: "./img/02-hall-lounge-wide.jpg"
+hero: "./img/00-hero-img-6438.jpg"
 heroCol: 50
 gallery:
   - image: "./img/01-bar-front-wide.jpg"
