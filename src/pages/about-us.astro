@@ -76,10 +76,11 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
       <div class="team__bio">
         <p class="ab-kicker">Message from the CEO</p>
         <p class="team__quote">“Design is more than imagining beautiful spaces. It’s about the passion, knowledge and craftsmanship to bring a vision to life, where every detail matters.”</p>
-        <p>Dubai is one of the fastest-moving design and fit-out markets in the world. Trends change by the season, new concepts open every week, and clients rightly expect fresh ideas delivered to the highest standards and on tight timelines. Keeping pace takes more than following trends — it takes listening.</p>
-        <p>From day one, I wanted Crystal Fit to be more than just a contractor. I wanted us to be a trusted partner: approachable, responsive, and genuinely committed to our clients’ success, from the first sketch to handover and long after.</p>
-        <p>Many of our clients return to us with new projects, and we see this as one of our greatest achievements. Their trust and honest feedback give us valuable insights into the industry and help us understand what works best for their businesses. We learn from every collaboration, improving our services and delivering better results with each new project.</p>
-        <p>At the heart of Crystal Fit is our team: dedicated professionals who share my passion for what we do, combining expertise, creativity, and genuine care for every project. Their attention to detail and ability to take on challenges of any complexity are the driving force behind our continued growth.</p>
+        <p class="ceo-msg">Dubai is one of the fastest-moving design and fit-out markets in the world. Trends change by the season, new concepts open every week, and clients rightly expect fresh ideas delivered to the highest standards and on tight timelines. Keeping pace takes more than following trends — it takes listening.</p>
+        <p class="ceo-msg">From day one, I wanted Crystal Fit to be more than just a contractor. I wanted us to be a trusted partner: approachable, responsive, and genuinely committed to our clients’ success, from the first sketch to handover and long after.</p>
+        <p class="ceo-msg">Many of our clients return to us with new projects, and we see this as one of our greatest achievements. Their trust and honest feedback give us valuable insights into the industry and help us understand what works best for their businesses. We learn from every collaboration, improving our services and delivering better results with each new project.</p>
+        <p class="ceo-msg">At the heart of Crystal Fit is our team: dedicated professionals who share my passion for what we do, combining expertise, creativity, and genuine care for every project. Their attention to detail and ability to take on challenges of any complexity are the driving force behind our continued growth.</p>
+        <button type="button" class="ceo-more" aria-expanded="false">Read more</button>
       </div>
     </div>
   </section>
@@ -134,6 +135,13 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
   .team__lead figcaption b { font-family: var(--ff-head); font-size: var(--fs-card); line-height: var(--lh-card); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; display: block; }
   .team__lead figcaption span { font-size: var(--fs-cap); line-height: var(--lh-cap); display: block; color: #555; }
   .team__lead figcaption .team__deg { text-transform: none; } /* keep "MSc" as written */
+  /* CEO message on phones: first paragraph + "Read more" */
+  .ceo-more { display: none; }
+  @media (max-width: 767px) {
+    .team__bio:not(.is-open) .ceo-msg ~ .ceo-msg { display: none; }
+    .ceo-more { display: inline-block; margin: 4px 0 0; padding: 10px 0 4px; background: none; border: 0; border-bottom: 1px solid currentColor; color: #000; cursor: pointer;
+      font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
+  }
   .team__lead figcaption .team__role { color: inherit; font-weight: 600; } /* same colour as the name, bolder than the degrees */
   .team__bio { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 300; letter-spacing: 0; color: #333; max-width: 640px; }
   .team__bio p { margin: 0 0 16px; }
@@ -202,5 +210,13 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
   document.querySelectorAll<HTMLButtonElement>('.ab-miles__head').forEach((b) => b.addEventListener('click', () => {
     const open = b.parentElement!.classList.toggle('is-open');
     b.setAttribute('aria-expanded', String(open));
+  }));
+</script>
+<script>
+  // CEO message on phones: "Read more" unfolds the rest of the text
+  document.querySelectorAll<HTMLButtonElement>('.ceo-more').forEach((b) => b.addEventListener('click', () => {
+    const open = b.parentElement!.classList.toggle('is-open');
+    b.setAttribute('aria-expanded', String(open));
+    b.textContent = open ? 'Read less' : 'Read more';
   }));
 </script>
