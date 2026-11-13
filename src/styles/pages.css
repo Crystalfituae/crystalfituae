@@ -108,7 +108,7 @@
   .svc__media img { width: 100%; height: auto; aspect-ratio: 5 / 7; }
   /* phones: first paragraph, the rest behind "Read more" */
   .svc__text:not(.is-open) p:nth-of-type(n+2) { display: none; }
-  .svc__more { display: inline-block; margin-top: 4px; padding: 10px 0 4px; background: none; border: 0; border-bottom: 1px solid currentColor; color: inherit; cursor: pointer;
+  .svc__more { display: inline-block; margin-top: 4px; padding: 10px 0 4px; background: none; border: 0; color: inherit; cursor: pointer;
     font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
 }
 
