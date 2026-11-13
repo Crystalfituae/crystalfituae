@@ -71,7 +71,7 @@ export const logosHome = [
   // most recognised first, then by project year (newest first)
   'roasters-png.png', 'christie-s-logo-7b51158dc3-seeklogo-com-.png',
   'panmi.png', 'amv.png', // 2026
-  'wala.png', 'selfspace.png', // 2025
+  'wala.png', 'gasteria.png', 'selfspace.png', // 2025
   'yoy-2.png', 'logo-black.png', // 2024 (YOY Neo Bistro, In the Pink)
   'livrichy.png', 'muha-logo-bw-1.png', 'the-game-logo-1.png', 'hanah.png', 'desires-logo.png', // 2023
   'fissman-logo-1.png', // 2022
