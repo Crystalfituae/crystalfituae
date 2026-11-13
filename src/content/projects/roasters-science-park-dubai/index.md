@@ -3,12 +3,12 @@ title: "Roasters Specialty Coffee, Dubai Science Park"
 heading: "ROASTERS Specialty coffee house, DUBAI SCIENCE PARK"
 order: 9.5
 listed: true
-size: half
+size: quarter
 categories: ["fb"]
 template: modern
-cover: "./img/01-bar-front-wide.jpg"
-coverRatio: 0.666667
-hero: "./img/00-hero-img-6438.jpg"
+cover: "./img/00-hero-roasters-signage.jpg"
+coverRatio: 1.500000
+hero: "./img/00-hero-roasters-signage.jpg"
 heroCol: 50
 gallery:
   - image: "./img/01-bar-front-wide.jpg"
@@ -77,9 +77,6 @@ gallery:
   - image: "./img/25-corridor-linear-light.jpg"
     size: quarter
     title: "Corridor"
-  - image: "./img/24-white-gallery-room.jpg"
-    size: quarter
-    title: "Gallery room"
   - image: "./img/23-washroom-vanity.jpg"
     size: quarter
     title: "Washroom"
