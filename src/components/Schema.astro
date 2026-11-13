@@ -22,12 +22,13 @@ const org = {
   geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
   hasMap: site.mapUrl,
   areaServed: [{ '@type': 'Country', name: 'United Arab Emirates' }],
-  knowsAbout: ['Fit-out', 'Interior design', 'Restaurant fit-out', 'Cafe fit-out', 'Office fit-out', 'Retail fit-out', 'Villa interior design', 'Turnkey project management'],
+  knowsAbout: ['Fit-out', 'Commercial fit-out', 'Design and build', 'Restaurant fit-out', 'Cafe fit-out', 'Office fit-out', 'Retail fit-out', 'Clinic fit-out', 'Villa interior design', 'Interior design', 'MEP design', 'Turnkey project management'],
   makesOffer: [
-    ['Restaurant & cafe fit-out', 'Design and turnkey fit-out of cafes, coffee shops, restaurants and kiosks, including landlord and authority approvals.'],
-    ['Office & commercial fit-out', 'Offices, clinics, galleries, showrooms and retail units in malls and business districts.'],
-    ['Villa & apartment interior design', 'Residential interior design and fit-out of villas, penthouses and apartments.'],
-    ['Turnkey project management', 'Drawings, approvals (Emaar, Dubai Holding, TECOM, Nakheel, DM, DCD, DEWA), procurement, construction and handover.'],
+    ['Restaurant & café fit-out', 'Food & Beverage (F&B) design and build in Dubai: restaurants, cafés and coffee shops, with landlord, Dubai Municipality food safety, Civil Defence and DEWA approvals.'],
+    ['Commercial, office & retail fit-out', 'Fit-out of offices, retail stores, clinics, galleries, studios and hotels in Dubai, including landlord and authority permits, MEP and custom joinery.'],
+    ['Villa & apartment interior design and renovation', 'Interior design, renovation and fit-out of villas, townhouses, penthouses and apartments in Dubai.'],
+    ['Interior & MEP design', 'Interior design drawings and MEP engineering with HVAC, electrical, plumbing, drainage and fire-fighting calculations; submission drawings for Dubai Municipality, Civil Defence and DEWA.'],
+    ['Turnkey fit-out & project management', 'Programme, approvals and inspections, procurement, contractor coordination, quality, budget control and handover.'],
   ].map(([name, description]) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name, description, areaServed: 'Dubai, UAE' } })),
   sameAs: [...site.socials.filter((s) => s.name !== 'whatsapp').map((s) => s.href), ...site.sameAsExtra],
 };
