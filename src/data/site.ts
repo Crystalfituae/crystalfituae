@@ -79,7 +79,7 @@ export const logosHome = [
   'paper-logo-1.png', // 2019
   'narrow-300.png', // 2018
   'mercure-150.png', // 2016
-  'osha150.png', 'img-2642.png', 'download-1.png', // early projects (Osha 013, Friends Avenue 018), The Cake Bar
+  'osha150.png', 'img-2642.png', // early projects (Osha 013, Friends Avenue 018)
 ];
 export const logosInner = logosHome;
 
