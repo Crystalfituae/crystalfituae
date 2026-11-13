@@ -1,9 +1,9 @@
 ---
 title: "Springs Townhouse, Dubai"
 heading: "Springs Townhouse, The Springs, Dubai"
-order: 7.5
+order: 29.5
 listed: true
-size: half
+size: quarter
 categories: ["residential"]
 template: modern
 cover: "./img/01-img-4521.jpg"
