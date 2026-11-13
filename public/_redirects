@@ -28,3 +28,7 @@
 /interior-design-consultancy-dubai/                           /services/#consultancy                     301
 /featured-projects_category/commercial/3/                     /featured-projects_category/commercial/    301
 /featured-projects_category/residential/3/                    /featured-projects_category/residential/   301
+# old WordPress images (indexed in Google Images) and any other WP paths
+/wp-content/*                                                 /portfolio/                                301
+/wp-includes/*                                                /                                          301
+/xmlrpc.php                                                   /                                          301
