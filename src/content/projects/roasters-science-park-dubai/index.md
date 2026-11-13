@@ -71,6 +71,18 @@ gallery:
   - image: "./img/21-guinness-certificate-bar.jpg"
     size: quarter
     title: "Bar detail"
+  - image: "./img/22-view-from-mezzanine.jpg"
+    size: quarter
+    title: "View from the mezzanine"
+  - image: "./img/25-corridor-linear-light.jpg"
+    size: quarter
+    title: "Corridor"
+  - image: "./img/24-white-gallery-room.jpg"
+    size: quarter
+    title: "Gallery room"
+  - image: "./img/23-washroom-vanity.jpg"
+    size: quarter
+    title: "Washroom"
 otherCases: ["roasters-dubai-hills","roasters-downtown","roasters-sobha-hartland","wala-coffee-roastery","panmi-coffee-shop-dubai-hills","roasters-palm-jumeirah-mall","title-brew-specialty-coffee-bay-square","restaurant-contractor-dubai-yoy-neo-bistro","mercure-gold-hotel-interior-design"]
 location: "Dubai Science Park, Dubai, UAE"
 year: "2026"
