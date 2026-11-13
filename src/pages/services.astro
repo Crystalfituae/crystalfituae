@@ -16,49 +16,47 @@ import turnkey from '../assets/services/turnkey.jpg';
 
 // Same order and names as "What we do" on the home page; old texts and photos.
 const blocks = [
-  { id: 'fnb', h: 940, dark: true, img: fnb, title: 'F&B DESIGN & BUILD', paras: [
-    'Opening a new Food &amp; Beverage (F&amp;B) place in UAE is indeed a long and thrilling journey unlike in many other places worldwide. <br>Strict timelines, specified vendors, client obligations, design codes and FINES is what your first meeting at site will mostly sound like.',
-    '&nbsp;',
-    'Business in Dubai does not forgive you mistakes, and this is where hiring experienced and professional team of Designers comes to first place.',
-    '&nbsp;',
-    'Since 2014, the Crystal Fit Contracting LLC team has successfully completed projects in most of the major Dubai Locations, and worked with the most possible landlords. You name it- we have it :Emaar, Nakheel, Trakhees ,Dubai Mall, Mall of the Emirates, Dubai Hills, Nakheel mall, Circle Mall, The Pointe, these are only few locations where we worked.',
-    '&nbsp;',
-    'Our key strengths in this field is not only design aesthetics but also experience based procedure know-how. We are certified and prequalified with varieties of the main vendors, registered with all government entities ready to be your reliable partner paving your way towards successful food concept in UAE with peace and confidence.'] },
-  { id: 'commercial', h: 820, dark: false, img: retail, title: 'COMMERCIAL FIT-OUTS', paras: [
-    'Our Commercial /Retail interior design always starts with deep analysis, of your business, customers, their desires and behaviors. Our experienced team creates unforgettable image of your business both aesthetically and functionally rethinking the space with efficient zoning, styling and decor.',
-    '&nbsp;',
-    'Crystal fit contracting LLC team are familiar with all the government approval processes with a proven track of experience within all major Malls and vendors around UAE. The Dubai Mall, Mall of Emirates, Nakheel Mall, Marina Mall, JBR, Blue Waters these are just few names with whom we already have successfully finished projects Commercial and Retail Projects.',
-    '&nbsp;',
-    'Make your life easier by hiring our professional team with vast experience to make sure you meet your handover deadlines.'] },
-  { id: 'residential', h: 820, dark: true, img: residential, title: 'RESIDENTIAL INTERIORS', paras: [
-    'Residential Interiors have been always a core part of our services. We create well thought bespoke designs for you to call a home. Our team will find the optimal solution for your future place of strength. A perfectly balanced spatial planning twisted with experience-based design solutions will create a flawless space for concentration, revival and retreat.',
-    '&nbsp;',
-    'Crystal fit contracting LLC develops the interior spaces, handles all documentation bureaucracy, approvals, procurements, manages construction timelines, qualities and budgets on your behalf.<br>Sit back relax and wait to move in to a classy tailor-made interior of your dreams.'] },
-  { id: 'consultancy', h: 925, dark: false, img: planning, title: 'DESIGN & TECH. CONSULTANCY', tight: true, paras: [
-    'If you don’t think of a space planning in your daily life, it means your space is well-planned. Very few can do it by themselves. For others, there are bespoke interior design services.',
-    'Crystal fit contracting LLC will keep worries about the best furniture placement, ergonometrics and sizes -away from you. Bespoke spatial planning maximizes the design potential and efficiency while discreetly bringing together both form and function in perfect harmony.',
-    '&nbsp;',
-    'We understand that each space has its unique characteristics to which we must find the key to unlock its full potential. Our creative ideas and extensive experience will bring perfect balance to your interiors.'] },
-  { id: 'project-management', h: 870, dark: true, img: turnkey, title: 'PROJECT MANAGEMENT', narrow: true, paras: [
-    'Since 2014 we have been mastering our skills in Construction Project Management (CPM) and turn key project handling. CPM is an essential part of Fit out process at any construction work size and it is crucial for those who values their time and money.',
-    '&nbsp;',
-    'Providing end to end turn key project management is an essential part of Crystal Fit work model. By providing superior advice and decision-making experience across all stages of the project our team will mitigate any arising issues in a timely manner.',
-    '&nbsp;',
-    'Crystal fit contracting LLC project management will take care of cooperation between architects/designers, contractors, authorities and other stakeholders to ensure strong and fruitful performance with the highest quality that is delivered on time !'] },
+  { id: 'fnb', h: 940, dark: true, img: fnb, kicker: 'F&B Design & Build', title: 'Restaurant & Café Fit-Out in Dubai', more: { label: 'See our F&B projects', href: '/portfolio/#fnb' }, paras: [
+    'Opening a restaurant, café or coffee shop in Dubai means landlord design codes, authority approvals, kitchen requirements and a fixed opening date — all at once. Crystal Fit delivers <strong>Food &amp; Beverage (F&amp;B) fit-out</strong> from concept to opening day: design, approvals, fit-out, MEP and custom joinery under one contract.',
+    '<strong>What’s included:</strong> interior design, landlord submissions and NOCs, <strong>Dubai Municipality food safety, Civil Defence (DCD) and DEWA approvals</strong>, MEP and kitchen coordination with your supplier, bar counters and joinery built for your menu, and handover with all completion certificates.',
+    '<strong>Built for service, not just for photos.</strong> We plan guest flow, bar and kitchen workflow, storage and seating capacity with your operations team, and coordinate the exhaust, grease trap, gas and fire-suppression details inspectors check before you open. Finishes are chosen to survive daily cleaning and heavy traffic.',
+    'Already have a designer or a brand book? We turn your drawings into an approved, buildable project. Send us the unit location and concept — we’ll come back with the scope and approval route.'] },
+  { id: 'commercial', h: 820, dark: false, img: retail, kicker: 'Commercial Fit-Outs', title: 'Commercial, Office & Retail Fit-Out in Dubai', more: { label: 'See our commercial projects', href: '/portfolio/#commercial' }, paras: [
+    'Your space is part of your brand. Crystal Fit is a <strong>commercial fit-out contractor in Dubai</strong> for <strong>offices, retail stores, clinics, galleries, studios and hotels</strong> — designed around how your customers and staff use it, and built to open on time.',
+    '<strong>What’s included:</strong> space planning and design, landlord and mall approvals, <strong>TECOM, Dubai Holding, Emaar, Dubai Municipality and Civil Defence permits</strong>, partitions, ceilings, MEP, lighting, flooring and custom joinery.',
+    'For offices we plan workstations, meeting rooms and acoustics; for retail, a storefront and layout that guide people through your products; for clinics, treatment rooms and patient flow that meet authority requirements.',
+    'Tell us your unit size and location — we’ll advise on layout and approvals.'] },
+  { id: 'residential', h: 820, dark: true, img: residential, kicker: 'Residential Interiors', title: 'Villa & Apartment Interior Design and Renovation in Dubai', more: { label: 'See our residential projects', href: '/portfolio/#residential' }, paras: [
+    'Crystal Fit designs and builds <strong>villa, townhouse, penthouse and apartment interiors in Dubai</strong> — from full renovation to bespoke finishing of a new home.',
+    '<strong>What’s included:</strong> interior design and 3D visuals, layout changes, <strong>community and authority approvals</strong>, MEP, flooring, kitchens, wardrobes and joinery, procurement and supervision until you move in.',
+    'We choose materials for Dubai’s heat, humidity and sun, so your home stays comfortable and easy to maintain. Living abroad or busy? One project manager handles drawings, approvals, purchasing, quality and budget for you.',
+    'Share your floor plan and a few photos — we’ll suggest what’s possible.'] },
+  { id: 'consultancy', h: 925, dark: false, img: planning, kicker: 'Design & Tech. Consultancy', title: 'Interior Design, Space Planning & Approval Drawings in Dubai', more: { label: 'See our portfolio', href: '/portfolio/' }, paras: [
+    'A good fit-out starts on paper. Crystal Fit provides <strong>interior design, space planning and technical consultancy in Dubai</strong> — before you choose a contractor, or as a second opinion on an existing design.',
+    '<strong>What we prepare:</strong> concept design and 3D visuals, material specifications, <strong>authority and landlord drawing packages</strong>, MEP coordination, joinery shop drawings and BOQ for tender.',
+    'An efficient layout means more seats, more sales or more usable space. Our <strong>value engineering</strong> keeps the look while cutting build cost — before the tender, not after the contract.',
+    'Design only or design and build — either works, with no gap between designer and contractor.'] },
+  { id: 'project-management', h: 870, dark: true, img: turnkey, kicker: 'Project Management', title: 'Turnkey Fit-Out & Project Management in Dubai', narrow: true, more: { label: 'See our portfolio', href: '/portfolio/' }, paras: [
+    'Designers, contractors, landlords, authorities, suppliers — a fit-out has many parties and one deadline. Crystal Fit provides <strong>turnkey fit-out and construction project management in Dubai</strong>, with one accountable point of contact from the first drawing to handover.',
+    '<strong>What we manage:</strong> programme, approvals and inspections, procurement and long-lead items, contractor coordination, site quality and safety, budget and variations, snagging and completion certificates.',
+    'Our <strong>in-house skilled labour</strong> and selected suppliers keep quality under control. You always know the status of approvals, purchases, progress and costs; variations are agreed in writing before work starts.',
+    'Already have a design and a contractor? We can step in as your project manager.'] },
 ];
 ---
-<Base title="Interior Design & Fit-Out Services in Dubai | Crystal Fit" description="Restaurant, cafe, office and retail fit-out, villa interiors and turnkey project management in Dubai, with Emaar, Dubai Holding, TECOM & Nakheel approvals.">
+<Base title="Fit-Out Services in Dubai – Restaurant, Office, Villa | Crystal Fit" description="Design and build fit-out in Dubai: restaurants & cafés, offices, retail, clinics and villas. Approvals, MEP, joinery and turnkey project management.">
   <Hero slides={[{ image: hero, lines: ['Our', 'Services'] }]} place="right-top" dark h1="— interior design & fit-out in Dubai" />
   <Breadcrumb current="Crystal fit contracting LLC UAE / SERVICES" />
   {blocks.map((b) => (
     <section id={b.id} class:list={['svc', b.dark ? 'svc--dark' : 'svc--light', { 'svc--narrow': b.narrow }]} style={`--h:${b.h}px`}>
       <div class="svc__inner">
         <div class="svc__text">
+          <p class="svc__kicker">{b.kicker}</p>
           <h2 class="svc__title">{b.title}{b.dark && <span class="dot" aria-hidden="true"></span>}</h2>
           {b.paras.map((p) => <p set:html={p} />)}
           {b.paras.length > 1 && <button type="button" class="svc__more" aria-expanded="false">Read more +</button>}
+          <a class="svc__link" href={b.more.href}>{b.more.label} →</a>
         </div>
-        <div class="svc__media"><Image src={b.img} alt={`${b.title.toLowerCase().replace(/(^|[ /])\w/g, (c) => c.toUpperCase())} by Crystal Fit, Dubai`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" /></div>
+        <div class="svc__media"><Image src={b.img} alt={`${b.kicker} – ${b.title}, Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" /></div>
       </div>
     </section>
   ))}

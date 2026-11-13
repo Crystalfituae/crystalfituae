@@ -98,7 +98,13 @@
 .svc--narrow .svc__text p { max-width: 464px; line-height: 30px; color: #edeaea; }
 .svc--narrow .svc__media { padding-left: 32px; }
 .svc__more { display: none; }
+/* small label above the SEO heading + link to the matching portfolio filter */
+.svc__text p.svc__kicker { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; color: inherit; }
+.svc__title { margin-bottom: 30px; }
+.svc__link { display: inline-block; margin-top: 10px; font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: inherit; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 3px; }
+.svc__link:hover { opacity: .7; }
 @media (max-width: 767px) {
+  .svc__link { display: table; margin-top: 16px; }
   .svc { padding: 40px 10px; min-height: 0; }
   .svc__inner { grid-template-columns: 1fr; }
   .svc--light .svc__text { order: 1; text-align: left; padding-left: 0; }
@@ -107,7 +113,7 @@
   .svc__text p { margin-bottom: 14px; }
   .svc__media img { width: 100%; height: auto; aspect-ratio: 5 / 7; }
   /* phones: first paragraph, the rest behind "Read more" */
-  .svc__text:not(.is-open) p:nth-of-type(n+2) { display: none; }
+  .svc__text:not(.is-open) p:nth-of-type(n+3) { display: none; }
   .svc__more { display: inline-block; margin-top: 4px; padding: 10px 0 4px; background: none; border: 0; color: inherit; cursor: pointer;
     font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
 }
