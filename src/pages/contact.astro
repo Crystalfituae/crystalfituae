@@ -12,7 +12,7 @@ import hero from '../assets/site/hero-contact-gallery.jpg'; // Gari Tatintsian G
 const follow = site.socials.map((s) => [s.name === 'linkedin-in' ? 'linkedin' : s.name, s.href]);
 const schema = [{ '@type': 'ContactPage', name: 'Contact Crystal Fit', url: new URL('/contact/', Astro.site).href, mainEntity: { '@id': new URL('/#company', Astro.site).href } }];
 ---
-<Base title="Contact Crystal Fit – Fit-Out Contractor in Al Quoz, Dubai" description="Request a fit-out quote from Crystal Fit Contracting LLC, Al Quoz Industrial 3, Dubai. Call +971 4 320 2224, WhatsApp or e-mail info@crystalfituae.com." schema={schema}>
+<Base title="Contact Crystal Fit – Fit-Out Contractor in Al Quoz, Dubai" description="Request a fit-out quote from Crystal Fit Contracting LLC, Al Quoz Industrial 3, Dubai. Call +971 4 297 0320, WhatsApp or e-mail info@crystalfituae.com." schema={schema}>
   <Hero slides={[{ image: hero, lines: ['Time to make', 'the first meeting'] }]} />
   <Breadcrumb current="Crystal fit contracting LLC / Contact" />
   <section class="contact">
@@ -31,7 +31,7 @@ const schema = [{ '@type': 'ContactPage', name: 'Contact Crystal Fit', url: new 
         </div>
         <div>
           <h3><LineIcon name="phone" size={22} />Call or write</h3>
-          <p>Phone: <a href={`tel:${site.phoneOffice}`}>+971 4 320 2224</a><br />
+          <p>Phone: <a href={`tel:${site.phoneOffice}`}>+971 4 297 0320</a><br />
             WhatsApp: <a href={site.whatsapp} target="_blank" rel="noopener">Chat with us</a><br />
             Email: <a href={`mailto:${site.email}`}>{site.email}</a></p>
         </div>

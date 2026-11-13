@@ -3,7 +3,7 @@ export const site = {
   url: 'https://crystalfituae.com',
   phoneMobileDisplay: '+971 (056) 338 62 19',
   phoneMobile: '+971563386219',
-  phoneOffice: '+97143202224',
+  phoneOffice: '+97142970320',
   email: 'info@crystalfituae.com',
   address: 'Al Quoz Industrial 3, Ghoshi Warehouse City WH-132, Dubai',
   // structured data (schema.org) — same address/phone as the Google Business profile
