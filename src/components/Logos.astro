@@ -11,7 +11,7 @@ const names: Record<string, string> = {
   'christie-s-logo-7b51158dc3-seeklogo-com-.png': "Christie's", 'logo-black.png': 'In the Pink', 'the-game-logo-1.png': 'The Game Premium Lounge',
   '118507871-400x300-1.png': 'Three Diamonds Real Estate', 'muha-logo-bw-1.png': 'Muha Music & Fine Arts', 'narrow-300.png': 'Narrow Specialty Coffee',
   'fissman-logo-1.png': 'Fissman', 'paper-logo-1.png': 'Studio Paper', 'desires-logo.png': "Desire's Specialty Coffee", 'download-1.png': 'The Cake Bar',
-  'mercure-150.png': 'Mercure Gold Hotel', 'osha150.png': 'Osha', 'livrichy.png': 'Livrichy Real Estate', 'wala.png': 'Wala Coffee & Roastery', 'panmi.png': 'Panmi Milk Toast Cafe', 'amv.png': 'AMV Clinic', 'gasteria.png': 'Gasteria', 'selfspace.png': 'self.space', 'hanah.png': 'Hanah Chocolate', 'img-2642.png': 'Friends Avenue Cafe',
+  'mercure-150.png': 'Mercure Gold Hotel', 'osha150.png': 'Osha', 'livrichy.png': 'Livrichy Real Estate', 'wala.png': 'Wala Coffee & Roastery', 'panmi.png': 'Panmi Milk Toast Cafe', 'amv.png': 'AMV Clinic', 'gasteria.png': 'Gasteria', 'tatintsian.png': 'Gary Tatintsian Gallery', 'selfspace.png': 'self.space', 'hanah.png': 'Hanah Chocolate', 'img-2642.png': 'Friends Avenue Cafe',
 };
 const logos = (list as string[]).map((n) => ({ img: byName(n), alt: `${names[n] ?? 'Client'} logo` })).filter((l) => l.img) as { img: ImageMetadata; alt: string }[];
 ---
