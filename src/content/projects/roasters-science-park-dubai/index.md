@@ -53,6 +53,24 @@ gallery:
   - image: "./img/14-black-slatted-wall.jpg"
     size: quarter
     title: "Slatted wall"
+  - image: "./img/16-lounge-black-wall-wide.jpg"
+    size: half
+    title: "Lounge"
+  - image: "./img/18-espresso-bar-signage-vertical.jpg"
+    size: quarter
+    title: "Espresso bar"
+  - image: "./img/20-lounge-armchairs-art.jpg"
+    size: quarter
+    title: "Lounge armchairs"
+  - image: "./img/17-espresso-bar-signage-wide.jpg"
+    size: half
+    title: "Espresso bar and signage"
+  - image: "./img/19-art-wall-tables.jpg"
+    size: quarter
+    title: "Art wall"
+  - image: "./img/21-guinness-certificate-bar.jpg"
+    size: quarter
+    title: "Bar detail"
 otherCases: ["roasters-dubai-hills","roasters-downtown","roasters-sobha-hartland","wala-coffee-roastery","panmi-coffee-shop-dubai-hills","roasters-palm-jumeirah-mall","title-brew-specialty-coffee-bay-square","restaurant-contractor-dubai-yoy-neo-bistro","mercure-gold-hotel-interior-design"]
 location: "Dubai Science Park, Dubai, UAE"
 year: "2026"
