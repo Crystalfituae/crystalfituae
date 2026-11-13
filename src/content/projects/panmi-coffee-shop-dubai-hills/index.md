@@ -4,7 +4,7 @@ heading: "Panmi Coffee Shop, Dubai Hills"
 order: 0
 listed: true
 size: half
-categories: ["commercial","fb"]
+categories: ["fb"]
 template: modern
 cover: "./img/25-sovremennaya-kofeynya-s-uyutnoy-stoykoy.jpg"
 coverRatio: 0.667333

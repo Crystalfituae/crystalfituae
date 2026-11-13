@@ -4,7 +4,7 @@ heading: "Roasters Specialty Coffee Kiosk, Dubai Mall"
 order: 3
 listed: true
 size: quarter
-categories: ["commercial","fb"]
+categories: ["fb"]
 template: modern
 cover: "./img/02-img_9647-hdr.jpg"
 coverRatio: 1.500000

@@ -4,7 +4,7 @@ heading: "Roasters Specialty Coffee, Palm Jumeirah Mall"
 order: 10
 listed: true
 size: half
-categories: ["commercial","fb"]
+categories: ["fb"]
 template: modern
 cover: "./img/03-img_3649-hdr.jpg"
 coverRatio: 0.666667

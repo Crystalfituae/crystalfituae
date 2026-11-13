@@ -4,7 +4,7 @@ heading: "Park View Mall"
 order: 48
 listed: true
 size: quarter
-categories: ["commercial","residential"]
+categories: ["commercial"]
 template: modern
 cover: "./img/06-community_mall_0000-scaled.jpg"
 coverRatio: 0.562667

@@ -4,7 +4,7 @@ heading: "Gasteria Restaurant"
 order: 9
 listed: true
 size: quarter
-categories: ["commercial","fb"]
+categories: ["fb"]
 template: modern
 cover: "./img/01-img_7409-1.jpg"
 coverRatio: 1.500000

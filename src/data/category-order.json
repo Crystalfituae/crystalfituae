@@ -1,30 +1,19 @@
 {
  "commercial": [
-  "wala-coffee-roastery",
   "amv-aesthetic-clinic",
   "gary-tatintsian-gallery",
-  "roasters-palm-jumeirah-mall",
   "in-the-pink-stretching-studio-cafe",
-  "roasters-specialty-coffee-creek-harbour",
-  "roasters-science-park-dubai",
-  "roasters-downtown",
   "muha-music-fine-arts",
   "community-mall-dubai-al-khawaneej-2-dubai",
   "coxs-bazar-family-hotel-bg4roof",
-  "hanah-chocolate",
   "fissman-circle-mall-jvc-dubai",
   "the-game-premium-lounge",
-  "roasters-coffee-nad-al-sheba-mall",
   "livrichy-real-estates-office",
-  "panmi-coffee-shop-dubai-hills",
-  "west-gate-cinema-interior-design",
-  "mercure-gold-hotel-interior-design",
-  "roasters-coffee-kiosk-dubai-mall"
+  "mercure-gold-hotel-interior-design"
  ],
  "fb": [
   "wala-coffee-roastery",
   "roasters-palm-jumeirah-mall",
-  "in-the-pink-stretching-studio-cafe",
   "roasters-specialty-coffee-creek-harbour",
   "roasters-downtown",
   "desires-specialty-coffee-saadiyat-island-abu-dhabi",
@@ -38,17 +27,13 @@
   "roasters-specialty-coffee-dubai-mall-island",
   "narrow-specialty-coffee-sharjah",
   "roasters-coffee-nad-al-sheba-mall",
-  "beacon-coffee-portable-kiosk",
   "panmi-coffee-shop-dubai-hills",
   "restaurant-contractor-dubai-yoy-neo-bistro",
-  "mercure-gold-hotel-interior-design",
   "roasters-coffee-kiosk-dubai-mall"
  ],
  "residential": [
   "anantara-penthouse",
   "boulevard-crescent-apartment",
-  "community-mall-dubai-al-khawaneej-2-dubai",
-  "coxs-bazar-family-hotel-bg4roof",
   "ros-apart-creek-harbor-dubai",
   "mskh-villa-al-khavaneej-dubai",
   "kob-apartment-executive-towers-dubai",
@@ -62,7 +47,6 @@
   "gbl-villa-ar-dubai-hills",
   "blsh-villa-suyoh-sharjah",
   "amr-villa-al-mizhar",
-  "villa-windsor_dxb",
   "nad-al-sheba-villa-moderna-dubai"
  ]
 }

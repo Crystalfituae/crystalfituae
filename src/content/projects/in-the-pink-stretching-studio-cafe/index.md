@@ -4,7 +4,7 @@ heading: "in the pink stretching STUDIO, cafe"
 order: 13
 listed: true
 size: half
-categories: ["commercial","fb"]
+categories: ["commercial"]
 template: modern
 cover: "./img/25-0031.jpg"
 coverRatio: 0.666667

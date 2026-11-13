@@ -4,7 +4,7 @@ heading: "Roasters Specialty Coffee, Nad Al Sheba Mall"
 order: 15
 listed: true
 size: half
-categories: ["commercial","fb"]
+categories: ["fb"]
 template: modern
 cover: "./img/11-img_6810-uluchsheno-um.-shuma-hdr.jpg"
 coverRatio: 0.666667

@@ -4,7 +4,7 @@ heading: "ROASTERS Specialty coffee house, DUBAI SCIENCE PARK"
 order: 9.5
 listed: true
 size: half
-categories: ["commercial","fb"]
+categories: ["fb"]
 template: modern
 cover: "./img/01-bar-front-wide.jpg"
 coverRatio: 0.666667

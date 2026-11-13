@@ -4,7 +4,7 @@ heading: "ROASTERS Specialty coffee house, Creek Harbour"
 order: 14
 listed: true
 size: quarter
-categories: ["commercial","fb"]
+categories: ["fb"]
 template: modern
 cover: "./img/07-img_3445.jpg"
 coverRatio: 1.500000

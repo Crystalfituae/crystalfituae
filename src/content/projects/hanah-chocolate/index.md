@@ -4,7 +4,7 @@ heading: "Hanah Chocolate"
 order: 22
 listed: true
 size: quarter
-categories: ["commercial","fb"]
+categories: ["fb"]
 template: modern
 cover: "./img/01-e7ba9370-8686-41cb-a5b7-728a3d373cd8.jpg"
 coverRatio: 1.481481

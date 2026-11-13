@@ -4,7 +4,7 @@ heading: "ROASTERS Specialty coffee house, Downtown"
 order: 16
 listed: true
 size: half
-categories: ["commercial","fb"]
+categories: ["fb"]
 template: modern
 cover: "./img/09-img_2341.jpg"
 coverRatio: 0.666667

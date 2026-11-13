@@ -4,7 +4,7 @@ heading: "Wala Coffee & Roastery"
 order: 1
 listed: true
 size: half
-categories: ["commercial","fb"]
+categories: ["fb"]
 template: modern
 gallerySpacer: true
 cover: "./img/21-walacoffee_mandytoh_september2026_46.jpg"

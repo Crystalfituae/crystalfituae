@@ -4,7 +4,7 @@ heading: "Family Boutique Hotel"
 order: 47
 listed: true
 size: half
-categories: ["commercial","residential"]
+categories: ["commercial"]
 template: modern
 cover: "./img/14-hotel_0000-scaled.jpg"
 coverRatio: 0.562667

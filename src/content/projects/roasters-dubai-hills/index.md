@@ -4,7 +4,7 @@ heading: "Roasters Specialty Coffee, Dubai Hills"
 order: 7
 listed: true
 size: half
-categories: ["commercial","fb"]
+categories: ["fb"]
 template: modern
 cover: "./img/03-img_9675.jpg"
 coverRatio: 0.666667

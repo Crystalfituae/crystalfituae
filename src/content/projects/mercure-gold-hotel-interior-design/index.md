@@ -4,7 +4,7 @@ heading: "MERCURE GOLD HOTEL, DUBAI"
 order: 32
 listed: true
 size: half
-categories: ["commercial","fb"]
+categories: ["commercial"]
 template: modern
 cover: "./img/29-interior-design-of-mercure-gold-hotel-by-kg-design-studio-ma.jpg"
 coverRatio: 0.666667
