@@ -23,6 +23,8 @@ export const site = {
     { name: 'pinterest', href: 'https://www.pinterest.com/crystalfituae/' },
     { name: 'whatsapp', href: 'https://wa.me/971563386219' },
   ],
+  // profiles shown only to search engines (schema.org sameAs), no footer icon - Facebook page is not actively run
+  sameAsExtra: ['https://www.facebook.com/crystalfituae/'],
   nav: [
     { label: 'Home', href: '/' },
     { label: 'About us', href: '/about-us/' },

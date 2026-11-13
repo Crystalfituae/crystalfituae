@@ -29,7 +29,7 @@ const org = {
     ['Villa & apartment interior design', 'Residential interior design and fit-out of villas, penthouses and apartments.'],
     ['Turnkey project management', 'Drawings, approvals (Emaar, Dubai Holding, TECOM, Nakheel, DM, DCD, DEWA), procurement, construction and handover.'],
   ].map(([name, description]) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name, description, areaServed: 'Dubai, UAE' } })),
-  sameAs: site.socials.filter((s) => s.name !== 'whatsapp').map((s) => s.href),
+  sameAs: [...site.socials.filter((s) => s.name !== 'whatsapp').map((s) => s.href), ...site.sameAsExtra],
 };
 const json = (o: object) => JSON.stringify(o).replace(/</g, '\\u003c');
 ---
