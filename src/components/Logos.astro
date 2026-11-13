@@ -19,7 +19,7 @@ const logos = (list as string[]).map((n) => ({ img: byName(n), alt: `${names[n] 
   {title && <div class="trusted__title">trusted by the best</div>}
   <div class="logos">
     <ul class="logos__track">
-      {[...logos, ...logos].map((l, i) => <li class="logos__item" aria-hidden={i >= logos.length ? 'true' : undefined}><Image src={l.img} alt={i >= logos.length ? '' : l.alt} widths={[139, 278]} sizes="139px" loading="lazy" /></li>)}
+      {[...logos, ...logos].map((l, i) => <li class="logos__item" aria-hidden={i >= logos.length ? 'true' : undefined}><Image src={l.img} alt={i >= logos.length ? '' : l.alt} widths={[150, 300]} sizes="150px" loading="lazy" /></li>)}
     </ul>
   </div>
 </section>

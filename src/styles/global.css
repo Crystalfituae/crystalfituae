@@ -152,15 +152,14 @@ button { font: inherit; }
 .logos { --lg-gap: 70px; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
 .logos__track { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: var(--lg-gap); width: max-content; animation: logos-run 60s linear infinite; }
 .logos__track:hover { animation-play-state: paused; }
-.logos__item { flex: 0 0 auto; width: 139px; height: 110px; display: flex; align-items: center; justify-content: center; }
-.logos__item img { max-width: 100%; max-height: 100%; width: auto; height: auto; }
+.logos__item { flex: 0 0 auto; width: 150px; height: 150px; display: flex; align-items: center; justify-content: center; } /* every logo in the same 150x150 frame */
+.logos__item img { max-width: 100%; max-height: 100%; width: auto; height: auto; filter: grayscale(1); } /* black & white only */
 @keyframes logos-run { to { transform: translateX(calc(-50% - var(--lg-gap) / 2)); } }
 @media (prefers-reduced-motion: reduce) { .logos__track { animation: none; } }
 @media (max-width: 767px) {
   .trusted__title { display: none; }
   .trusted { padding: 40px 0; }
   .logos { --lg-gap: 40px; }
-  .logos__item { width: 100px; height: 70px; }
   .logos__track { animation-duration: 45s; }
 }
 
