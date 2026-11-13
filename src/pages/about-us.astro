@@ -71,7 +71,7 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
     <div class="team__lead">
       <figure>
         <Image src={ph('konstantin')} alt="Konstantin Grytsan, CEO and founder of Crystal Fit" width={487} height={487} widths={[487, 974]} sizes="(min-width: 768px) 487px, 100vw" fit="cover" loading="lazy" />
-        <figcaption><b>Konstantin Grytsan</b><span>CEO / Founder</span><span>MSc Architecture</span><span>MSc Construction Project Management</span></figcaption>
+        <figcaption><b>Konstantin Grytsan</b><span>CEO / Founder</span><span class="team__deg">MSc Architecture</span><span class="team__deg">MSc Construction Project Management</span></figcaption>
       </figure>
       <div class="team__bio">
         <p class="ab-kicker">Message from the CEO</p>
@@ -133,6 +133,7 @@ const schema = [{ '@type': 'AboutPage', name: 'About Crystal Fit Contracting LLC
   .team__lead figcaption { padding-top: 16px; color: #000; font-family: var(--ff-head); text-transform: uppercase; }
   .team__lead figcaption b { font-family: var(--ff-head); font-size: var(--fs-card); line-height: var(--lh-card); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; display: block; }
   .team__lead figcaption span { font-size: var(--fs-cap); line-height: var(--lh-cap); display: block; color: #555; }
+  .team__lead figcaption .team__deg { text-transform: none; } /* keep "MSc" as written */
   .team__bio { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 300; letter-spacing: 0; color: #333; max-width: 640px; }
   .team__bio p { margin: 0 0 16px; }
   .ab-kicker { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #000; margin-bottom: 18px !important; }
