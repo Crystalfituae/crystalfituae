@@ -42,7 +42,6 @@ export const site = {
   // Main inbox, receives every enquiry: info@crystalfituae.com
   formKey: import.meta.env.PUBLIC_WEB3FORMS_KEY || 'bc4e80cb-ae26-45a9-b622-999b514d67ef',
   // Copy inbox, receives "Project Inquiry" only: kg@crystalfituae.com
-  formKeyCopy: import.meta.env.PUBLIC_WEB3FORMS_KEY_COPY || '5e004c92-e461-4fe3-9f0e-e30756b08f2c',
   // Tracking (empty = not loaded, no cookie banner). Set in hosting env vars or here.
   // Google Analytics 4 measurement ID, e.g. G-XXXXXXXXXX
   gaId: import.meta.env.PUBLIC_GA_ID || '',
