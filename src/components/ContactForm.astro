@@ -5,7 +5,7 @@ import { site } from '../data/site';
   <div class="contact-form__inner">
     <p class="contact-form__label">Contact Us</p>
     <h5 class="contact-form__title">Let’s Talk Together</h5>
-    <form class="cf" action="https://api.web3forms.com/submit" method="POST" data-cf data-key-copy={site.formKeyCopy}>
+    <form class="cf" action="https://api.web3forms.com/submit" method="POST" data-cf>
       <input type="hidden" name="access_key" value={site.formKey} />
       <input type="hidden" name="from_name" value="crystalfituae.com" />
       <input type="hidden" name="subject" value="" />
@@ -31,13 +31,10 @@ import { site } from '../data/site';
   </div>
 </section>
 <script>
-  // Every enquiry goes to the main inbox (info@). "Project Inquiry" is also copied to the second inbox (kg@).
-  // Web3Forms ties one access key to one e-mail, so the copy is a second submission with the second key.
-  const send = (f: HTMLFormElement, key?: string) => {
-    const fd = new FormData(f);
-    if (key) fd.set('access_key', key);
-    return fetch(f.action, { method: 'POST', headers: { Accept: 'application/json' }, body: fd }).then((r) => r.json());
-  };
+  // Every enquiry goes to info@ (the only recipient Web3Forms Free allows). "Project Inquiry" reaches kg@
+  // through a Gmail filter on info@ (subject contains "Project Inquiry" -> forward to kg@).
+  const send = (f: HTMLFormElement) =>
+    fetch(f.action, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(f) }).then((r) => r.json());
   // "Apply now" links to /contact/?topic=recruitment#contact-form — preselect the topic
   const wanted = new URLSearchParams(location.search).get('topic');
   for (const f of document.querySelectorAll<HTMLFormElement>('form[data-cf]')) {
@@ -57,8 +54,6 @@ import { site } from '../data/site';
       try {
         const main = await send(f);
         if (!main.success) throw new Error(main.message);
-        const copyKey = f.dataset.keyCopy;
-        if (topic === 'Project Inquiry' && copyKey) await send(f, copyKey).catch(() => {});
         st.textContent = 'Thank you for your message. It has been sent.';
         if (topic !== 'Recruitment') (window as any).cfTrack?.('lead', { topic });
         f.reset();
