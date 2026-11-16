@@ -1,7 +1,9 @@
 ---
-// Short quote form for service pages (DRAFT 2026-11-16): 3 fields, same Web3Forms inbox as the main form.
+// Short form at the bottom of every page except Contact (which keeps the full form).
+// Fields: Name, Phone, Subject (topic, so suppliers and job seekers can be filtered in the mailbox), Message.
+// Same Web3Forms inbox as the main form; e-mail subject = "<Topic> — <service/page> — crystalfituae.com".
 import { site } from '../data/site';
-const { title = 'Get a quote', text = 'Three fields — we reply by phone or WhatsApp.', service = '' } = Astro.props;
+const { title = 'Get a quote', text = 'Send a short message — we reply by phone or WhatsApp.', service = '' } = Astro.props;
 ---
 <section class="qq" id="contact-form">
   <div class="qq__inner">
@@ -9,35 +11,54 @@ const { title = 'Get a quote', text = 'Three fields — we reply by phone or Wha
       <h2 class="qq__title">{title}</h2>
       <p class="qq__text">{text}</p>
     </div>
-    <form class="qq__form" action="https://api.web3forms.com/submit" method="POST" data-qq>
+    <form class="qq__form" action="https://api.web3forms.com/submit" method="POST" data-qq data-service={service}>
       <input type="hidden" name="access_key" value={site.formKey} />
       <input type="hidden" name="from_name" value="crystalfituae.com" />
-      <input type="hidden" name="subject" value={`Project Inquiry — ${service || 'service page'} — crystalfituae.com`} />
+      <input type="hidden" name="subject" value="" />
       <input type="hidden" name="page" value="" />
       <input type="checkbox" name="botcheck" class="qq__hp" tabindex="-1" autocomplete="off" />
       <input type="text" name="name" placeholder="Name" required maxlength="200" aria-label="Name" />
       <input type="tel" name="phone" placeholder="Phone" required maxlength="40" aria-label="Phone" />
-      <input type="text" name="message" placeholder="Your project (e.g. 120 m² café, Dubai Hills)" required maxlength="500" aria-label="Your project" />
+      <select name="topic" aria-label="Subject" required>
+        <option value="Project Inquiry" selected>Project Inquiry</option>
+        <option value="Collaborations">Collaborations</option>
+        <option value="Recruitment">Recruitment</option>
+      </select>
+      <input type="text" name="message" placeholder="Your project (e.g. 120 m² café, Dubai Hills)" required maxlength="1000" aria-label="Message" />
       <button type="submit">Send</button>
       <p class="qq__status" role="status" hidden></p>
     </form>
-    <p class="qq__legal">By sending this form you agree to our <a href="/privacy-policy/">Privacy Policy</a>. Prefer a full brief? <a href="/contact/#contact-form">Use the detailed form</a>.</p>
+    <p class="qq__legal">By sending this form you agree to our <a href="/privacy-policy/">Privacy Policy</a>.</p>
   </div>
 </section>
 <script>
+  const hints: Record<string, string> = {
+    'Project Inquiry': 'Your project (e.g. 120 m² café, Dubai Hills)',
+    Collaborations: 'Your company and what you offer',
+    Recruitment: 'Position you are interested in + link to your CV / portfolio',
+  };
+  const wanted = new URLSearchParams(location.search).get('topic');
   for (const f of document.querySelectorAll<HTMLFormElement>('form[data-qq]')) {
+    const sel = f.elements.namedItem('topic') as HTMLSelectElement;
+    const msg = f.elements.namedItem('message') as HTMLInputElement;
+    const sync = () => { msg.placeholder = hints[sel.value] || hints['Project Inquiry']; };
+    if (wanted) { const o = [...sel.options].find((x) => x.value.toLowerCase() === wanted.toLowerCase()); if (o) sel.value = o.value; }
+    sync(); sel.addEventListener('change', sync);
     f.addEventListener('submit', async (e) => {
       e.preventDefault();
       const st = f.querySelector<HTMLElement>('.qq__status')!;
       const btn = f.querySelector('button')!;
+      const topic = sel.value;
+      const where = f.dataset.service || document.title.split('|')[0].trim();
+      (f.elements.namedItem('subject') as HTMLInputElement).value = `${topic} — ${where} — crystalfituae.com`;
       (f.elements.namedItem('page') as HTMLInputElement).value = location.href;
       btn.disabled = true; st.hidden = false; st.textContent = 'Sending…';
       try {
         const r = await fetch(f.action, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(f) }).then((x) => x.json());
         if (!r.success) throw new Error(r.message);
         st.textContent = 'Thank you — we will contact you shortly.';
-        (window as any).cfTrack?.('lead', { topic: 'Project Inquiry', form: 'quick' });
-        f.reset();
+        if (topic !== 'Recruitment') (window as any).cfTrack?.('lead', { topic, form: 'quick' });
+        f.reset(); sync();
       } catch {
         st.textContent = 'Sorry, something went wrong. Please try again or message us on WhatsApp.';
       } finally { btn.disabled = false; }
@@ -50,9 +71,10 @@ const { title = 'Get a quote', text = 'Three fields — we reply by phone or Wha
   .qq__head { display: flex; align-items: baseline; gap: 24px; flex-wrap: wrap; margin-bottom: 26px; }
   .qq__title { font-family: var(--ff-head); font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: 200; letter-spacing: 0; text-transform: uppercase; margin: 0; }
   .qq__text { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 300; color: #666; margin: 0; }
-  .qq__form { display: grid; grid-template-columns: 1fr 1fr 2fr auto; gap: 12px; }
-  .qq__form input { font-family: var(--ff-body); font-size: var(--fs-body); padding: 16px 18px; border: 1px solid #ccc; background: #fff; color: #111; min-width: 0; }
-  .qq__form input:focus { outline: none; border-color: #000; }
+  .qq__form { display: grid; grid-template-columns: 1fr 1fr 1fr 2fr auto; gap: 12px; }
+  .qq__form input, .qq__form select { font-family: var(--ff-body); font-size: var(--fs-body); padding: 16px 18px; border: 1px solid #ccc; background: #fff; color: #111; min-width: 0; border-radius: 0; }
+  .qq__form select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23111'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 36px; cursor: pointer; }
+  .qq__form input:focus, .qq__form select:focus { outline: none; border-color: #000; }
   .qq__form button { font-family: var(--ff-head); font-size: var(--fs-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; background: #000; color: #fff; border: 0; padding: 0 40px; cursor: pointer; }
   .qq__form button:disabled { opacity: .6; }
   .qq__hp { display: none; }
@@ -61,7 +83,9 @@ const { title = 'Get a quote', text = 'Three fields — we reply by phone or Wha
   .qq__legal a { color: #555; }
   @media (max-width: 991px) {
     .qq { padding: 56px 16px; }
-    .qq__form { grid-template-columns: 1fr; }
+    .qq__form { grid-template-columns: 1fr 1fr; }
+    .qq__form input[name="message"], .qq__form button { grid-column: 1 / -1; }
     .qq__form button { padding: 16px; }
   }
+  @media (max-width: 599px) { .qq__form { grid-template-columns: 1fr; } }
 </style>
