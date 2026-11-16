@@ -15,8 +15,8 @@ const { title = 'Get a quote', text = 'Three fields — we reply by phone or Wha
       <input type="hidden" name="subject" value={`Project Inquiry — ${service || 'service page'} — crystalfituae.com`} />
       <input type="hidden" name="page" value="" />
       <input type="checkbox" name="botcheck" class="qq__hp" tabindex="-1" autocomplete="off" />
-      <input type="text" name="name" placeholder="Your name" required maxlength="200" aria-label="Your name" />
-      <input type="tel" name="phone" placeholder="Phone / WhatsApp" required maxlength="40" aria-label="Phone or WhatsApp" />
+      <input type="text" name="name" placeholder="Name" required maxlength="200" aria-label="Name" />
+      <input type="tel" name="phone" placeholder="Phone" required maxlength="40" aria-label="Phone" />
       <input type="text" name="message" placeholder="Your project (e.g. 120 m² café, Dubai Hills)" required maxlength="500" aria-label="Your project" />
       <button type="submit">Send</button>
       <p class="qq__status" role="status" hidden></p>
