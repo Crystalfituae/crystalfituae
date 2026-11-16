@@ -205,7 +205,10 @@ export const services: Service[] = [
     deliverParas: [[
       'Every design project follows the same sequence. We start with the brief, a site survey and the landlord fit-out guide, develop the <strong>concept and 3D visuals</strong> until you approve the direction, and sign off the <strong>material samples</strong>.',
       'Next comes the <strong>detailed design</strong>: the full drawing set, joinery details and MEP calculations, coordinated between interior and engineering. We prepare the <strong>authority submissions</strong>, answer every comment until approval and hand over a <strong>BOQ for tender</strong> — or build it ourselves.',
-    ], []],
+    ], [
+      'Our MEP engineers design every system in-house and back each drawing with <strong>calculations</strong>: HVAC heat-load and fresh-air ventilation, electrical load schedules and DB schedules, water supply, drainage and fire-fighting hydraulics. The result is equipment that is sized right — not oversized to be safe, and not too small to pass inspection.',
+      'For Food &amp; Beverage (F&amp;B) units we coordinate <strong>kitchen exhaust, fresh air, grease trap and gas</strong> with your kitchen consultant; for clinics and offices — power, data and lighting layouts around the furniture plan. Every package is prepared for submission to <strong>Dubai Municipality, Dubai Civil Defence and DEWA</strong>, and we answer every authority comment until approval.',
+    ]],
     approvalsBlock: {
       image: 'turnkey.jpg',
       paras: [
