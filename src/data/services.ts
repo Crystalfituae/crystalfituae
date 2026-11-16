@@ -250,11 +250,17 @@ export const services: Service[] = [
     deliver: [],
     deliverGroups: [
       ['F&B design', [
-        'Concept, moodboards and 3D visuals for your brand',
-        'Front-of-house layout: guest flow, seating capacity, bar and counter',
-        'Kitchen, bar and back-of-house layouts with your equipment supplier',
-        'Dubai Municipality food-safety layout and landlord design submission',
-        'Material, lighting and FF&amp;E specifications, joinery details',
+        // owner's list (2026-11-16)
+        'Concept architectural design with 3D visuals and drawings',
+        'Detailed architectural design as per landlord requirements',
+        'Detailed MEP design',
+        'Dubai Municipality (DM) food safety drawings',
+        'Kitchen and bar detail drawings (in coordination with the kitchen consultant)',
+        'Material, lighting and FF&amp;E schedule',
+        'Joinery details',
+        'Guidance through all steps',
+        'Forms, registrations and AMC support',
+        'BOQ template and fit-out tender process',
       ]],
       ['F&B fit-out', [
         'Civil works, partitions, ceilings, flooring and finishes',
