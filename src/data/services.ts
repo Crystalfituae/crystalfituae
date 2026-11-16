@@ -179,6 +179,8 @@ export const services: Service[] = [
         'Every successful fit-out starts with a complete design package. Crystal Fit provides <strong>interior design and MEP engineering in Dubai</strong> — all drawings and calculations needed for landlord and authority approval, and for construction.',
         '<strong>Interior design:</strong> space planning, concept and 3D visuals, material and FF&amp;E specifications, layout, ceiling, flooring and elevation drawings, joinery details and shop drawings.',
         '<strong>MEP design:</strong> HVAC heat-load and ventilation calculations, electrical load schedules and lighting layouts, plumbing and drainage, fire-fighting and fire-alarm design — <strong>submission drawings for Dubai Municipality, Civil Defence and DEWA</strong>.',
+        'Our interior designers and MEP engineers work in one office, so ceilings, lighting, ducts, sprinklers and joinery are coordinated on paper — not discovered on site. Fire-fighting and fire-alarm design is done in-house.',
+        'The package is ready for <strong>landlord NOC and authority submission</strong> — Dubai Municipality, Dubai Civil Defence and DEWA — and for tender, with a BOQ any contractor can price.',
         'Design only or design and build — either works, with a BOQ for tender.',
       ],
     },
@@ -199,7 +201,11 @@ export const services: Service[] = [
         'Kitchen exhaust and services coordination for Food &amp; Beverage (F&amp;B)',
       ]],
     ],
-    deliverImages: ['design-render-omakase.jpg', 'mep-site-ceiling.jpg'],
+    deliverImages: ['design-render-omakase.jpg', 'svc-mep-6233.jpg'],
+    deliverParas: [[
+      'Every design project follows the same sequence. We start with the brief, a site survey and the landlord fit-out guide, develop the <strong>concept and 3D visuals</strong> until you approve the direction, and sign off the <strong>material samples</strong>.',
+      'Next comes the <strong>detailed design</strong>: the full drawing set, joinery details and MEP calculations, coordinated between interior and engineering. We prepare the <strong>authority submissions</strong>, answer every comment until approval and hand over a <strong>BOQ for tender</strong> — or build it ourselves.',
+    ], []],
     approvalsBlock: {
       image: 'turnkey.jpg',
       paras: [
@@ -210,11 +216,12 @@ export const services: Service[] = [
     approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'Nakheel', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA'],
     facts: [],
     process: [
-      ['Brief & site survey', 'We visit the unit, measure it, read the landlord fit-out guide and agree the brief and budget.'],
-      ['Concept', 'Space planning, moodboards and 3D visuals until you approve the design direction.'],
-      ['Technical design', 'Full drawing set and MEP calculations, coordinated between interior and engineering.'],
-      ['Submissions', 'Landlord NOC and authority drawings for Dubai Municipality, Civil Defence and DEWA — we answer every comment until approval.'],
-      ['Tender or build', 'A BOQ for tender and support during construction — or we build it ourselves.'],
+      ['Brief & agreement signed', ''],
+      ['Concept & 3D approved', ''],
+      ['Material samples signed', ''],
+      ['Detailed design & MEP calculations', ''],
+      ['Authority submissions & approvals', ''],
+      ['Tender or build', ''],
     ],
     faq: [
       ['Can you do the design only, without the fit-out?', 'Yes. We deliver complete interior and MEP packages that any contractor can build from, with a BOQ for tender, and can support you during construction.'],
@@ -398,27 +405,36 @@ export const services: Service[] = [
         'Crystal Fit designs and builds <strong>villa, townhouse, penthouse and apartment interiors in Dubai</strong> — from full renovation to bespoke finishing of a new home.',
         '<strong>What’s included:</strong> interior design and 3D visuals, layout changes, <strong>community and authority approvals</strong>, MEP, flooring, kitchens, wardrobes and joinery, procurement and supervision until you move in.',
         'We choose materials for Dubai’s heat, humidity and sun, so your home stays comfortable and easy to maintain. Living abroad or busy? One project manager handles drawings, approvals, purchasing, quality and budget for you.',
+        'Most of our residential clients need the home finished by a fixed date — before the school year, a move from abroad or the end of a lease. One project manager runs drawings, community approvals, purchasing and site work, and you receive regular photo reports wherever you are.',
+        'Our <strong>in-house skilled labour</strong> and joinery workshop build kitchens, wardrobes, doors and wall panelling to measure, so the finishes match the design and quality stays under our control.',
         'Share your floor plan and a few photos — we’ll suggest what’s possible.',
       ],
     },
     deliver: [],
     deliverGroups: [
-      ['Interior design', [
-        'Concept, moodboards and 3D visuals of every room',
-        'New layouts: open kitchens, extra bedrooms, walk-in wardrobes',
-        'Material, lighting and furniture selection',
-        'Kitchen, wardrobe and bathroom design with joinery details',
-        'Full drawing set for the community NOC and contractor',
-      ]],
-      ['Renovation & fit-out', [
+      ['Residential fit-out', [
         'Demolition, layout changes and extensions',
         'MEP, AC, lighting and smart-home works',
         'Marble, parquet and stone flooring, wall finishes',
         'Kitchens, wardrobes and doors from our joinery workshop',
         'Furniture, lighting and decor procurement until move-in',
       ]],
+      ['Residential design', [
+        'Concept design with 3D visuals of every room',
+        'Detailed layouts as per community requirements',
+        'Detailed MEP design: AC, lighting, power and plumbing',
+        'Kitchen, wardrobe and bathroom detail drawings',
+        'Material, lighting and FF&amp;E schedule',
+        'Joinery details',
+        'Drawing set for the community NOC and authority permits',
+        'Guidance through all steps',
+      ]],
     ],
-    deliverImages: ['svc-res-design.jpg', 'svc-res-fitout.jpg'],
+    deliverImages: ['svc-res-fitout-2107.jpg', 'svc-res-design.jpg'],
+    deliverParas: [[
+      'Every home follows the same sequence. It starts with a detailed <strong>BOQ and one signed agreement</strong> for the whole scope. Before anything is ordered, you approve and sign the <strong>material samples</strong> — marble, parquet, finishes and fittings.',
+      'Our team then verifies every detail on site — measurements, existing services and the community rules — and prepares the <strong>community NOC and authority permits</strong>. <strong>Fit-out works start</strong> under one programme with regular photo reports and finish with <strong>final inspections and snagging</strong>, cleaning and handover — ready to move in.',
+    ], []],
     approvalsBlock: {
       image: 'svc-res-approvals.jpg',
       paras: [
@@ -429,11 +445,12 @@ export const services: Service[] = [
     approvals: ['Emaar', 'Nakheel', 'Dubai Holding', 'Meraas', 'Dubai Municipality', 'Trakhees', 'DEWA'],
     facts: [],
     process: [
-      ['Visit & brief', 'We visit your home, measure it and agree the scope, style and budget with you.'],
-      ['Design', 'Layouts, 3D visuals and material boards until you approve every room.'],
-      ['Community NOC & permits', 'Drawings for the master developer and the authority, submitted and followed up until approval.'],
-      ['Renovation works', 'Our in-house skilled labour and workshop build it — one project manager, regular photo reports.'],
-      ['Handover', 'Snagging, cleaning, final inspection and handover with warranty — ready to move in.'],
+      ['BOQ & agreement signed', ''],
+      ['Material samples signed', ''],
+      ['On-site verification', ''],
+      ['Authority submissions & approvals', ''],
+      ['Fit-out works start', ''],
+      ['Final inspections & snagging', ''],
     ],
     faq: [
       ['Do you handle the community NOC for villa renovation?', 'Yes. We prepare drawings for the master developer (Emaar, Nakheel, Dubai Holding and others) and the authority permits before works start.'],
@@ -453,7 +470,7 @@ export const services: Service[] = [
     heroLines: ['Project', 'management'],
     h1: '— turnkey fit-out and construction project management in Dubai',
     heroProject: 'nad-al-sheba-villa-moderna-dubai',
-    heroImage: 'home-3.jpg',
+    heroImage: 'hero-services-retouched.jpg', // owner: PM cover = current Services banner (drawing on plans)
     intro: [],
     introBlock: {
       kicker: 'Project Management',
@@ -463,18 +480,13 @@ export const services: Service[] = [
         'Designers, contractors, landlords, authorities, suppliers — a fit-out has many parties and one deadline. Crystal Fit provides <strong>turnkey fit-out and construction project management in Dubai</strong>, with one accountable point of contact from the first drawing to handover.',
         '<strong>What we manage:</strong> programme, approvals and inspections, procurement and long-lead items, contractor coordination, site quality and safety, budget and variations, snagging and completion certificates.',
         'Our <strong>in-house skilled labour</strong> and selected suppliers keep quality under control. You always know the status of approvals, purchases, progress and costs; variations are agreed in writing before work starts.',
+        'We have taken over projects after previous contractors could not finish them or obtain approvals — starting with a full technical review, a realistic programme and a clear list of what has to be fixed. Gari Tatintsian Gallery in Dubai Design District is one of them.',
+        'Owners, brands and investors use us as their single point of responsibility: one programme, one budget report and one person who answers for approvals, quality and handover.',
         'Already have a design and a contractor? We can step in as your project manager.',
       ],
     },
     deliver: [],
     deliverGroups: [
-      ['Project management', [
-        'Programme and milestones agreed before works start',
-        'BOQ review, tender and contractor selection',
-        'Coordination of designers, contractors and suppliers',
-        'Site supervision, quality and safety checks',
-        'Weekly reports on progress, approvals and costs',
-      ]],
       ['Turnkey fit-out', [
         'One contract from design to handover',
         'Our in-house skilled labour and joinery workshop',
@@ -482,8 +494,19 @@ export const services: Service[] = [
         'Variations agreed in writing before work starts',
         'Snagging, completion certificates and warranty',
       ]],
+      ['Project management', [
+        'Programme and milestones agreed before works start',
+        'BOQ review, tender and contractor selection',
+        'Coordination of designers, contractors and suppliers',
+        'Site supervision, quality and safety checks',
+        'Weekly reports on progress, approvals and costs',
+      ]],
     ],
-    deliverImages: ['svc-pm-manage.jpg', 'svc-pm-turnkey.jpg'],
+    deliverImages: ['svc-pm-turnkey-2088.jpg', 'svc-pm-manage-1907.jpg'],
+    deliverParas: [[
+      'Every turnkey project follows the same sequence. It starts with a detailed <strong>BOQ and one signed agreement</strong> for the whole scope. Before anything is ordered, you approve and sign the <strong>material samples</strong>.',
+      'We then verify every project detail on site, prepare the <strong>authority submissions</strong> and order long-lead items so nothing waits. <strong>Fit-out works start</strong> under one programme with weekly reports on progress, approvals and costs, and finish with <strong>final inspections and snagging</strong>, completion certificates and handover.',
+    ], []],
     approvalsBlock: {
       image: 'svc-pm-approvals.jpg',
       paras: [
@@ -494,11 +517,12 @@ export const services: Service[] = [
     approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'Nakheel', 'DIFC', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA', 'Trakhees'],
     facts: [],
     process: [
-      ['Brief & budget', 'We agree the scope, budget, quality level and the opening or move-in date.'],
-      ['Programme', 'A programme with design, approvals, procurement and works milestones.'],
-      ['Tender & procurement', 'BOQ, quotations and long-lead items ordered so nothing waits on site.'],
-      ['Site management', 'Daily supervision, quality and safety checks, weekly reports on progress and costs.'],
-      ['Handover', 'Inspections, snagging, completion certificates, as-built documents and warranty.'],
+      ['BOQ & agreement signed', ''],
+      ['Material samples signed', ''],
+      ['On-site verification', ''],
+      ['Authority submissions & approvals', ''],
+      ['Fit-out works start', ''],
+      ['Final inspections & snagging', ''],
     ],
     faq: [
       ['Can you manage a project designed by another company?', 'Yes. We can take over an existing design and contractor and manage the project on your behalf, or build it ourselves.'],
