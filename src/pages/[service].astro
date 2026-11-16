@@ -121,8 +121,20 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
     </section>
 </>)}
 
-  <section class:list={['sv', 'sv--projects', { 'sv--dark': !s.approvalsBlock }]}>
-    <h2 class="sv__h2">Selected projects</h2>
+  <!-- 5. FAQ (white) -->
+  <section class="sv sv--faq">
+    <div class="sv__wrap">
+    <h2 class="sv__h2">Frequently asked questions</h2>
+    <div class="sv__faq">
+      {s.faq.map(([q, a]) => <details><summary>{q}</summary><p set:html={hl(a)} /></details>)}
+    </div>
+    </div>
+  </section>
+
+  <!-- 6. Latest projects (black), then logos + form as on every page -->
+  <section class="sv sv--dark sv--projects">
+    <div class="sv__wrap">
+    <h2 class="sv__h2">Latest projects</h2>
     <div class="sv__grid">
       {projects.map((p) => (
         <a class="sv__card" href={`/featured-projects/${p.id}/`}>
@@ -131,15 +143,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
         </a>
       ))}
     </div>
-    <p class="sv__more"><a class:list={['btn', s.approvalsBlock ? 'btn--black' : 'btn--white']} href="/portfolio/">View full portfolio</a></p>
-  </section>
-
-  <section class:list={['sv', { 'sv--dark sv--faq': !!s.approvalsBlock }]}>
-    <div class="sv__wrap">
-    <h2 class="sv__h2">FAQ</h2>
-    <div class="sv__faq">
-      {s.faq.map(([q, a]) => <details><summary>{q}</summary><p set:html={hl(a)} /></details>)}
-    </div>
+    <p class="sv__more"><a class="btn btn--white" href="/portfolio/">View full portfolio</a></p>
     </div>
   </section>
 
@@ -205,14 +209,11 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   .sv--steps .sv__steps li::before { background: #fff; }
   .sv--steps .sv__num { color: #fff; }
   .sv--steps .sv__steps p { color: #cfcfcf; }
-  .sv--faq .sv__faq details { border-bottom-color: #333; }
-  .sv--faq .sv__faq p { color: #cfcfcf; }
-  .sv--projects:not(.sv--dark) { border-top: 0; }
   .sv__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
   .sv__card img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block; }
   .sv__card span { font-family: var(--ff-head); font-size: var(--fs-card); line-height: var(--lh-card); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; display: block; padding: 12px 0 0; color: #222; }
   .sv__more { text-align: center; margin-top: 40px; margin-bottom: 0; }
-  .sv--projects { border-top: 1px solid #222; }
+  .sv--projects { border-top: 0; }
   .sv--dark .sv__card span { color: #fff; }
   .sv__faq details { border-bottom: 1px solid #ddd; padding: 16px 0; }
   .sv__faq summary { font-family: var(--ff-head); font-size: var(--fs-q); line-height: var(--lh-q); font-weight: 500; letter-spacing: 0; cursor: pointer; list-style: none; }
