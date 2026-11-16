@@ -4,6 +4,7 @@
 export interface Service {
   slug: string;
   draft: boolean;
+  off?: boolean;        // not built at all (owner switched the page off)
   title: string;        // <title>, max 60 chars
   description: string;  // meta description, max 160 chars
   heroLines: string[];
@@ -201,7 +202,7 @@ export const services: Service[] = [
         'Kitchen exhaust and services coordination for Food &amp; Beverage (F&amp;B)',
       ]],
     ],
-    deliverImages: ['design-render-omakase.jpg', 'svc-mep-6233.jpg'],
+    deliverImages: ['design-render-omakase.jpg', 'svc-mep-hvac-drawing.jpg'], // MEP = HVAC ducting drawing, Roasters Science Park GF
     deliverParas: [[
       'Every design project follows the same sequence. We start with the brief, a site survey and the landlord fit-out guide, develop the <strong>concept and 3D visuals</strong> until you approve the direction, and sign off the <strong>material samples</strong>.',
       'Next comes the <strong>detailed design</strong>: the full drawing set, joinery details and MEP calculations, coordinated between interior and engineering. We prepare the <strong>authority submissions</strong>, answer every comment until approval and hand over a <strong>BOQ for tender</strong> — or build it ourselves.',
@@ -468,6 +469,7 @@ export const services: Service[] = [
     // DRAFT (2026-11-16): Project management service page on the owner's template
     slug: 'project-management-draft',
     draft: true,
+    off: true, // owner 2026-11-16: no separate Project Management service page for now
     title: 'Turnkey Fit-Out & Project Management Dubai | Crystal Fit',
     description: 'Turnkey fit-out and construction project management in Dubai: programme, approvals, procurement, contractor coordination, quality, budget and handover.',
     heroLines: ['Project', 'management'],

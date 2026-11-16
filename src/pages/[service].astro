@@ -18,7 +18,7 @@ export async function getStaticPaths() {
   // Only draft references (noindex, not in sitemap/menu) are built.
   // Drafts are built only locally (SHOW_DRAFTS=1 npm run build) — owner 2026-11-16: services section not on the live site until approved.
   if (!process.env.SHOW_DRAFTS) return [] as { params: { service: string }; props: { s: Service } }[];
-  return services.filter((s) => s.draft).map((s) => ({ params: { service: s.slug }, props: { s } }));
+  return services.filter((s) => s.draft && !s.off).map((s) => ({ params: { service: s.slug }, props: { s } }));
 }
 const { s } = Astro.props as { s: Service };
 const all = await getCollection('projects', ({ data }) => !data.draft);
