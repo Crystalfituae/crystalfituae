@@ -349,7 +349,7 @@ export const services: Service[] = [
         'BOQ template and fit-out tender process',
       ]],
     ],
-    deliverImages: ['svc-com-offices.jpg', 'svc-com-design.jpg'], // owner: design photo from Self.Space or Wala (renders OK in design blocks), not Livrichy
+    deliverImages: ['svc-com-fitout-site.jpg', 'svc-com-design.jpg'], // owner: design photo from Self.Space or Wala (renders OK in design blocks), not Livrichy
     deliverParas: [[
       'Every commercial project follows the same sequence. It starts with a detailed <strong>BOQ and one signed agreement</strong> for the whole scope. Before anything is ordered, you approve and sign the <strong>material samples</strong> — finishes, colours and fixtures.',
       'Our team then verifies every project detail on site — measurements, existing services, building and landlord requirements — and prepares the <strong>authority submissions</strong>: landlord NOC, Dubai Municipality, Civil Defence, DEWA and, for clinics, the <strong>Dubai Health Authority (DHA)</strong>. <strong>Fit-out works start</strong> under one programme with weekly progress reports — phased around your business when the building is occupied — and finish with <strong>final inspections and snagging</strong>, completion certificates and handover.',
