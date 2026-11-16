@@ -29,10 +29,10 @@ export const site = {
     { label: 'Home', href: '/' },
     { label: 'About us', href: '/about-us/' },
     { label: 'Services', href: '/services/', children: [
+      { label: 'Interior & MEP Design', href: '/services/#consultancy' },
       { label: 'F&B Design & Build', href: '/services/#fnb' },
       { label: 'Commercial Fit-outs', href: '/services/#commercial' },
       { label: 'Residential Interiors', href: '/services/#residential' },
-      { label: 'Interior & MEP Design', href: '/services/#consultancy' },
       { label: 'Project Management', href: '/services/#project-management' },
     ] },
     { label: 'Portfolio', href: '/portfolio/' },
