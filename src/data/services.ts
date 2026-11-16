@@ -436,7 +436,7 @@ export const services: Service[] = [
       'Our team then verifies every detail on site — measurements, existing services and the community rules — and prepares the <strong>community NOC and authority permits</strong>. <strong>Fit-out works start</strong> under one programme with regular photo reports and finish with <strong>final inspections and snagging</strong>, cleaning and handover — ready to move in.',
     ], []],
     approvalsBlock: {
-      image: 'svc-res-approvals-render.jpg', // owner: render (Science Park, WhatsApp 2025-02-24 7.41.07 PM (2))
+      image: 'svc-res-approvals-kidsroom.jpg', // owner: render Radouane villa kids room (Copy of detskaja_0000 (1))
       paras: [
         'Most villa and apartment works in Dubai need a <strong>community NOC</strong> from the master developer — Emaar, Nakheel, Dubai Holding and others — and for structural or MEP changes a <strong>permit</strong> from Dubai Municipality or Trakhees.',
         'We prepare the drawings, submit them and handle the inspections and the DEWA connection, so works start legally and your security deposit is returned in full.',
