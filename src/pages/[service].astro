@@ -6,19 +6,14 @@ import type { ImageMetadata } from 'astro';
 import Base from '../layouts/Base.astro';
 import Hero from '../components/Hero.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
-import CtaBand from '../components/CtaBand.astro';
-import QuickQuote from '../components/QuickQuote.astro';
 import '../styles/pages.css';
 import Logos from '../components/Logos.astro';
 import { services, serviceProcess, type Service } from '../data/services';
 import { logosInner } from '../data/site';
 
 export async function getStaticPaths() {
-  // live landing pages switched off by owner 2026-11-12 (old /services/ layout kept); URLs 301 -> /services/#section.
-  // Only draft references (noindex, not in sitemap/menu) are built.
-  // Drafts are built only locally (SHOW_DRAFTS=1 npm run build) — owner 2026-11-16: services section not on the live site until approved.
-  if (!process.env.SHOW_DRAFTS) return [] as { params: { service: string }; props: { s: Service } }[];
-  return services.filter((s) => s.draft && !s.off).map((s) => ({ params: { service: s.slug }, props: { s } }));
+  // Live service pages (owner's template, published 2026-11-16). Drafts (draft: true) build only locally with SHOW_DRAFTS=1; off: true = never built.
+  return services.filter((s) => !s.off && (!s.draft || !!process.env.SHOW_DRAFTS)).map((s) => ({ params: { service: s.slug }, props: { s } }));
 }
 const { s } = Astro.props as { s: Service };
 const all = await getCollection('projects', ({ data }) => !data.draft);
@@ -51,7 +46,7 @@ const schema = [
 ];
 const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>${m}</mark>`);
 ---
-<Base title={s.title} description={s.description} schema={schema} noindex={s.draft} form={!s.draft}>
+<Base title={s.title} description={s.description} schema={schema} noindex={s.draft}>
   {s.draft && <div class="sdraft">DRAFT — not published yet.</div>}
   <Hero slides={[{ image: hero, lines: s.heroLines }]} h1={s.h1} />
   <Breadcrumb current={`Crystal fit contracting LLC / Services / ${s.heroLines.join(' ')}`} />
@@ -157,7 +152,6 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
 </>)}
 
   <Logos list={logosInner} />
-  {s.draft ? <QuickQuote service={s.heroLines.join(' ')} /> : <CtaBand title="Planning a project?" label="Get a quote" href="#contact-form" />}
 </Base>
 <script>
   // How we work on phones: tap a step to unfold its text (desktop shows everything)

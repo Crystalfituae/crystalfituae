@@ -23,10 +23,10 @@ const all = await getCollection('projects', ({ data }) => !data.draft);
 const cover = (id: string) => all.find((p) => p.id === id)!.data.cover;
 // What we do: [title, short line, anchor on /services/]
 const services: [string, string, string][] = [
-  ['Interior Design & MEP', 'Concepts, drawings & approvals', '/services/#consultancy'],
-  ['F&B Design & Build', 'Cafes, coffee shops & restaurants', '/services/#fnb'],
-  ['Commercial Fit-outs', 'Offices, clinics, retail & galleries', '/services/#commercial'],
-  ['Residential Interiors', 'Villas, townhouses & apartments', '/services/#residential'],
+  ['Interior Design & MEP', 'Concepts, drawings & approvals', '/interior-design-mep-dubai/'],
+  ['F&B Design & Build', 'Cafes, coffee shops & restaurants', '/cafe-restaurant-fit-out-dubai/'],
+  ['Commercial Fit-outs', 'Offices, clinics, retail & galleries', '/commercial-fit-out-dubai/'],
+  ['Residential Interiors', 'Villas, townhouses & apartments', '/villa-interior-design-dubai/'],
 ];
 const stats: [string, string][] = [['2014', 'UAE grown since'], ['200+', 'Projects handed over'], ['90 days', 'Shell & core to opening'], ['100%', 'Approvals in‑house']];
 const logos = import.meta.glob<{ default: ImageMetadata }>('../assets/logos/*', { eager: true });

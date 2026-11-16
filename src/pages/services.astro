@@ -15,22 +15,22 @@ import planning from '../assets/services/planning.jpg';
 
 // Same order and names as "What we do" on the home page; old texts and photos.
 const blocks = [
-  { id: 'consultancy', h: 925, dark: true, img: planning, kicker: 'Interior Design & MEP', title: 'Interior Design & MEP Engineering in Dubai', more: { label: 'See our portfolio', href: '/portfolio/' }, paras: [
+  { id: 'consultancy', page: '/interior-design-mep-dubai/', h: 925, dark: true, img: planning, kicker: 'Interior Design & MEP', title: 'Interior Design & MEP Engineering in Dubai', more: { label: 'See our portfolio', href: '/portfolio/' }, paras: [
     'Every successful fit-out starts with a complete design package. Crystal Fit provides <strong>interior design and MEP engineering in Dubai</strong> — all drawings and calculations needed for landlord and authority approval, and for construction.',
     '<strong>Interior design:</strong> space planning, concept and 3D visuals, material and FF&amp;E specifications, layout, ceiling, flooring and elevation drawings, joinery details and shop drawings.',
     '<strong>MEP design:</strong> HVAC heat-load and ventilation calculations, electrical load schedules and lighting layouts, plumbing and drainage, fire-fighting and fire-alarm design — <strong>submission drawings for Dubai Municipality, Civil Defence and DEWA</strong>.',
     'Design only or design and build — either works, with a BOQ for tender.'] },
-  { id: 'fnb', h: 940, dark: false, img: fnb, kicker: 'F&B Design & Build', title: 'Restaurant & Café Fit-Out in Dubai', more: { label: 'See our F&B projects', href: '/portfolio/#fnb' }, paras: [
+  { id: 'fnb', page: '/cafe-restaurant-fit-out-dubai/', h: 940, dark: false, img: fnb, kicker: 'F&B Design & Build', title: 'Restaurant & Café Fit-Out in Dubai', more: { label: 'See our F&B projects', href: '/portfolio/#fnb' }, paras: [
     'Opening a restaurant, café or coffee shop in Dubai means landlord design codes, authority approvals, kitchen requirements and a fixed opening date — all at once. Crystal Fit delivers <strong>Food &amp; Beverage (F&amp;B) fit-out</strong> from concept to opening day: design, approvals, fit-out, MEP and custom joinery under one contract.',
     '<strong>What’s included:</strong> interior design, landlord submissions and NOCs, <strong>Dubai Municipality food safety, Civil Defence (DCD) and DEWA approvals</strong>, MEP and kitchen coordination with your supplier, bar counters and joinery built for your menu, and handover with all completion certificates.',
     '<strong>Built for service, not just for photos.</strong> We plan guest flow, bar and kitchen workflow, storage and seating capacity with your operations team, and coordinate the exhaust, grease trap, gas and fire-suppression details inspectors check before you open. Finishes are chosen to survive daily cleaning and heavy traffic.',
     'Already have a designer or a brand book? We turn your drawings into an approved, buildable project. Send us the unit location and concept — we’ll come back with the scope and approval route.'] },
-  { id: 'commercial', h: 820, dark: true, img: retail, kicker: 'Commercial Fit-Outs', title: 'Commercial, Office & Retail Fit-Out in Dubai', more: { label: 'See our commercial projects', href: '/portfolio/#commercial' }, paras: [
+  { id: 'commercial', page: '/commercial-fit-out-dubai/', h: 820, dark: true, img: retail, kicker: 'Commercial Fit-Outs', title: 'Commercial, Office & Retail Fit-Out in Dubai', more: { label: 'See our commercial projects', href: '/portfolio/#commercial' }, paras: [
     'Your space is part of your brand. Crystal Fit is a <strong>commercial fit-out contractor in Dubai</strong> for <strong>offices, retail stores, clinics, galleries, studios and hotels</strong> — designed around how your customers and staff use it, and built to open on time.',
     '<strong>What’s included:</strong> space planning and design, landlord and mall approvals, <strong>TECOM, Dubai Holding, Emaar, Dubai Municipality and Civil Defence permits</strong>, partitions, ceilings, MEP, lighting, flooring and custom joinery.',
     'For offices we plan workstations, meeting rooms and acoustics; for retail, a storefront and layout that guide people through your products; for clinics, treatment rooms and patient flow that meet authority requirements.',
     'Tell us your unit size and location — we’ll advise on layout and approvals.'] },
-  { id: 'residential', h: 820, dark: false, img: residential, kicker: 'Residential Interiors', title: 'Villa & Apartment Interior Design and Renovation in Dubai', more: { label: 'See our residential projects', href: '/portfolio/#residential' }, paras: [
+  { id: 'residential', page: '/villa-interior-design-dubai/', h: 820, dark: false, img: residential, kicker: 'Residential Interiors', title: 'Villa & Apartment Interior Design and Renovation in Dubai', more: { label: 'See our residential projects', href: '/portfolio/#residential' }, paras: [
     'Crystal Fit designs and builds <strong>villa, townhouse, penthouse and apartment interiors in Dubai</strong> — from full renovation to bespoke finishing of a new home.',
     '<strong>What’s included:</strong> interior design and 3D visuals, layout changes, <strong>community and authority approvals</strong>, MEP, flooring, kitchens, wardrobes and joinery, procurement and supervision until you move in.',
     'We choose materials for Dubai’s heat, humidity and sun, so your home stays comfortable and easy to maintain. Living abroad or busy? One project manager handles drawings, approvals, purchasing, quality and budget for you.',
@@ -47,6 +47,7 @@ const blocks = [
           <h2 class="svc__title">{b.kicker}</h2>{/* owner 2026-11-16: block title = section name only, no "... in Dubai." */}
           {b.paras.map((p) => <p set:html={p} />)}
           {b.paras.length > 1 && <button type="button" class="svc__more" aria-expanded="false">Read more +</button>}
+          {b.page && <a class="svc__link" href={b.page}>Learn more about {b.kicker} →</a>}
           <a class="svc__link" href={b.more.href}>{b.more.label} →</a>
         </div>
         <div class="svc__media"><Image src={b.img} alt={`${b.kicker} – ${b.title}, Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" /></div>
