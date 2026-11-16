@@ -16,6 +16,8 @@ export interface Service {
   facts: [string, string][]; // big numbers row
   faq: [string, string][];
   projects: string[];   // project slugs shown as examples
+  deliverGroups?: [string, string[]][]; // optional: "What we deliver" split into titled columns
+  process?: [string, string][];         // optional: own "How we work" steps (default: serviceProcess)
 }
 
 const process: [string, string][] = [
@@ -150,5 +152,54 @@ export const services: Service[] = [
       ['How do I get a quotation?', 'Send us your floor plan or unit details through the form or WhatsApp. After a site visit and a short brief we prepare a detailed BOQ and a programme for your project.'],
     ],
     projects: ['gary-tatintsian-gallery', 'christiess-ofiice-interior-design-dubai', 'west-gate-cinema-interior-design', 'coxs-bazar-family-hotel-bg4roof', 'community-mall-dubai-al-khawaneej-2-dubai', 'mercure-gold-hotel-interior-design'],
+  },
+  {
+    // DRAFT reference (2026-11-16): separate page for the "Interior & MEP Design" service, same content as /services/#consultancy, expanded
+    slug: 'interior-mep-design-draft',
+    draft: true,
+    title: 'Interior Design & MEP Engineering in Dubai | Crystal Fit',
+    description: 'Interior design drawings and MEP engineering with HVAC, electrical, plumbing and fire-fighting calculations. Approval-ready packages for DM, DCD and DEWA.',
+    heroLines: ['Interior &', 'MEP design'],
+    h1: '— interior design and MEP engineering in Dubai',
+    heroProject: 'gary-tatintsian-gallery',
+    heroImage: 'design-render-omakase.jpg',
+    intro: [
+      'Every successful fit-out starts with a complete design package. Crystal Fit provides <strong>interior design and MEP engineering in Dubai</strong> — all drawings and calculations needed for landlord and authority approval, and for construction.',
+      'Our interior designers and MEP engineers work as one team, so ceilings, lighting, ducts and joinery are coordinated on paper — not discovered on site. Order the design on its own, or continue with us into the fit-out with no gap between designer and contractor.',
+    ],
+    deliver: [],
+    deliverGroups: [
+      ['Interior design', [
+        'Concept, moodboards and 3D visuals',
+        'Space planning and test fits before you sign a lease',
+        'Material, finishes and FF&amp;E specifications',
+        'Layout, ceiling, flooring, lighting and elevation drawings',
+        'Joinery details and shop drawings',
+      ]],
+      ['MEP engineering', [
+        'HVAC heat-load and ventilation calculations, AC and duct layouts',
+        'Electrical load schedules, DB schedules, power and lighting layouts',
+        'Plumbing, water supply and drainage design',
+        'Fire-fighting and fire-alarm design',
+        'Kitchen exhaust and services coordination for Food &amp; Beverage (F&amp;B)',
+      ]],
+    ],
+    approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'Nakheel', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA'],
+    facts: [['200+', 'projects designed & delivered'], ['2014', 'in business since'], ['2 in 1', 'interior and MEP design, one team'], ['5', 'MEP systems: HVAC, power, lighting, plumbing, fire']],
+    process: [
+      ['Brief & site survey', 'We visit the unit, measure it, read the landlord fit-out guide and agree the brief and budget.'],
+      ['Concept', 'Space planning, moodboards and 3D visuals until you approve the design direction.'],
+      ['Technical design', 'Full drawing set and MEP calculations, coordinated between interior and engineering.'],
+      ['Submissions', 'Landlord NOC and authority drawings for Dubai Municipality, Civil Defence and DEWA — we answer every comment until approval.'],
+      ['Tender or build', 'A BOQ for tender and support during construction — or we build it ourselves.'],
+    ],
+    faq: [
+      ['Can you do the design only, without the fit-out?', 'Yes. We deliver complete interior and MEP packages that any contractor can build from, with a BOQ for tender, and can support you during construction.'],
+      ['Do you do MEP design in-house?', 'Yes. Our MEP engineers prepare HVAC, electrical, plumbing, drainage and fire-fighting design with all calculations, coordinated with the interior design.'],
+      ['Which approvals do your drawings cover?', 'Landlord NOC (Emaar, Dubai Holding, TECOM, Nakheel and others), Dubai Municipality, Dubai Civil Defence and DEWA.'],
+      ['Can you check a unit before we sign the lease?', 'Yes. We review the landlord fit-out guide, the services available and the layout, and tell you what is feasible and what the main risks are.'],
+      ['What do you need to start?', 'A floor plan or the unit details, and the landlord fit-out guide if you have it. Send them through the form or WhatsApp and we will come back with the scope and next steps.'],
+    ],
+    projects: ['wala-coffee-roastery', 'roasters-science-park-dubai', 'panmi-coffee-shop-dubai-hills', 'gary-tatintsian-gallery', 'amv-aesthetic-clinic', 'christiess-ofiice-interior-design-dubai', 'anantara-penthouse', 'rad-villa-dubai-hills'],
   },
 ];
