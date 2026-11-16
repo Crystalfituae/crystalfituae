@@ -34,6 +34,7 @@ const dBlocks = s.deliverGroups && s.deliverImages
 const dark = (n: number) => n % 2 === 0; // n = position after the intro (0 = How we work, black)
 const nS = 0, nD = 1, nA = dBlocks.length + 1, nF = nA + 1, nP = nA + 2;
 const apprImg = pick(s.approvalsBlock?.image);
+const portfolioHref = s.slug.startsWith('fnb') ? '/portfolio/#fnb' : s.slug.startsWith('commercial') ? '/portfolio/#commercial' : s.slug.startsWith('residential') ? '/portfolio/#residential' : '/portfolio/';
 const projects = s.projects.map((id) => all.find((p) => p.id === id)).filter((p) => !!p);
 const url = new URL(`/${s.slug}/`, Astro.site).href;
 const schema = [
@@ -129,7 +130,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
         </a>
       ))}
     </div>
-    <p class="sv__more"><a class:list={['btn', dark(nP) ? 'btn--white' : 'btn--black']} href="/portfolio/">View full portfolio</a></p>
+    <p class="sv__more"><a class:list={['btn', dark(nP) ? 'btn--white' : 'btn--black']} href={portfolioHref}>View full portfolio</a></p>
     </div>
   </section>
 </>) : (<>
@@ -262,5 +263,5 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
     .sv__steps li.is-open p { display: block; }
     .sv__grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   }
-  @media (max-width: 599px) { .sv__grid { grid-template-columns: 1fr; } }
+  @media (max-width: 767px) { .sv__grid { grid-template-columns: 1fr; } .sv__card:nth-child(n+4) { display: none; } } /* phones: 3 latest projects, then "View full portfolio" */
 </style>
