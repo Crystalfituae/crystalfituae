@@ -22,6 +22,7 @@ export interface Service {
   // owner's service-page template (2026-11-16): 1 intro white (photo left) / 2 deliver black (photo right) / 3 approvals white (photo left) / 4 steps black (Our story style)
   deliverImage?: string;
   deliverImages?: string[]; // one photo per deliverGroups entry -> each group becomes its own 'X: what we deliver' block
+  deliverParas?: string[][]; // optional text paragraphs per deliverGroups entry (shown above the list)
   approvalsBlock?: { image: string; paras: string[] };
 }
 
@@ -264,6 +265,10 @@ export const services: Service[] = [
       ]],
     ],
     deliverImages: ['svc-fnb-design.jpg', 'svc-fnb-fitout.jpg'],
+    deliverParas: [[], [
+      'Every Food &amp; Beverage (F&amp;B) project follows the same sequence. It starts with a detailed <strong>BOQ and one signed agreement</strong> for the whole scope. Before anything is ordered, you approve and sign the <strong>material samples</strong> — finishes, colours and fixtures.',
+      'Our team then verifies every project detail on site — measurements, existing services and the landlord’s requirements — and prepares the <strong>authority submissions</strong>: landlord NOC, Dubai Municipality food safety, Civil Defence and DEWA. <strong>Fit-out works start</strong> under one programme with weekly progress reports and finish with <strong>final inspections and snagging</strong>, completion certificates and handover before your opening day.',
+    ]],
     approvalsBlock: {
       image: 'svc-fnb-approvals.jpg',
       paras: [
@@ -276,7 +281,7 @@ export const services: Service[] = [
     process: [
       // owner's sequence (2026-11-16)
       ['BOQ & agreement signed', 'We agree the scope and a detailed BOQ with you, and sign one agreement for the whole project.'],
-      ['Material sample boards signed', 'You approve the finishes, materials and colours on physical sample boards — nothing is ordered without your signature.'],
+      ['Material samples signed', 'You approve the finishes, materials and colours on physical sample boards — nothing is ordered without your signature.'],
       ['On-site verification', 'We verify all project details on site: measurements, existing services and the landlord’s requirements.'],
       ['Authority submissions & approvals', 'Landlord NOC, Dubai Municipality food safety, Civil Defence and DEWA — submitted and followed up until approval.'],
       ['Fit-out works start', 'Civil, MEP, kitchen exhaust, joinery and finishes — one team, one programme, weekly progress reports.'],

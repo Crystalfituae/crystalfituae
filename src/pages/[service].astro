@@ -30,7 +30,7 @@ const pick = (f?: string) => f ? Object.entries(assets).find(([k]) => k.endsWith
 const deliverImg = pick(s.deliverImage);
 // owner's template: after the white intro, blocks alternate black / white
 const dBlocks = s.deliverGroups && s.deliverImages
-  ? s.deliverGroups.map(([g, items], i) => ({ title: g, items, img: pick(s.deliverImages![i]) }))
+  ? s.deliverGroups.map(([g, items], i) => ({ title: g, items, img: pick(s.deliverImages![i]), paras: s.deliverParas?.[i] ?? [] }))
   : [{ title: s.heroLines.join(' '), items: s.deliverGroups ? s.deliverGroups.flatMap(([, it]) => it) : s.deliver, img: deliverImg }];
 // order (owner 2026-11-16): intro, How we work, one block per service part, approvals, FAQ, latest projects
 const dark = (n: number) => n % 2 === 0; // n = position after the intro (0 = How we work, black)
@@ -79,7 +79,8 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   <section class:list={['sv', { 'sv--dark sv--steps': dark(nS) }]}>
     <div class="sv__wrap">
       <h2 class="sv__h2">How we work</h2>
-      <ol class="sv__steps" style={`--n:${(s.process ?? serviceProcess).length}`}>{(s.process ?? serviceProcess).map(([t, d], i) => <li><button type="button" class="sv__step-head" aria-expanded="false" aria-controls={`step-${i}`}><span class="sv__num">Step {String(i + 1).padStart(2, '0')}</span><h3>{t}</h3></button><p id={`step-${i}`}>{d}</p></li>)}</ol>
+      {/* owner: step names only, no descriptions (the process is described in the text of the service blocks) */}
+      <ol class="sv__steps sv__steps--names" style={`--n:${(s.process ?? serviceProcess).length}`}>{(s.process ?? serviceProcess).map(([t], i) => <li><div class="sv__step-name"><span class="sv__num">Step {String(i + 1).padStart(2, '0')}</span><h3>{t}</h3></div></li>)}</ol>
     </div>
   </section>
 
@@ -90,6 +91,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
         <div class="svc__text">
           <h2 class="svc__title svx__name">{b.title}</h2>
           <p class="svx__sub">What we deliver</p>
+          {b.paras && b.paras.map((p) => <p set:html={hl(p)} />)}
           <ul class="sv__list">{b.items.map((d) => <li set:html={hl(d)} />)}</ul>
         </div>
         <div class="svc__media">{b.img && <Image src={b.img} alt={`${b.title} by Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" />}</div>
@@ -234,6 +236,10 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
     .svc.svx--tr .sv__list li::before { left: 0; right: auto; }
     .svc.svx--tr .svx__tags { justify-content: flex-start; }
   }
+  .sv__steps--names li { padding-bottom: 0; }
+  .sv__steps--names h3 { margin: 0; }
+  .svx .svc__text p + .sv__list { margin-top: 24px; }
+  @media (max-width: 991px) { .sv__steps.sv__steps--names li { padding: 14px 0 14px 26px; } .sv__steps--names li::before { top: 18px; } }
   .svc__title.svx__name { margin-bottom: 10px; }
   .svc__text p.svx__sub { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px; }
   .svx__tags li { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid #000; padding: 8px 14px; }
