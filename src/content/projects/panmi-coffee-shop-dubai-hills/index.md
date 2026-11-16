@@ -67,7 +67,7 @@ location: "Lime Garden, Dubai Hills, Dubai, UAE"
 area: 210
 year: "2026"
 scope: ["design", "approvals", "fitout", "mep", "joinery", "pm"]
-approvals: ["Emaar", "DDA (d3)", "DEWA"]
+approvals: ["Emaar", "DDA", "DEWA"]
 seoTitle: "Panmi Coffee Shop Dubai Hills – Cafe Fit-Out | Crystal Fit"
 seoDescription: "Panmi coffee shop, Lime Garden, Dubai Hills: 210 sqm design & build cafe fit-out by Crystal Fit, from shell & core to opening."
 ---
