@@ -44,7 +44,7 @@ export const site = {
   // Copy inbox, receives "Project Inquiry" only: kg@crystalfituae.com
   // Tracking (empty = not loaded, no cookie banner). Set in hosting env vars or here.
   // Google Analytics 4 measurement ID, e.g. G-XXXXXXXXXX
-  gaId: import.meta.env.PUBLIC_GA_ID || '',
+  gaId: import.meta.env.PUBLIC_GA_ID || 'G-R4X3R030FS',
   // Google Ads conversion: tag ID (AW-XXXXXXXXX) and the "lead" conversion label
   adsId: import.meta.env.PUBLIC_GADS_ID || '',
   adsLeadLabel: import.meta.env.PUBLIC_GADS_LEAD_LABEL || '',
