@@ -32,3 +32,7 @@
 /wp-content/*                                                 /portfolio/                                301
 /wp-includes/*                                                /                                          301
 /xmlrpc.php                                                   /                                          301
+# old kgdesignuae.com paths (domain forwarded to crystalfituae.com with the same path)
+/featured-projects/new-test-project/                          /portfolio/                                301
+/featured-projects_category/architecture/                     /featured-projects_category/residential/   301
+/featured-projects_category/horeca/                           /featured-projects_category/fb/            301
