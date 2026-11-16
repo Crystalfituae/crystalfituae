@@ -49,7 +49,7 @@ export const site = {
   adsId: import.meta.env.PUBLIC_GADS_ID || '',
   adsLeadLabel: import.meta.env.PUBLIC_GADS_LEAD_LABEL || '',
   // Meta (Facebook/Instagram) Pixel ID, digits only
-  metaPixelId: import.meta.env.PUBLIC_META_PIXEL_ID || '',
+  metaPixelId: import.meta.env.PUBLIC_META_PIXEL_ID || '1630119451476255',
 };
 
 export const categories = {
