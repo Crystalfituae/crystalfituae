@@ -103,7 +103,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
         {s.approvalsBlock.paras.map((p) => <p set:html={hl(p)} />)}
         <ul class="svx__tags">{s.approvals.map((x) => <li>{x}</li>)}</ul>
       </div>
-      <div class="svc__media">{apprImg && <Image src={apprImg} alt="Crystal Fit site inspection in Dubai" width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" />}</div>
+      <div class="svc__media">{apprImg && <Image src={apprImg} alt={`Landlord and authority approvals for ${s.heroLines.join(' ')} – Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" />}</div>
     </div>
   </section>
 
