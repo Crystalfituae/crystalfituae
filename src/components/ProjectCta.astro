@@ -1,0 +1,37 @@
+---
+// End-of-page call to action (DRAFT 2026-11-16): replaces "Still having questions?" band + the long form
+// on every page except Contact. WhatsApp first (UAE clients prefer it), "Get a quote" -> full form on /contact/.
+import { site } from '../data/site';
+const { title = 'Planning a project in Dubai?', text = 'Tell us about your space — we will come back with the scope, the approval route and the next steps.' } = Astro.props;
+---
+<section class="pcta">
+  <div class="pcta__inner">
+    <h2 class="pcta__title">{title}</h2>
+    <p class="pcta__text">{text}</p>
+    <div class="pcta__btns">
+      <a class="pcta__btn pcta__btn--wa" href={site.whatsapp} target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3Z"/></svg>
+        WhatsApp us
+      </a>
+      <a class="pcta__btn pcta__btn--quote" href="/contact/#contact-form">Get a quote →</a>
+    </div>
+    <p class="pcta__alt">or call <a href={`tel:${site.phoneMobile}`}>{site.phoneMobileDisplay}</a> · <a href={`mailto:${site.email}`}>{site.email}</a></p>
+  </div>
+</section>
+<style>
+  .pcta { background: #000; color: #fff; padding: 90px 20px; text-align: center; }
+  .pcta__inner { max-width: 760px; margin: 0 auto; }
+  .pcta__title { font-family: var(--ff-head); font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: 200; letter-spacing: 0; text-transform: uppercase; margin: 0 0 18px; }
+  .pcta__text { font-family: var(--ff-head); font-size: var(--fs-lead); line-height: var(--lh-lead); font-weight: 300; color: #ddd; margin: 0 auto 34px; max-width: 620px; }
+  .pcta__btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .pcta__btn { display: inline-flex; align-items: center; gap: 10px; min-width: 220px; justify-content: center; padding: 16px 28px; font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; border: 1px solid #fff; transition: opacity .2s; }
+  .pcta__btn:hover { opacity: .85; }
+  .pcta__btn--wa { background: #fff; color: #000; }
+  .pcta__btn--quote { background: transparent; color: #fff; }
+  .pcta__alt { font-family: var(--ff-head); font-size: var(--fs-small); line-height: var(--lh-small); color: #aaa; margin: 26px 0 0; }
+  .pcta__alt a { color: #ddd; text-decoration: none; border-bottom: 1px solid #555; }
+  @media (max-width: 767px) {
+    .pcta { padding: 60px 16px; }
+    .pcta__btn { width: 100%; min-width: 0; }
+  }
+</style>

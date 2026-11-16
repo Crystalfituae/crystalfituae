@@ -1,0 +1,67 @@
+---
+// Short quote form for service pages (DRAFT 2026-11-16): 3 fields, same Web3Forms inbox as the main form.
+import { site } from '../data/site';
+const { title = 'Get a quote', text = 'Three fields — we reply by phone or WhatsApp.', service = '' } = Astro.props;
+---
+<section class="qq" id="contact-form">
+  <div class="qq__inner">
+    <div class="qq__head">
+      <h2 class="qq__title">{title}</h2>
+      <p class="qq__text">{text}</p>
+    </div>
+    <form class="qq__form" action="https://api.web3forms.com/submit" method="POST" data-qq>
+      <input type="hidden" name="access_key" value={site.formKey} />
+      <input type="hidden" name="from_name" value="crystalfituae.com" />
+      <input type="hidden" name="subject" value={`Project Inquiry — ${service || 'service page'} — crystalfituae.com`} />
+      <input type="hidden" name="page" value="" />
+      <input type="checkbox" name="botcheck" class="qq__hp" tabindex="-1" autocomplete="off" />
+      <input type="text" name="name" placeholder="Your name" required maxlength="200" aria-label="Your name" />
+      <input type="tel" name="phone" placeholder="Phone / WhatsApp" required maxlength="40" aria-label="Phone or WhatsApp" />
+      <input type="text" name="message" placeholder="Your project (e.g. 120 m² café, Dubai Hills)" required maxlength="500" aria-label="Your project" />
+      <button type="submit">Send</button>
+      <p class="qq__status" role="status" hidden></p>
+    </form>
+    <p class="qq__legal">By sending this form you agree to our <a href="/privacy-policy/">Privacy Policy</a>. Prefer a full brief? <a href="/contact/#contact-form">Use the detailed form</a>.</p>
+  </div>
+</section>
+<script>
+  for (const f of document.querySelectorAll<HTMLFormElement>('form[data-qq]')) {
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const st = f.querySelector<HTMLElement>('.qq__status')!;
+      const btn = f.querySelector('button')!;
+      (f.elements.namedItem('page') as HTMLInputElement).value = location.href;
+      btn.disabled = true; st.hidden = false; st.textContent = 'Sending…';
+      try {
+        const r = await fetch(f.action, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(f) }).then((x) => x.json());
+        if (!r.success) throw new Error(r.message);
+        st.textContent = 'Thank you — we will contact you shortly.';
+        (window as any).cfTrack?.('lead', { topic: 'Project Inquiry', form: 'quick' });
+        f.reset();
+      } catch {
+        st.textContent = 'Sorry, something went wrong. Please try again or message us on WhatsApp.';
+      } finally { btn.disabled = false; }
+    });
+  }
+</script>
+<style>
+  .qq { background: #fff; padding: 80px 20px; }
+  .qq__inner { max-width: 1180px; margin: 0 auto; }
+  .qq__head { display: flex; align-items: baseline; gap: 24px; flex-wrap: wrap; margin-bottom: 26px; }
+  .qq__title { font-family: var(--ff-head); font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: 200; letter-spacing: 0; text-transform: uppercase; margin: 0; }
+  .qq__text { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 300; color: #666; margin: 0; }
+  .qq__form { display: grid; grid-template-columns: 1fr 1fr 2fr auto; gap: 12px; }
+  .qq__form input { font-family: var(--ff-body); font-size: var(--fs-body); padding: 16px 18px; border: 1px solid #ccc; background: #fff; color: #111; min-width: 0; }
+  .qq__form input:focus { outline: none; border-color: #000; }
+  .qq__form button { font-family: var(--ff-head); font-size: var(--fs-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; background: #000; color: #fff; border: 0; padding: 0 40px; cursor: pointer; }
+  .qq__form button:disabled { opacity: .6; }
+  .qq__hp { display: none; }
+  .qq__status { grid-column: 1 / -1; margin: 4px 0 0; font-family: var(--ff-head); font-size: var(--fs-small); }
+  .qq__legal { font-family: var(--ff-head); font-size: var(--fs-cap); line-height: var(--lh-cap); color: #888; margin: 14px 0 0; }
+  .qq__legal a { color: #555; }
+  @media (max-width: 991px) {
+    .qq { padding: 56px 16px; }
+    .qq__form { grid-template-columns: 1fr; }
+    .qq__form button { padding: 16px; }
+  }
+</style>

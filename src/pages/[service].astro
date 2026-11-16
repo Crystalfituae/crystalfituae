@@ -7,6 +7,7 @@ import Base from '../layouts/Base.astro';
 import Hero from '../components/Hero.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import CtaBand from '../components/CtaBand.astro';
+import QuickQuote from '../components/QuickQuote.astro';
 import Logos from '../components/Logos.astro';
 import { services, serviceProcess, type Service } from '../data/services';
 import { logosInner } from '../data/site';
@@ -35,7 +36,7 @@ const schema = [
 ];
 const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>${m}</mark>`);
 ---
-<Base title={s.title} description={s.description} schema={schema} noindex={s.draft}>
+<Base title={s.title} description={s.description} schema={schema} noindex={s.draft} form={!s.draft}>
   {s.draft && <div class="sdraft">DRAFT — not published yet.</div>}
   <Hero slides={[{ image: hero, lines: s.heroLines }]} h1={s.h1} />
   <Breadcrumb current={`Crystal fit contracting LLC / Services / ${s.heroLines.join(' ')}`} />
@@ -87,7 +88,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   </section>
 
   <Logos list={logosInner} />
-  <CtaBand title="Planning a project?" label="Get a quote" href="#contact-form" />
+  {s.draft ? <QuickQuote service={s.heroLines.join(' ')} /> : <CtaBand title="Planning a project?" label="Get a quote" href="#contact-form" />}
 </Base>
 <style is:global>
   .sdraft { position: sticky; top: 0; z-index: 50; background: #ffe066; color: #000; text-align: center; font-size: 13px; font-weight: 600; padding: 6px 12px; }

@@ -1,0 +1,13 @@
+---
+// DRAFT (noindex): new end-of-page block (variant A) shown in context — logos strip, CTA, footer. Not linked anywhere.
+import Base from '../layouts/Base.astro';
+import Logos from '../components/Logos.astro';
+import ProjectCta from '../components/ProjectCta.astro';
+import { logosInner } from '../data/site';
+---
+<Base title="CTA draft | Crystal Fit" description="Draft" noindex form={false}>
+  <div style="position:sticky;top:0;z-index:50;background:#ffe066;color:#000;text-align:center;font-size:13px;font-weight:600;padding:6px 12px">DRAFT — end of a page (project / portfolio / home / about) with the new block instead of “Still having questions?” + long form</div>
+  <section style="max-width:1180px;margin:0 auto;padding:60px 20px 40px;font-family:var(--ff-head);color:#999;text-align:center">… page content above …</section>
+  <Logos list={logosInner} />
+  <ProjectCta />
+</Base>
