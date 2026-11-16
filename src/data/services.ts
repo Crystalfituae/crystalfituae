@@ -18,6 +18,7 @@ export interface Service {
   projects: string[];   // project slugs shown as examples
   deliverGroups?: [string, string[]][]; // optional: "What we deliver" split into titled columns
   process?: [string, string][];         // optional: own "How we work" steps (default: serviceProcess)
+  introBlock?: { kicker: string; title: string; image: string; paras: string[] }; // optional: intro in the /services/ section style (text + photo)
 }
 
 const process: [string, string][] = [
@@ -162,11 +163,20 @@ export const services: Service[] = [
     heroLines: ['Interior &', 'MEP design'],
     h1: '— interior design and MEP engineering in Dubai',
     heroProject: 'gary-tatintsian-gallery',
-    heroImage: 'design-render-omakase.jpg',
-    intro: [
-      'Every successful fit-out starts with a complete design package. Crystal Fit provides <strong>interior design and MEP engineering in Dubai</strong> — all drawings and calculations needed for landlord and authority approval, and for construction.',
-      'Our interior designers and MEP engineers work as one team, so ceilings, lighting, ducts and joinery are coordinated on paper — not discovered on site. Order the design on its own, or continue with us into the fit-out with no gap between designer and contractor.',
-    ],
+    heroImage: 'hero-services-retouched.jpg', // same banner as /services/
+    intro: [],
+    // same text and photo as the live /services/#consultancy section
+    introBlock: {
+      kicker: 'Interior & MEP Design',
+      title: 'Interior Design & MEP Engineering in Dubai',
+      image: 'planning.jpg',
+      paras: [
+        'Every successful fit-out starts with a complete design package. Crystal Fit provides <strong>interior design and MEP engineering in Dubai</strong> — all drawings and calculations needed for landlord and authority approval, and for construction.',
+        '<strong>Interior design:</strong> space planning, concept and 3D visuals, material and FF&amp;E specifications, layout, ceiling, flooring and elevation drawings, joinery details and shop drawings.',
+        '<strong>MEP design:</strong> HVAC heat-load and ventilation calculations, electrical load schedules and lighting layouts, plumbing and drainage, fire-fighting and fire-alarm design — <strong>submission drawings for Dubai Municipality, Civil Defence and DEWA</strong>.',
+        'Design only or design and build — either works, with a BOQ for tender.',
+      ],
+    },
     deliver: [],
     deliverGroups: [
       ['Interior design', [
@@ -185,7 +195,7 @@ export const services: Service[] = [
       ]],
     ],
     approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'Nakheel', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA'],
-    facts: [['200+', 'projects designed & delivered'], ['2014', 'in business since'], ['2 in 1', 'interior and MEP design, one team'], ['5', 'MEP systems: HVAC, power, lighting, plumbing, fire']],
+    facts: [],
     process: [
       ['Brief & site survey', 'We visit the unit, measure it, read the landlord fit-out guide and agree the brief and budget.'],
       ['Concept', 'Space planning, moodboards and 3D visuals until you approve the design direction.'],

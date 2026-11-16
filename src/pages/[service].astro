@@ -8,6 +8,7 @@ import Hero from '../components/Hero.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import CtaBand from '../components/CtaBand.astro';
 import QuickQuote from '../components/QuickQuote.astro';
+import '../styles/pages.css';
 import Logos from '../components/Logos.astro';
 import { services, serviceProcess, type Service } from '../data/services';
 import { logosInner } from '../data/site';
@@ -19,9 +20,10 @@ export async function getStaticPaths() {
 }
 const { s } = Astro.props as { s: Service };
 const all = await getCollection('projects', ({ data }) => !data.draft);
-const assets = import.meta.glob<{ default: ImageMetadata }>('../assets/services/*', { eager: true });
+const assets = import.meta.glob<{ default: ImageMetadata }>(['../assets/services/*', '../assets/site/*'], { eager: true });
 const heroFile = s.heroImage && Object.entries(assets).find(([k]) => k.endsWith('/' + s.heroImage))?.[1].default;
 const hero = heroFile || all.find((p) => p.id === s.heroProject)!.data.cover;
+const introImg = s.introBlock && Object.entries(assets).find(([k]) => k.endsWith('/' + s.introBlock!.image))?.[1].default;
 const projects = s.projects.map((id) => all.find((p) => p.id === id)).filter((p) => !!p);
 const url = new URL(`/${s.slug}/`, Astro.site).href;
 const schema = [
@@ -41,10 +43,24 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   <Hero slides={[{ image: hero, lines: s.heroLines }]} h1={s.h1} />
   <Breadcrumb current={`Crystal fit contracting LLC / Services / ${s.heroLines.join(' ')}`} />
 
-  <section class="sv">
-    <div class="sv__intro">{s.intro.map((p) => <p set:html={hl(p)} />)}</div>
-    <ul class="sv__facts">{s.facts.map(([n, t]) => <li><b>{n}</b><span>{t}</span></li>)}</ul>
-  </section>
+  {s.introBlock ? (
+    <section class="svc svc--light" style="--h:auto">
+      <div class="svc__inner">
+        <div class="svc__text">
+          <p class="svc__kicker">{s.introBlock.kicker}</p>
+          <h2 class="svc__title">{s.introBlock.title}</h2>
+          {s.introBlock.paras.map((p) => <p set:html={hl(p)} />)}
+          <button type="button" class="svc__more" aria-expanded="false">Read more +</button>
+        </div>
+        <div class="svc__media">{introImg && <Image src={introImg} alt={`${s.introBlock.kicker} by Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" />}</div>
+      </div>
+    </section>
+  ) : (
+    <section class="sv">
+      <div class="sv__intro">{s.intro.map((p) => <p set:html={hl(p)} />)}</div>
+      {s.facts.length > 0 && <ul class="sv__facts">{s.facts.map(([n, t]) => <li><b>{n}</b><span>{t}</span></li>)}</ul>}
+    </section>
+  )}
 
   <section class="sv sv--dark">
     <div class="sv__cols">
@@ -90,6 +106,13 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   <Logos list={logosInner} />
   {s.draft ? <QuickQuote service={s.heroLines.join(' ')} /> : <CtaBand title="Planning a project?" label="Get a quote" href="#contact-form" />}
 </Base>
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.svc__more').forEach((btn) => btn.addEventListener('click', () => {
+    const open = btn.parentElement!.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', String(open));
+    btn.textContent = open ? 'Read less −' : 'Read more +';
+  }));
+</script>
 <style is:global>
   .sdraft { position: sticky; top: 0; z-index: 50; background: #ffe066; color: #000; text-align: center; font-size: 13px; font-weight: 600; padding: 6px 12px; }
   mark { background: #ffe066; padding: 0 2px; }
