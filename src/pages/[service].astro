@@ -60,8 +60,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
     <section class="svc svc--light" style="--h:auto">
       <div class="svc__inner">
         <div class="svc__text">
-          <p class="svc__kicker">{s.introBlock.kicker}</p>
-          <h2 class="svc__title">{s.introBlock.title}</h2>
+          <h2 class="svc__title">{s.introBlock.kicker}</h2>{/* owner: section name exactly as in the Services block, no "… in Dubai" headline */}
           {s.introBlock.paras.map((p) => <p set:html={hl(p)} />)}
           <button type="button" class="svc__more" aria-expanded="false">Read more +</button>
         </div>
