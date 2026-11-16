@@ -53,7 +53,8 @@ const schema = [
           <div class="pinfo__body">
             <h1 class="pinfo__title">{d.heading}</h1>
             {facts.length > 0 && <div class="pinfo__text pfacts">{facts.map(([k, v]) => <p><strong>{k.toUpperCase()}:</strong> {v}</p>)}</div>}
-            <Content />
+            <div class="pdesc"><Content /></div>
+            <button type="button" class="pdesc__more" aria-expanded="false" hidden>Read more +</button>
           </div>
         </div>
       </section>
@@ -105,7 +106,8 @@ const schema = [
       <div class="pclassic__body">
         <h1 class="pclassic__title">{d.heading}</h1>
         {facts.map(([k, v]) => (<><h6>{k}</h6><p>{v}</p></>))}
-        <Content />
+        <div class="pdesc"><Content /></div>
+        <button type="button" class="pdesc__more" aria-expanded="false" hidden>Read more +</button>
       </div>
     </section>
   )}
@@ -115,6 +117,19 @@ const schema = [
   <div class="lbox" hidden slot="after-form"><button class="lbox__close" aria-label="Close">×</button><button class="lbox__prev" aria-label="Previous">‹</button><img alt="" /><button class="lbox__next" aria-label="Next">›</button></div>
 </Base>
 <script>
+  // phones: project description shows ~100 words (14 lines), the rest behind "Read more +" (texts are ~260 words)
+  for (const d of document.querySelectorAll<HTMLElement>('.pdesc')) {
+    const btn = d.nextElementSibling as HTMLButtonElement;
+    const check = () => { if (!d.classList.contains('is-open')) btn.hidden = d.scrollHeight <= d.clientHeight + 2; };
+    check(); addEventListener('resize', check);
+    btn.addEventListener('click', () => {
+      const open = d.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', String(open));
+      btn.textContent = open ? 'Read less −' : 'Read more +';
+      if (!open) d.scrollIntoView({ block: 'nearest' });
+    });
+  }
+
   // lightbox
   const links = [...document.querySelectorAll<HTMLAnchorElement>('a.lb')];
   const box = document.querySelector<HTMLElement>('.lbox')!;

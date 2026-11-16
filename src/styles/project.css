@@ -96,3 +96,14 @@
 .pinfo__body > p { font-family: var(--ff-head); font-size: var(--fs-body); line-height: var(--lh-body); font-weight: 300; letter-spacing: 0; margin: 0 0 16px; }
 .pinfo__body > p strong { font-family: var(--ff-body); font-weight: 600; }
 @media (max-width: 767px) { }
+
+/* phones: description clamped to 14 lines (~100 words) + "Read more +" (owner 2026-11-16) */
+.pdesc__more { display: none; }
+@media (max-width: 767px) {
+  .pdesc:not(.is-open) { max-height: calc(var(--lh-body) * 14); overflow: hidden; position: relative; }
+  .pdesc:not(.is-open)::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 54px; background: linear-gradient(rgba(255,255,255,0), #fff); }
+  .pdesc .pinfo__text:first-of-type { margin-bottom: 0; }
+  .pdesc__more { display: inline-block; margin: 10px 0 30px; padding: 10px 0 4px; background: none; border: 0; color: inherit; cursor: pointer;
+    font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
+  .pdesc__more[hidden] { display: none; }
+}
