@@ -430,13 +430,13 @@ export const services: Service[] = [
         'Guidance through all steps',
       ]],
     ],
-    deliverImages: ['svc-res-fitout-2107.jpg', 'svc-res-design.jpg'],
+    deliverImages: ['svc-res-fitout-6045.jpg', 'svc-res-design.jpg'],
     deliverParas: [[
       'Every home follows the same sequence. It starts with a detailed <strong>BOQ and one signed agreement</strong> for the whole scope. Before anything is ordered, you approve and sign the <strong>material samples</strong> — marble, parquet, finishes and fittings.',
       'Our team then verifies every detail on site — measurements, existing services and the community rules — and prepares the <strong>community NOC and authority permits</strong>. <strong>Fit-out works start</strong> under one programme with regular photo reports and finish with <strong>final inspections and snagging</strong>, cleaning and handover — ready to move in.',
     ], []],
     approvalsBlock: {
-      image: 'svc-res-approvals.jpg',
+      image: 'svc-res-approvals-render.jpg', // owner: render (Science Park, WhatsApp 2025-02-24 7.41.07 PM (2))
       paras: [
         'Most villa and apartment works in Dubai need a <strong>community NOC</strong> from the master developer — Emaar, Nakheel, Dubai Holding and others — and for structural or MEP changes a <strong>permit</strong> from Dubai Municipality or Trakhees.',
         'We prepare the drawings, submit them and handle the inspections and the DEWA connection, so works start legally and your security deposit is returned in full.',
