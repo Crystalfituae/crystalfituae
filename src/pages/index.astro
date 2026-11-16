@@ -23,7 +23,7 @@ const all = await getCollection('projects', ({ data }) => !data.draft);
 const cover = (id: string) => all.find((p) => p.id === id)!.data.cover;
 // What we do: [title, short line, anchor on /services/]
 const services: [string, string, string][] = [
-  ['Interior & MEP Design', 'Concepts, drawings & approvals', '/services/#consultancy'],
+  ['Interior Design & MEP', 'Concepts, drawings & approvals', '/services/#consultancy'],
   ['F&B Design & Build', 'Cafes, coffee shops & restaurants', '/services/#fnb'],
   ['Commercial Fit-outs', 'Offices, clinics, retail & galleries', '/services/#commercial'],
   ['Residential Interiors', 'Villas, townhouses & apartments', '/services/#residential'],

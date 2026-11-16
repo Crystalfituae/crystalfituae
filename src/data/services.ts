@@ -166,14 +166,14 @@ export const services: Service[] = [
     draft: true,
     title: 'Interior Design & MEP Engineering in Dubai | Crystal Fit',
     description: 'Interior design drawings and MEP engineering with HVAC, electrical, plumbing and fire-fighting calculations. Approval-ready packages for DM, DCD and DEWA.',
-    heroLines: ['Interior &', 'MEP design'],
+    heroLines: ['Interior design', '& MEP'],
     h1: '— interior design and MEP engineering in Dubai',
     heroProject: 'gary-tatintsian-gallery',
     heroImage: 'hero-services-retouched.jpg', // same banner as /services/
     intro: [],
     // same text and photo as the live /services/#consultancy section
     introBlock: {
-      kicker: 'Interior & MEP Design',
+      kicker: 'Interior Design & MEP',
       title: 'Interior Design & MEP Engineering in Dubai',
       image: 'planning.jpg',
       paras: [
@@ -210,7 +210,7 @@ export const services: Service[] = [
         'Weekly reports on progress, approvals and costs',
       ]],
     ],
-    deliverImages: ['design-render-omakase.jpg', 'svc-mep-hvac-drawing.jpg', 'svc-pm-manage-1907.jpg'], // MEP = HVAC ducting drawing, Roasters Science Park GF
+    deliverImages: ['design-render-omakase.jpg', 'svc-mep-hvac-drawing.jpg', 'turnkey.jpg'], // PM = former approvals photo (owner) // MEP = HVAC ducting drawing, Roasters Science Park GF
     deliverParas: [[
       'Every design project follows the same sequence. We start with the brief, a site survey and the landlord fit-out guide, develop the <strong>concept and 3D visuals</strong> until you approve the direction, and sign off the <strong>material samples</strong>.',
       'Next comes the <strong>detailed design</strong>: the full drawing set, joinery details and MEP calculations, coordinated between interior and engineering. We prepare the <strong>authority submissions</strong>, answer every comment until approval and hand over a <strong>BOQ for tender</strong> — or build it ourselves.',
@@ -222,7 +222,7 @@ export const services: Service[] = [
       'Already have a design and a contractor? We can step in as your <strong>project manager</strong> — we have also taken over projects after previous contractors could not finish them or obtain approvals.',
     ]],
     approvalsBlock: {
-      image: 'turnkey.jpg',
+      image: 'svc-imd-approvals-1941.jpg', // neutral: drawings and material samples on the table
       paras: [
         'Every fit-out in Dubai needs two sets of approvals: the <strong>landlord NOC</strong> from the developer or mall, and <strong>authority permits</strong> from Dubai Municipality, Dubai Civil Defence and DEWA.',
         'We prepare the submission drawings and calculations, submit them, answer every comment and attend the inspections — so approvals are part of the schedule, not a delay.',
@@ -231,12 +231,13 @@ export const services: Service[] = [
     approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'Nakheel', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA'],
     facts: [],
     process: [
-      ['Brief & agreement signed', ''],
+      // owner: steps follow the section (interior design -> MEP -> approvals -> project management)
+      ['Brief & site survey', ''],
       ['Concept & 3D approved', ''],
       ['Material samples signed', ''],
       ['Detailed design & MEP calculations', ''],
       ['Authority submissions & approvals', ''],
-      ['Tender or build', ''],
+      ['Tender & project management', ''],
     ],
     faq: [
       ['Can you do the design only, without the fit-out?', 'Yes. We deliver complete interior and MEP packages that any contractor can build from, with a BOQ for tender, and can support you during construction.'],
