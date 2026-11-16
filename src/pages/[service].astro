@@ -79,7 +79,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   <section class:list={['sv', { 'sv--dark sv--steps': dark(nS) }]}>
     <div class="sv__wrap">
       <h2 class="sv__h2">How we work</h2>
-      <ol class="sv__steps">{(s.process ?? serviceProcess).map(([t, d], i) => <li><button type="button" class="sv__step-head" aria-expanded="false" aria-controls={`step-${i}`}><span class="sv__num">Step {String(i + 1).padStart(2, '0')}</span><h3>{t}</h3></button><p id={`step-${i}`}>{d}</p></li>)}</ol>
+      <ol class="sv__steps" style={`--n:${(s.process ?? serviceProcess).length}`}>{(s.process ?? serviceProcess).map(([t, d], i) => <li><button type="button" class="sv__step-head" aria-expanded="false" aria-controls={`step-${i}`}><span class="sv__num">Step {String(i + 1).padStart(2, '0')}</span><h3>{t}</h3></button><p id={`step-${i}`}>{d}</p></li>)}</ol>
     </div>
   </section>
 
@@ -150,7 +150,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   </section>
   <section class="sv">
     <h2 class="sv__h2">How we work</h2>
-    <ol class="sv__steps">{(s.process ?? serviceProcess).map(([t, d], i) => <li><button type="button" class="sv__step-head" aria-expanded="false" aria-controls={`step-${i}`}><span class="sv__num">Step {String(i + 1).padStart(2, '0')}</span><h3>{t}</h3></button><p id={`step-${i}`}>{d}</p></li>)}</ol>
+    <ol class="sv__steps" style={`--n:${(s.process ?? serviceProcess).length}`}>{(s.process ?? serviceProcess).map(([t, d], i) => <li><button type="button" class="sv__step-head" aria-expanded="false" aria-controls={`step-${i}`}><span class="sv__num">Step {String(i + 1).padStart(2, '0')}</span><h3>{t}</h3></button><p id={`step-${i}`}>{d}</p></li>)}</ol>
   </section>
 </>)}
 
@@ -197,7 +197,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   .sv__all { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; display: none; }
   .sv__tags li { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid rgba(255,255,255,.5); padding: 8px 14px; }
   /* How we work = same timeline as "Our story" on About (line + dot per step), on white */
-  .sv__steps { display: grid; grid-template-columns: repeat(5, 1fr); list-style: none; padding: 0; margin: 20px 0 0; }
+  .sv__steps { display: grid; grid-template-columns: repeat(var(--n, 5), 1fr); list-style: none; padding: 0; margin: 20px 0 0; }
   .sv__steps li { position: relative; padding: 34px 30px 0 0; border-top: 1px solid #bbb; }
   .sv__steps li::before { content: ''; position: absolute; left: 0; top: -7px; width: 13px; height: 13px; background: #000; border-radius: 50%; }
   .sv__step-head { all: unset; display: block; width: 100%; box-sizing: border-box; cursor: default; color: inherit; }

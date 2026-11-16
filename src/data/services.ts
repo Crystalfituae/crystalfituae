@@ -274,11 +274,13 @@ export const services: Service[] = [
     approvals: ['Emaar', 'Dubai Holding', 'Nakheel', 'TECOM', 'Meraas', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA', 'Trakhees'],
     facts: [],
     process: [
-      ['Site visit & brief', 'We visit the unit, read the landlord fit-out guide and agree the concept, menu needs and budget with your team.'],
-      ['Design & layout', 'Concept and 3D visuals, then the kitchen, bar and seating layout with your equipment supplier.'],
-      ['Approvals', 'Landlord NOC, Dubai Municipality food safety, Civil Defence and DEWA — submitted and followed up until permits are issued.'],
-      ['Fit-out works', 'Civil, MEP, kitchen exhaust, joinery and finishes — one team, one programme, weekly progress reports.'],
-      ['Inspections & opening', 'Authority and landlord inspections, snagging, completion certificates and handover before your opening day.'],
+      // owner's sequence (2026-11-16)
+      ['BOQ & agreement signed', 'We agree the scope and a detailed BOQ with you, and sign one agreement for the whole project.'],
+      ['Material sample boards signed', 'You approve the finishes, materials and colours on physical sample boards — nothing is ordered without your signature.'],
+      ['On-site verification', 'We verify all project details on site: measurements, existing services and the landlord’s requirements.'],
+      ['Authority submissions & approvals', 'Landlord NOC, Dubai Municipality food safety, Civil Defence and DEWA — submitted and followed up until approval.'],
+      ['Fit-out works start', 'Civil, MEP, kitchen exhaust, joinery and finishes — one team, one programme, weekly progress reports.'],
+      ['Final inspections & snagging', 'Authority and landlord inspections, snagging, completion certificates and handover before your opening day.'],
     ],
     faq: [
       ['Do you handle Dubai Municipality and Civil Defence approvals?', 'Yes. We prepare the drawings and submit the landlord NOC, Dubai Municipality food-safety layout, Civil Defence and DEWA approvals, and attend all inspections until the completion certificate.'],
