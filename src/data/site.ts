@@ -33,7 +33,6 @@ export const site = {
       { label: 'F&B Design & Build', href: '/services/#fnb' },
       { label: 'Commercial Fit-outs', href: '/services/#commercial' },
       { label: 'Residential Interiors', href: '/services/#residential' },
-      { label: 'Project Management', href: '/services/#project-management' },
     ] },
     { label: 'Portfolio', href: '/portfolio/' },
     { label: 'Contact us', href: '/contact/' },

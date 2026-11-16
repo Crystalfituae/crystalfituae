@@ -201,14 +201,25 @@ export const services: Service[] = [
         'Fire-fighting and fire-alarm design',
         'Kitchen exhaust and services coordination for Food &amp; Beverage (F&amp;B)',
       ]],
+      ['Project management', [
+        'Programme and milestones agreed before works start',
+        'Approvals, inspections and completion certificates',
+        'Procurement and long-lead items ordered on time',
+        'Coordination of designers, contractors and suppliers',
+        'Site quality, safety, budget and variations',
+        'Weekly reports on progress, approvals and costs',
+      ]],
     ],
-    deliverImages: ['design-render-omakase.jpg', 'svc-mep-hvac-drawing.jpg'], // MEP = HVAC ducting drawing, Roasters Science Park GF
+    deliverImages: ['design-render-omakase.jpg', 'svc-mep-hvac-drawing.jpg', 'svc-pm-manage-1907.jpg'], // MEP = HVAC ducting drawing, Roasters Science Park GF
     deliverParas: [[
       'Every design project follows the same sequence. We start with the brief, a site survey and the landlord fit-out guide, develop the <strong>concept and 3D visuals</strong> until you approve the direction, and sign off the <strong>material samples</strong>.',
       'Next comes the <strong>detailed design</strong>: the full drawing set, joinery details and MEP calculations, coordinated between interior and engineering. We prepare the <strong>authority submissions</strong>, answer every comment until approval and hand over a <strong>BOQ for tender</strong> — or build it ourselves.',
     ], [
       'Our MEP engineers design every system in-house and back each drawing with <strong>calculations</strong>: HVAC heat-load and fresh-air ventilation, electrical load schedules and DB schedules, water supply, drainage and fire-fighting hydraulics. The result is equipment that is sized right — not oversized to be safe, and not too small to pass inspection.',
       'For Food &amp; Beverage (F&amp;B) units we coordinate the kitchen layout with your <strong>kitchen consultant</strong> and do the calculations ourselves — kitchen exhaust, fresh air, drainage and grease trap. <strong>Fire-fighting is designed in-house</strong>; <strong>gas (LPG)</strong> is designed together with our specialist consultants. As the <strong>main contractor</strong>, we coordinate all disciplines — interior, MEP, kitchen, gas and joinery — and prepare every package for <strong>Dubai Municipality, Dubai Civil Defence and DEWA</strong>, answering every authority comment until approval.',
+    ], [
+      'Designers, contractors, landlords, authorities, suppliers — a fit-out has many parties and one deadline. We provide <strong>construction project management</strong> with one accountable point of contact from the first drawing to handover: programme, approvals and inspections, procurement, contractor coordination, quality, budget and variations.',
+      'Already have a design and a contractor? We can step in as your <strong>project manager</strong> — we have also taken over projects after previous contractors could not finish them or obtain approvals.',
     ]],
     approvalsBlock: {
       image: 'turnkey.jpg',
