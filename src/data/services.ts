@@ -21,6 +21,7 @@ export interface Service {
   introBlock?: { kicker: string; title: string; image: string; paras: string[] }; // optional: intro in the /services/ section style (text + photo)
   // owner's service-page template (2026-11-16): 1 intro white (photo left) / 2 deliver black (photo right) / 3 approvals white (photo left) / 4 steps black (Our story style)
   deliverImage?: string;
+  deliverImages?: string[]; // one photo per deliverGroups entry -> each group becomes its own 'X: what we deliver' block
   approvalsBlock?: { image: string; paras: string[] };
 }
 
@@ -189,7 +190,7 @@ export const services: Service[] = [
         'Layout, ceiling, flooring, lighting and elevation drawings',
         'Joinery details and shop drawings',
       ]],
-      ['MEP engineering', [
+      ['MEP design', [
         'HVAC heat-load and ventilation calculations, AC and duct layouts',
         'Electrical load schedules, DB schedules, power and lighting layouts',
         'Plumbing, water supply and drainage design',
@@ -197,7 +198,7 @@ export const services: Service[] = [
         'Kitchen exhaust and services coordination for Food &amp; Beverage (F&amp;B)',
       ]],
     ],
-    deliverImage: 'design-render-omakase.jpg',
+    deliverImages: ['design-render-omakase.jpg', 'mep-site-ceiling.jpg'],
     approvalsBlock: {
       image: 'turnkey.jpg',
       paras: [

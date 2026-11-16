@@ -26,6 +26,12 @@ const hero = heroFile || all.find((p) => p.id === s.heroProject)!.data.cover;
 const introImg = s.introBlock && Object.entries(assets).find(([k]) => k.endsWith('/' + s.introBlock!.image))?.[1].default;
 const pick = (f?: string) => f ? Object.entries(assets).find(([k]) => k.endsWith('/' + f))?.[1].default : undefined;
 const deliverImg = pick(s.deliverImage);
+// owner's template: after the white intro, blocks alternate black / white
+const dBlocks = s.deliverGroups && s.deliverImages
+  ? s.deliverGroups.map(([g, items], i) => ({ title: `${g}: what we deliver`, items, img: pick(s.deliverImages![i]) }))
+  : [{ title: 'What we deliver', items: s.deliverGroups ? s.deliverGroups.flatMap(([, it]) => it) : s.deliver, img: deliverImg }];
+const dark = (n: number) => n % 2 === 0; // n = position after the intro (0 = first block, black)
+const nA = dBlocks.length, nS = nA + 1, nF = nA + 2, nP = nA + 3;
 const apprImg = pick(s.approvalsBlock?.image);
 const projects = s.projects.map((id) => all.find((p) => p.id === id)).filter((p) => !!p);
 const url = new URL(`/${s.slug}/`, Astro.site).href;
@@ -66,21 +72,21 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   )}
 
 {s.approvalsBlock ? (<>
-  <!-- 2. What we deliver: black, text left, photo right -->
-  <section class="svc svc--dark svx">
-    <div class="svc__inner">
-      <div class="svc__text">
-        <h2 class="svc__title">What we deliver</h2>
-        {s.deliverGroups ? (
-            <div class="sv__groups">{s.deliverGroups.map(([g, items]) => <div><h3 class="sv__gh">{g}</h3><ul class="sv__list">{items.map((d) => <li set:html={hl(d)} />)}</ul></div>)}</div>
-          ) : <ul class="sv__list">{s.deliver.map((d) => <li set:html={hl(d)} />)}</ul>}
+  <!-- 2..n. One block per service part ("Interior design: what we deliver", "MEP design: what we deliver"), black/white alternating, photo opposite the text -->
+  {dBlocks.map((b, i) => (
+    <section class:list={['svc', 'svx', dark(i) ? 'svc--dark' : 'svc--light']}>
+      <div class="svc__inner">
+        <div class="svc__text">
+          <h2 class="svc__title">{b.title}</h2>
+          <ul class="sv__list">{b.items.map((d) => <li set:html={hl(d)} />)}</ul>
+        </div>
+        <div class="svc__media">{b.img && <Image src={b.img} alt={`${b.title.split(':')[0]} by Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" />}</div>
       </div>
-      <div class="svc__media">{deliverImg && <Image src={deliverImg} alt={`${s.heroLines.join(' ')} by Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" />}</div>
-    </div>
-  </section>
+    </section>
+  ))}
 
-  <!-- 3. Approvals: white, photo left, text right -->
-  <section class="svc svc--light svx">
+  <!-- Approvals -->
+  <section class:list={['svc', 'svx', dark(nA) ? 'svc--dark' : 'svc--light']}>
     <div class="svc__inner">
       <div class="svc__text">
         <h2 class="svc__title">Which approvals we handle</h2>
@@ -91,38 +97,16 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
     </div>
   </section>
 
-  <!-- 4. How we work: black, timeline as "Our story" on About -->
-  <section class="sv sv--dark sv--steps">
+  <!-- How we work: timeline as "Our story" on About -->
+  <section class:list={['sv', { 'sv--dark sv--steps': dark(nS) }]}>
     <div class="sv__wrap">
       <h2 class="sv__h2">How we work</h2>
       <ol class="sv__steps">{(s.process ?? serviceProcess).map(([t, d], i) => <li><button type="button" class="sv__step-head" aria-expanded="false" aria-controls={`step-${i}`}><span class="sv__num">Step {String(i + 1).padStart(2, '0')}</span><h3>{t}</h3></button><p id={`step-${i}`}>{d}</p></li>)}</ol>
     </div>
   </section>
-</>) : (<>
-  <section class="sv sv--dark">
-      <div class="sv__cols">
-        <div>
-          <h2 class="sv__h2">What we deliver<span class="dot" aria-hidden="true"></span></h2>
-          {s.deliverGroups ? (
-            <div class="sv__groups">{s.deliverGroups.map(([g, items]) => <div><h3 class="sv__gh">{g}</h3><ul class="sv__list">{items.map((d) => <li set:html={hl(d)} />)}</ul></div>)}</div>
-          ) : <ul class="sv__list">{s.deliver.map((d) => <li set:html={hl(d)} />)}</ul>}
-        </div>
-        <div>
-          <h2 class="sv__h2 sv__appr-h">Approvals we handle</h2>
-          <ul class="sv__tags">{s.approvals.map((a) => <li>{a}</li>)}</ul>
-          <p class="sv__all">We handle all landlord and authority approvals.</p>
-        </div>
-      </div>
-    </section>
-  
-    <section class="sv">
-      <h2 class="sv__h2">How we work</h2>
-      <ol class="sv__steps">{(s.process ?? serviceProcess).map(([t, d], i) => <li><button type="button" class="sv__step-head" aria-expanded="false" aria-controls={`step-${i}`}><span class="sv__num">Step {String(i + 1).padStart(2, '0')}</span><h3>{t}</h3></button><p id={`step-${i}`}>{d}</p></li>)}</ol>
-    </section>
-</>)}
 
-  <!-- 5. FAQ (white) -->
-  <section class="sv sv--faq">
+  <!-- FAQ -->
+  <section class:list={['sv', { 'sv--dark sv--faqd': dark(nF) }]}>
     <div class="sv__wrap">
     <h2 class="sv__h2">Frequently asked questions</h2>
     <div class="sv__faq">
@@ -131,8 +115,8 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
     </div>
   </section>
 
-  <!-- 6. Latest projects (black), then logos + form as on every page -->
-  <section class="sv sv--dark sv--projects">
+  <!-- Latest projects, then logos + form as on every page -->
+  <section class:list={['sv', 'sv--projects', { 'sv--dark': dark(nP) }]}>
     <div class="sv__wrap">
     <h2 class="sv__h2">Latest projects</h2>
     <div class="sv__grid">
@@ -143,9 +127,28 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
         </a>
       ))}
     </div>
-    <p class="sv__more"><a class="btn btn--white" href="/portfolio/">View full portfolio</a></p>
+    <p class="sv__more"><a class:list={['btn', dark(nP) ? 'btn--white' : 'btn--black']} href="/portfolio/">View full portfolio</a></p>
     </div>
   </section>
+</>) : (<>
+  <section class="sv sv--dark">
+    <div class="sv__cols">
+      <div>
+        <h2 class="sv__h2">What we deliver<span class="dot" aria-hidden="true"></span></h2>
+        <ul class="sv__list">{s.deliver.map((d) => <li set:html={hl(d)} />)}</ul>
+      </div>
+      <div>
+        <h2 class="sv__h2 sv__appr-h">Approvals we handle</h2>
+        <ul class="sv__tags">{s.approvals.map((a) => <li>{a}</li>)}</ul>
+        <p class="sv__all">We handle all landlord and authority approvals.</p>
+      </div>
+    </div>
+  </section>
+  <section class="sv">
+    <h2 class="sv__h2">How we work</h2>
+    <ol class="sv__steps">{(s.process ?? serviceProcess).map(([t, d], i) => <li><button type="button" class="sv__step-head" aria-expanded="false" aria-controls={`step-${i}`}><span class="sv__num">Step {String(i + 1).padStart(2, '0')}</span><h3>{t}</h3></button><p id={`step-${i}`}>{d}</p></li>)}</ol>
+  </section>
+</>)}
 
   <Logos list={logosInner} />
   {s.draft ? <QuickQuote service={s.heroLines.join(' ')} /> : <CtaBand title="Planning a project?" label="Get a quote" href="#contact-form" />}
@@ -202,6 +205,11 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   .svc--light .sv__list li::before { background: #000; }
   .svx .sv__groups { gap: 24px; max-width: 580px; }
   .svx__tags { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; list-style: none; padding: 0; margin: 24px 0 0 auto; max-width: 580px; }
+  .svc--dark .svx__tags { justify-content: flex-start; margin-left: 0; }
+  .svc--dark .svx__tags li { border-color: rgba(255,255,255,.6); }
+  .svc--light .sv__list { max-width: 580px; margin-left: auto; text-align: left; }
+  .sv--faqd .sv__faq details { border-bottom-color: #333; }
+  .sv--faqd .sv__faq p { color: #cfcfcf; }
   .svx__tags li { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid #000; padding: 8px 14px; }
   .sv__wrap { max-width: 1180px; margin: 0 auto; }
   /* steps on black = exact "Our story" colours */
