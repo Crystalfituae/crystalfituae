@@ -84,7 +84,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
 
   <!-- 2..n. One block per service part ("Interior design: what we deliver", "MEP design: what we deliver"), black/white alternating, photo opposite the text -->
   {dBlocks.map((b, i) => (
-    <section class:list={['svc', 'svx', dark(nD + i) ? 'svc--dark' : 'svc--light']}>
+    <section class:list={['svc', 'svx', dark(nD + i) ? 'svc--dark' : 'svc--light', i % 2 === 0 ? 'svx--tl' : 'svx--tr']}>
       <div class="svc__inner">
         <div class="svc__text">
           <h2 class="svc__title svx__name">{b.title}</h2>
@@ -97,7 +97,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   ))}
 
   <!-- Approvals -->
-  <section class:list={['svc', 'svx', dark(nA) ? 'svc--dark' : 'svc--light']}>
+  <section class:list={['svc', 'svx', dark(nA) ? 'svc--dark' : 'svc--light', dBlocks.length % 2 === 0 ? 'svx--tl' : 'svx--tr']}>
     <div class="svc__inner">
       <div class="svc__text">
         <h2 class="svc__title">Which approvals we handle</h2>
@@ -207,17 +207,33 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   .svx .svc__text .sv__list li { color: inherit; }
   .svc--light .sv__list li::before { background: #000; }
   .svx .sv__groups { gap: 24px; max-width: 580px; }
-  .svx__tags { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; list-style: none; padding: 0; margin: 24px 0 0 auto; max-width: 580px; }
-  .svc--dark .svx__tags { justify-content: flex-start; margin-left: 0; }
   .svc--dark .svx__tags li { border-color: rgba(255,255,255,.6); }
-  .svc--light .sv__list { max-width: 580px; margin-left: auto; text-align: right; }
-  .svc--light .sv__list li { padding: 0 24px 14px 0; }
-  .svc--light .sv__list li::before { left: auto; right: 0; }
-  @media (max-width: 767px) { .svc--light .sv__list { text-align: left; margin-left: 0; } .svc--light .sv__list li { padding: 0 0 14px 24px; } .svc--light .sv__list li::before { left: 0; right: auto; } }
   .sv--faqd .sv__faq details { border-bottom-color: #333; }
   .sv--faqd .sv__faq p { color: #cfcfcf; }
+  /* photo side alternates independently of colour (owner): intro = photo left, so the first block after How we work = photo right, then left, ... */
+  .svx__tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 24px 0 0; max-width: 580px; }
+  .svc.svx--tl .svc__text { order: 1; text-align: left; padding-left: 0; }
+  .svc.svx--tl .svc__media { order: 2; padding-left: 70px; }
+  .svc.svx--tl .svc__text p { margin-left: 0; }
+  .svc.svx--tl .svc__title { padding-right: 0; }
+  .svc.svx--tr .svc__text { order: 2; text-align: right; padding-left: 10px; }
+  .svc.svx--tr .svc__media { order: 1; padding-left: 60px; }
+  .svc.svx--tr .svc__text p { margin-left: auto; }
+  .svc.svx--tr .svc__title { padding-right: 0; margin-left: auto; }
+  .svc.svx--tr .sv__list { max-width: 580px; margin-left: auto; text-align: right; }
+  .svc.svx--tr .sv__list li { padding: 0 24px 14px 0; }
+  .svc.svx--tr .sv__list li::before { left: auto; right: 0; }
+  .svc.svx--tr .svx__tags { justify-content: flex-end; margin-left: auto; }
+  @media (max-width: 767px) {
+    .svc.svx--tl .svc__text, .svc.svx--tr .svc__text { order: 1; text-align: left; padding-left: 0; }
+    .svc.svx--tl .svc__media, .svc.svx--tr .svc__media { order: 2; padding: 20px 0 0; }
+    .svc.svx--tr .svc__text p, .svc.svx--tr .svc__title, .svc.svx--tr .sv__list, .svc.svx--tr .svx__tags { margin-left: 0; }
+    .svc.svx--tr .sv__list { text-align: left; }
+    .svc.svx--tr .sv__list li { padding: 0 0 14px 24px; }
+    .svc.svx--tr .sv__list li::before { left: 0; right: auto; }
+    .svc.svx--tr .svx__tags { justify-content: flex-start; }
+  }
   .svc__title.svx__name { margin-bottom: 10px; }
-  .svc--light.svx .svc__title { padding-right: 0; }
   .svc__text p.svx__sub { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px; }
   .svx__tags li { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid #000; padding: 8px 14px; }
   .sv__wrap { max-width: 1180px; margin: 0 auto; }
@@ -258,7 +274,6 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
     .sv--steps .sv__steps { border-left-color: #555; }
     .sv--steps .sv__steps li { border-bottom-color: #333; }
     .sv--steps .sv__step-head::after { color: #fff; }
-    .svx__tags { justify-content: flex-start; margin-left: 0; }
     .sv__steps p { display: none; padding: 0 0 18px; }
     .sv__steps li.is-open p { display: block; }
     .sv__grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
