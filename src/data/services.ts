@@ -270,7 +270,7 @@ export const services: Service[] = [
         'BOQ template and fit-out tender process',
       ]],
     ],
-    deliverImages: ['svc-fnb-fitout-site.jpg', 'svc-fnb-design.jpg'], // owner: Fit-out block before Design
+    deliverImages: ['svc-fnb-fitout-8825.jpg', 'svc-fnb-design.jpg'], // IMG_8825 Wala site; owner will send a version with safety shoes // owner: Fit-out block before Design
     deliverParas: [[
       'Every Food &amp; Beverage (F&amp;B) project follows the same sequence. It starts with a detailed <strong>BOQ and one signed agreement</strong> for the whole scope. Before anything is ordered, you approve and sign the <strong>material samples</strong> — finishes, colours and fixtures.',
       'Our team then verifies every project detail on site — measurements, existing services and the landlord’s requirements — and prepares the <strong>authority submissions</strong>: landlord NOC, Dubai Municipality food safety, Civil Defence and DEWA. <strong>Fit-out works start</strong> under one programme with weekly progress reports and finish with <strong>final inspections and snagging</strong>, completion certificates and handover before your opening day.',
