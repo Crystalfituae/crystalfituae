@@ -44,8 +44,7 @@ const blocks = [
     <section id={b.id} class:list={['svc', b.dark ? 'svc--dark' : 'svc--light', { 'svc--narrow': b.narrow }]} style={`--h:${b.h}px`}>
       <div class="svc__inner">
         <div class="svc__text">
-          <p class="svc__kicker">{b.kicker}</p>
-          <h2 class="svc__title">{b.title}{b.dark && <span class="dot" aria-hidden="true"></span>}</h2>
+          <h2 class="svc__title">{b.kicker}</h2>{/* owner 2026-11-16: block title = section name only, no "... in Dubai." */}
           {b.paras.map((p) => <p set:html={p} />)}
           {b.paras.length > 1 && <button type="button" class="svc__more" aria-expanded="false">Read more +</button>}
           <a class="svc__link" href={b.more.href}>{b.more.label} →</a>
