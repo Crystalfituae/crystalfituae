@@ -19,6 +19,9 @@ export interface Service {
   deliverGroups?: [string, string[]][]; // optional: "What we deliver" split into titled columns
   process?: [string, string][];         // optional: own "How we work" steps (default: serviceProcess)
   introBlock?: { kicker: string; title: string; image: string; paras: string[] }; // optional: intro in the /services/ section style (text + photo)
+  // owner's service-page template (2026-11-16): 1 intro white (photo left) / 2 deliver black (photo right) / 3 approvals white (photo left) / 4 steps black (Our story style)
+  deliverImage?: string;
+  approvalsBlock?: { image: string; paras: string[] };
 }
 
 const process: [string, string][] = [
@@ -194,6 +197,14 @@ export const services: Service[] = [
         'Kitchen exhaust and services coordination for Food &amp; Beverage (F&amp;B)',
       ]],
     ],
+    deliverImage: 'design-render-omakase.jpg',
+    approvalsBlock: {
+      image: 'turnkey.jpg',
+      paras: [
+        'Every fit-out in Dubai needs two sets of approvals: the <strong>landlord NOC</strong> from the developer or mall, and <strong>authority permits</strong> from Dubai Municipality, Dubai Civil Defence and DEWA.',
+        'We prepare the submission drawings and calculations, submit them, answer every comment and attend the inspections — so approvals are part of the schedule, not a delay.',
+      ],
+    },
     approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'Nakheel', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA'],
     facts: [],
     process: [
