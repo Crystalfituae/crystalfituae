@@ -209,10 +209,14 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   .svx__tags { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; list-style: none; padding: 0; margin: 24px 0 0 auto; max-width: 580px; }
   .svc--dark .svx__tags { justify-content: flex-start; margin-left: 0; }
   .svc--dark .svx__tags li { border-color: rgba(255,255,255,.6); }
-  .svc--light .sv__list { max-width: 580px; margin-left: auto; text-align: left; }
+  .svc--light .sv__list { max-width: 580px; margin-left: auto; text-align: right; }
+  .svc--light .sv__list li { padding: 0 24px 14px 0; }
+  .svc--light .sv__list li::before { left: auto; right: 0; }
+  @media (max-width: 767px) { .svc--light .sv__list { text-align: left; margin-left: 0; } .svc--light .sv__list li { padding: 0 0 14px 24px; } .svc--light .sv__list li::before { left: 0; right: auto; } }
   .sv--faqd .sv__faq details { border-bottom-color: #333; }
   .sv--faqd .sv__faq p { color: #cfcfcf; }
   .svc__title.svx__name { margin-bottom: 10px; }
+  .svc--light.svx .svc__title { padding-right: 0; }
   .svc__text p.svx__sub { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px; }
   .svx__tags li { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid #000; padding: 8px 14px; }
   .sv__wrap { max-width: 1180px; margin: 0 auto; }
