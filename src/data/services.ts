@@ -249,6 +249,13 @@ export const services: Service[] = [
     },
     deliver: [],
     deliverGroups: [
+      ['F&B fit-out', [
+        'Civil works, partitions, ceilings, flooring and finishes',
+        'MEP and HVAC, kitchen exhaust, fresh air and drainage',
+        'Grease trap, gas (LPG) and fire-suppression coordination',
+        'Bar counters, display units and bespoke joinery from our workshop',
+        'Signage, decorative lighting and final styling before opening',
+      ]],
       ['F&B design', [
         // owner's list (2026-11-16)
         'Concept architectural design with 3D visuals and drawings',
@@ -262,19 +269,12 @@ export const services: Service[] = [
         'Forms, registrations and AMC support',
         'BOQ template and fit-out tender process',
       ]],
-      ['F&B fit-out', [
-        'Civil works, partitions, ceilings, flooring and finishes',
-        'MEP and HVAC, kitchen exhaust, fresh air and drainage',
-        'Grease trap, gas (LPG) and fire-suppression coordination',
-        'Bar counters, display units and bespoke joinery from our workshop',
-        'Signage, decorative lighting and final styling before opening',
-      ]],
     ],
-    deliverImages: ['svc-fnb-design.jpg', 'svc-fnb-fitout.jpg'],
-    deliverParas: [[], [
+    deliverImages: ['svc-fnb-fitout.jpg', 'svc-fnb-design.jpg'], // owner: Fit-out block before Design
+    deliverParas: [[
       'Every Food &amp; Beverage (F&amp;B) project follows the same sequence. It starts with a detailed <strong>BOQ and one signed agreement</strong> for the whole scope. Before anything is ordered, you approve and sign the <strong>material samples</strong> — finishes, colours and fixtures.',
       'Our team then verifies every project detail on site — measurements, existing services and the landlord’s requirements — and prepares the <strong>authority submissions</strong>: landlord NOC, Dubai Municipality food safety, Civil Defence and DEWA. <strong>Fit-out works start</strong> under one programme with weekly progress reports and finish with <strong>final inspections and snagging</strong>, completion certificates and handover before your opening day.',
-    ]],
+    ], []],
     approvalsBlock: {
       image: 'svc-fnb-approvals.jpg',
       paras: [
