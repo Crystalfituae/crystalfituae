@@ -87,7 +87,7 @@ export const services: Service[] = [
         'Weekly reports on progress, approvals and costs',
       ]],
     ],
-    deliverImages: ['design-render-omakase.jpg', 'svc-mep-hvac-drawing.jpg', 'turnkey.jpg'], // PM = former approvals photo (owner) // MEP = HVAC ducting drawing, Roasters Science Park GF
+    deliverImages: ['svc-imd-design-omakase25.jpg', 'svc-mep-drainage-mahojer.jpg', 'turnkey.jpg'], // PM = former approvals photo (owner) // MEP = HVAC ducting drawing, Roasters Science Park GF
     deliverParas: [[
       'Every design project follows the same sequence. We start with the brief, a site survey and the landlord fit-out guide, develop the <strong>concept and 3D visuals</strong> until you approve the direction, and sign off the <strong>material samples</strong>.',
       'Next comes the <strong>detailed design</strong>: the full drawing set, joinery details and MEP calculations, coordinated between interior and engineering. We prepare the <strong>authority submissions</strong>, answer every comment until approval and hand over a <strong>BOQ for tender</strong> — or build it ourselves.',
