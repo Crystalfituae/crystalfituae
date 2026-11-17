@@ -105,7 +105,7 @@ export const services: Service[] = [
         'We prepare the submission drawings and calculations, submit them, answer every comment and attend the inspections — so approvals are part of the schedule, not a delay.',
       ],
     },
-    approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'Nakheel', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA'],
+    approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'Nakheel', 'IDAMA', 'Dubai Municipality', 'DM Food & Safety', 'Dubai Civil Defence', 'DEWA'],
     facts: [],
     process: [
       ['Brief & Site Survey', 'We visit the site, measure it, read the landlord fit-out guide and agree the brief, scope and budget with you.'],
@@ -180,7 +180,7 @@ export const services: Service[] = [
         'We prepare every submission, answer the comments and attend the inspections, running approvals in parallel with the works — so the doors open within the rent-free period.',
       ],
     },
-    approvals: ['Emaar', 'Dubai Holding', 'Nakheel', 'TECOM', 'Meraas', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA', 'Trakhees'],
+    approvals: ['Emaar', 'Dubai Holding', 'Nakheel', 'IDAMA', 'TECOM', 'Meraas', 'Dubai Municipality', 'DM Food & Safety', 'Dubai Civil Defence', 'DEWA', 'Trakhees'],
     facts: [],
     process: [
       ['BOQ & Agreement', 'We agree the scope and a detailed BOQ with you, and sign one agreement for the whole project.'],
@@ -258,7 +258,7 @@ export const services: Service[] = [
         'For clinics we also handle the <strong>Dubai Health Authority (DHA)</strong> route: layouts to DHA facility requirements, submissions and the inspections before the facility licence — as we did for AMV Aesthetic Clinic in Bay Square. We submit, answer every comment and attend every inspection until the completion certificate.',
       ],
     },
-    approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'DIFC', 'DDA', 'Nakheel', 'DHA', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA'],
+    approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'DIFC', 'DDA', 'Nakheel', 'IDAMA', 'DHA', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA'],
     facts: [],
     process: [
       ['BOQ & Agreement', 'We agree the scope and a detailed BOQ with you, and sign one agreement for the whole project.'],
@@ -286,6 +286,7 @@ export const services: Service[] = [
     heroLines: ['Residential', 'interiors'],
     h1: '— villa and apartment interior design and renovation in Dubai',
     heroProject: 'anantara-penthouse',
+    heroImage: 'home-5.jpg', // owner: Bluewaters kitchen island with blue stone (former home carousel slide)
     intro: [],
     introBlock: {
       kicker: 'Residential Interiors',
@@ -332,7 +333,7 @@ export const services: Service[] = [
         'We prepare the drawings, submit them and handle the inspections and the DEWA connection, so works start legally and your security deposit is returned in full.',
       ],
     },
-    approvals: ['Emaar', 'Nakheel', 'Dubai Holding', 'Meraas', 'Dubai Municipality', 'Trakhees', 'DEWA'],
+    approvals: ['Emaar', 'Nakheel', 'IDAMA', 'Dubai Holding', 'Meraas', 'Dubai Municipality', 'Trakhees', 'DEWA'],
     facts: [],
     process: [
       ['BOQ & Agreement', 'We agree the scope and a detailed BOQ with you, and sign one agreement for the whole project.'],

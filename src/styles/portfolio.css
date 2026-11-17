@@ -36,5 +36,4 @@
 @media (max-width: 767px) {
   .pfilter { flex-wrap: wrap; justify-content: flex-start; gap: 8px 20px; height: auto; padding: 4px 16px 6px; }
   .pfilter a { white-space: nowrap; }
-  .pfilter sup { display: none; }
 }
