@@ -87,7 +87,7 @@ export const services: Service[] = [
         'Weekly reports on progress, approvals and costs',
       ]],
     ],
-    deliverImages: ['svc-imd-design-omakase25.jpg', 'svc-mep-drainage-mahojer.jpg', 'turnkey.jpg'], // PM = former approvals photo (owner) // MEP = HVAC ducting drawing, Roasters Science Park GF
+    deliverImages: ['svc-imd-design-omakase25.jpg', 'svc-mep-drainage-mahojer.png', 'turnkey.jpg'], // PM = former approvals photo (owner) // MEP = HVAC ducting drawing, Roasters Science Park GF
     deliverParas: [[
       'Every design project follows the same sequence. We start with the brief, a site survey and the landlord fit-out guide, develop the <strong>concept and 3D visuals</strong> until you approve the direction, and sign off the <strong>material samples</strong>.',
       'Next comes the <strong>detailed design</strong>: the full drawing set, joinery details and MEP calculations, coordinated between interior and engineering. We prepare the <strong>authority submissions</strong>, answer every comment until approval and hand over a <strong>BOQ for tender</strong> — or build it ourselves.',
@@ -99,7 +99,7 @@ export const services: Service[] = [
       'Already have a design and a contractor? We can step in as your <strong>project manager</strong> — we have also taken over projects after previous contractors could not finish them or obtain approvals.',
     ]],
     approvalsBlock: {
-      image: 'svc-imd-approvals-1941.jpg', // neutral: drawings and material samples on the table
+      image: 'svc-imd-approvals-tfc-yoga.jpg', // owner: TFC Yoga_2 render
       paras: [
         'Every fit-out in Dubai needs two sets of approvals: the <strong>landlord NOC</strong> from the developer or mall, and <strong>authority permits</strong> from Dubai Municipality, Dubai Civil Defence and DEWA.',
         'We prepare the submission drawings and calculations, submit them, answer every comment and attend the inspections — so approvals are part of the schedule, not a delay.',

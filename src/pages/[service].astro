@@ -93,7 +93,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
             <button type="button" class="svc__more" aria-expanded="false">Read more +</button>
           </>) : <ul class="sv__list">{b.items.map((d) => <li set:html={hl(d)} />)}</ul>}
         </div>
-        <div class="svc__media">{b.img && <Image src={b.img} alt={`${b.title} by Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" />}</div>
+        <div class="svc__media">{b.img && <Image src={b.img} alt={`${b.title} by Crystal Fit`} width={500} height={700} widths={[370, 500, 1000, 1400]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" quality={90} loading="lazy" />}</div>
       </div>
     </section>
   ))}
