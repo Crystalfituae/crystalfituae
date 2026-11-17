@@ -45,7 +45,8 @@ const blocks = [
       <div class="svc__inner">
         <div class="svc__text">
           <h2 class="svc__title">{b.kicker}</h2>{/* owner 2026-11-16: block title = section name only, no "... in Dubai." */}
-          {b.paras.map((p) => <p set:html={p} />)}
+          <p set:html={b.paras[0]} />
+          {b.paras.length > 1 && <div class="svc__rest">{b.paras.slice(1).map((p) => <p set:html={p} />)}</div>}
           {b.paras.length > 1 && <button type="button" class="svc__more" aria-expanded="false">Read more +</button>}
           {b.page && <a class="svc__link" href={b.page}>Learn more about {b.kicker} →</a>}
           <a class="svc__link" href={b.more.href}>{b.more.label} →</a>

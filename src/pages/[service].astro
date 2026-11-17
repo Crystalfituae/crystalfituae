@@ -56,7 +56,8 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
       <div class="svc__inner">
         <div class="svc__text">
           <h2 class="svc__title">{s.introBlock.kicker}</h2>{/* owner: section name exactly as in the Services block, no "… in Dubai" headline */}
-          {s.introBlock.paras.map((p) => <p set:html={hl(p)} />)}
+          <p set:html={hl(s.introBlock.paras[0])} />
+          <div class="svc__rest">{s.introBlock.paras.slice(1).map((p) => <p set:html={hl(p)} />)}</div>
           <button type="button" class="svc__more" aria-expanded="false">Read more +</button>
         </div>
         <div class="svc__media">{introImg && <Image src={introImg} alt={`${s.introBlock.kicker} by Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" />}</div>
@@ -86,8 +87,11 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
         <div class="svc__text">
           <h2 class="svc__title svx__name">{b.title}</h2>
           <p class="svx__sub">What we deliver</p>
-          {b.paras && b.paras.map((p) => <p set:html={hl(p)} />)}
-          <ul class="sv__list">{b.items.map((d) => <li set:html={hl(d)} />)}</ul>
+          {b.paras && b.paras.length > 0 ? (<>
+            <p set:html={hl(b.paras[0])} />
+            <div class="svc__rest">{b.paras.slice(1).map((p) => <p set:html={hl(p)} />)}<ul class="sv__list">{b.items.map((d) => <li set:html={hl(d)} />)}</ul></div>
+            <button type="button" class="svc__more" aria-expanded="false">Read more +</button>
+          </>) : <ul class="sv__list">{b.items.map((d) => <li set:html={hl(d)} />)}</ul>}
         </div>
         <div class="svc__media">{b.img && <Image src={b.img} alt={`${b.title} by Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" />}</div>
       </div>
@@ -99,8 +103,9 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
     <div class="svc__inner">
       <div class="svc__text">
         <h2 class="svc__title">Which approvals we handle</h2>
-        {s.approvalsBlock.paras.map((p) => <p set:html={hl(p)} />)}
-        <ul class="svx__tags">{s.approvals.map((x) => <li>{x}</li>)}</ul>
+        <p set:html={hl(s.approvalsBlock.paras[0])} />
+        <div class="svc__rest">{s.approvalsBlock.paras.slice(1).map((p) => <p set:html={hl(p)} />)}<ul class="svx__tags">{s.approvals.map((x) => <li>{x}</li>)}</ul></div>
+        <button type="button" class="svc__more" aria-expanded="false">Read more +</button>
       </div>
       <div class="svc__media">{apprImg && <Image src={apprImg} alt={`Landlord and authority approvals for ${s.heroLines.join(' ')} – Crystal Fit`} width={500} height={700} widths={[370, 500, 1000]} sizes="(min-width: 768px) 500px, 100vw" fit="cover" loading="lazy" />}</div>
     </div>

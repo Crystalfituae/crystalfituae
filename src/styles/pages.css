@@ -113,10 +113,12 @@
   .svc__text p { margin-bottom: 14px; }
   .svc__media img { width: 100%; height: auto; aspect-ratio: 5 / 7; }
   /* phones: first paragraph, the rest behind "Read more" */
-  .svc__text:not(.is-open) p:nth-of-type(n+3) { display: none; }
+  .svc__text:not(.is-open) .svc__rest { display: none; }
   .svc__more { display: inline-block; margin-top: 4px; padding: 10px 0 4px; background: none; border: 0; color: inherit; cursor: pointer;
     font-family: var(--ff-head); font-size: var(--fs-btn); line-height: var(--lh-btn); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
 }
+
+.svc__rest > .sv__list:first-child, .svc__rest > .svx__tags:first-child { margin-top: 24px; }
 
 /* ---------- Contact ---------- */
 .contact { max-width: 1210px; margin: 0 auto; display: grid; grid-template-columns: 575px 575px; justify-content: space-between; padding: 72px 0 90px; align-items: start; }
