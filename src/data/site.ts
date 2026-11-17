@@ -95,3 +95,6 @@ export const scopeLabels: Record<string, string> = {
 };
 // Project page: approval authorities / landlords (suggested names; any other text also works)
 export const approvalOptions = ['Emaar', 'TECOM', 'Dubai Holding', 'Nakheel', 'Meraas', 'DMCC', 'DIFC', 'DDA', 'Individual', 'DM', 'DCD', 'DEWA', 'Trakhees', 'DHA', 'Sharjah Municipality', 'SEWA'];
+
+// Company numbers (owner 2026-11-12/13), same as About > Our story; phones show only Emaar + Dubai Holding
+export const companyFacts: [string, string][] = [['200+', 'Projects completed'], ['38', 'Projects in Emaar properties'], ['58', 'Projects with Dubai Holding'], ['10', 'Projects in TECOM']];
