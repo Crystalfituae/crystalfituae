@@ -74,8 +74,8 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
   <section class:list={['sv', { 'sv--dark sv--steps': dark(nS) }]}>
     <div class="sv__wrap">
       <h2 class="sv__h2">How we work</h2>
-      {/* owner: step names only, no descriptions (the process is described in the text of the service blocks) */}
-      <ol class="sv__steps sv__steps--names" style={`--n:${(s.process ?? serviceProcess).length}`}>{(s.process ?? serviceProcess).map(([t], i) => <li><div class="sv__step-name"><span class="sv__num">Step {String(i + 1).padStart(2, '0')}</span><h3>{t}</h3></div></li>)}</ol>
+          {/* like "Our story": name + short text; desktop shows the text, phones tap to unfold */}
+      <ol class="sv__steps" style={`--n:${(s.process ?? serviceProcess).length}`}>{(s.process ?? serviceProcess).map(([t, d], i) => <li><button type="button" class="sv__step-head" aria-expanded="false" aria-controls={`step-${i}`}><span class="sv__num">Step {String(i + 1).padStart(2, '0')}</span><h3>{t}</h3></button>{d && <p id={`step-${i}`}>{d}</p>}</li>)}</ol>
     </div>
   </section>
 
@@ -230,10 +230,7 @@ const hl = (t: string) => t.replace(/\[CONFIRM[^\]]*\]|\[___\]/g, (m) => `<mark>
     .svc.svx--tr .sv__list li::before { left: 0; right: auto; }
     .svc.svx--tr .svx__tags { justify-content: flex-start; }
   }
-  .sv__steps--names li { padding-bottom: 0; }
-  .sv__steps--names h3 { margin: 0; }
   .svx .svc__text p + .sv__list { margin-top: 24px; }
-  @media (max-width: 991px) { .sv__steps.sv__steps--names li { padding: 14px 0 14px 26px; } .sv__steps--names li::before { top: 18px; } }
   .svc__title.svx__name { margin-bottom: 10px; }
   .svc__text p.svx__sub { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 30px; }
   .svx__tags li { font-family: var(--ff-head); font-size: var(--fs-label); line-height: var(--lh-label); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid #000; padding: 8px 14px; }

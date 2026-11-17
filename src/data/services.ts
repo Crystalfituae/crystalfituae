@@ -108,13 +108,11 @@ export const services: Service[] = [
     approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'Nakheel', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA'],
     facts: [],
     process: [
-      // owner: steps follow the section (interior design -> MEP -> approvals -> project management)
-      ['Brief & Survey', ''],
-      ['Concept & 3D', ''],
-      ['Material Approvals', ''],
-      ['Design & MEP', ''],
-      ['Authority Approvals', ''],
-      ['Project Management', ''],
+      ['Brief & Site Survey', 'We visit the site, measure it, read the landlord fit-out guide and agree the brief, scope and budget with you.'],
+      ['Concept Design & 3D Visuals', 'Moodboards, layout options and 3D visuals until you approve the design direction and the materials.'],
+      ['Concept Drawings', 'Layout, ceiling and elevation drawings for the landlord design review and your sign-off before the detailed design.'],
+      ['Detailed Arch. & MEP', 'Full architectural and MEP drawing set with HVAC, electrical, plumbing and fire-fighting calculations — ready for approvals and tender.'],
+      ['Fit-out', 'We build it ourselves as the main contractor — or support your contractor and manage the project until handover.'],
     ],
     faq: [
       ['Can you do the design only, without the fit-out?', 'Yes. We deliver complete interior and MEP packages that any contractor can build from, with a BOQ for tender, and can support you during construction.'],
@@ -185,9 +183,8 @@ export const services: Service[] = [
     approvals: ['Emaar', 'Dubai Holding', 'Nakheel', 'TECOM', 'Meraas', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA', 'Trakhees'],
     facts: [],
     process: [
-      // owner's sequence (2026-11-16)
       ['BOQ & Agreement', 'We agree the scope and a detailed BOQ with you, and sign one agreement for the whole project.'],
-      ['Material Approvals', 'You approve the finishes, materials and colours on physical sample boards — nothing is ordered without your signature.'],
+      ['Material Approvals', 'You approve the finishes, materials and colours on physical samples — nothing is ordered without your signature.'],
       ['On-site Verification', 'We verify all project details on site: measurements, existing services and the landlord’s requirements.'],
       ['Authority Approvals', 'Landlord NOC, Dubai Municipality food safety, Civil Defence and DEWA — submitted and followed up until approval.'],
       ['Fit-out Works', 'Civil, MEP, kitchen exhaust, joinery and finishes — one team, one programme, weekly progress reports.'],
@@ -264,12 +261,12 @@ export const services: Service[] = [
     approvals: ['Emaar', 'Dubai Holding', 'TECOM', 'DIFC', 'DDA', 'Nakheel', 'DHA', 'Dubai Municipality', 'Dubai Civil Defence', 'DEWA'],
     facts: [],
     process: [
-      ['BOQ & Agreement', ''],
-      ['Material Approvals', ''],
-      ['On-site Verification', ''],
-      ['Authority Approvals', ''],
-      ['Fit-out Works', ''],
-      ['Inspections & Snagging', ''],
+      ['BOQ & Agreement', 'We agree the scope and a detailed BOQ with you, and sign one agreement for the whole project.'],
+      ['Material Approvals', 'You approve the finishes, materials and colours on physical samples — nothing is ordered without your signature.'],
+      ['On-site Verification', 'We verify all project details on site: measurements, existing services and the landlord’s requirements.'],
+      ['Authority Approvals', 'Landlord NOC, Dubai Municipality, Civil Defence, DEWA and, for clinics, DHA — submitted and followed up until approval.'],
+      ['Fit-out Works', 'Partitions, ceilings, MEP, flooring, joinery and finishes — phased around your business when needed.'],
+      ['Inspections & Snagging', 'Authority and landlord inspections, snagging, completion certificates and handover on the agreed date.'],
     ],
     faq: [
       ['Do you get the landlord NOC and permits?', 'Yes. We prepare the drawings required by the landlord and authorities, submit them and follow up until permits and completion certificates are issued.'],
@@ -338,12 +335,12 @@ export const services: Service[] = [
     approvals: ['Emaar', 'Nakheel', 'Dubai Holding', 'Meraas', 'Dubai Municipality', 'Trakhees', 'DEWA'],
     facts: [],
     process: [
-      ['BOQ & Agreement', ''],
-      ['Material Approvals', ''],
-      ['On-site Verification', ''],
-      ['Authority Approvals', ''],
-      ['Fit-out Works', ''],
-      ['Inspections & Snagging', ''],
+      ['BOQ & Agreement', 'We agree the scope and a detailed BOQ with you, and sign one agreement for the whole project.'],
+      ['Material Approvals', 'You approve marble, parquet, finishes and fittings on physical samples — nothing is ordered without your signature.'],
+      ['On-site Verification', 'We verify measurements, existing services and the community rules before any work starts.'],
+      ['Authority Approvals', 'Community NOC from the master developer and Dubai Municipality or Trakhees permits — submitted and followed up.'],
+      ['Fit-out Works', 'Demolition, MEP, flooring, joinery and finishes by our in-house skilled labour, with regular photo reports.'],
+      ['Inspections & Snagging', 'Snagging, cleaning, final inspection and handover — ready to move in.'],
     ],
     faq: [
       ['Do you handle the community NOC for villa renovation?', 'Yes. We prepare drawings for the master developer (Emaar, Nakheel, Dubai Holding and others) and the authority permits before works start.'],
