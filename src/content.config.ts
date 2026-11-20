@@ -17,7 +17,7 @@ const projects = defineCollection({
       coverRatio: z.number().optional(),       // height/width of the tile (defaults to the photo's own ratio)
       hero: image().optional(),                // big photo next to description
       heroCol: z.number().optional(),
-      gallery: z.array(z.object({ image: image(), size: z.enum(['half', 'quarter', 'five12', 'full']).default('half'), ratio: z.number().optional(), title: z.string().optional() })).default([]),
+      gallery: z.array(z.object({ image: image(), size: z.enum(['half', 'quarter', 'third', 'five12', 'full']).default('half'), ratio: z.number().optional(), title: z.string().optional() })).default([]),
       gallerySpacer: z.boolean().default(false), // reproduces an empty first tile of the old site's gallery
       // unified project facts (shown on every project page in this order)
       location: z.string().optional(),         // "Area, City, Country"
