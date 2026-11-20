@@ -50,7 +50,7 @@ otherCases: ["mercure-gold-hotel-interior-design","livrichy-real-estates-office"
 location: "Dubai Design District (d3), Dubai, UAE"
 area: 220
 year: "2025"
-scope: ["approvals", "fitout", "mep", "supervision", "pm"]
+scope: ["approvals", "fitout", "mep", "joinery", "supervision", "pm"]
 approvals: ["TECOM", "DDA", "DCD", "DEWA"]
 seoTitle: "Gari Tatintsian Gallery – Gallery Fit-Out | Crystal Fit"
 seoDescription: "Gari Tatintsian Gallery, Dubai Design District: 220 sqm art gallery fit-out by Crystal Fit with DDA, DCD, DEWA and TECOM approvals."

@@ -4,7 +4,7 @@ import { Image, getImage } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import Masonry from '../../components/Masonry.astro';
 import Icon from '../../components/Icon.astro';
-import { otherCases, scopeLabels } from '../../data/site';
+import { otherCases, scopeText } from '../../data/site';
 import '../../styles/project.css';
 
 export async function getStaticPaths() {
@@ -28,7 +28,8 @@ const facts = [
   ['Location', d.location],
   ['Size', d.area ? `${d.area.toLocaleString('en-US')} sq.m` : undefined],
   ['Year', d.year],
-  ['Scope', Object.keys(scopeLabels).filter((k) => d.scope.includes(k as any)).map((k) => scopeLabels[k]).join(' · ') || undefined],
+  ['Our scope of works', scopeText(d.scope).ours],
+  ['By others', scopeText(d.scope).others],
   ['Approvals', d.approvals.join(' · ') || undefined],
 ].filter((f): f is [string, string] => !!f[1]);
 const schema = [

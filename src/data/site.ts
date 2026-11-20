@@ -10,6 +10,10 @@ export const site = {
   streetAddress: 'Ghoshi Warehouse City WH-132, Al Quoz Industrial 3',
   geo: { lat: 25.1218654, lng: 55.2185395 },
   foundingYear: '2014',
+  // legal entity (owner 2026-11-20): 2014-2021 operated as KG Design LLC; Crystal Fit Contracting LLC set up 10 Dec 2021 (larger visa quota + contracting activities)
+  formerName: 'KG Design LLC',
+  licenceNo: '1010584',
+  licenceDate: '2021-12-10',
   mapUrl: 'https://maps.app.goo.gl/6d8yRjZRXKNBa2M89',
   // route from the visitor's location to the Crystal Fit pin (WH-132, 19D Street, Ghoshi Warehouse City, Al Quoz Industrial 3)
   directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=25.1218654%2C55.2185395&travelmode=driving',
@@ -93,6 +97,23 @@ export const scopeLabels: Record<string, string> = {
   supervision: 'Technical supervision',
   pm: 'Project management',
 };
+// Project page: plain-language scope sentence ("what exactly did Crystal Fit do here") — read by visitors and AI search
+const scopeLong: Record<string, string> = {
+  design: 'interior design', approvals: 'landlord and authority approvals', fitout: 'fit-out and finishing works',
+  mep: 'MEP works', joinery: 'custom joinery', supervision: 'technical supervision', pm: 'project management',
+};
+export function scopeText(scope: string[]): { ours?: string; others?: string } {
+  const list = (a: string[]) => a.length > 1 ? `${a.slice(0, -1).join(', ')} and ${a[a.length - 1]}` : a[0];
+  const ours = Object.keys(scopeLong).filter((k) => scope.includes(k)).map((k) => scopeLong[k]);
+  const others: string[] = [];
+  const build = scope.includes('fitout');
+  if (!scope.includes('design')) others.push("interior design (client's designer)");
+  if (!build && scope.includes('design')) others.push("construction (client's contractor)");
+  if (!build && !scope.includes('design')) others.push("fit-out works (client's contractors, coordinated and supervised by Crystal Fit)");
+  if (!ours.length) return {};
+  const o = list(ours)!;
+  return { ours: o[0].toUpperCase() + o.slice(1) + '.', others: others.length ? list(others)![0].toUpperCase() + list(others)!.slice(1) + '.' : undefined };
+}
 // Project page: approval authorities / landlords (suggested names; any other text also works)
 export const approvalOptions = ['Emaar', 'TECOM', 'Dubai Holding', 'Nakheel', 'Meraas', 'DMCC', 'DIFC', 'DDA', 'Individual', 'DM', 'DCD', 'DEWA', 'Trakhees', 'DHA', 'Sharjah Municipality', 'SEWA'];
 
