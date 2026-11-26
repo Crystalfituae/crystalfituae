@@ -42,8 +42,9 @@ export const site = {
     { label: 'Contact us', href: '/contact/' },
   ],
   // Web3Forms access keys (free, https://web3forms.com). One key = one inbox.
-  // Main inbox, receives every enquiry: info@crystalfituae.com
-  formKey: import.meta.env.PUBLIC_WEB3FORMS_KEY || 'bc4e80cb-ae26-45a9-b622-999b514d67ef',
+  // Inbox for every enquiry (all topics, both forms): kg@crystalfituae.com (owner, since 2026-11-26).
+  // Fixed here on purpose so an old hosting env var cannot send enquiries back to info@.
+  formKey: '169fb4f7-6617-447c-8430-a9f267f677b6',
   // Copy inbox, receives "Project Inquiry" only: kg@crystalfituae.com
   // Tracking (empty = not loaded, no cookie banner). Set in hosting env vars or here.
   // Google Analytics 4 measurement ID, e.g. G-XXXXXXXXXX
