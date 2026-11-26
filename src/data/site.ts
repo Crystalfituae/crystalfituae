@@ -44,7 +44,7 @@ export const site = {
   // Web3Forms access keys (free, https://web3forms.com). One key = one inbox.
   // Inbox for every enquiry (all topics, both forms): kg@crystalfituae.com (owner, since 2026-11-26).
   // Fixed here on purpose so an old hosting env var cannot send enquiries back to info@.
-  formKey: '169fb4f7-6617-447c-8430-a9f267f677b6',
+  formKey: 'be693319-fb25-4f08-a706-5902e2664ed4',
   // Copy inbox, receives "Project Inquiry" only: kg@crystalfituae.com
   // Tracking (empty = not loaded, no cookie banner). Set in hosting env vars or here.
   // Google Analytics 4 measurement ID, e.g. G-XXXXXXXXXX
